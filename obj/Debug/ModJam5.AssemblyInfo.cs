@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2025 TheSignalJammers")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7aa0af5d32b7da1f138bf6657606ef8dd9c4341")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42eca8f449f3d5732709b37669cd533586fdded6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModJam5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModJam5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
