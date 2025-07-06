@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json",
+  "credits": [
+    "A Jam 5 Submission by the Signal Jammers Team",
+    " # ",
+    "Modders:",
+    "pikpik_carrot#Lead Developer",
+    "Anonymous#Programmer",
+    "Echatsum#Backup Programmer and Designer",
+    "Repcon#3D Modeling and Design",
+    " # ",
+    "Playtesters:",
+    " # ",
+    "Special Thanks:",
+    "xen"
+  ]
+}
