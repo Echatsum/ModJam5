@@ -593,9 +593,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jn7jn\\source\\repos\\ModJam5\\ModJam5.csproj",
-      "projectName": "ModJam5",
-      "projectPath": "C:\\Users\\jn7jn\\source\\repos\\ModJam5\\ModJam5.csproj",
+      "projectUniqueName": "C:\\Users\\jn7jn\\source\\repos\\ModJam5\\FifthModJam.csproj",
+      "projectName": "FifthModJam",
+      "projectPath": "C:\\Users\\jn7jn\\source\\repos\\ModJam5\\FifthModJam.csproj",
       "packagesPath": "C:\\Users\\jn7jn\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jn7jn\\source\\repos\\ModJam5\\obj\\",
       "projectStyle": "PackageReference",

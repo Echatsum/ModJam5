@@ -5,7 +5,7 @@ using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace ModJam5
+namespace FifthModJam
 {
     public interface INewHorizons
     {

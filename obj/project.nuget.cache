@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0V6hYzUZi88=",
+  "dgSpecHash": "31rTqoaZUo8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jn7jn\\source\\repos\\ModJam5\\ModJam5.csproj",
+  "projectFilePath": "C:\\Users\\jn7jn\\source\\repos\\ModJam5\\FifthModJam.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jn7jn\\.nuget\\packages\\harmonyx\\2.5.5\\harmonyx.2.5.5.nupkg.sha512",
     "C:\\Users\\jn7jn\\.nuget\\packages\\json.net.unity3d\\9.0.1\\json.net.unity3d.9.0.1.nupkg.sha512",

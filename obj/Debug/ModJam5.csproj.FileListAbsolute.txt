@@ -19,4 +19,8 @@ C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.M
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.ModJam5\planets\assets\AssetBundle\AssetBundle.manifest
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.ModJam5\planets\assets\AssetBundle\pulsar
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.ModJam5\planets\assets\AssetBundle\pulsar.manifest
-C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.ModJam5\planets\Pulsar.json
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.ModJam5\planets\assets\AssetBundle\spacestation
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.ModJam5\planets\assets\AssetBundle\spacestation.manifest
+C:\Users\jn7jn\source\repos\ModJam5\obj\Debug\ModJam5.sourcelink.json
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.ModJam5\planets\SilverLining.json
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.ModJam5\planets\OminousOrbiter.json

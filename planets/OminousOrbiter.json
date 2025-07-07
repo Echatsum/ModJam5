@@ -1,0 +1,45 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Ominous Orbiter",
+  "starSystem": "Jam5",
+  "Base": {
+    "surfaceSize": 400,
+    "showMinimap": false,
+    "surfaceGravity": 0
+  },
+  "MapMarker": {
+    "enabled": true
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assets/AssetBundle/spacestation",
+        "path": "Assets/KavriShip_Interior.prefab"
+      },
+      {
+        "path": "Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/Prefab_HEA_Campfire",
+        "parentPath": "Sector/KavriShip_Interior/Interactibles/Prefab_IP_LodgeFire/Effects_HEA_Campfire",
+        "isRelativeToParent": true,
+        "removeChildren": [
+          "Effects",
+          "Props_HEA_Campfire"
+        ]
+      },
+      {
+        "path": "Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/Prefab_HEA_Campfire",
+        "parentPath": "Sector/KavriShip_Interior/Interactibles/Prefab_IP_LodgeFire/Effects_HEA_Campfire (1)",
+        "isRelativeToParent": true,
+        "removeChildren": [
+          "Effects",
+          "Props_HEA_Campfire"
+        ]
+      }
+    ]
+  },
+  "Orbit": {
+    "primaryBody": "SilverLining",
+    "dottedOrbitLine": true,
+    "semiMajorAxis": 1200,
+    "isTidallyLocked": true
+  }
+}

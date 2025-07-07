@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 2563435268
+CRC: 287527423
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: pulsar
+      Dependencies: {}
+    Info_1:
+      Name: spacestation
       Dependencies: {}

@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
-  "filename": "ModJam5.dll",
+  "filename": "FifthModJam.dll",
   "author": "TheSignalJammers",
-  "name": "ModJam5",
-  "uniqueName": "TheSignalJammers.ModJam5",
+  "name": "FifthModJam",
+  "uniqueName": "TheSignalJammers.FifthModJam",
   "version": "0.1.0",
   "owmlVersion": "2.15.1",
   "dependencies": [ "xen.NewHorizons", "xen-42.ModJam5" ]
