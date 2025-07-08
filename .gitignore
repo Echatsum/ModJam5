@@ -1,10 +1,2 @@
 .vs/**
-/planets/assets/AssetBundle/**
-planets/assets/AssetBundle/AssetBundle
-planets/assets/AssetBundle/AssetBundle.manifest
-planets/assets/AssetBundle/spacestation
-planets/assets/AssetBundle/spacestation.manifest
-planets/assets/AssetBundle/AssetBundle
-planets/assets/AssetBundle/AssetBundle.manifest
-planets/assets/AssetBundle/spacestation
-planets/assets/AssetBundle/spacestation.manifest
+planets/assets/AssetBundle/**
