@@ -25,3 +25,7 @@ C:\Users\jn7jn\source\repos\ModJam5\obj\Debug\FifthModJam.dll
 C:\Users\jn7jn\source\repos\ModJam5\obj\Debug\FifthModJam.pdb
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\Audio\mountainking.ogg
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\KarviWarp.json
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\Audio\fawns.ogg
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\Museum.json
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\AssetBundle\museum
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\AssetBundle\museum.manifest

@@ -2,20 +2,28 @@
 using OWML.Common;
 using OWML.ModHelper;
 using System.Reflection;
+using UnityEngine;
 
 namespace FifthModJam
 {
     public class FifthModJam : ModBehaviour
     {
-        public static FifthModJam Instance;
-        public INewHorizons NewHorizons;
+        public static INewHorizons NewHorizonsAPI { get; private set; }
 
-        public void Awake()
+        public static FifthModJam Instance
         {
-            Instance = this;
-            // You won't be able to access OWML's mod helper in Awake.
-            // So you probably don't want to do anything here.
-            // Use Start() instead.
+            get
+            {
+                if (instance == null) instance = FindObjectOfType<FifthModJam>();
+                return instance;
+            }
+        }
+
+        private static FifthModJam instance;
+
+        public static void WriteLine(string text, MessageType messageType = MessageType.Message)
+        {
+            Instance.ModHelper.Console.WriteLine(text, messageType);
         }
 
         public void Start()
@@ -24,8 +32,8 @@ namespace FifthModJam
             ModHelper.Console.WriteLine($"My mod {nameof(FifthModJam)} is loaded!", MessageType.Success);
 
             // Get the New Horizons API and load configs
-            NewHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
-            NewHorizons.LoadConfigs(this);
+            NewHorizonsAPI = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
+            NewHorizonsAPI.LoadConfigs(this);
 
             new Harmony("TheSignalJammers.FifthModJam").PatchAll(Assembly.GetExecutingAssembly());
 
@@ -38,6 +46,17 @@ namespace FifthModJam
         {
             if (newScene != OWScene.SolarSystem) return;
             ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
+        }
+
+        public bool IsInJamFiveSystem()
+        {
+            if (NewHorizonsAPI.GetCurrentStarSystem() == "Jam5")
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
         }
     }
 

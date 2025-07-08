@@ -15,6 +15,15 @@
   "MapMarker": {
     "enabled": true
   },
+  "Spawn": {
+    "playerSpawnPoints": [
+      {
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SpawnReturn",
+        "isRelativeToParent": true,
+        "rename": "SpawnKAV5"
+      }
+    ]
+  },
   "Props": {
     "details": [
       {

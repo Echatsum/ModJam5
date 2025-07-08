@@ -1,0 +1,97 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "ScaledMuseum",
+  "starSystem": "Jam5",
+  "Base": {
+    "surfaceSize": 800,
+    "showMinimap": false,
+    "surfaceGravity": 0
+  },
+  "Orbit": {
+    "primaryBody": "Silver Lining",
+    "showOrbitLine": false,
+    "semiMajorAxis": 1800,
+    "trueAnomaly": 180
+  },
+  "Spawn": {
+    "playerSpawnPoints": [
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/Spawn",
+        "isRelativeToParent": true,
+        "rename": "SpawnKAV1"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/Spawn",
+        "isRelativeToParent": true,
+        "rename": "SpawnKAV2"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/Spawn",
+        "isRelativeToParent": true,
+        "rename": "SpawnKAV3"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/Spawn",
+        "isRelativeToParent": true,
+        "rename": "SpawnKAV4"
+      }
+    ]
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assets/AssetBundle/museum",
+        "path": "Assets/Karvi/ScaledMuseum.prefab"
+      }
+    ]
+  },
+  "Volumes": {
+    "oxygenVolumes": [
+      {
+        "radius": 800
+      }
+    ],
+    "audioVolumes": [
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/Spawn",
+        "isRelativeToParent": true,
+        "radius": 100,
+        "clipSelection": "sequential",
+        "audio": "Reel_1_Backdrop_A",
+        "volume": 0.4,
+        "rename": "StrangerAudio",
+        "priority": 0
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/Spawn",
+        "isRelativeToParent": true,
+        "radius": 100,
+        "clipSelection": "sequential",
+        "audio": "OW NM Nomai Ruins 081718 AP",
+        "volume": 0.4,
+        "rename": "NomaiAudio",
+        "priority": 0
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/Spawn",
+        "isRelativeToParent": true,
+        "radius": 100,
+        "clipSelection": "sequential",
+        "audio": "OW_TH_Museum",
+        "volume": 0.4,
+        "rename": "HearthAudio",
+        "priority": 0
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/Spawn",
+        "isRelativeToParent": true,
+        "radius": 100,
+        "clipSelection": "sequential",
+        "audio": "planets/assets/Audio/fawns.ogg",
+        "volume": 0.4,
+        "rename": "KarviAudio",
+        "priority": 0
+      }
+    ]
+  }
+}
