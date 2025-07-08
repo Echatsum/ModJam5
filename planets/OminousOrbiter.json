@@ -3,9 +3,14 @@
   "name": "Ominous Orbiter",
   "starSystem": "Jam5",
   "Base": {
-    "surfaceSize": 400,
+    "surfaceSize": 150,
     "showMinimap": false,
     "surfaceGravity": 0
+  },
+  "Orbit": {
+    "primaryBody": "Silver Lining",
+    "dottedOrbitLine": true,
+    "semiMajorAxis": 1200
   },
   "MapMarker": {
     "enabled": true
@@ -14,11 +19,11 @@
     "details": [
       {
         "assetBundle": "planets/assets/AssetBundle/spacestation",
-        "path": "Assets/KavriShip_Interior.prefab"
+        "path": "Assets/Karvi/KarviShip_Interior.prefab"
       },
       {
         "path": "Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/Prefab_HEA_Campfire",
-        "parentPath": "Sector/KavriShip_Interior/Interactibles/Prefab_IP_LodgeFire/Effects_HEA_Campfire",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Prefab_IP_LodgeFire/Effects_HEA_Campfire",
         "isRelativeToParent": true,
         "removeChildren": [
           "Effects",
@@ -27,19 +32,37 @@
       },
       {
         "path": "Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/Prefab_HEA_Campfire",
-        "parentPath": "Sector/KavriShip_Interior/Interactibles/Prefab_IP_LodgeFire/Effects_HEA_Campfire (1)",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Prefab_IP_LodgeFire/Effects_HEA_Campfire (1)",
         "isRelativeToParent": true,
         "removeChildren": [
           "Effects",
           "Props_HEA_Campfire"
         ]
       }
+    ],
+    "warpReceivers": [
+      {
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/NOM_WarpSocket",
+        "isRelativeToParent": true,
+        "frequency": "KarviShip"
+      }
     ]
   },
-  "Orbit": {
-    "primaryBody": "SilverLining",
-    "dottedOrbitLine": true,
-    "semiMajorAxis": 1200,
-    "isTidallyLocked": true
+  "Volumes": {
+    "oxygenVolumes": [
+      {
+        "radius": 100
+      }
+    ],
+    "audioVolumes": [
+      {
+        "radius": 100,
+        "clipSelection": "sequential",
+        "audio": "planets/assets/Audio/mountainking.ogg",
+        "volume": 0.4,
+        "rename": "MountainKingAudio",
+        "priority": 0
+      }
+    ]
   }
 }

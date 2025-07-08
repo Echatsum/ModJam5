@@ -16,18 +16,13 @@
     "details": [
       {
         "assetBundle": "planets/assets/AssetBundle/pulsar",
-        "path": "Assets/Effects_Pulsar.prefab",
+        "path": "Assets/Karvi/Effects_Pulsar.prefab",
         "keepLoaded": true
       }
     ]
   },
   "Orbit": {
-    "axialTilt": 45,
-    "staticPosition": {
-      "x": 5000,
-      "y": 1000,
-      "z": 2000
-    }
+    "axialTilt": 45
   },
   "Star": {
     "stellarDeathType": "none",

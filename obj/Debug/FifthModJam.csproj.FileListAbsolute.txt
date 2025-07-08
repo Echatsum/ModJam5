@@ -7,7 +7,6 @@ C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.F
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\AssetBundle\pulsar.manifest
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\AssetBundle\spacestation
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\AssetBundle\spacestation.manifest
-C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\example-platform.json
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\OminousOrbiter.json
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\SilverLining.json
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\systems\.gitkeep
@@ -24,3 +23,5 @@ C:\Users\jn7jn\source\repos\ModJam5\obj\Debug\FifthModJam.csproj.CoreCompileInpu
 C:\Users\jn7jn\source\repos\ModJam5\obj\Debug\FifthModJam.sourcelink.json
 C:\Users\jn7jn\source\repos\ModJam5\obj\Debug\FifthModJam.dll
 C:\Users\jn7jn\source\repos\ModJam5\obj\Debug\FifthModJam.pdb
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\Audio\mountainking.ogg
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\KarviWarp.json

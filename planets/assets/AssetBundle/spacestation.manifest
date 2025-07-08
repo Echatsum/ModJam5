@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 975359041
+CRC: 1495621726
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e1ddc097e27545317da36afcd861ed10
+    Hash: e2ef557a5a3ceb2210304f93fdae85d1
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ce738a366dd01936e5ed2110a65e6fd1
+    Hash: cf9af53dfad34490e0c537cf4c8f8255
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -48,13 +48,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: b446aa63b809cb3da1921800cd416866, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: d8d76e73e6d52c1cf065bd54c51e7cbd, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: d3e77ae3309b6f323de07b456da83fb0, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 4d213e1421b973fcb0ec6d3b7bb1aa62, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: ae101e74c1ac7ac7f3867d7e18597ede, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a223d69493f03f4a8e6bda998c52d250, type: 3}
 - Class: 114
@@ -80,6 +76,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 0cfd736a3952486c93e9a5d8f58c79c3, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 9250218a8a25e77e3671d3545aa77462, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 1f3014da1c89ce2573a27c371d8ccd9f, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 7eeda83b93d7578c97d87743a0cc718e, type: 3}
@@ -104,8 +102,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: dc5c2fbe21b920b7511b52c7ed73ff4a, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 00b05c6f9a67b3a747736e91adf59f44, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 5b69738f164a5a2451d76a672bae5943, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 70a165af169a966717936a0dd983943f, type: 3}
@@ -119,11 +115,7 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 136
   Script: {instanceID: 0}
-- Class: 198
-  Script: {instanceID: 0}
-- Class: 199
-  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/KavriShip_Interior.prefab
+- Assets/Karvi/KarviShip_Interior.prefab
 Dependencies: []

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 940490675
+CRC: 839859994
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 81a277e749e6d7fea1d68d9154531129
+    Hash: f20e1df1849340928230d2d85f8d1f11
   TypeTreeHash:
     serializedVersion: 2
     Hash: 636e74305896a3905e788695e7f1ae82
@@ -37,5 +37,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Effects_Pulsar.prefab
+- Assets/Karvi/Effects_Pulsar.prefab
 Dependencies: []
