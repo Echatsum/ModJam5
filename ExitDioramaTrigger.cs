@@ -7,6 +7,7 @@ namespace FifthModJam
     public class ExitDioramaTrigger : MonoBehaviour
     {
         private GameObject museum;
+        private GameObject starLight;
         private SpawnPoint returnPoint;
 
         protected PlayerSpawner _spawner; // for spawning the player
@@ -24,6 +25,7 @@ namespace FifthModJam
             if (FifthModJam.Instance.IsInJamFiveSystem())
             {
                 museum = SearchUtilities.Find("ScaledMuseum_Body/Sector"); // get museum
+                starLight = SearchUtilities.Find("SilverLining_Body/Sector/Star/StarLight"); // get starlight
                 returnPoint = SearchUtilities.Find("OminousOrbiter_Body/Sector/KarviShip_Interior/Interactibles/SpawnReturn/SpawnKAV5").GetComponent<SpawnPoint>();
             }
         }
@@ -45,6 +47,7 @@ namespace FifthModJam
             cameraEffectController.OpenEyes(animTime, false); // open eyes
             yield return new WaitForSeconds(animTime); //  waits until animation stops to proceed to next line
             museum.SetActive(false); // disables museum when in trigger
+            starLight.SetActive(true); // disables museum when in trigger
         }
 
         public virtual void OnTriggerExit(Collider hitCollider)

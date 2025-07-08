@@ -9,6 +9,7 @@ namespace FifthModJam
         [SerializeField]
         private int spawnIndex;
         private GameObject museum;
+        private GameObject starLight;
         private SpawnPoint[] spawnPoints = new SpawnPoint[4];
 
         protected PlayerSpawner _spawner; // for spawning the player
@@ -26,6 +27,7 @@ namespace FifthModJam
             if (FifthModJam.Instance.IsInJamFiveSystem())
             {
                 museum = SearchUtilities.Find("ScaledMuseum_Body/Sector"); // get museum
+                starLight = SearchUtilities.Find("SilverLining_Body/Sector/Star/StarLight"); // get starlight
                 spawnPoints[0] = SearchUtilities.Find("ScaledMuseum_Body/Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/Spawn/SpawnKAV1").GetComponent<SpawnPoint>();
                 spawnPoints[1] = SearchUtilities.Find("ScaledMuseum_Body/Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/Spawn/SpawnKAV2").GetComponent<SpawnPoint>();
                 spawnPoints[2] = SearchUtilities.Find("ScaledMuseum_Body/Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/Spawn/SpawnKAV3").GetComponent<SpawnPoint>();
@@ -37,6 +39,7 @@ namespace FifthModJam
         {
             // close eyes
             museum.SetActive(true); // disables museum when in trigger
+            starLight.SetActive(false); // disables museum when in trigger
             var cameraEffectController = FindObjectOfType<PlayerCameraEffectController>(); // gets camera controller
             cameraEffectController.CloseEyes(animTime); // closes eyes
             yield return new WaitForSeconds(animTime);  // waits until animation stops to proceed to next line

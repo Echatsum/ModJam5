@@ -47,6 +47,15 @@
           "Effects",
           "Props_HEA_Campfire"
         ]
+      },
+      {
+        "path": "Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/Prefab_HEA_Campfire",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/CultFire",
+        "isRelativeToParent": true,
+        "removeChildren": [
+          "Effects",
+          "Props_HEA_Campfire"
+        ]
       }
     ],
     "warpReceivers": [
@@ -71,6 +80,16 @@
         "volume": 0.4,
         "rename": "MountainKingAudio",
         "priority": 0
+      },
+      {
+        "radius": 8,
+        "clipSelection": "sequential",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/CultFire",
+        "isRelativeToParent": true,
+        "audio": "planets/assets/Audio/fearandashes.mp3",
+        "volume": 0.3,
+        "rename": "SecretErnestoAudio",
+        "priority": 1
       }
     ]
   }

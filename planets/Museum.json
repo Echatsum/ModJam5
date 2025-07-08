@@ -51,6 +51,11 @@
         "radius": 800
       }
     ],
+    "mapRestrictionVolumes": [
+      {
+        "radius": 800
+      }
+    ],
     "audioVolumes": [
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/Spawn",
