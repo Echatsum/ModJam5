@@ -1,5 +1,4 @@
-﻿using NewHorizons.Utility;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace FifthModJam
@@ -14,45 +13,33 @@ namespace FifthModJam
         private Animator doorAnim;
         [SerializeField]
         private OWAudioSource audio;
-        public bool areAllItemsPresent;
-        private bool hasOpened;
 
-        private void Start()
+        private bool AreAllSocketsFilled()
         {
-            hasOpened = false;
-        }
-
-        private bool AllSocketsFilled()
-        {
-            int i = 0;
             foreach (var socket in customItemSockets)
             {
-                if (socket.isActive)
+                if (!socket.isActive)
                 {
-                    i++;
+                    return false;
                 }
             }
 
-            if (strangerItemSocket.IsSocketOccupied())
-            {
-                i++;
-            }
-
-            if (i > customItemSockets.Length)
-            {
-                return true;
-            } else
+            if (!strangerItemSocket.IsSocketOccupied())
             {
                 return false;
             }
+
+            // If we haven't found any empty socket, then they're all filled
+            return true;
         }
 
         private void Update()
         {
-            if (AllSocketsFilled() && !hasOpened)
+            if (AreAllSocketsFilled())
             {
-                hasOpened = true;
-                StartCoroutine(PlayAnim());   
+                StartCoroutine(PlayAnim());
+
+                this.enabled = false; // We don't need to update anymore, since this door won't change after opening
             }
         }
 

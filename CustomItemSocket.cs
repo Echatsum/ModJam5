@@ -1,35 +1,37 @@
 ﻿using UnityEngine;
 
-namespace FifthModJam;
-public class CustomItemSocket : OWItemSocket
+namespace FifthModJam
 {
-    [SerializeField]
-    public int desiredIndex;
-    [SerializeField]
-    public ItemType desiredType;
-    public bool isActive;
-
-    public override void Awake()
+    public class CustomItemSocket : OWItemSocket
     {
-        base.Awake();
-        _acceptableType = desiredType;
-    }
+        [SerializeField]
+        public SpeciesEnum desiredSpecies; // This is for solving the door puzzle
+        [SerializeField]
+        public ItemType desiredType; // This is for item-socket compatibility
+        public bool isActive;
 
-    public override bool PlaceIntoSocket(OWItem item)
-    {
-        if (base.PlaceIntoSocket(item) && item.GetComponent<CustomItem>().customItemIndex == desiredIndex)
+        public override void Awake()
         {
-            isActive = true;
-            return true;
+            base.Awake();
+            _acceptableType = desiredType;
         }
-        isActive = false;
-        return false;
-    }
 
-    public override OWItem RemoveFromSocket()
-    {
-        isActive = false;
-        OWItem oWItem = base.RemoveFromSocket();
-        return oWItem;
+        public override bool PlaceIntoSocket(OWItem item)
+        {
+            if (base.PlaceIntoSocket(item) && item.GetComponent<CustomItem>().speciesItem == desiredSpecies)
+            {
+                isActive = true;
+                return true;
+            }
+            isActive = false;
+            return false;
+        }
+
+        public override OWItem RemoveFromSocket()
+        {
+            isActive = false;
+            OWItem oWItem = base.RemoveFromSocket();
+            return oWItem;
+        }
     }
 }
