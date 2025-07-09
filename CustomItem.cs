@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace FifthModJam
 {
+    [RequireComponent(typeof(SpeciesTypeData))]
     public class CustomItem : OWItem
     {
         [SerializeField]
@@ -14,7 +15,7 @@ namespace FifthModJam
         [SerializeField]
         private Animator _animator;
         [SerializeField]
-        public SpeciesEnum speciesItem; // This is for solving the door puzzle
+        public SpeciesTypeData speciesTypeData; // This is for solving the door puzzle, as well as some other stuff (animators, etc?)
 
         public override void Awake()
         {
@@ -44,11 +45,11 @@ namespace FifthModJam
 
         public override void DropItem(Vector3 position, Vector3 normal, Transform parent, Sector sector, IItemDropTarget customDropTarget)
         {
-            if (_animator != null && speciesItem == SpeciesEnum.KARVI)
+            if (_animator != null && speciesTypeData.species == SpeciesEnum.KARVI)
             {
                 _animator.Play("KAV_CRYSTAL", 0);
             }
-            if (speciesItem == SpeciesEnum.NOMAI)
+            if (speciesTypeData.species == SpeciesEnum.NOMAI)
             {
                 /*foreach (var playerSector in Locator.GetPlayerSectorDetector()._sectorList)
                 {
@@ -63,7 +64,7 @@ namespace FifthModJam
 
         public override void PickUpItem(Transform holdTranform)
         {
-            if (_animator != null && speciesItem == SpeciesEnum.KARVI)
+            if (_animator != null && speciesTypeData.species == SpeciesEnum.KARVI)
             {
                 _animator.Play("KAV_CRYSTAL_STATIC", 0);
             }

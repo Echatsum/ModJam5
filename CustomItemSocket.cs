@@ -7,31 +7,29 @@ namespace FifthModJam
         [SerializeField]
         public SpeciesEnum desiredSpecies; // This is for solving the door puzzle
         [SerializeField]
-        public ItemType desiredType; // This is for item-socket compatibility
-        public bool isActive;
+        public ItemType acceptableTypesMask; // This is for item-socket compatibility
 
         public override void Awake()
         {
             base.Awake();
-            _acceptableType = desiredType;
+            _acceptableType = acceptableTypesMask;
         }
 
-        public override bool PlaceIntoSocket(OWItem item)
+        public bool HasCorrectSpeciesItem()
         {
-            if (base.PlaceIntoSocket(item) && item.GetComponent<CustomItem>().speciesItem == desiredSpecies)
+            if (!this.IsSocketOccupied())
             {
-                isActive = true;
-                return true;
+                return false;
             }
-            isActive = false;
-            return false;
-        }
 
-        public override OWItem RemoveFromSocket()
-        {
-            isActive = false;
-            OWItem oWItem = base.RemoveFromSocket();
-            return oWItem;
+            var item = this.GetSocketedItem();
+            var speciesTypeData = item.GetComponent<SpeciesTypeData>();
+            if (speciesTypeData != null)
+            {
+                return speciesTypeData.species == desiredSpecies;
+            }
+
+            return false;
         }
     }
 }

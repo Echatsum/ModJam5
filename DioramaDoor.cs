@@ -8,34 +8,31 @@ namespace FifthModJam
         [SerializeField]
         private CustomItemSocket[] customItemSockets;
         [SerializeField]
-        private DreamLanternSocket strangerItemSocket;
-        [SerializeField]
         private Animator doorAnim;
         [SerializeField]
         private OWAudioSource audio;
 
-        private bool AreAllSocketsFilled()
+        private bool AreAllSocketsCorrect()
         {
             foreach (var socket in customItemSockets)
             {
-                if (!socket.isActive)
+                if (!socket.IsSocketOccupied())
+                {
+                    return false;
+                }
+                if (!socket.HasCorrectSpeciesItem())
                 {
                     return false;
                 }
             }
 
-            if (!strangerItemSocket.IsSocketOccupied())
-            {
-                return false;
-            }
-
-            // If we haven't found any empty socket, then they're all filled
+            // If we haven't found any wrong socket, then they're all filled correctly
             return true;
         }
 
         private void Update()
         {
-            if (AreAllSocketsFilled())
+            if (AreAllSocketsCorrect())
             {
                 StartCoroutine(PlayAnim());
 
