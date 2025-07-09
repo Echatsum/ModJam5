@@ -1,0 +1,36 @@
+﻿<!-- Example File -->
+<!-- All files must have "AstroObjectEntry" as their root element, the xmlns:xsi=... and xsi:noNamespaceSchemaLocation=... is optional but heavily encouraged to reduce errors -->
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>SHIP</ID> <!-- The ID of the planet this xml file is for -->
+
+    <Entry> <!-- An Entry For This Planet -->
+        <ID>SHIP_MAIN</ID> <!-- The ID of this entry -->
+		<Name>Ominous Orbiter</Name> <!-- The name to show for this entry both on the card and in map mode -->
+
+        <RumorFact> <!-- A rumor fact that belongs to this entry -->
+            <ID>SHIP_MAIN_R</ID> <!-- The ID of this fact -->
+            <RumorName>Unknown Vessel</RumorName> <!-- The name of the rumor this fact relates to -->
+            <Text>Ping has noticed a strange alien vessel orbiting a pulsar in the distance.</Text> <!-- The Text to display for this fact -->
+        </RumorFact>
+
+        <ExploreFact> <!-- An explore fact that belongs to this entry -->
+            <ID>SHIP_MAIN_E</ID> <!-- The ID of this fact -->
+            <Text>I made it inside the alien ship. It appears to be eerie, yet humble.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+        </ExploreFact>
+
+        <Entry> <!-- An Entry For This Planet -->
+            <ID>SHIP_CRYSTAL</ID> <!-- The ID of this entry -->
+            <Name>Knowledge Crystal</Name> <!-- The name to show for this entry both on the card and in map mode -->
+
+			<ExploreFact> <!-- An explore fact that belongs to this entry -->
+                <ID>SHIP_CRYSTAL_E1</ID> <!-- The ID of this fact -->
+                <Text>When I approached this crystal, I learned how to read three new languages!</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+            </ExploreFact>
+
+            <ExploreFact> <!-- An explore fact that belongs to this entry -->
+                <ID>SHIP_CRYSTAL_E2</ID> <!-- The ID of this fact -->
+                <Text>I can also pick up the crystal.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+            </ExploreFact>
+        </Entry>
+    </Entry>
+</AstroObjectEntry>

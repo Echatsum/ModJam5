@@ -77,7 +77,7 @@
         "radius": 100,
         "clipSelection": "sequential",
         "audio": "planets/assets/Audio/mountainking.ogg",
-        "volume": 0.4,
+        "volume": 0.5,
         "rename": "MountainKingAudio",
         "priority": 0
       },

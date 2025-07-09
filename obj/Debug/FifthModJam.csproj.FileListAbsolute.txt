@@ -30,3 +30,4 @@ C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.F
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\AssetBundle\museum
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\AssetBundle\museum.manifest
 C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\assets\Audio\fearandashes.mp3
+C:\Users\jn7jn\AppData\Roaming\OuterWildsModManager\OWML\Mods\TheSignalJammers.FifthModJam\planets\shiplogs\TIMBER_HEARTH.xml

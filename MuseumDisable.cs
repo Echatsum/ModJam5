@@ -1,5 +1,4 @@
 ﻿using NewHorizons.Utility;
-using System.Collections;
 using UnityEngine;
 
 namespace FifthModJam
