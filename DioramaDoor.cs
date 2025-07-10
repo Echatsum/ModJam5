@@ -43,7 +43,7 @@ namespace FifthModJam
         private IEnumerator PlayAnim()
         {
             doorAnim.Play("DOOR", 0);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
             audio.Play();
         }
     }

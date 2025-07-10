@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewHorizons.Utility;
+using System;
 using UnityEngine;
 
 namespace FifthModJam
@@ -49,16 +50,17 @@ namespace FifthModJam
             {
                 _animator.Play("KAV_CRYSTAL", 0);
             }
-            /*if (speciesTypeData.species == SpeciesEnum.NOMAI)
+            if (speciesTypeData.species == SpeciesEnum.NOMAI)
             {
-                foreach (var playerSector in Locator.GetPlayerSectorDetector()._sectorList)
+                Sector desiredSector;
+                if (Locator.GetPlayerSectorDetector().IsWithinSector("ScaledMuseum")) {
+                    desiredSector = SearchUtilities.Find("ScaledMuseum_Body/Sector").GetComponent<Sector>();
+                } else
                 {
-                    if (this.GetSector() != playerSector)
-                    {
-                        this.SetSector(playerSector);
-                    }
+                    desiredSector = SearchUtilities.Find("OminousOrbiter_Body/Sector").GetComponent<Sector>();
                 }
-            }*/
+                this.SetSector(desiredSector);
+            }
             base.DropItem(position, normal, parent, sector, customDropTarget);
         }
 

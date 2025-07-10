@@ -13,6 +13,7 @@ namespace FifthModJam
 
         private GameObject museum;
         private GameObject starLight;
+        private TowerCollapse collapseHandler;
 
         protected PlayerSpawner _spawner; // for spawning the player
         public const float blinkTime = 0.5f; // constant for blink time
@@ -22,6 +23,7 @@ namespace FifthModJam
         {
             OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen);
             LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
+            collapseHandler = SearchUtilities.Find("ScaledMuseum_Body/Sector/ScaledMuseum").GetComponent<TowerCollapse>();
         }
 
         public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene)
@@ -55,11 +57,15 @@ namespace FifthModJam
             // close eyes
             museum.SetActive(true); // enables museum when in trigger
             starLight.SetActive(false); // disables star when in trigger
+            if (collapseHandler.hasFallen)
+            {
+                collapseHandler.ForceTowerFall(); // forces the tower to fall down if it has before
+            }
             var cameraEffectController = FindObjectOfType<PlayerCameraEffectController>(); // gets camera controller
             cameraEffectController.CloseEyes(animTime); // closes eyes
             yield return new WaitForSeconds(animTime);  // waits until animation stops to proceed to next line
             GlobalMessenger.FireEvent("PlayerBlink"); // fires an event for the player blinking
-
+            
             // warp
             yield return new WaitForSeconds(1);
             _spawner = GameObject.FindGameObjectWithTag("Player").GetRequiredComponent<PlayerSpawner>(); // gets player spawner
@@ -75,6 +81,7 @@ namespace FifthModJam
             //checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled && museum != null)
             {
+                
                 StartCoroutine(SetupEntry());
             }
         }

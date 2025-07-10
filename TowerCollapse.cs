@@ -20,11 +20,13 @@ namespace FifthModJam
         [SerializeField]
         private GearInterfaceEffects _gearInterface;
 
-        private bool hasBegunFalling;
+        private Animator smallTower;
+        public bool hasFallen;
 
         private void Start()
         {
-            hasBegunFalling = false;
+            smallTower = SearchUtilities.Find("OminousOrbiter_Body/Sector/KarviShip_Interior/Interactibles/Diorama/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot").GetComponent<Animator>();
+            hasFallen = false;
             if (_interactReceiver != null)
             {
                 _interactReceiver.OnPressInteract += OnPressInteract;
@@ -32,18 +34,26 @@ namespace FifthModJam
             }
         }
 
+        public void ForceTowerFall()
+        {
+            smallTower.Play("TOWER_AFTER", 0);
+            towerAnim.Play("TOWER_AFTER", 0);
+        }
+
         private IEnumerator PlayAnim()
         {
-            shuttleAudio[0].Play(); // this line gives index out of bounds exception, yet all the values are there in unity explorer.
+            smallTower.Play("TOWER_AFTER", 0);
+            //shuttleAudio[0].Play(); // this line gives index out of bounds exception, yet all the values are there in unity explorer.
             shuttleAnim.Play("SHUTTLE", 0);
             yield return new WaitForSeconds(0.917f);
-            shuttleAudio[1].Play();
+            //shuttleAudio[1].Play();
             towerAnim.Play("TOWER", 0);
-            towerAudio[0].Play();
+            //towerAudio[0].Play();
             yield return new WaitForSeconds(0.75f);
-            towerAudio[1].Play();
+            //towerAudio[1].Play();
             yield return new WaitForSeconds(1.4f);
-            towerAudio[2].Play();
+            //towerAudio[2].Play();
+            hasFallen = true;
             // ship reveal here maybe?
         }
 
@@ -57,9 +67,8 @@ namespace FifthModJam
 
         private void OnPressInteract()
         {
-            if (_gearInterface != null && !hasBegunFalling)
+            if (_gearInterface != null && !hasFallen)
             {
-                hasBegunFalling = true;
                 StartCoroutine(PlayAnim());
             }
         }
