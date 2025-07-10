@@ -49,16 +49,16 @@ namespace FifthModJam
             {
                 _animator.Play("KAV_CRYSTAL", 0);
             }
-            if (speciesTypeData.species == SpeciesEnum.NOMAI)
+            /*if (speciesTypeData.species == SpeciesEnum.NOMAI)
             {
-                /*foreach (var playerSector in Locator.GetPlayerSectorDetector()._sectorList)
+                foreach (var playerSector in Locator.GetPlayerSectorDetector()._sectorList)
                 {
                     if (this.GetSector() != playerSector)
                     {
                         this.SetSector(playerSector);
                     }
-                }*/
-            }
+                }
+            }*/
             base.DropItem(position, normal, parent, sector, customDropTarget);
         }
 

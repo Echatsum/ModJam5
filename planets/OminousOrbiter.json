@@ -92,5 +92,8 @@
         "priority": 1
       }
     ]
+  },
+  "ShipLog": {
+    "xmlFile": "planets/shiplogs/Ship.xml"
   }
 }

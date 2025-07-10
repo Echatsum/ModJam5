@@ -1,4 +1,21 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
-  "name": "Jam5"
+  "name": "Jam5",
+  "initialReveal": ["SHIP_MAIN_R"],
+  "entryPositions": [
+    {
+      "id": "SHIP_MAIN",
+      "position": {
+        "x": 200,
+        "y": 300
+      }
+    },
+    {
+      "id": "SHIP_CRYSTAL",
+      "position": {
+        "x": 300,
+        "y": 400
+      }
+    }
+  ]
 }

@@ -52,9 +52,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="planets\shiplogs\" />
-  </ItemGroup>
 	<Target Name="BuildDll" AfterTargets="Build">
 		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(USERPROFILE)\source\repos\OW-JAM-UNITY\Assets\" />
 	</Target>
