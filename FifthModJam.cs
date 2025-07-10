@@ -38,13 +38,12 @@ namespace FifthModJam
             new Harmony("TheSignalJammers.FifthModJam").PatchAll(Assembly.GetExecutingAssembly());
 
             // Example of accessing game code.
-            OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen); // We start on title screen
-            LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
+            NewHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnCompleteSceneLoad);
         }
 
-        public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene)
+        public void OnCompleteSceneLoad(string newScene)
         {
-            if (newScene != OWScene.SolarSystem) return;
+            if (newScene != "Jam5") return;
             ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
         }
 

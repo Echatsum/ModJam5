@@ -26,6 +26,7 @@
   },
   "Star": {
     "stellarDeathType": "none",
+    "hasStarController": false,
     "size": 200,
     "solarLuminosity": 1,
     "lightTint": {

@@ -21,23 +21,15 @@ namespace FifthModJam
 
         public void Start()
         {
-            OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen);
-            LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
-            collapseHandler = SearchUtilities.Find("ScaledMuseum_Body/Sector/ScaledMuseum").GetComponent<TowerCollapse>();
-        }
+            museum = GameObject.Find("ScaledMuseum_Body/Sector"); // get museum
+            starLight = GameObject.Find("SilverLining_Body/Sector/Star/StarLight"); // get starlight
 
-        public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene)
-        {
-            if (FifthModJam.Instance.IsInJamFiveSystem())
-            {
-                museum = SearchUtilities.Find("ScaledMuseum_Body/Sector"); // get museum
-                starLight = SearchUtilities.Find("SilverLining_Body/Sector/Star/StarLight"); // get starlight
+            // Get the SpawnPoint matching the target diorama
+            const string pathPrefix = "ScaledMuseum_Body/Sector/ScaledMuseum/Offset/Exhibits/";
+            string pathSuffix = GetTargetDioramaPathSuffix();
+            spawnPointTarget = GameObject.Find(pathPrefix + pathSuffix).GetComponent<SpawnPoint>();
 
-                // Get the SpawnPoint matching the target diorama
-                const string pathPrefix = "ScaledMuseum_Body/Sector/ScaledMuseum/Offset/Exhibits/";
-                string pathSuffix = GetTargetDioramaPathSuffix();
-                spawnPointTarget = SearchUtilities.Find(pathPrefix + pathSuffix).GetComponent<SpawnPoint>();
-            }
+            collapseHandler = GameObject.Find("ScaledMuseum_Body/Sector/ScaledMuseum").GetComponent<TowerCollapse>();
         }
 
         private string GetTargetDioramaPathSuffix()

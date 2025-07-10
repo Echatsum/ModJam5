@@ -16,19 +16,16 @@ namespace FifthModJam
 
         public void Start()
         {
-            OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen);
-            LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
-        }
-
-        public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene)
-        {
             if (FifthModJam.Instance.IsInJamFiveSystem())
             {
-                museum = SearchUtilities.Find("ScaledMuseum_Body/Sector"); // get museum
-                starLight = SearchUtilities.Find("SilverLining_Body/Sector/Star/StarLight"); // get starlight
-                returnPoint = SearchUtilities.Find("OminousOrbiter_Body/Sector/KarviShip_Interior/Interactibles/SpawnReturn/SpawnKAV5").GetComponent<SpawnPoint>();
+                museum = GameObject.Find("ScaledMuseum_Body/Sector"); // get museum
+                starLight = GameObject.Find("SilverLining_Body/Sector/Star/StarLight"); // get starlight
+                returnPoint = GameObject.Find("OminousOrbiter_Body/Sector/KarviShip_Interior/Interactibles/SpawnReturn/SpawnKAV5").GetComponent<SpawnPoint>();
             }
         }
+        
+
+     
 
         private IEnumerator SetupExit()
         {
