@@ -27,9 +27,10 @@ namespace FifthModJam
             // Get the SpawnPoint matching the target diorama
             const string pathPrefix = "ScaledMuseum_Body/Sector/ScaledMuseum/Offset/Exhibits/";
             string pathSuffix = GetTargetDioramaPathSuffix();
-            spawnPointTarget = GameObject.Find(pathPrefix + pathSuffix).GetComponent<SpawnPoint>();
+            spawnPointTarget = SearchUtilities.Find(pathPrefix + pathSuffix).GetComponent<SpawnPoint>();
+            FifthModJam.WriteLine(pathPrefix + pathSuffix, OWML.Common.MessageType.Success);
 
-            collapseHandler = GameObject.Find("ScaledMuseum_Body/Sector/ScaledMuseum").GetComponent<TowerCollapse>();
+            collapseHandler = SearchUtilities.Find("ScaledMuseum_Body/Sector/ScaledMuseum").GetComponent<TowerCollapse>();
         }
 
         private string GetTargetDioramaPathSuffix()
@@ -73,7 +74,6 @@ namespace FifthModJam
             //checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled && museum != null)
             {
-                
                 StartCoroutine(SetupEntry());
             }
         }
