@@ -21,15 +21,17 @@ namespace FifthModJam
 
         public void Start()
         {
-            museum = GameObject.Find("ScaledMuseum_Body/Sector"); // get museum
+            // [Note: museum-dependent objects might be inactive during Start(), so SearchUtilities is used to catch these cases]
+
+            museum = SearchUtilities.Find("ScaledMuseum_Body/Sector"); // get museum
             starLight = GameObject.Find("SilverLining_Body/Sector/Star/StarLight"); // get starlight
 
             // Get the SpawnPoint matching the target diorama
             const string pathPrefix = "ScaledMuseum_Body/Sector/ScaledMuseum/Offset/Exhibits/";
             string pathSuffix = GetTargetDioramaPathSuffix();
-            spawnPointTarget = GameObject.Find(pathPrefix + pathSuffix).GetComponent<SpawnPoint>();
+            spawnPointTarget = SearchUtilities.Find(pathPrefix + pathSuffix).GetComponent<SpawnPoint>();
 
-            collapseHandler = GameObject.Find("ScaledMuseum_Body/Sector/ScaledMuseum").GetComponent<TowerCollapse>();
+            collapseHandler = SearchUtilities.Find("ScaledMuseum_Body/Sector/ScaledMuseum").GetComponent<TowerCollapse>();
         }
 
         private string GetTargetDioramaPathSuffix()
