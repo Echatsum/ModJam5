@@ -13,7 +13,7 @@ namespace FifthModJam
         [SerializeField]
         private OWAudioSource audio;
 
-        private bool _isDoorClosed;
+        private bool _isDoorClosed = true;
 
         private bool AreAllSocketsCorrect()
         {
