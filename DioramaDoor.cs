@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace FifthModJam
@@ -11,6 +12,8 @@ namespace FifthModJam
         private Animator doorAnim;
         [SerializeField]
         private OWAudioSource audio;
+
+        private bool _isDoorClosed;
 
         private bool AreAllSocketsCorrect()
         {
@@ -30,13 +33,29 @@ namespace FifthModJam
             return true;
         }
 
-        private void Update()
+        private void Awake()
+        {
+            // Link each socket to trigger OnSocketFilled [Note: this is so that we check for door opening only when needed and not on every Update]
+            foreach (var socket in customItemSockets)
+            {
+                // This big line is the equivalent of a += but with events
+                socket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Combine(socket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
+            }
+        }
+        private void OnSocketFilled(OWItem item)
+        {
+            if (_isDoorClosed)
+            {
+                CheckActivation();
+            }
+        }
+
+        private void CheckActivation()
         {
             if (AreAllSocketsCorrect())
             {
                 StartCoroutine(PlayAnim());
-
-                this.enabled = false; // We don't need to update anymore, since this door won't change after opening
+                _isDoorClosed = false;
             }
         }
 
