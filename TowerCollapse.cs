@@ -43,16 +43,21 @@ namespace FifthModJam
 
         private IEnumerator PlayAnim()
         {
-            smallTower.Play("TOWER_AFTER", 0);            
-            shuttleAudio[0].Play(); // this line gives index out of bounds exception, yet all the values are there in unity explorer.
+            smallTower.Play("TOWER_AFTER", 0);
+            FifthModJam.WriteLine("playing shuttleAudio[0]", OWML.Common.MessageType.Debug);
+            shuttleAudio[0].Play();
             shuttleAnim.Play("SHUTTLE", 0);
             yield return new WaitForSeconds(0.917f);
+            FifthModJam.WriteLine("playing shuttleAudio[1]", OWML.Common.MessageType.Debug);
             shuttleAudio[1].Play();
             towerAnim.Play("TOWER", 0);
+            FifthModJam.WriteLine("playing towerAudio[0]", OWML.Common.MessageType.Debug);
             towerAudio[0].Play();
             yield return new WaitForSeconds(0.75f);
+            FifthModJam.WriteLine("playing towerAudio[1]", OWML.Common.MessageType.Debug);
             towerAudio[1].Play();
             yield return new WaitForSeconds(1.4f);
+            FifthModJam.WriteLine("playing towerAudio[2]", OWML.Common.MessageType.Debug);
             towerAudio[2].Play();
             // ship reveal here maybe?
         }

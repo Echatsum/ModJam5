@@ -1,18 +1,32 @@
-﻿using NewHorizons.Utility;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace FifthModJam
 {
     public class MuseumDisabler : MonoBehaviour
     {
-        private GameObject museum;
-
         public void Start()
         {
-            if (FifthModJam.Instance.IsInJamFiveSystem())
+            if (!FifthModJam.Instance.IsInJamFiveSystem())
             {
-                museum = GameObject.Find("ScaledMuseum_Body/Sector"); // get museum
-                museum.SetActive(false); // disables museum every loop
+                return;
+            }
+
+            // Get museum
+            const string museumPath = Constants.UNITYPATH_MUSEUM;
+            var museum = GameObject.Find(museumPath);
+            if (museum == null)
+            {
+                FifthModJam.WriteLineObjectOrComponentNotFound("MuseumDisabler", museumPath);
+            }
+            else
+            {
+                FifthModJam.WriteLineReady("MuseumDisabler");
+            }
+
+            // Disables museum every loop
+            if (museum != null)
+            {
+                museum.SetActive(false);
             }
         }
     }

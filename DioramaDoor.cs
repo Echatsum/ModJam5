@@ -44,7 +44,7 @@ namespace FifthModJam
         {
             doorAnim.Play("DOOR", 0);
             yield return new WaitForSeconds(1f);
-            audio.Play();
+            audio.Play(); // Audio plays after the door slams on the ground
         }
     }
 }
