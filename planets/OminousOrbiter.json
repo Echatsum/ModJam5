@@ -76,9 +76,9 @@
       {
         "radius": 100,
         "clipSelection": "sequential",
-        "audio": "planets/assets/Audio/mountainking.ogg",
-        "volume": 0.5,
-        "rename": "MountainKingAudio",
+        "audio": "OW Eye Temple 121820_2 AP LP",
+        "volume": 0.4,
+        "rename": "ShipAudio",
         "priority": 0
       },
       {

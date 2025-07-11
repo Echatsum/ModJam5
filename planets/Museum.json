@@ -42,54 +42,82 @@
       {
         "assetBundle": "planets/assets/AssetBundle/museum",
         "path": "Assets/Karvi/ScaledMuseum.prefab"
-      },
-      {
-        "path": "Sector_TH/Sector_Village/Interactables_Village/ModelRocket_Station",
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/Structure_HEA_ModelRocketConsole",
-        "isRelativeToParent": true
-      },
-      {
-        "path": "ModelRocket_Body",
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/Structure_HEA_ModelRocketConsole/ModelRocket_Station/ModelRocketSpawn",
-        "isRelativeToParent": true
-      },
-      {
-        "path": "TimberHearth_Body/Sector_TH/Sector_QuantumGrove/Interactables_QuantumGrove/Geyser_Q_SetUp/QuantumGeyser/Terrain_TH_SeperateGeyser_Open (1)"
       }
     ],
     "socketQuantumGroups": [
       {
         "details": [
           {
-            "path": "TimberHearth_Body/Sector_TH/Sector_QuantumGrove/Interactables_QuantumGrove/Geyser_Q_SetUp/QuantumGeyser/Terrain_TH_SeperateGeyser_Open (1)",
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets",
-            "isRelativeToParent": true
+            "assetBundle": "planets/assets/AssetBundle/geyser",
+            "path": "Assets/GAMERIP/Geyser.prefab",
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserA",
+            "isRelativeToParent": true,
+            "scale": 0.5
           }
         ],
         "sockets": [
           {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket1",
             "isRelativeToParent": true,
-            "rename": "SOCKET1"
+            "rename": "SOCKET1A"
           },
           {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket2",
             "isRelativeToParent": true,
-            "rename": "SOCKET2"
+            "rename": "SOCKET2A"
           },
           {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
-            "isRelativeToParent": true,
-            "rename": "SOCKET3",
-            "probability": 0.001
+            "isRelativeToParent": false,
+            "rename": "SOCKET3A"
           }
         ]
-      }
-    ],
-    "geysers": [
+      },
       {
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Terrain_TH_SeperateGeyser_Open (1)",
-        "isRelativeToParent": true
+        "details": [
+          {
+            "assetBundle": "planets/assets/AssetBundle/geyser",
+            "path": "Assets/GAMERIP/Geyser.prefab",
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserB",
+            "isRelativeToParent": true,
+            "scale": 0.5
+          }
+        ],
+        "sockets": [
+          {
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket1",
+            "isRelativeToParent": true,
+            "rename": "SOCKET1B"
+          },
+          {
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
+            "isRelativeToParent": false,
+            "rename": "SOCKET3B"
+          }
+        ]
+      },
+      {
+        "details": [
+          {
+            "assetBundle": "planets/assets/AssetBundle/geyser",
+            "path": "Assets/GAMERIP/Geyser.prefab",
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserC",
+            "isRelativeToParent": true,
+            "scale": 0.5
+          }
+        ],
+        "sockets": [
+          {
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket2",
+            "isRelativeToParent": true,
+            "rename": "SOCKET2C"
+          },
+          {
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
+            "isRelativeToParent": false,
+            "rename": "SOCKET3C"
+          }
+        ]
       }
     ],
     "signals": [
@@ -98,10 +126,11 @@
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
         "detectionRadius": 20,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/Props/Props_HEA_Probe_STATIC",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Props/Props_HEA_Probe_STATIC",
         "isRelativeToParent": true,
         "name": "Scout Distress Signal",
-        "volume": 0.4
+        "volume": 0.2,
+        "reveals": "MUSEUM_HEA_FIRSTSIGNAL_E"
       }
     ]
   },
@@ -152,11 +181,14 @@
         "isRelativeToParent": true,
         "radius": 100,
         "clipSelection": "sequential",
-        "audio": "planets/assets/Audio/fawns.ogg",
-        "volume": 0.4,
+        "audio": "planets/assets/Audio/saturn.ogg",
+        "volume": 0.7,
         "rename": "KarviAudio",
         "priority": 0
       }
     ]
+  },
+  "ShipLog": {
+    "xmlFile": "planets/shiplogs/Museum.xml"
   }
 }
