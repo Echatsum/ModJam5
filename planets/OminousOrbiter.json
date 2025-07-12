@@ -64,7 +64,8 @@
         "isRelativeToParent": true,
         "frequency": "KarviShip"
       }
-    ]
+    ],
+
   },
   "Volumes": {
     "oxygenVolumes": [

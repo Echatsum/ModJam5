@@ -53,7 +53,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="planets\dialogue\Folder\" />
+    <Folder Include="planets\dialogue\KarviDiorama\Houses\" />
+    <Folder Include="planets\dialogue\KarviDiorama\FinalBuilding\" />
   </ItemGroup>
 	<Target Name="BuildDll" AfterTargets="Build">
 		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(USERPROFILE)\source\repos\OW-JAM-UNITY\Assets\" />

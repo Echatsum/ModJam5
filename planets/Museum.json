@@ -42,6 +42,46 @@
       {
         "assetBundle": "planets/assets/AssetBundle/museum",
         "path": "Assets/Karvi/ScaledMuseum.prefab"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/HearthianText",
+        "isRelativeToParent": true,
+        "rename": "HearthianEyeDialogue"
+      }
+    ],
+    "dialogue": [
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/KarviText/Dialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Karvi.xml"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/StrangerText/Dialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Stranger.xml"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/HearthianText/HearthianEyeDialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Hearthian.xml"
+      }
+    ],
+    "translatorText": [
+      {
+        "rename": "NomaiEyeText",
+        "type": "wall",
+        "position": {
+          "x": -131.7427,
+          "y": -106.7392,
+          "z": 141.6041
+        },
+        "rotation": {
+          "x": 0.2137,
+          "y": 275.567,
+          "z": 80.6691
+        },
+        "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Nomai.xml"
       }
     ],
     "socketQuantumGroups": [
@@ -125,12 +165,75 @@
         "frequency": "Karvi Wavelength",
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
-        "detectionRadius": 20,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Props/Props_HEA_Probe_STATIC",
-        "isRelativeToParent": true,
+        "detectionRadius": 40,
+        "position": {
+          "x": -199.8032,
+          "y": -106.1324,
+          "z": -107.9833
+        },
         "name": "Scout Distress Signal",
-        "volume": 0.2,
+        "volume": 0.1,
         "reveals": "MUSEUM_HEA_FIRSTSIGNAL_E"
+      },
+      {
+        "frequency": "Karvi Wavelength",
+        "audio": "Orb_Roll_Energy_Loop_v2_01",
+        "identificationRadius": 5,
+        "detectionRadius": 20,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/HEA",
+        "isRelativeToParent": true,
+        "name": "4 - SUN",
+        "volume": 0.1
+      },
+      {
+        "frequency": "Karvi Wavelength",
+        "audio": "Orb_Roll_Energy_Loop_v2_01",
+        "identificationRadius": 5,
+        "detectionRadius": 20,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/KAV",
+        "isRelativeToParent": true,
+        "name": "5 - STAR",
+        "volume": 0.1
+      },
+      {
+        "frequency": "Karvi Wavelength",
+        "audio": "Orb_Roll_Energy_Loop_v2_01",
+        "identificationRadius": 5,
+        "detectionRadius": 20,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/STR1",
+        "isRelativeToParent": true,
+        "name": "1 - RING",
+        "volume": 0.1
+      },
+      {
+        "frequency": "Karvi Wavelength",
+        "audio": "Orb_Roll_Energy_Loop_v2_01",
+        "identificationRadius": 5,
+        "detectionRadius": 20,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/STR2",
+        "isRelativeToParent": true,
+        "name": "2 - EYE",
+        "volume": 0.1
+      },
+      {
+        "frequency": "Karvi Wavelength",
+        "audio": "Orb_Roll_Energy_Loop_v2_01",
+        "identificationRadius": 5,
+        "detectionRadius": 20,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/NOM",
+        "isRelativeToParent": true,
+        "name": "3 - FIRE",
+        "volume": 0.1
+      },
+      {
+        "frequency": "Infared Readings",
+        "audio": "Loading Tunnel - Loop",
+        "identificationRadius": 5,
+        "detectionRadius": 20,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/ERN",
+        "isRelativeToParent": true,
+        "name": "Distorted Signal",
+        "volume": 0.1
       }
     ]
   },
