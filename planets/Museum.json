@@ -40,7 +40,7 @@
   "Props": {
     "details": [
       {
-        "assetBundle": "planets/assets/AssetBundle/museum",
+        "assetBundle": "planets/assets/AssetBundle/jam5",
         "path": "Assets/Karvi/ScaledMuseum.prefab"
       },
       {
@@ -84,11 +84,170 @@
         "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Nomai.xml"
       }
     ],
+    "slideShows": [
+      {
+        "reelModel": "whole",
+        "reelCondition": "pristine",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02",
+        "isRelativeToParent": true,
+        "rename": "Tower_Reel",
+        "slides": [
+          {
+            "backdropAudio": "planets/assets/Audio/main_slidereel.ogg",
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00001.png"
+          },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00002.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00003.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00004.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00005.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00006.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00007.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00008.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00009.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00010.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00011.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00012.png" },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00013.png",
+            "beatAudio": "Artifact Pickup"
+          },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00014.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00015.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00016.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00017.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00018.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00019.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00020.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00021.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00022.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00023.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00024.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00025.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00026.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00027.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00028.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00029.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00030.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00031.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00032.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00033.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00034.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00035.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00036.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00037.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00038.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00039.png" },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00040.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00041.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00042.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00043.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00044.png" },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00045.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00046.png" },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00047.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00048.png" },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00049.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00050.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00051.png" },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00052.png"
+          },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00053.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00054.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00055.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00056.png",
+            "beatAudio": "Ignite_CampFire_04"
+          },
+          {
+            "imagePath": "planets/assets/Slideshows/Puzzle/slide_00057.png",
+            "beatAudio": "OW_NM_TractorBeamPowerUp"
+          },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00058.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00059.png" },
+          { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00062.png" }
+        ]
+      },
+      {
+        "reelModel": "whole",
+        "reelCondition": "rusted",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/ERN",
+        "isRelativeToParent": true,
+        "rename": "Secret_Reel",
+        "slides": [
+          {
+            "backdropAudio": "planets/assets/Audio/main_slidereel.ogg",
+            "imagePath": "planets/assets/Slideshows/Secret/slide_00001.png"
+          },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00002.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00003.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00004.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00005.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00006.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00007.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00008.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00009.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00010.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00011.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00012.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00013.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00014.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00015.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00016.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00017.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00018.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00019.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00020.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00021.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00022.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00023.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00024.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00025.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00026.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00027.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/slide_00028.png" },
+          {
+            "imagePath": "planets/assets/Slideshows/Secret/slide_00029.png",
+            "beatAudio": "Ghost Individual Death 3",
+            "backdropAudio": "planets/assets/Audio/silence.ogg"
+          },
+          { "imagePath": "planets/assets/Slideshows/Secret/burn1.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/burn2.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/burn3.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/burn4.png" },
+          { "imagePath": "planets/assets/Slideshows/Secret/burn5.png" }
+        ]
+      }
+    ],
     "socketQuantumGroups": [
       {
         "details": [
           {
-            "assetBundle": "planets/assets/AssetBundle/geyser",
+            "assetBundle": "planets/assets/AssetBundle/jam5",
             "path": "Assets/GAMERIP/Geyser.prefab",
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserA",
             "isRelativeToParent": true,
@@ -116,7 +275,7 @@
       {
         "details": [
           {
-            "assetBundle": "planets/assets/AssetBundle/geyser",
+            "assetBundle": "planets/assets/AssetBundle/jam5",
             "path": "Assets/GAMERIP/Geyser.prefab",
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserB",
             "isRelativeToParent": true,
@@ -139,7 +298,7 @@
       {
         "details": [
           {
-            "assetBundle": "planets/assets/AssetBundle/geyser",
+            "assetBundle": "planets/assets/AssetBundle/jam5",
             "path": "Assets/GAMERIP/Geyser.prefab",
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserC",
             "isRelativeToParent": true,
@@ -326,6 +485,15 @@
         "volume": 0.7,
         "rename": "KarviAudio",
         "priority": 0
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/TheatreRoom_ProjectionHouse_Zone1",
+        "isRelativeToParent": true,
+        "radius": 3,
+        "clipSelection": "sequential",
+        "audio": "planets/assets/Audio/silence.ogg",
+        "rename": "Silence",
+        "priority": 1
       }
     ]
   },

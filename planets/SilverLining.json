@@ -15,7 +15,7 @@
   "Props": {
     "details": [
       {
-        "assetBundle": "planets/assets/AssetBundle/pulsar",
+        "assetBundle": "planets/assets/AssetBundle/jam5",
         "path": "Assets/Karvi/Effects_Pulsar.prefab",
         "keepLoaded": true
       }
