@@ -65,6 +65,19 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/HearthianText/HearthianEyeDialogue",
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Hearthian.xml"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_DialogueSocket",
+        "isRelativeToParent": true,
+        "radius": 1.3,
+        "xmlFile": "planets/dialogue/KarviDiorama/FinalBuilding/Ending.xml",
+        "attentionPoint": {
+          "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_DialogueSocket",
+          "isRelativeToParent": true,
+          "position": {
+            "y": -1.5
+          }
+        }
       }
     ],
     "translatorText": [
@@ -109,7 +122,7 @@
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00012.png" },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00013.png",
-            "beatAudio": "Artifact Pickup"
+            "beatAudio": "planets/assets/Audio/pickup.wav"
           },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00014.png" },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00015.png" },
@@ -139,7 +152,7 @@
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00039.png" },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00040.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00041.png" },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00042.png" },
@@ -147,21 +160,21 @@
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00044.png" },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00045.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00046.png" },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00047.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00048.png" },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00049.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00050.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00051.png" },
           {
@@ -169,23 +182,23 @@
           },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00053.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00054.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00055.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00056.png",
-            "beatAudio": "Ignite_CampFire_04"
+            "beatAudio": "planets/assets/Audio/campfire.wav"
           },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00057.png",
-            "beatAudio": "OW_NM_TractorBeamPowerUp"
+            "beatAudio": "planets/assets/Audio/powerup.wav"
           },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00058.png" },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00059.png" },
@@ -232,7 +245,7 @@
           { "imagePath": "planets/assets/Slideshows/Secret/slide_00028.png" },
           {
             "imagePath": "planets/assets/Slideshows/Secret/slide_00029.png",
-            "beatAudio": "Ghost Individual Death 3",
+            "beatAudio": "planets/assets/Audio/ghostdeath.wav",
             "backdropAudio": "planets/assets/Audio/silence.ogg"
           },
           { "imagePath": "planets/assets/Slideshows/Secret/burn1.png" },
@@ -493,6 +506,19 @@
         "clipSelection": "sequential",
         "audio": "planets/assets/Audio/silence.ogg",
         "rename": "Silence",
+        "priority": 1
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_DialogueSocket",
+        "isRelativeToParent": true,
+        "radius": 4,
+        "position": {
+          "y": 2
+        },
+        "clipSelection": "sequential",
+        "audio": "planets/assets/Audio/olderthantheuniverse.mp3",
+        "rename": "EndingSong",
+        "volume": 0.4,
         "priority": 1
       }
     ]

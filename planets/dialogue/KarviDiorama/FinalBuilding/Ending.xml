@@ -1,0 +1,52 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>???</NameField>
+	<!-- The name of this character -->
+	<DialogueNode>
+		<Name>Ending</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>You there!</Page>
+			<Page>Do not move! Stay where you are!</Page>
+			<Page>Hmmm...</Page>
+			<Page>On closer inspection, you look like a Hearthian....</Page>
+			<Page>Wow...I never thought you would be twice as big as me!</Page>
+			<Page>Wait...could you be...the one that was set to launch a few minutes ago?</Page>
+			<Page>That's right. I know all about you.</Page>
+			<Page>"Hatchling", the youngest member of Outer Wilds Ventures.</Page>
+			<Page>I've watched you ever since you were just a little tadpole.</Page>
+			<Page>All your life, you've dreamed of following in the footsteps of the great Feldspar.</Page>
+			<Page>In just a handful of minutes, you came all the way here from your home system on your first flight.</Page>
+			<Page>I know what you're thinking. I probably find this odd, don't I? Far from it, because I know exactly why.</Page>
+			<Page>My kind knows all about the phonomenon of the Ash Twin Project. I know that you're connected to it.</Page>
+			<Page>We have observed three species in a span of 400,000 years, including yours, and the Nomai.</Page>
+			<Page>Us Karvi, we are observers. We look at the stars, but we don't interact with them like you and the Nomai have.</Page>
+			<Page>Like you, we once had a home planet, until 400,000 years ago.</Page>
+			<Page>Our planet was apart of a binary relationship with another purple, Hycean planet.</Page>
+			<Page>The two twins danced around our home star, until a rogue gas giant sent our home planet flying out of its orbit into the coldest depths of space.</Page>
+			<Page>However, it was not too late. We built this ship to escape our freezing deaths, and parked ourselves in orbit around this pulsar.</Page>
+			<Page>Once we've arrived, we observed a lush, green moon orbiting a teal-ringed giant.</Page>
+			<Page>It was beautiful, watching its owl-like inhabitants raft down its rivers and counting their stars.</Page>
+			<Page>Then, a enigmatic vortex let out an eerie song for all the universe to hear.</Page>
+			<Page>We stood there amazed in its beauty, but we did not dare to go. Instead, we waited for the other species to react.</Page>
+			<Page>And they did...what a show it was. Full of heartbreak, tears, and drama. They could not handle its horrifying beauty.</Page>
+			<Page>Well, all except one. The one who freed the signal, the one who reeled in the Nomai.</Page>
+			<Page>And so, we sat on the edge of our seats watching the Nomai try to crack the code.</Page>
+			<Page>Then the comet came. Even though we watched the Nomai draw their final breath, we knew something bigger was coming.</Page>
+			<Page>Mother Nature then splashed away the ghastly fog and the amphibians rose to triumph. And so, your kind was born.</Page>
+			<Page>While you three species put on your little play, our crew of 20-something people 400,000 years ago slowly and naturally trickled its way down to just one.</Page>
+			<Page>That sole survivor is I, Phosphorus.</Page>
+			<Page>There is one thing in which we share, Hatchling. We know what it's like to be the last of our kind.</Page>
+			<Page>And yet, you are hooked onto a death loop for all eternity to suffer.</Page>
+			<Page>I've only watched my kind die once. You've witnessed it countless times.</Page>
+			<Page>Slate, Chert, Riebeck, and even the great Feldspar, you've watched them burn into oblivion.</Page>
+			<Page>Hatchling, look around you. This universe, it may seem gargantuan, but life itself? It's just a small blip in the oceans of history.</Page>
+			<Page>You've died many times, but you are still bound to the fear of death that your friends have put onto you.</Page>
+			<Page>Death itself, and many concepts that are tangible, matter almost nothing compared to the true nature of the universe.</Page>
+			<Page>Hatchling, it's time to let go. The invevitable will happen, your friends may die, but there is no need to endure all this pain just to see their faces again.</Page>
+			<Page>That Prisoner? He scanned the vortex when no one was looking. He knew there was more to the vortex, and thanks to him, we know the secret to the Eye of the Universe.</Page>
+			<Page>Once someone enters the Eye and sacrifices themselves, their memories are passed on and allow the creation of a brand new universe.</Page>
+			<Page>Find a way to disable the Ash Twin Project. Follow the cry of the Eye, and put and end to your suffering and the suffering of the universe, for the hope that there'll be a tomorrow.</Page>
+			<Page>Farewell Hatchling. Just remember, that your friend Phosphorus will be watching your back, rooting for you.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>
