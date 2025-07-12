@@ -12,16 +12,16 @@ namespace FifthModJam
         [SerializeField]
         private Animator shuttleAnim;
         [SerializeField]
-        private OWAudioSource[] shuttleAudio = new OWAudioSource[2];
+        private OWAudioSource shuttleAudio;
         [SerializeField]
-        private OWAudioSource[] towerAudio = new OWAudioSource[3];
+        private OWAudioSource towerAudio;
         [SerializeField]
         private InteractReceiver _interactReceiver;
 
         [SerializeField]
         private GearInterfaceEffects _gearInterface;
 
-        private Animator smallTower; // [Note for @Anon: smallTower and towerAnim point to the same animator, what's the difference?]
+        private Animator smallTower;
         public bool hasFallen;
 
         private void Start()
@@ -44,21 +44,16 @@ namespace FifthModJam
         private IEnumerator PlayAnim()
         {
             smallTower.Play("TOWER_AFTER", 0);
-            FifthModJam.WriteLine("playing shuttleAudio[0]", OWML.Common.MessageType.Debug);
-            shuttleAudio[0].Play();
+            shuttleAudio.PlayOneShot(global::AudioType.NomaiVesselPowerUp, 1f);
             shuttleAnim.Play("SHUTTLE", 0);
             yield return new WaitForSeconds(0.917f);
-            FifthModJam.WriteLine("playing shuttleAudio[1]", OWML.Common.MessageType.Debug);
-            shuttleAudio[1].Play();
+            shuttleAudio.PlayOneShot(global::AudioType.ShipImpact_LightDamage, 1f);
             towerAnim.Play("TOWER", 0);
-            FifthModJam.WriteLine("playing towerAudio[0]", OWML.Common.MessageType.Debug);
-            towerAudio[0].Play();
+            towerAudio.PlayOneShot(global::AudioType.Tower_RW_Fall_1, 1f);
             yield return new WaitForSeconds(0.75f);
-            FifthModJam.WriteLine("playing towerAudio[1]", OWML.Common.MessageType.Debug);
-            towerAudio[1].Play();
+            towerAudio.PlayOneShot(global::AudioType.Tower_RW_Fall_2, 1f);
             yield return new WaitForSeconds(1.4f);
-            FifthModJam.WriteLine("playing towerAudio[2]", OWML.Common.MessageType.Debug);
-            towerAudio[2].Play();
+            towerAudio.PlayOneShot(global::AudioType.GeneralDestruction, 1f);
             // ship reveal here maybe?
         }
 
@@ -72,7 +67,7 @@ namespace FifthModJam
 
         private void OnPressInteract()
         {
-            if (_gearInterface != null && !hasFallen) // [Note: What is _gearInterface used for here?]
+            if (_gearInterface != null && !hasFallen)
             {
                 StartCoroutine(PlayAnim());
                 hasFallen = true;

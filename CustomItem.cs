@@ -10,11 +10,13 @@ namespace FifthModJam
         [SerializeField]
         private OWAudioSource _oneShotAudio;
         [SerializeField]
-        private string itemName;
+        public string itemName;
         [SerializeField]
-        private ItemType itemType; // This is for item-socket compatibility
+        public ItemType itemType; // This is for item-socket compatibility
         [SerializeField]
         private Animator _animator;
+        [SerializeField]
+        public GameObject flames;
         [SerializeField]
         public SpeciesTypeData speciesTypeData; // This is for solving the door puzzle, as well as some other stuff (animators, etc?)
 
@@ -27,11 +29,24 @@ namespace FifthModJam
         private void Start()
         {
             base.enabled = false;
+            if (speciesTypeData.species == SpeciesEnum.STRANGER && itemType == ItemType.VisionTorch && flames != null)
+            {
+                GlobalMessenger<float>.AddListener("PlayerCameraEnterWater", OnCameraEnterWater);
+                flames.SetActive(false);
+            }
         }
 
         public override void OnDestroy()
         {
             base.OnDestroy();
+        }
+
+        private void OnCameraEnterWater(float _)
+        {
+            if (speciesTypeData.species == SpeciesEnum.STRANGER && itemType == ItemType.VisionTorch && flames != null && flames.activeSelf)
+            {
+                ToggleFlames(false);
+            }
         }
 
         public override string GetDisplayName()
@@ -71,6 +86,33 @@ namespace FifthModJam
                 _animator.Play("KAV_CRYSTAL_STATIC", 0);
             }
             base.PickUpItem(holdTranform);
+        }
+
+        public bool IsBoatPoleLit()
+        {
+            if (speciesTypeData.species == SpeciesEnum.STRANGER && itemType == ItemType.VisionTorch && flames != null && flames.activeSelf)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
+
+        public void ToggleFlames(bool isIgniting)
+        {
+            if (speciesTypeData.species == SpeciesEnum.STRANGER && itemType == ItemType.VisionTorch && flames != null)
+            {
+                flames.SetActive(isIgniting);
+                if (isIgniting)
+                {
+                    _animator.Play("FLAME", 0);
+                    _oneShotAudio.PlayOneShot(global::AudioType.TH_Campfire_Ignite, 0.5f);
+                } else
+                {
+                    _oneShotAudio.PlayOneShot(global::AudioType.Artifact_Extinguish, 0.5f);
+                }
+            }
         }
 
         public override void UpdateCollisionLOD()

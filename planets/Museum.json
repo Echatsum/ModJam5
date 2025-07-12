@@ -235,6 +235,28 @@
         "name": "Distorted Signal",
         "volume": 0.1
       }
+    ],
+    "singularities": [
+      {
+        "type": "whiteHole",
+        "horizonRadius": 0,
+        "hasWarpEffects": false,
+        "rename": "ENDING_WH",
+        "uniqueID": "ENDING_WH",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper",
+        "isRelativeToParent": true,
+        "pairedSingularity": "ENDING_BH"
+      },
+      {
+        "type": "blackHole",
+        "horizonRadius": 0,
+        "hasWarpEffects": false,
+        "rename": "ENDING_BH",
+        "uniqueID": "ENDING_BH",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower",
+        "isRelativeToParent": true,
+        "pairedSingularity": "ENDING_WH"
+      }
     ]
   },
   "Volumes": {
@@ -246,6 +268,22 @@
     "mapRestrictionVolumes": [
       {
         "radius": 800
+      }
+    ],
+    "creditsVolume": [
+      {
+        "deathType": "blackHole",
+        "gameOver": {
+          "text": "FIN",
+          "creditsType": "final",
+          "colour": {
+            "r": 189,
+            "b": 255
+          }
+        },
+        "rename": "CREDITS_VOLUME",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/CREDITS",
+        "isRelativeToParent": true
       }
     ],
     "audioVolumes": [
@@ -291,6 +329,14 @@
       }
     ]
   },
+  "removeChildren": [
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/BlackHoleRenderer",
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/BlackHoleAmbience",
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/BlackHoleEmissionOneShot",
+
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper/WhiteHoleRenderer",
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper/WhiteHoleAmbience"
+  ],
   "ShipLog": {
     "xmlFile": "planets/shiplogs/Museum.xml"
   }
