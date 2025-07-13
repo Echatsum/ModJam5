@@ -454,7 +454,7 @@
           }
         },
         "rename": "CREDITS_VOLUME",
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/CREDITS",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/Effects_KAV_BEAM (1)/CREDITS",
         "isRelativeToParent": true
       }
     ],
@@ -509,9 +509,9 @@
         "priority": 1
       },
       {
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_DialogueSocket",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_Music",
         "isRelativeToParent": true,
-        "radius": 4,
+        "radius": 20,
         "position": {
           "y": 2
         },
@@ -520,6 +520,13 @@
         "rename": "EndingSong",
         "volume": 0.4,
         "priority": 1
+      }
+    ],
+    "reverbVolumes": [
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_Music",
+        "isRelativeToParent": true,
+        "radius": 20
       }
     ]
   },

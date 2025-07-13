@@ -159,6 +159,8 @@ namespace FifthModJam
 
         public IEnumerator CloseEyesCoroutine()
         {
+            OWInput.ChangeInputMode(InputMode.None); // stop player input for a while
+            Locator.GetProbe().Retrieve(0.5f); // recall scout
             var cameraEffectController = FindObjectOfType<PlayerCameraEffectController>();
             cameraEffectController.CloseEyes(Constants.BLINK_CLOSE_ANIM_TIME);
             yield return new WaitForSeconds(Constants.BLINK_CLOSE_ANIM_TIME);  // waits until animation stops to proceed to next line
@@ -169,7 +171,7 @@ namespace FifthModJam
             var cameraEffectController = FindObjectOfType<PlayerCameraEffectController>();
             cameraEffectController.OpenEyes(Constants.BLINK_OPEN_ANIM_TIME, false);
             yield return new WaitForSeconds(Constants.BLINK_OPEN_ANIM_TIME); // Waits until animation stops to proceed to next line
+            OWInput.ChangeInputMode(InputMode.Character); // gives the player back input
         }
     }
-
 }

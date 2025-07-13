@@ -11,6 +11,8 @@ namespace FifthModJam
         private GameObject[] objectsToEnable;
         [SerializeField]
         private OWAudioSource audio;
+        [SerializeField]
+        private Animator beamAnim;
 
         public bool isPuzzleComplete;
 
@@ -49,6 +51,7 @@ namespace FifthModJam
                 foreach (var disabledObject in objectsToEnable){
                     disabledObject.SetActive(true);
                     audio.PlayOneShot(global::AudioType.NomaiTractorBeamActivate, 0.5f);
+                    beamAnim.Play("BEAM", 0);
                     isPuzzleComplete = true;
                 }
             }
