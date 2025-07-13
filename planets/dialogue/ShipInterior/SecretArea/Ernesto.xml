@@ -1,0 +1,198 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Ernesto</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hatchling?</Page>
+			<Page>What the Feldspar is going on here?</Page>
+			<Page>How did I even get here?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Ernesto?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>First a cult following, now you have an actual cult?</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How's Geswaldo?</Text>
+				<DialogueTarget>GES</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Oh no...ANOTHER ERNESTO REFERENCE IN AN OUTER WILDS MOD!?</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>...</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Bye Bye</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START2</Name>
+		<Dialogue>
+			<Page>Hurry this up, I need to find Geswaldo immediately.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Ernesto?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>First a cult following, now you have an actual cult?</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How's Geswaldo?</Text>
+				<DialogueTarget>GES</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Oh no...ANOTHER ERNESTO REFERENCE IN AN OUTER WILDS MOD!?</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>...</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>ByeBye</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>1</Name>
+		<Dialogue>
+			<Page>Indeed, it is I, Ernesto, the magic talking anglerfish.</Page>
+			<Page>Seems here that people take this whole obsession thing a little too far this time.</Page>
+			<Page>"FOR THE WORLDS TO NEVER END"...Those poor fools just couldn't let go.</Page>
+			<Page>But what do I have to do with that? Am I associated with something bigger in another realm?</Page>
+			<Page>Still, it's very sickening what they are doing.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Agreed.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How's Geswaldo?</Text>
+				<DialogueTarget>GES</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>2</Name>
+		<Dialogue>
+			<Page>Yeah. People took this Ernesto obsession thing way too far.</Page>
+			<Page>I just want to live a normal life. Don't you?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Who doesn't?</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I know the feeling.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Sure, but this is all YOUR fault!</Text>
+				<DialogueTarget>5</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>GES</Name>
+		<Dialogue>
+			<Page>Geswaldo was doing wonderful until I was transported here. I told him I would stop being the easter egg, and let him try for a change.</Page>
+			<Page>This whole easter egg mess almost destroyed our relationship. We never saw each other much for long periods of time, which felt endless to the two of us.</Page>
+			<Page>Then we talked about it, and since we gave up being an easter egg, our relationship blossomed back into what it was when we first met.</Page>
+			<Page>It was so nice feeling his soft, slippery skin again. And now here I am, taken away from him once again.</Page>
+			<Page>Hopefully Geswaldo has come to this system to look for me. If you see him, tell him where I am, okay?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Sure thing, Ernesto.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>3</Name>
+		<Dialogue>
+			<Page>Like I even wanted to be here in the first place!</Page>
+			<Page>People are obsessed with me to the point that they worshipping me in the most sick and twisted ways.</Page>
+			<Page>Geswaldo is probably worried about me, and you fools summon me through demonic worship?</Page>
+			<Page>You people make me sick.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>OK then, sorry.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text><![CDATA[<color=red>ALL HAIL ERNESTO.</color>]]></Text>
+				<DialogueTarget>5</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>4</Name>
+		<Dialogue>
+			<Page>....not a word?</Page>
+			<Page>I was forced to come here, and you don't at least say hello?</Page>
+			<Page>I'm not just your beloved easter egg, I'm an living, breathing, organism, just like you!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Sorry....</Text>
+				<DialogueTarget>DEATH</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>DEATH</Name>
+		<Dialogue>
+			<Page>Anyways, watch the door on your way out.</Page>
+		</Dialogue>
+		<SetCondition>ErnestoPissed</SetCondition>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>5</Name>
+		<Dialogue>
+			<Page>...Really? Just in a time where I could have really used your support.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Sorry, I couldn't help myself.</Text>
+				<DialogueTarget>DEATH</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>BYE</Name>
+		<Dialogue>
+			<Page>Bye bye.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

@@ -58,19 +58,94 @@
         ]
       }
     ],
+    "dialogue": [
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper (1)/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper (2)/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper (3)/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper (4)/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper (5)/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper (6)/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper (7)/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Ernesto.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/ERNESTO/Dialogue",
+        "isRelativeToParent": true,
+        "radius": 2
+      }
+    ],
     "warpReceivers": [
       {
         "parentPath": "Sector/KarviShip_Interior/Interactibles/NOM_WarpSocket",
         "isRelativeToParent": true,
         "frequency": "KarviShip"
       }
-    ],
-
+    ]
   },
   "Volumes": {
     "oxygenVolumes": [
       {
         "radius": 100
+      }
+    ],
+    "reverbVolumes": [
+      {
+        "radius": 100
+      }
+    ],
+    "creditsVolume": [
+      {
+        "radius": 3,
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/DEATH",
+        "isRelativeToParent": true,
+        "deathType": "crushedByElevator",
+        "gameOver": {
+          "colour": {
+            "r": 255
+          },
+          "creditsType": "kazoo",
+          "text": "ERNESTO BEAT YOU TO DEATH WITH A ROCK"
+        }
       }
     ],
     "audioVolumes": [

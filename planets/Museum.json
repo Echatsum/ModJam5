@@ -447,7 +447,7 @@
         "deathType": "blackHole",
         "gameOver": {
           "text": "FIN",
-          "creditsType": "final",
+          "creditsType": "fast",
           "colour": {
             "r": 189,
             "b": 255

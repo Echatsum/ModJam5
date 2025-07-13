@@ -1,0 +1,16 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Worshipper</NameField>
+	<!-- The name of this character -->
+	<DialogueNode>
+		<Name>ErnestoCult</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<color=red>ERNESTO IS GOD.</color>]]></Page>
+			<Page><![CDATA[<color=red>ERNESTO IS EVERYTHING.</color>]]></Page>
+			<Page><![CDATA[<color=red>ERNESTO, BLESSER OF ALTERNATE REALITIES.</color>]]></Page>
+			<Page><![CDATA[<color=red>ERNESTO, WRITER OF NEW STORIES.</color>]]></Page>
+			<Page><![CDATA[<color=red>ERNESTO, WE SWEAR TO THEE OUR UTMOST LOYALTY.</color>]]></Page>
+			<Page><![CDATA[<color=red>ALL HAIL ERNESTO, FOR THE WORLDS TO NEVER END.</color>]]></Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>
