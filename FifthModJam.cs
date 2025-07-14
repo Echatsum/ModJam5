@@ -42,6 +42,7 @@ namespace FifthModJam
             ModHelper.Console.WriteLine("Loaded into jam5 system!", MessageType.Success);
 
             DioramaWarpManager.Spawn();
+            MuseumDisablerManager.Spawn();
         }
 
         public bool IsInJamFiveSystem()
