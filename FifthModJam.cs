@@ -21,12 +21,6 @@ namespace FifthModJam
             }
         }
 
-        // museum and star gameobjects
-        private GameObject _museum;
-        private GameObject _starLight;
-        // TowerCollapse controller
-        private TowerCollapse _collapseHandler;
-
         public void Start()
         {
             // Starting here, you'll have access to OWML's mod helper.
@@ -45,52 +39,14 @@ namespace FifthModJam
         public void OnCompleteSceneLoad(string newScene)
         {
             if (newScene != "Jam5") return;
+            ModHelper.Console.WriteLine("Loaded into jam5 system!", MessageType.Success);
 
-            RegisterGameobjects(); // Find game objects, for use on coroutines and other methods
-
-            ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
+            DioramaWarpManager.Spawn();
         }
 
         public bool IsInJamFiveSystem()
         {
             return NewHorizonsAPI.GetCurrentStarSystem() == "Jam5";
-        }
-
-        public void RegisterGameobjects()
-        {
-            // [Note: museum-dependent objects might be inactive during Start(), so SearchUtilities is used to catch these cases that GameObject cannot]
-            bool isReady = true;
-            string classLocation = "FifthModJam root";
-
-            // Get starlight
-            _starLight = GameObject.Find(Constants.UNITYPATH_STARLIGHT);
-            if (_starLight == null)
-            {
-                FifthModJam.WriteLineObjectOrComponentNotFound(classLocation, Constants.UNITYPATH_STARLIGHT);
-                isReady = false;
-            }
-
-            // Get museum
-            _museum = SearchUtilities.Find(Constants.UNITYPATH_MUSEUM);
-            if (_museum == null)
-            {
-                FifthModJam.WriteLineObjectOrComponentNotFound(classLocation, Constants.UNITYPATH_MUSEUM);
-                isReady = false;
-            }
-
-            // Get the tower collapse handler
-            _collapseHandler = SearchUtilities.Find(Constants.UNITYPATH_SCALEDMUSEUM)?.GetComponent<TowerCollapse>();
-            if (_collapseHandler == null)
-            {
-                FifthModJam.WriteLineObjectOrComponentNotFound(classLocation, Constants.UNITYPATH_SCALEDMUSEUM, nameof(TowerCollapse));
-                isReady = false;
-            }
-
-            // Everything registered correctly
-            if (isReady)
-            {
-                FifthModJam.WriteLineReady(classLocation);
-            }
         }
 
         // UTILS
@@ -109,54 +65,6 @@ namespace FifthModJam
         }
 
         // COROUTINES
-        public void EnterDiorama(SpawnPoint spawnPointTarget)
-        {
-            StartCoroutine(EnterDioramaCoroutine(spawnPointTarget));
-        }
-        private IEnumerator EnterDioramaCoroutine(SpawnPoint spawnPointTarget)
-        {
-            // Close eyes
-            yield return StartCoroutine(CloseEyesCoroutine());
-            yield return new WaitForSeconds(Constants.BLINK_STAY_CLOSED_TIME);
-
-            // Update objects
-            _museum.SetActive(true);
-            _starLight.SetActive(false);
-            if (_collapseHandler.hasFallen)
-            {
-                _collapseHandler.ForceTowerFallenState(); // forces the tower to fallen down state if it has before
-            }
-
-            // Warp
-            var spawner = GameObject.FindGameObjectWithTag("Player").GetRequiredComponent<PlayerSpawner>();
-            spawner.DebugWarp(spawnPointTarget);
-
-            // Open eyes
-            yield return StartCoroutine(OpenEyesCoroutine());
-        }
-
-        public void ExitDiorama(SpawnPoint spawnPointTarget)
-        {
-            StartCoroutine(ExitDioramaCoroutine(spawnPointTarget));
-        }
-        private IEnumerator ExitDioramaCoroutine(SpawnPoint spawnPointTarget)
-        {
-            // Close eyes
-            yield return StartCoroutine(CloseEyesCoroutine());
-
-            // Warp
-            var spawner = GameObject.FindGameObjectWithTag("Player").GetRequiredComponent<PlayerSpawner>();
-            spawner.DebugWarp(spawnPointTarget);
-
-            // Update objects
-            _museum.SetActive(false);
-            _starLight.SetActive(true);
-
-            // Open eyes
-            yield return new WaitForSeconds(Constants.BLINK_STAY_CLOSED_TIME);
-            yield return StartCoroutine(OpenEyesCoroutine());
-        }
-
         public IEnumerator CloseEyesCoroutine()
         {
             OWInput.ChangeInputMode(InputMode.None); // stop player input for a while
