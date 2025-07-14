@@ -48,6 +48,12 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/HearthianText",
         "isRelativeToParent": true,
         "rename": "HearthianEyeDialogue"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/HEA_Text",
+        "isRelativeToParent": true,
+        "rename": "FeldsparDialogue"
       }
     ],
     "dialogue": [
@@ -63,6 +69,11 @@
       },
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/HearthianText/HearthianEyeDialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Hearthian.xml"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/HEA_Text/FeldsparDialogue",
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Hearthian.xml"
       },
@@ -303,7 +314,7 @@
           },
           {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
-            "isRelativeToParent": false,
+            "isRelativeToParent": true,
             "rename": "SOCKET3B"
           }
         ]
@@ -338,11 +349,8 @@
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
         "detectionRadius": 40,
-        "position": {
-          "x": -199.8032,
-          "y": -106.1324,
-          "z": -107.9833
-        },
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/SIGNAL_SCOUT",
+        "isRelativeToParent": true,
         "name": "Scout Distress Signal",
         "volume": 0.1,
         "reveals": "MUSEUM_HEA_FIRSTSIGNAL_E"
