@@ -25,7 +25,7 @@
     <None Include="default-config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="ErnestoAnim.cs" />
+    <None Include="Controllers\ErnestoAnim.cs" />
     <None Include="manifest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -55,10 +55,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Interop\" />
-    <Folder Include="Controllers\Triggers\" />
-    <Folder Include="Utils\" />
     <Folder Include="planets\assets\Slideshows\Secret\" />
     <Folder Include="planets\dialogue\KarviDiorama\Houses\" />
   </ItemGroup>

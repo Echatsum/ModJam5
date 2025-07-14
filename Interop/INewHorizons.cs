@@ -5,8 +5,6 @@ using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
-// [TODO: Move to Interop/ folder once safe for push/pull]
-
 namespace FifthModJam
 {
     public interface INewHorizons

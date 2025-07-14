@@ -4,8 +4,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-// [TODO: Move to Controllers/ folder once safe for push/pull]
-
 namespace FifthModJam
 {
 

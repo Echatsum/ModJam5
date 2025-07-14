@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-// [TODO: Move to Utils/ folder once safe for push/pull]
-
 namespace FifthModJam
 {
     public class SpeciesTypeData : MonoBehaviour

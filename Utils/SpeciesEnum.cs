@@ -1,6 +1,4 @@
-﻿// [TODO: Move to Utils/ folder once safe for push/pull]
-
-namespace FifthModJam
+﻿namespace FifthModJam
 {
     public enum SpeciesEnum
     {

@@ -1,5 +1,4 @@
-﻿
-namespace FifthModJam
+﻿namespace FifthModJam
 {
     public static class Constants
     {

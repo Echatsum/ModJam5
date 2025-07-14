@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-// [TODO: Move to Triggers/ folder once safe for push/pull]
-
 namespace FifthModJam
 {
     public class ExitDioramaTrigger : MonoBehaviour

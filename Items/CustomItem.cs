@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-// [TODO: Move to Items/ folder once safe for push/pull]
-
 namespace FifthModJam
 {
     /// <summary>
