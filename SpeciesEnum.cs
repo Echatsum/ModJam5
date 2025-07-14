@@ -1,11 +1,14 @@
-﻿
+﻿// [TODO: Move to Utils/ folder once safe for push/pull]
+
 namespace FifthModJam
 {
     public enum SpeciesEnum
     {
-        STRANGER = 0, // Owlks!
-        NOMAI = 1,
-        HEARTHIAN = 2,
-        KARVI = 3
+        INVALID = 0,
+
+        STRANGER = 1, // Owlks!
+        NOMAI = 2,
+        HEARTHIAN = 3,
+        KARVI = 4
     }
 }

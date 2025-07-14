@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+// [TODO: Move to Controllers/ folder once safe for push/pull]
+
 namespace FifthModJam
 {
 
@@ -59,6 +61,18 @@ namespace FifthModJam
             socketTwo.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Combine(socketTwo.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketTwoFilled));
             socketTwo.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Combine(socketTwo.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketTwoRemoved));
         }
+        private void OnDestroy()
+        {
+            var socketOne = customItemSockets[0];
+            socketOne.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Remove(socketOne.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketOneFilled));
+            socketOne.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Remove(socketOne.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketOneRemoved));
+
+            var socketTwo = customItemSockets[1];
+            socketTwo.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Remove(socketTwo.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketTwoFilled));
+            socketTwo.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Remove(socketTwo.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketTwoRemoved));
+        }
+
+
         private void OnSocketOneFilled(OWItem item)
         {
             _socketsFilledMask |= SocketsFilledMask.SocketOne; // Adding the SocketOne bit

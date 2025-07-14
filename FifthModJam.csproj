@@ -55,6 +55,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Interop\" />
+    <Folder Include="Controllers\Triggers\" />
+    <Folder Include="Utils\" />
     <Folder Include="planets\assets\Slideshows\Secret\" />
     <Folder Include="planets\dialogue\KarviDiorama\Houses\" />
   </ItemGroup>

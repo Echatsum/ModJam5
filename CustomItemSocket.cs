@@ -1,35 +1,35 @@
 ﻿using UnityEngine;
 
+// [TODO: Move to Items/ folder once safe for push/pull]
+
 namespace FifthModJam
 {
+    /// <summary>
+    /// The basic expanded OWItemSocket class for custom mod itemSockets.
+    /// Allows for custom mask on the accepted item types.
+    /// </summary>
     public class CustomItemSocket : OWItemSocket
     {
         [SerializeField]
-        public SpeciesEnum desiredSpecies; // This is for solving the door puzzle
-        [SerializeField]
-        public ItemType acceptableTypesMask; // This is for item-socket compatibility
+        private ItemType _acceptableTypesMask; // This is for item-socket compatibility
+
+        protected virtual void VerifyUnityParameters()
+        {
+            if (_acceptableTypesMask == ItemType.Invalid)
+            {
+                FifthModJam.WriteLine("[CustomItemSocket] type mask has no accepted value", OWML.Common.MessageType.Error);
+            }
+        }
 
         public override void Awake()
         {
             base.Awake();
-            _acceptableType = acceptableTypesMask;
+            _acceptableType = _acceptableTypesMask;
         }
 
-        public bool HasCorrectSpeciesItem()
+        protected virtual void Start()
         {
-            if (!this.IsSocketOccupied())
-            {
-                return false;
-            }
-
-            var item = this.GetSocketedItem();
-            var speciesTypeData = item.GetComponent<SpeciesTypeData>();
-            if (speciesTypeData != null)
-            {
-                return speciesTypeData.species == desiredSpecies;
-            }
-
-            return false;
+            VerifyUnityParameters();
         }
     }
 }

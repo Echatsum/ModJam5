@@ -1,6 +1,8 @@
 ﻿using NewHorizons.Utility;
 using UnityEngine;
 
+// [TODO: Move to Triggers/ folder once safe for push/pull]
+
 namespace FifthModJam
 {
     public class EnterDioramaTrigger : MonoBehaviour
@@ -9,8 +11,18 @@ namespace FifthModJam
         private SpeciesEnum targetDiorama; // Which target this trigger should warp the player to
         private SpawnPoint _spawnPointTarget;
 
+        protected void VerifyUnityParameters()
+        {
+            if (targetDiorama == SpeciesEnum.INVALID)
+            {
+                FifthModJam.WriteLine("[EnterDioramaTrigger] targetDiorama left on invalid", OWML.Common.MessageType.Error);
+            }
+        }
+
         public void Start()
         {
+            VerifyUnityParameters();
+
             // Get the SpawnPoint matching the target diorama
             const string pathPrefix = Constants.UNITYPATH_EXHIBITS_PREFIX;
             string spawnPath = pathPrefix + GetTargetDioramaPathSuffix();

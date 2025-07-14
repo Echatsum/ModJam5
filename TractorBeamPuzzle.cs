@@ -1,35 +1,63 @@
 ﻿using System;
 using UnityEngine;
 
+// [TODO: Move to Controllers/ folder once safe for push/pull]
+
 namespace FifthModJam
 {
-
     public class TractorBeamPuzzle : MonoBehaviour
     {
         [SerializeField]
-        private CustomItemSocket customItemSocket;
+        private SpeciesItemSocket _speciesItemSocket;
         [SerializeField]
-        private GameObject tractorBeam;
+        private GameObject _tractorBeam;
 
         private void Awake()
         {
-            customItemSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Combine(customItemSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
-            customItemSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Combine(customItemSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+            if (_speciesItemSocket != null)
+            {
+                _speciesItemSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Combine(_speciesItemSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
+                _speciesItemSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Combine(_speciesItemSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+            }
+        }
+        private void OnDestroy()
+        {
+            if (_speciesItemSocket != null)
+            {
+                _speciesItemSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Remove(_speciesItemSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
+                _speciesItemSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Remove(_speciesItemSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+            }
         }
 
         private void Start()
         {
-            tractorBeam.SetActive(false);
+            if(_speciesItemSocket == null)
+            {
+                FifthModJam.WriteLine("[TractorBeamPuzzle] socket is null", OWML.Common.MessageType.Error);
+            }
+            if (_tractorBeam == null)
+            {
+                FifthModJam.WriteLine("[TractorBeamPuzzle] tractorBeam is null", OWML.Common.MessageType.Error);
+            }
+
+            _tractorBeam?.SetActive(false);
         }
 
         private void OnSocketFilled(OWItem item)
         {
-            tractorBeam.SetActive(true);
+            CheckActivation();
+        }
+        private void CheckActivation()
+        {
+            if (_speciesItemSocket.HasCorrectSpeciesItem())
+            {
+                _tractorBeam?.SetActive(true);
+            }
         }
 
         private void OnSocketRemoved(OWItem item)
         {
-            tractorBeam.SetActive(false);
+            _tractorBeam?.SetActive(false);
         }
     }
 }

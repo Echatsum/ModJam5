@@ -1,11 +1,13 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
+
+// [TODO: Move to Utils/ folder once safe for push/pull]
 
 namespace FifthModJam
 {
     public class SpeciesTypeData : MonoBehaviour
     {
         [SerializeField]
-        public SpeciesEnum species;
+        private SpeciesEnum _species;
+        public SpeciesEnum Species => _species;
     }
 }

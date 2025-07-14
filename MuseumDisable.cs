@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+// [TODO: Move to Controllers/ folder once safe for push/pull]
+
 namespace FifthModJam
 {
     public class MuseumDisabler : MonoBehaviour

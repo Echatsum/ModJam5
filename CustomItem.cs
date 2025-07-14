@@ -1,123 +1,52 @@
-﻿using NewHorizons.Utility;
-using System;
-using UnityEngine;
+﻿using UnityEngine;
+
+// [TODO: Move to Items/ folder once safe for push/pull]
 
 namespace FifthModJam
 {
-    [RequireComponent(typeof(SpeciesTypeData))]
+    /// <summary>
+    /// The basic expanded OWItem class for custom mod items.
+    /// Allows for custom name and choosing ItemType equivalence.
+    /// </summary>
     public class CustomItem : OWItem
     {
+        // Name and socket type
         [SerializeField]
-        private OWAudioSource _oneShotAudio;
+        protected string _itemName;
         [SerializeField]
-        public string itemName;
-        [SerializeField]
-        public ItemType itemType; // This is for item-socket compatibility
-        [SerializeField]
-        private Animator _animator;
-        [SerializeField]
-        public GameObject flames;
-        [SerializeField]
-        public SpeciesTypeData speciesTypeData; // This is for solving the door puzzle, as well as some other stuff (animators, etc?)
+        protected ItemType _itemType; // This is for item-socket compatibility [Note: While this can be set as mask, try to keep it as only one flag]
+
+        protected virtual void VerifyUnityParameters()
+        {
+            if (_itemName == null || _itemName.Length == 0)
+            {
+                FifthModJam.WriteLine($"[CustomItem] itemname null or empty", OWML.Common.MessageType.Error);
+            }
+            if (_itemType == ItemType.Invalid)
+            {
+                FifthModJam.WriteLine($"[CustomItem ({_itemName})] itemType has no accepted value", OWML.Common.MessageType.Error);
+            }
+
+            if (_sector == null) // Base code works but gets annoyed if we don't set a sector for the items
+            {
+                FifthModJam.WriteLine($"[CustomItem ({_itemName})] sector is null", OWML.Common.MessageType.Warning);
+            }
+        }
 
         public override void Awake()
         {
-            _type = itemType;
+            _type = _itemType;
             base.Awake();
         }
 
-        private void Start()
+        protected virtual void Start()
         {
-            base.enabled = false;
-            if (speciesTypeData.species == SpeciesEnum.STRANGER && itemType == ItemType.VisionTorch && flames != null)
-            {
-                GlobalMessenger<float>.AddListener("PlayerCameraEnterWater", OnCameraEnterWater);
-                flames.SetActive(false);
-            }
-        }
-
-        public override void OnDestroy()
-        {
-            base.OnDestroy();
-        }
-
-        private void OnCameraEnterWater(float _)
-        {
-            if (speciesTypeData.species == SpeciesEnum.STRANGER && itemType == ItemType.VisionTorch && flames != null && flames.activeSelf)
-            {
-                ToggleFlames(false);
-            }
+            VerifyUnityParameters();
         }
 
         public override string GetDisplayName()
         {
-            return itemName;
-        }
-
-        public override void SocketItem(Transform socketTransform, Sector sector)
-        {
-            base.SocketItem(socketTransform, sector);
-        }
-
-        public override void DropItem(Vector3 position, Vector3 normal, Transform parent, Sector sector, IItemDropTarget customDropTarget)
-        {
-            if (_animator != null && speciesTypeData.species == SpeciesEnum.KARVI)
-            {
-                _animator.Play("KAV_CRYSTAL", 0);
-            }
-            if (speciesTypeData.species == SpeciesEnum.NOMAI)
-            {
-                Sector desiredSector;
-                if (Locator.GetPlayerSectorDetector().IsWithinSector("ScaledMuseum")) {
-                    desiredSector = SearchUtilities.Find("ScaledMuseum_Body/Sector").GetComponent<Sector>();
-                } else
-                {
-                    desiredSector = SearchUtilities.Find("OminousOrbiter_Body/Sector").GetComponent<Sector>();
-                }
-                this.SetSector(desiredSector);
-            }
-            base.DropItem(position, normal, parent, sector, customDropTarget);
-        }
-
-        public override void PickUpItem(Transform holdTranform)
-        {
-            if (_animator != null && speciesTypeData.species == SpeciesEnum.KARVI)
-            {
-                _animator.Play("KAV_CRYSTAL_STATIC", 0);
-            }
-            base.PickUpItem(holdTranform);
-        }
-
-        public bool IsBoatPoleLit()
-        {
-            if (speciesTypeData.species == SpeciesEnum.STRANGER && itemType == ItemType.VisionTorch && flames != null && flames.activeSelf)
-            {
-                return true;
-            } else
-            {
-                return false;
-            }
-        }
-
-        public void ToggleFlames(bool isIgniting)
-        {
-            if (speciesTypeData.species == SpeciesEnum.STRANGER && itemType == ItemType.VisionTorch && flames != null)
-            {
-                flames.SetActive(isIgniting);
-                if (isIgniting)
-                {
-                    _animator.Play("FLAME", 0);
-                    _oneShotAudio.PlayOneShot(global::AudioType.TH_Campfire_Ignite, 0.5f);
-                } else
-                {
-                    _oneShotAudio.PlayOneShot(global::AudioType.Artifact_Extinguish, 0.5f);
-                }
-            }
-        }
-
-        public override void UpdateCollisionLOD()
-        {
-            base.UpdateCollisionLOD();
+            return _itemName;
         }
     }
 }
