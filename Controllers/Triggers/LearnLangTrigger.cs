@@ -40,7 +40,6 @@ namespace FifthModJam
                 if (!LanguageManager.Instance.HasLearnedLang()) // Check for fact (the trigger resets between loops, but we only need to reveal fact once)
                 {
                     LanguageManager.Instance.RevealFactLanguagesLearned();
-                    LanguageManager.Instance.OnLanguagesLearned?.Invoke(); // Event to let every handler update their status
                 }
 
                 _hasAlreadyEnteredOnce = true;
