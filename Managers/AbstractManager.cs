@@ -18,7 +18,10 @@ namespace FifthModJam
             }
         }
 
-        public static T Spawn() // Equivalent to Instance, but calling it in the main FifthModJam class makes sure the manager is generated
+        /// <summary>
+        /// Equivalent to Instance, but calling it makes sure the manager instance is generated at this time
+        /// </summary>
+        public static T Spawn() 
         {
             return Instance;
         }

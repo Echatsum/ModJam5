@@ -4,7 +4,7 @@ using UnityEngine;
 namespace FifthModJam
 {
     /// <summary>
-    /// The torch puzzle manager.
+    /// The torch puzzle controller.
     /// Puzzle is complete when all the torches are lit. It then activates some gameObjects.
     /// </summary>
     public class TorchPuzzle : MonoBehaviour
@@ -27,7 +27,7 @@ namespace FifthModJam
         private bool _isBeamActive = false;
         public bool IsPuzzleCompleted => _isBeamActive;
 
-        protected void VerifyUnityParameters()
+        private void VerifyUnityParameters()
         {
             if (_torches == null || _torches.Length == 0)
             {

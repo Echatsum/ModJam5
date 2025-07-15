@@ -43,6 +43,8 @@ namespace FifthModJam
 
             DioramaWarpManager.Spawn();
             MuseumDisablerManager.Spawn();
+            LanguageManager.Spawn();
+            TowerCollapseManager.Spawn();
         }
 
         public bool IsInJamFiveSystem()

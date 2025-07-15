@@ -13,8 +13,6 @@ namespace FifthModJam
         // museum and star gameobjects
         private GameObject _museum;
         private GameObject _starLight;
-        // TowerCollapse controller
-        private TowerCollapse _collapseHandler;
 
         private bool _hasRegisteredObjects = false;
 
@@ -54,14 +52,6 @@ namespace FifthModJam
             if (_museum == null)
             {
                 FifthModJam.WriteLineObjectOrComponentNotFound("DioramaWarpManager", Constants.UNITYPATH_MUSEUM);
-                flag1 = false;
-            }
-
-            // Get the tower collapse handler
-            _collapseHandler = SearchUtilities.Find(Constants.UNITYPATH_SCALEDMUSEUM)?.GetComponent<TowerCollapse>();
-            if (_collapseHandler == null)
-            {
-                FifthModJam.WriteLineObjectOrComponentNotFound("DioramaWarpManager", Constants.UNITYPATH_SCALEDMUSEUM, nameof(TowerCollapse));
                 flag1 = false;
             }
 
@@ -135,10 +125,6 @@ namespace FifthModJam
             // Update objects
             _museum.SetActive(true);
             _starLight.SetActive(false);
-            if (_collapseHandler.hasFallen)
-            {
-                _collapseHandler.ForceTowerFallenState(); // forces the tower to fallen down state if it has before
-            }
 
             // Warp
             var spawner = GameObject.FindGameObjectWithTag("Player").GetRequiredComponent<PlayerSpawner>();

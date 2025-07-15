@@ -3,12 +3,28 @@ using UnityEngine;
 
 namespace FifthModJam
 {
+    /// <summary>
+    /// Controller of the beam puzzle.
+    /// Solved when its socket has the correct item.
+    /// </summary>
     public class TractorBeamPuzzle : MonoBehaviour
     {
         [SerializeField]
         private SpeciesItemSocket _speciesItemSocket;
         [SerializeField]
         private GameObject _tractorBeam;
+
+        private void VerifyUnityParameters()
+        {
+            if (_speciesItemSocket == null)
+            {
+                FifthModJam.WriteLine("[TractorBeamPuzzle] socket is null", OWML.Common.MessageType.Error);
+            }
+            if (_tractorBeam == null)
+            {
+                FifthModJam.WriteLine("[TractorBeamPuzzle] tractorBeam is null", OWML.Common.MessageType.Error);
+            }
+        }
 
         private void Awake()
         {
@@ -29,14 +45,7 @@ namespace FifthModJam
 
         private void Start()
         {
-            if(_speciesItemSocket == null)
-            {
-                FifthModJam.WriteLine("[TractorBeamPuzzle] socket is null", OWML.Common.MessageType.Error);
-            }
-            if (_tractorBeam == null)
-            {
-                FifthModJam.WriteLine("[TractorBeamPuzzle] tractorBeam is null", OWML.Common.MessageType.Error);
-            }
+            VerifyUnityParameters();
 
             _tractorBeam?.SetActive(false);
         }
