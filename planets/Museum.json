@@ -75,7 +75,7 @@
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/HEA_Text/FeldsparDialogue",
         "isRelativeToParent": true,
-        "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Hearthian.xml"
+        "xmlFile": "planets/dialogue/HearthianDiorama/Recorder.xml"
       },
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_DialogueSocket",
@@ -209,7 +209,7 @@
           },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00057.png",
-            "beatAudio": "planets/assets/Audio/powerup.wav"
+            "beatAudio": "planets/assets/Audio/powerup.wav"            
           },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00058.png" },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00059.png" },
@@ -535,6 +535,17 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_Music",
         "isRelativeToParent": true,
         "radius": 20
+      }
+    ],
+    "speedTrapVolumes": [
+      {
+        "position": {
+          "x": -142.7575,
+          "y": -95.7916,
+          "z": -89.88161
+        },
+        "radius": 3,
+        "speedLimit": 2
       }
     ]
   },

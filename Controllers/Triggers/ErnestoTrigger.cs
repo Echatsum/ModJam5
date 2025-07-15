@@ -24,7 +24,7 @@ namespace FifthModJam
         private bool hasActivatedDeathVol;
 
         // scaling stuff
-        private Vector3 targetScale = new Vector3(0.03f, 0.03f, 0.03f);
+        private Vector3 targetScale = new Vector3(0.015f, 0.015f, 0.015f);
         private float lerpDuration = 1;
 
         private void Start()
@@ -50,6 +50,7 @@ namespace FifthModJam
         {
             if (IsErnestoPissed() && !hasActivatedDeathVol)
             {
+                ernestoAnim.audio.PlayOneShot(global::AudioType.DBAnglerfishOpeningMouth, 0.5f);
                 hasActivatedDeathVol = true;
                 deathVol.SetActive(true);
             }

@@ -24,6 +24,10 @@
 				<DialogueTarget>GES</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
+				<Text>Did you pay your taxes?</Text>
+				<DialogueTarget>TAXES</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
 				<Text>Oh no...ANOTHER ERNESTO REFERENCE IN AN OUTER WILDS MOD!?</Text>
 				<DialogueTarget>3</DialogueTarget>
 			</DialogueOption>
@@ -58,6 +62,10 @@
 				<DialogueTarget>GES</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
+				<Text>Did you pay your taxes?</Text>
+				<DialogueTarget>TAXES</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
 				<Text>Oh no...ANOTHER ERNESTO REFERENCE IN AN OUTER WILDS MOD!?</Text>
 				<DialogueTarget>3</DialogueTarget>
 			</DialogueOption>
@@ -84,7 +92,7 @@
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>Agreed.</Text>
-				<DialogueTarget>START</DialogueTarget>
+				<DialogueTarget>START2</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<Text>How's Geswaldo?</Text>
@@ -102,11 +110,11 @@
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>Who doesn't?</Text>
-				<DialogueTarget>START</DialogueTarget>
+				<DialogueTarget>START2</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<Text>I know the feeling.</Text>
-				<DialogueTarget>START</DialogueTarget>
+				<DialogueTarget>START2</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<Text>Sure, but this is all YOUR fault!</Text>
@@ -127,7 +135,7 @@
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>Sure thing, Ernesto.</Text>
-				<DialogueTarget>START</DialogueTarget>
+				<DialogueTarget>START2</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
@@ -144,7 +152,7 @@
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>OK then, sorry.</Text>
-				<DialogueTarget>START</DialogueTarget>
+				<DialogueTarget>START2</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<Text><![CDATA[<color=red>ALL HAIL ERNESTO.</color>]]></Text>
@@ -187,6 +195,61 @@
 				<DialogueTarget>DEATH</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>TAXES</Name>
+		<Dialogue>
+			<Page>My taxes?</Page>
+			<Page>I'm so glad you asked! I finally paid my dues and I'm good to go!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>How'd you do it?</Text>
+				<DialogueTarget>TAXES2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What's your secret?</Text>
+				<DialogueTarget>TAXES2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>TAXES2</Name>
+		<Dialogue>
+			<Page>I uh...</Page>
+			<Page>....uhh......</Page>
+			<Page>I hit my tax collector with a rock.</Page>
+			<Page>It was the only way.</Page>
+			<Page>Don't tell anyone, okay?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I won't tell.</Text>
+				<DialogueTarget>GOOD</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I'm telling!</Text>
+				<DialogueTarget>TATTLE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>TATTLE</Name>
+		<Dialogue>
+			<Page>You better not tell, Hatchling. I'll be watching you.</Page>
+		</Dialogue>
+		<DialogueTarget>DEATH</DialogueTarget>
+	</DialogueNode>
+		
+	<DialogueNode>
+		<Name>GOOD</Name>
+		<Dialogue>
+			<Page>Good.</Page>
+		</Dialogue>
+		<DialogueTarget>START2</DialogueTarget>
 	</DialogueNode>
 	
 	<DialogueNode>
