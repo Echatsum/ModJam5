@@ -1,0 +1,11 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField>
+	<!-- The name of this character -->
+	<DialogueNode>
+		<Name>KarviLore</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>We sit here in celebration of our efforts to escape our doomed planet. We miss it so, but we must move on. There is a whole universe out there for us to observe!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

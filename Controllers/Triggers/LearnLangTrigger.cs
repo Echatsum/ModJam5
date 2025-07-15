@@ -11,6 +11,8 @@ namespace FifthModJam
         // Animator for the bubble
         [SerializeField]
         private Animator _crystalFX;
+        [SerializeField]
+        private OWAudioSource audio;
 
         // Triggers only once
         private bool _hasAlreadyEnteredOnce = false;
@@ -31,7 +33,7 @@ namespace FifthModJam
         public virtual void OnTriggerEnter(Collider hitCollider)
         {
             if (_hasAlreadyEnteredOnce) return;
-
+            audio.PlayOneShot(global::AudioType.EyeCosmicInflation, 0.5f);
             // Checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled)
             {

@@ -9,7 +9,7 @@ namespace FifthModJam
         public Animator _animator;
 
         [SerializeField]
-        private OWAudioSource audio;
+        public OWAudioSource audio;
 
         private AnglerfishController.AnglerState currentState;
 

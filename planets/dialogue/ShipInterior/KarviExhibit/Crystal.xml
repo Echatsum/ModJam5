@@ -1,0 +1,11 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField>
+	<!-- The name of this character -->
+	<DialogueNode>
+		<Name>Crystal</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>The Knowledge Crystal is the primary storage component for documenting and preserving our observations. This crystal on display has the knowledge of language. Enter its radius to harness its knowledge.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

@@ -88,7 +88,7 @@ namespace FifthModJam
             // Launch shuttle
             _shuttleAudio?.PlayOneShot(global::AudioType.NomaiVesselPowerUp, 1f);
             _shuttleAnim?.Play("SHUTTLE", 0);
-            yield return new WaitForSeconds(0.917f);
+            yield return new WaitForSeconds(2f);
             _shuttleAudio?.PlayOneShot(global::AudioType.ShipImpact_LightDamage, 1f);
 
             // Tower is hit, creaks and falls
