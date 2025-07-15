@@ -46,7 +46,7 @@ namespace FifthModJam
             smallTower.Play("TOWER_AFTER", 0);
             shuttleAudio.PlayOneShot(global::AudioType.NomaiVesselPowerUp, 1f);
             shuttleAnim.Play("SHUTTLE", 0);
-            yield return new WaitForSeconds(0.917f);
+            yield return new WaitForSeconds(2f);
             shuttleAudio.PlayOneShot(global::AudioType.ShipImpact_LightDamage, 1f);
             towerAnim.Play("TOWER", 0);
             towerAudio.PlayOneShot(global::AudioType.Tower_RW_Fall_1, 1f);
