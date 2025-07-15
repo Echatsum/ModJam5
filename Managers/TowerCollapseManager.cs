@@ -13,8 +13,6 @@
 
         public void CollapseTower()
         {
-            FifthModJam.WriteLine($"[TowerCollapseManager] invoking", OWML.Common.MessageType.Success);
-
             OnTowerCollapse?.Invoke(); // Event to let the towerSmall update its status
         }
     }
