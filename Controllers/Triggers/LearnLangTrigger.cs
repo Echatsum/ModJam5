@@ -33,10 +33,11 @@ namespace FifthModJam
         public virtual void OnTriggerEnter(Collider hitCollider)
         {
             if (_hasAlreadyEnteredOnce) return;
-            audio.PlayOneShot(global::AudioType.EyeCosmicInflation, 0.5f);
+
             // Checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled)
             {
+                audio.PlayOneShot(global::AudioType.EyeCosmicInflation, 0.5f);
                 _crystalFX?.Play("CrystalFade", 0);
                 
                 if (!LanguageManager.Instance.HasLearnedLang()) // Check for fact (the trigger resets between loops, but we only need to reveal fact once)
