@@ -12,6 +12,8 @@ namespace FifthModJam
         [SerializeField]
         protected string _itemName;
         [SerializeField]
+        protected string entryLog;
+        [SerializeField]
         protected ItemType _itemType; // This is for item-socket compatibility [Note: While this can be set as mask, try to keep it as only one flag]
 
         protected virtual void VerifyUnityParameters()
@@ -45,6 +47,15 @@ namespace FifthModJam
         public override string GetDisplayName()
         {
             return _itemName;
+        }
+
+        public override void PickUpItem(Transform holdTranform)
+        {
+            if (!Locator.GetShipLogManager().IsFactRevealed(entryLog) && entryLog != null)
+            {
+                Locator.GetShipLogManager().RevealFact(entryLog);
+            }
+            base.PickUpItem(holdTranform);
         }
     }
 }

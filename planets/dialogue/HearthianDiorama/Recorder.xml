@@ -12,5 +12,9 @@
 			<Page>Once in the right spot, they placed it down and let the tractor beams push them back to the surface.</Page>
 			<Page>Sometimes we Karvi wonder if Feldspar actually did things like these.</Page>
 		</Dialogue>
+		<RevealFacts>
+			<FactID>MUSEUM_KAV_TRACTOR_R</FactID>
+			<FactID>MUSEUM_HEA_CAVES_E2</FactID>
+		</RevealFacts>
 	</DialogueNode>
 </DialogueTree>

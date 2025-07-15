@@ -7,5 +7,8 @@
 		<Dialogue>
 			<Page>The sentient bird species we've been observing preserves things like we do, but seal it all behind lock and key. Their key is often a code of five symbols.</Page>
 		</Dialogue>
+		<RevealFacts>
+			<FactID></FactID>
+		</RevealFacts>
 	</DialogueNode>
 </DialogueTree>

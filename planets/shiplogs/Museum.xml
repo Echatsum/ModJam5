@@ -1,36 +1,372 @@
 ﻿<!-- Example File -->
 <!-- All files must have "AstroObjectEntry" as their root element, the xmlns:xsi=... and xsi:noNamespaceSchemaLocation=... is optional but heavily encouraged to reduce errors -->
 <AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
-    <ID>SHIP</ID> <!-- The ID of the planet this xml file is for -->
+    <ID>MUSEUM</ID> <!-- The ID of the planet this xml file is for -->
 
     <Entry> <!-- An Entry For This Planet -->
-        <ID>SHIP_MAIN</ID> <!-- The ID of this entry -->
-		<Name>Ominous Orbiter</Name> <!-- The name to show for this entry both on the card and in map mode -->
-
-        <RumorFact> <!-- A rumor fact that belongs to this entry -->
-            <ID>SHIP_MAIN_R</ID> <!-- The ID of this fact -->
-            <RumorName>Unknown Vessel</RumorName> <!-- The name of the rumor this fact relates to -->
-            <Text>Ping has noticed a strange alien vessel orbiting a pulsar in the distance.</Text> <!-- The Text to display for this fact -->
-        </RumorFact>
+        <ID>MUSEUM_MAIN</ID> <!-- The ID of this entry -->
+		<Name>Diorama Room</Name> <!-- The name to show for this entry both on the card and in map mode -->
 
         <ExploreFact> <!-- An explore fact that belongs to this entry -->
-            <ID>SHIP_MAIN_E</ID> <!-- The ID of this fact -->
-            <Text>I made it inside the alien ship. It appears to be eerie, yet humble.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+            <ID>MUSEUM_MAIN_E</ID> <!-- The ID of this fact -->
+            <Text>I found out that I can jump inside the dioramas in the diorama room.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
         </ExploreFact>
 
         <Entry> <!-- An Entry For This Planet -->
-            <ID>SHIP_CRYSTAL</ID> <!-- The ID of this entry -->
-            <Name>Knowledge Crystal</Name> <!-- The name to show for this entry both on the card and in map mode -->
+            <ID>MUSEUM_HEA_FIRSTSIGNAL</ID> <!-- The ID of this entry -->
+            <Name>Abandoned Scout Signal</Name> <!-- The name to show for this entry both on the card and in map mode -->
 
 			<ExploreFact> <!-- An explore fact that belongs to this entry -->
-                <ID>SHIP_CRYSTAL_E1</ID> <!-- The ID of this fact -->
-                <Text>When I approached this crystal, I learned how to read three new languages!</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-            </ExploreFact>
-
-            <ExploreFact> <!-- An explore fact that belongs to this entry -->
-                <ID>SHIP_CRYSTAL_E2</ID> <!-- The ID of this fact -->
-                <Text>I can also pick up the crystal.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+                <ID>MUSEUM_HEA_FIRSTSIGNAL_E</ID> <!-- The ID of this fact -->
+                <Text>I found a new frequency from an abandoned scout in the Hearthian Diorama.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
             </ExploreFact>
         </Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_STR_CODE</ID>
+			<!-- The ID of this entry -->
+			<Name>Slide Reel House Code</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_STR_CODE_R1</ID>
+				<!-- The ID of this fact -->
+				<RumorName>Secret Code</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>There is a code totem locking the entrance to the big house in the Inhabitant Diorama.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</RumorFact>
+
+			<RumorFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_STR_CODE_R2</ID>
+				<!-- The ID of this fact -->
+				<RumorName>Secret Code</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>A message in one of the houses in the Karvi Diorama hint that this code is five symbols long.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</RumorFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_STR_CODE_E</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>After examining the buildings, I managed to crack the code and enter the slide reel house.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_STR_SYMBOLS</ID>
+			<!-- The ID of this entry -->
+			<Name>Code Symbols</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+			
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_STR_SYMBOLS_E1</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>In one of the houses, I found a ring symbol.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_STR_SYMBOLS_E2</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>In one of the houses, I found a eye symbol.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_STR_SYMBOLS_E3</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>In one of the houses, I found a fire symbol.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_STR_SYMBOLS_E4</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>In one of the houses, I found a sun symbol.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_STR_SYMBOLS_E5</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>In one of the houses, I found a star symbol.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_STR_REEL</ID>
+			<!-- The ID of this entry -->
+			<Name>Tractor Beam Exploit</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_STR_REEL_R</ID>
+				<!-- The ID of this fact -->
+				<RumorName>Meaning of the Signals</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I found a slide reel atop the collapsed tower.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</RumorFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_STR_REEL_E</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>The slide reel depicts a boat pole being used to ignite unlit torches.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_NOM_TOWER</ID>
+			<!-- The ID of this entry -->
+			<Name>Gravity Cannon</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_NOM_TOWER_R</ID>
+				<!-- The ID of this fact -->
+				<RumorName>Gravity Cannon</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>A gravity cannon sits atop a structure in the Nomai Diorama.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</RumorFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_NOM_TOWER_E</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I was able to knock over the tower in the Inhabitant Diorama with the gravity cannon in the Nomai Diorama.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+		
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_HEA_CAVES</ID>
+			<!-- The ID of this entry -->
+			<Name>Ghost Matter Cave</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_HEA_CAVES_R</ID>
+				<!-- The ID of this fact -->
+				<RumorName>Ghost Matter Cave</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I found a cave barricaded by ghost matter. Entering it is likely fatal.</Text>
+				<!-- The Text to display for this fact -->
+			</RumorFact>
+			
+			<ExploreFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_HEA_CAVES_E1</ID>
+				<!-- The ID of this fact -->
+				<Text>I made it past the ghost matter with the aid of a collapsed quantum geyser.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_HEA_CAVES_E2</ID>
+				<!-- The ID of this fact -->
+				<Text>A Hearthian Recorder shares a fictional story of Felspar using a Nomai tractor beam to reach an unreachable place.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_HEA_QUANTUM</ID>
+			<!-- The ID of this entry -->
+			<Name>Rule of Quantum Manipulation</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_HEA_QUANTUM_R</ID>
+				<!-- The ID of this fact -->
+				<RumorName>Rings of Stone</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I am able to place down items atop rings of stone marked along the river.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</RumorFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_HEA_QUANTUM_E</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>According to a Nomai scroll, a fourth quantum rule states that a non-quantum object occupying the same space as a quantum socket can make it impossible for a quantum object to collapse on that socket.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_KAV_TRACTOR</ID>
+			<!-- The ID of this entry -->
+			<Name>Tractor Beam Exploit</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_TRACTOR_R</ID>
+				<!-- The ID of this fact -->
+				<RumorName>The Feldspar Myth</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>Feldspar's myth suggests that it's possible that a tractor beam can be used to ascend to higher places, if placed in a proper location.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</RumorFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_TRACTOR_E</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>When placing a tractor beam at the center of the cave, it activated all of the sudden. I can now ascend to the building at the top of the mountain.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_KAV_SIGNALS</ID>
+			<!-- The ID of this entry -->
+			<Name>Karvi Wavelengths</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_SIGNALS_R</ID>
+				<RumorName>Karvi Wavelengths</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>After discovering the Abandoned Scout's signal, I can now see several other signals available for me to find.</Text>
+				<!-- The Text to display for this fact -->
+			</RumorFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_SIGNALS_STR1</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I found a signal in the Inhabitant Diorama. The name of the signal oddly reads as "1 - RING"</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_SIGNALS_STR2</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I found a signal in the Inhabitant Diorama. The name of the signal oddly reads as "2 - EYE"</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_SIGNALS_NOM</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I found a signal in the Nomai Diorama. The name of the signal oddly reads as "3 - FIRE"</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_SIGNALS_HEA</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I found a signal in the Hearthian Diorama. The name of the signal oddly reads as "4 - SUN"</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_SIGNALS_KAV</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I found a signal in the Hearthian Diorama. The name of the signal oddly reads as "5 - STAR"</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_KAV_CODE</ID>
+			<!-- The ID of this entry -->
+			<Name>Mountain Building Code Totem</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_CODE_R</ID>
+				<!-- The ID of this fact -->
+				<RumorName>Mountain Building Code Totem</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>There is a code totem inside the building atop the mountain.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</RumorFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_CODE_E</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>Using the odd signal names, I managed to crack the code and get to the other side of the door.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_KAV_TORCH</ID>
+			<!-- The ID of this entry -->
+			<Name>Unlit Hallway</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<RumorFact>
+				<!-- An explore fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_TORCH_R</ID>
+				<!-- The ID of this fact -->
+				<RumorName>Mysterious Hallway</RumorName>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I found a dark hallway inside the building atop the mountain in the Karvi Exhibit.</Text>
+				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
+			</RumorFact>
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_TORCH_E</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>By following the slide reel, I used the pole to ignite the unlit torches.</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
+
+		<Entry>
+			<!-- An Entry For This Planet -->
+			<ID>MUSEUM_KAV_END</ID>
+			<!-- The ID of this entry -->
+			<Name>Phosphorous</Name>
+			<!-- The name to show for this entry both on the card and in map mode -->
+
+			<ExploreFact>
+				<!-- A rumor fact that belongs to this entry -->
+				<ID>MUSEUM_KAV_END_E</ID>
+				<!-- The name of the rumor this fact relates to -->
+				<Text>I met a living Karvi named Phosphorous!</Text>
+				<!-- The Text to display for this fact -->
+			</ExploreFact>
+		</Entry>
     </Entry>
 </AstroObjectEntry>

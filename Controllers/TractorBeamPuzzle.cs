@@ -44,6 +44,7 @@ namespace FifthModJam
         private void OnSocketFilled(OWItem item)
         {
             CheckActivation();
+            Locator.GetShipLogManager().RevealFact("MUSEUM_KAV_TRACTOR_E");
         }
         private void CheckActivation()
         {

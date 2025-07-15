@@ -74,6 +74,7 @@ namespace FifthModJam
         private void OnSocketOneFilled(OWItem item)
         {
             _socketsFilledMask |= SocketsFilledMask.SocketOne; // Adding the SocketOne bit
+            Locator.GetShipLogManager().RevealFact("MUSEUM_HEA_QUANTUM_R");
             UpdateGeysers();
         }
         private void OnSocketOneRemoved(OWItem item)
@@ -84,6 +85,7 @@ namespace FifthModJam
         private void OnSocketTwoFilled(OWItem item)
         {
             _socketsFilledMask |= SocketsFilledMask.SocketTwo; // Adding the SocketTwo bit
+            Locator.GetShipLogManager().RevealFact("MUSEUM_HEA_QUANTUM_R");
             UpdateGeysers();
         }
         private void OnSocketTwoRemoved(OWItem item)

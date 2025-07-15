@@ -97,6 +97,7 @@ namespace FifthModJam
             _doorAnim.Play("DOOR", 0);
             yield return new WaitForSeconds(1f);
             _audio.Play(); // Audio plays after the door slams on the ground
+            Locator.GetShipLogManager().RevealFact("SHIP_DOOR_E");
         }
     }
 }

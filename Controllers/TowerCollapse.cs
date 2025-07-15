@@ -54,7 +54,7 @@ namespace FifthModJam
             towerAudio.PlayOneShot(global::AudioType.Tower_RW_Fall_2, 1f);
             yield return new WaitForSeconds(1.4f);
             towerAudio.PlayOneShot(global::AudioType.GeneralDestruction, 1f);
-            // ship reveal here maybe?
+            Locator.GetShipLogManager().RevealFact("MUSEUM_NOM_TOWER_E");
         }
 
         private void OnDestroy()
