@@ -170,6 +170,7 @@
     ]
   },
   "ShipLog": {
-    "xmlFile": "planets/shiplogs/Ship.xml"
+    "xmlFile": "planets/shiplogs/Ship.xml",
+    "spriteFolder": "planets/shiplogs/sprites"
   }
 }

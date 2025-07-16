@@ -1,21 +1,298 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
   "name": "Jam5",
-  "initialReveal": ["SHIP_MAIN_R"],
+  "initialReveal": [
+    "COSMICCURATORS_OMINOUS_ORBITER_R",
+    // [Note to self@Stache: all the following is only to see the full shiplog. Comment the lines when testing proper gameplay, and remove when we release the mod]
+    "COSMICCURATORS_OMINOUS_ORBITER_E",
+    "COSMICCURATORS_EXHIBIT_ROOMS_R",
+    "COSMICCURATORS_EXHIBIT_ROOMS_E",
+    "COSMICCURATORS_EXHIBIT_ROOMS_KAV_E",
+    "COSMICCURATORS_CRYSTAL_PROX",
+    "COSMICCURATORS_CRYSTAL_PICK",
+    "COSMICCURATORS_EXHIBIT_ROOMS_STR_E",
+    "COSMICCURATORS_ARTIFACT_PICK",
+    "COSMICCURATORS_EXHIBIT_ROOMS_NOM_E",
+    "COSMICCURATORS_TRACTORBEAM_PICK",
+    "COSMICCURATORS_EXHIBIT_ROOMS_HEA_E",
+    "COSMICCURATORS_MARSHMALLOWS_PICK1",
+    "COSMICCURATORS_MARSHMALLOWS_PICK2",
+    "COSMICCURATORS_DIORAMA_DOOR_R",
+    "COSMICCURATORS_DIORAMA_DOOR_SOLVED",
+    "COSMICCURATORS_DIORAMA_ROOM_R",
+    "COSMICCURATORS_DIORAMA_ROOM_E",
+    "COSMICCURATORS_DIORAMA_ROOM_MINIATURE",
+    "COSMICCURATORS_DIORAMA_KAV_E1",
+    "COSMICCURATORS_DIORAMA_KAV_E2",
+    "COSMICCURATORS_DIORAMA_STR_E1",
+    "COSMICCURATORS_DIORAMA_STR_E2",
+    "COSMICCURATORS_DIORAMA_NOM_E1",
+    "COSMICCURATORS_DIORAMA_NOM_E2",
+    "COSMICCURATORS_DIORAMA_NOM_E3",
+    "COSMICCURATORS_DIORAMA_HEA_E1",
+    "COSMICCURATORS_DIORAMA_HEA_E2",
+
+    "PLACEHOLDER_CODED_DOORS_RUMOR",
+    "PLACEHOLDER_CODED_DOORS_RUMOR2",
+    "PLACEHOLDER_CODED_DOORS_RUMOR3",
+    "PLACEHOLDER_CODED_DOORS_RUMOR4",
+    "PLACEHOLDER_CODED_DOORS_FACT",
+    "PLACEHOLDER_CODED_DOORS_FACT2",
+    "PLACEHOLDER_CODED_DOORS_FACT3",
+    "PLACEHOLDER_CODED_DOORS_FACT4",
+    "PLACEHOLDER_SLIDE_HOUSE_FACT",
+    "PLACEHOLDER_SLIDE_HOUSE_FACT2",
+    "PLACEHOLDER_SLIDE_HOUSE_FACT3",
+    "PLACEHOLDER_SLIDE_REEL_RUMOR",
+    "PLACEHOLDER_SLIDE_REEL_FACT",
+    "PLACEHOLDER_SLIDE_REEL_FACT2",
+    "PLACEHOLDER_ERNESTO_RUMOR",
+    "PLACEHOLDER_ERNESTO_FACT",
+    "PLACEHOLDER_OWLK_TOWER_RUMOR",
+    "PLACEHOLDER_OWLK_TOWER_RUMOR2",
+    "PLACEHOLDER_OWLK_TOWER_FACT",
+    "PLACEHOLDER_OWLK_TOWER_FACT2",
+    "PLACEHOLDER_OWLK_TOWER_FACT3",
+    "PLACEHOLDER_NOMAI_CANON_FACT",
+    "PLACEHOLDER_FOURTH_QUANTUM_RULE_FACT",
+    "PLACEHOLDER_QUANTUM_GEYSERS_RUMOR",
+    "PLACEHOLDER_QUANTUM_GEYSERS_FACT",
+    "PLACEHOLDER_QUANTUM_GEYSERS_FACT2",
+    "PLACEHOLDER_QUANTUM_GEYSERS_FACT3",
+    "PLACEHOLDER_GHOST_MATTER_CAVE_RUMOR",
+    "PLACEHOLDER_GHOST_MATTER_CAVE_FACT",
+    "PLACEHOLDER_GHOST_MATTER_CAVE_FACT2",
+    "PLACEHOLDER_TRACTOR_BEAM_RUMOR",
+    "PLACEHOLDER_TRACTOR_BEAM_FACT",
+    "PLACEHOLDER_SCOUT_SIGNAL_FACT",
+    "PLACEHOLDER_SCOUT_CODE_RUMOR",
+    "PLACEHOLDER_SCOUT_CODE_FACT",
+    "PLACEHOLDER_SCOUT_CODE_FACT2",
+    "PLACEHOLDER_SCOUT_CODE_FACT3",
+    "PLACEHOLDER_SCOUT_CODE_FACT4",
+    "PLACEHOLDER_SCOUT_CODE_FACT5",
+    "PLACEHOLDER_KARVI_MESSAGE_FACT",
+    "PLACEHOLDER_VOLCANO_BUILDING_RUMOR",
+    "PLACEHOLDER_VOLCANO_BUILDING_FACT",
+    "PLACEHOLDER_VOLCANO_BUILDING_FACT2",
+    "PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_RUMOR",
+    "PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_RUMOR2",
+    "PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_FACT",
+    "PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_FACT2",
+    "PLACEHOLDER_ENDING_RUMOR",
+    "PLACEHOLDER_ENDING_FACT"
+  ],
   "entryPositions": [
     {
-      "id": "SHIP_MAIN",
+      "id": "COSMICCURATORS_OMINOUS_ORBITER",
       "position": {
-        "x": 200,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS",
+      "position": {
+        "x": 0,
         "y": 300
       }
     },
     {
-      "id": "SHIP_CRYSTAL",
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS_KAV",
+      "position": {
+        "x": 100,
+        "y": 350
+      }
+    },
+    {
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS_STR",
+      "position": {
+        "x": 100,
+        "y": 200
+      }
+    },
+    {
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS_NOM",
+      "position": {
+        "x": -100,
+        "y": 200
+      }
+    },
+    {
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS_HEA",
+      "position": {
+        "x": -100,
+        "y": 350
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_DOOR",
+      "position": {
+        "x": 0,
+        "y": 600
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_CURIOSITY",
+      "position": {
+        "x": 0,
+        "y": 1300
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_KAV",
+      "position": {
+        "x": -160,
+        "y": 1450
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_STR",
+      "position": {
+        "x": 160,
+        "y": 1450
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_NOM",
+      "position": {
+        "x": 160,
+        "y": 1150
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_HEA",
+      "position": {
+        "x": -160,
+        "y": 1150
+      }
+    },
+    // ---
+    // [Note to self@Stache: Placeholders while complete text]
+    {
+      "id": "PLACEHOLDER_CODED_DOORS",
+      "position": {
+        "x": 0,
+        "y": 1800
+      }
+    },
+    {
+      "id": "PLACEHOLDER_SLIDE_HOUSE",
       "position": {
         "x": 300,
-        "y": 400
+        "y": 1800
+      }
+    },
+    {
+      "id": "PLACEHOLDER_SLIDE_REEL",
+      "position": {
+        "x": 450,
+        "y": 2100
+      }
+    },
+    {
+      "id": "PLACEHOLDER_ERNESTO",
+      "position": {
+        "x": 750,
+        "y": 2100
+      }
+    },
+    {
+      "id": "PLACEHOLDER_OWLK_TOWER",
+      "position": {
+        "x": 450,
+        "y": 1500
+      }
+    },
+    {
+      "id": "PLACEHOLDER_NOMAI_CANON",
+      "position": {
+        "x": 450,
+        "y": 1100
+      }
+    },
+    {
+      "id": "PLACEHOLDER_FOURTH_QUANTUM_RULE",
+      "position": {
+        "x": 300,
+        "y": 800
+      }
+    },
+    {
+      "id": "PLACEHOLDER_QUANTUM_GEYSERS",
+      "position": {
+        "x": -300,
+        "y": 800
+      }
+    },
+    {
+      "id": "PLACEHOLDER_GHOST_MATTER_CAVE",
+      "position": {
+        "x": -600,
+        "y": 800
+      }
+    },
+    {
+      "id": "PLACEHOLDER_TRACTOR_BEAM",
+      "position": {
+        "x": -900,
+        "y": 800
+      }
+    },
+    {
+      "id": "PLACEHOLDER_SCOUT_SIGNAL",
+      "position": {
+        "x": -450,
+        "y": 1100
+      }
+    },
+    {
+      "id": "PLACEHOLDER_SCOUT_CODE",
+      "position": {
+        "x": -450,
+        "y": 1500
+      }
+    },
+    {
+      "id": "PLACEHOLDER_KARVI_MESSAGE",
+      "position": {
+        "x": -300,
+        "y": 1800
+      }
+    },
+    {
+      "id": "PLACEHOLDER_VOLCANO_BUILDING",
+      "position": {
+        "x": -450,
+        "y": 2100
+      }
+    },
+    {
+      "id": "PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY",
+      "position": {
+        "x": 0,
+        "y": 2500
+      }
+    },
+    {
+      "id": "PLACEHOLDER_ENDING",
+      "position": {
+        "x": 0,
+        "y": 2800
       }
     }
+  ],
+  "curiosities": [
+    {
+      "id": "COSMICCURATORS_DIORAMA_CURIOSITY",
+      "color": { "r": 200, "g": 120, "b": 200, "a": 255 }, // PURPLE
+      "highlightColor": { "r": 240, "g": 120, "b": 240, "a": 255 } // LIGHTER PURPLE
+    },
+    {
+      "id": "PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY",
+      "color": { "r": 240, "g": 120, "b": 120, "a": 255 }, // RED
+      "highlightColor": { "r": 240, "g": 150, "b": 150, "a": 255 } // LIGHTER RED
+    },
+  
   ]
 }

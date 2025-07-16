@@ -558,6 +558,7 @@
     "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper/WhiteHoleAmbience"
   ],
   "ShipLog": {
-    "xmlFile": "planets/shiplogs/Museum.xml"
+    "xmlFile": "planets/shiplogs/Museum.xml",
+    "spriteFolder": "planets/shiplogs/sprites"
   }
 }

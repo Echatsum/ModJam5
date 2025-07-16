@@ -1,36 +1,348 @@
 ﻿<!-- Example File -->
 <!-- All files must have "AstroObjectEntry" as their root element, the xmlns:xsi=... and xsi:noNamespaceSchemaLocation=... is optional but heavily encouraged to reduce errors -->
 <AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
-    <ID>SHIP</ID> <!-- The ID of the planet this xml file is for -->
+    <ID>MUSEUM</ID> <!-- The ID of the planet this xml file is for -->
+  
+  <!-- [Note to self@Stache: Placeholders while I work on the positioning] -->
 
-    <Entry> <!-- An Entry For This Planet -->
-        <ID>SHIP_MAIN</ID> <!-- The ID of this entry -->
-		<Name>Ominous Orbiter</Name> <!-- The name to show for this entry both on the card and in map mode -->
+  <!-- Coded Doors -->
+  <Entry><ID>PLACEHOLDER_CODED_DOORS</ID>
+    <Name>PLACEHOLDER_CODED_DOORS</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-        <RumorFact> <!-- A rumor fact that belongs to this entry -->
-            <ID>SHIP_MAIN_R</ID> <!-- The ID of this fact -->
-            <RumorName>Unknown Vessel</RumorName> <!-- The name of the rumor this fact relates to -->
-            <Text>Ping has noticed a strange alien vessel orbiting a pulsar in the distance.</Text> <!-- The Text to display for this fact -->
-        </RumorFact>
+    <RumorFact>
+      <ID>PLACEHOLDER_CODED_DOORS_RUMOR</ID>
+      <SourceID>PLACEHOLDER_SCOUT_CODE</SourceID>
+      <Text>[Reveal when we find any scout code] Wow I found a code</Text>
+    </RumorFact>
+    <RumorFact>
+      <ID>PLACEHOLDER_CODED_DOORS_RUMOR2</ID>
+      <SourceID>PLACEHOLDER_KARVI_MESSAGE</SourceID>
+      <Text>[Reveal when we read the Karvi message] Wow I found a code</Text>
+    </RumorFact>
+    <RumorFact>
+      <ID>PLACEHOLDER_CODED_DOORS_RUMOR3</ID>
+      <SourceID>PLACEHOLDER_SLIDE_HOUSE</SourceID>
+      <Text>[Reveal when we get to the slide house door] Wow I found a coded door</Text>
+    </RumorFact>
+    <RumorFact>
+      <ID>PLACEHOLDER_CODED_DOORS_RUMOR4</ID>
+      <SourceID>PLACEHOLDER_VOLCANO_BUILDING</SourceID>
+      <Text>[Reveal when we get to the volcano summit door] Wow I found a coded door</Text>
+    </RumorFact>
 
-        <ExploreFact> <!-- An explore fact that belongs to this entry -->
-            <ID>SHIP_MAIN_E</ID> <!-- The ID of this fact -->
-            <Text>I made it inside the alien ship. It appears to be eerie, yet humble.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-        </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_CODED_DOORS_FACT</ID>
+      <Text>[Reveal when we find any scout code] Wow the scouts around the dioramas have a code</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_CODED_DOORS_FACT2</ID>
+      <Text>[Reveal when we read the Karvi message] Wow the message in the karvi diorama has a code</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_CODED_DOORS_FACT3</ID>
+      <Text>[Reveal when we get to the slide house door] Wow I found a coded door in the Owlk diorama</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_CODED_DOORS_FACT4</ID>
+      <Text>[Reveal when we get to the volcano summit door] Wow I found a coded door in the Karvi diorama</Text>
+    </ExploreFact>
+  </Entry>
 
-        <Entry> <!-- An Entry For This Planet -->
-            <ID>SHIP_CRYSTAL</ID> <!-- The ID of this entry -->
-            <Name>Knowledge Crystal</Name> <!-- The name to show for this entry both on the card and in map mode -->
+  <!-- Slide House -->
+  <Entry><ID>PLACEHOLDER_SLIDE_HOUSE</ID>
+    <Name>PLACEHOLDER_SLIDE_HOUSE</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact> <!-- An explore fact that belongs to this entry -->
-                <ID>SHIP_CRYSTAL_E1</ID> <!-- The ID of this fact -->
-                <Text>When I approached this crystal, I learned how to read three new languages!</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-            </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_SLIDE_HOUSE_FACT</ID>
+      <Text>[Reveal when getting to the door] Wow there is a big house with a closed door</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_SLIDE_HOUSE_FACT2</ID>
+      <Text>[Reveal when entering] Wow the big house is a slide house</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_SLIDE_HOUSE_FACT3</ID>
+      <Text>[Reveal when reading about why no slides] Wow bukrads</Text>
+    </ExploreFact>
+  </Entry>
 
-            <ExploreFact> <!-- An explore fact that belongs to this entry -->
-                <ID>SHIP_CRYSTAL_E2</ID> <!-- The ID of this fact -->
-                <Text>I can also pick up the crystal.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-            </ExploreFact>
-        </Entry>
-    </Entry>
+  <!-- Slide Reel -->
+  <Entry><ID>PLACEHOLDER_SLIDE_REEL</ID>
+    <Name>PLACEHOLDER_SLIDE_REEL</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_SLIDE_REEL_RUMOR</ID>
+      <SourceID>PLACEHOLDER_SLIDE_HOUSE</SourceID>
+      <Text>[Reveal when watching any reel] Wow the reel house is for watching reels</Text>
+    </RumorFact>
+    
+    <ExploreFact>
+      <ID>PLACEHOLDER_SLIDE_REEL_FACT</ID>
+      <Text>[Reveal when finding the normal reel] Wow I found a reel in (where you find the normal reel)</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_SLIDE_REEL_FACT2</ID>
+      <Text>[Reveal when finding the ernesto reel] Wow I found a reel in (where you find the ernesto reel)</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Ernesto-->
+  <Entry><ID>PLACEHOLDER_ERNESTO</ID>
+    <Name>PLACEHOLDER_ERNESTO</Name> <!-- [Note: in practice there will be two names (vague "hidden room" maybe?), before and after we see it] -->
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_ERNESTO_RUMOR</ID>
+      <SourceID>PLACEHOLDER_SLIDE_REEL</SourceID>
+      <Text>[Reveal when watching reel] Wow there is a secret</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_ERNESTO_FACT</ID>
+      <Text>[Reveal when entering ernesto room] Wow Ernesto cult</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Owlk Tower -->
+  <Entry><ID>PLACEHOLDER_OWLK_TOWER</ID>
+    <Name>PLACEHOLDER_OWLK_TOWER</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_OWLK_TOWER_RUMOR</ID>
+      <SourceID>PLACEHOLDER_SLIDE_REEL</SourceID>
+      <Text>[Reveal when watching the first part of the reel about the pole] Wow the reel showed there is a boat pole in the tower</Text>
+    </RumorFact>
+    <RumorFact>
+      <ID>PLACEHOLDER_OWLK_TOWER_RUMOR2</ID>
+      <SourceID>PLACEHOLDER_NOMAI_CANON</SourceID>
+      <Text>[Reveal when launching the shuttle] Wow I hope the nomai have insurance</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_OWLK_TOWER_FACT</ID>
+      <Text>[Reveal when swimming close to the support] Wow the tower is not up to builders code</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_OWLK_TOWER_FACT2</ID>
+      <Text>[Reveal when watching the first part of the reel about the pole OR when simply finding the pole] Wow there is a boat pole in the tower</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_OWLK_TOWER_FACT3</ID>
+      <Text>[Reveal when collapsing the tower] Wow the tower collapsed when hit by the shuttle</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Nomai Cannon -->
+  <Entry><ID>PLACEHOLDER_NOMAI_CANON</ID>
+    <Name>PLACEHOLDER_NOMAI_CANON</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_NOMAI_CANON_FACT</ID>
+      <Text>[Reveal when pressing the button] Wow the shuttle can be launched at the owlk tower</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Fourth Quantum Rule -->
+  <Entry><ID>PLACEHOLDER_FOURTH_QUANTUM_RULE</ID>
+    <Name>PLACEHOLDER_FOURTH_QUANTUM_RULE</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_FOURTH_QUANTUM_RULE_FACT</ID>
+      <Text>[Reveal when reading about it] Wow there is a fourth quantum rule</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Quantum Geysers -->
+  <Entry><ID>PLACEHOLDER_QUANTUM_GEYSERS</ID>
+    <Name>PLACEHOLDER_QUANTUM_GEYSERS</Name>    <!-- [Note: in practice there will be two names (vague "quantum sockets" maybe?), in case the fourth quantum rule is learned before visiting the Heartian diorama] -->
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_QUANTUM_GEYSERS_RUMOR</ID>
+      <SourceID>PLACEHOLDER_FOURTH_QUANTUM_RULE</SourceID>
+      <RumorName>PLACEHOLDER_QUANTUM_GEYSERS_RUMOR_NAME</RumorName> <!-- rumor name -->
+      <Text>[Reveal when reading about quantum rule] Wow I can control quantum sockets</Text>
+    </RumorFact>
+    
+    <ExploreFact>
+      <ID>PLACEHOLDER_QUANTUM_GEYSERS_FACT</ID>
+      <Text>[Reveal when entering the diorama] Wow there are quantum geysers</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_QUANTUM_GEYSERS_FACT2</ID>
+      <Text>[Reveal when filling one socket] Wow the quantum socket can be blocked</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_QUANTUM_GEYSERS_FACT3</ID>
+      <Text>[Reveal when filling all sockets] Wow the geyser has moved next the to cave</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Ghost Matter Cave -->
+  <Entry><ID>PLACEHOLDER_GHOST_MATTER_CAVE</ID>
+    <Name>PLACEHOLDER_GHOST_MATTER_CAVE</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_GHOST_MATTER_CAVE_RUMOR</ID>
+      <SourceID>PLACEHOLDER_QUANTUM_GEYSERS</SourceID>
+      <Text>[Reveal when filling all sockets] Wow I can make the geyser point at the cave</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_GHOST_MATTER_CAVE_FACT</ID>
+      <Text>[Reveal when getting close to the cave] Wow ghost matter</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_GHOST_MATTER_CAVE_FACT2</ID>
+      <Text>[Reveal when entering the cave] Wow I'm all soaked</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Tractor Beam -->
+  <Entry><ID>PLACEHOLDER_TRACTOR_BEAM</ID>
+    <Name>PLACEHOLDER_TRACTOR_BEAM</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_TRACTOR_BEAM_RUMOR</ID>
+      <SourceID>PLACEHOLDER_GHOST_MATTER_CAVE</SourceID>
+      <Text>[Reveal when entering] Wow I entered the cave</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_TRACTOR_BEAM_FACT</ID>
+      <Text>[Reveal when listening to tape] Wow the tractor helps reaching high places</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Scout Signal -->
+  <Entry><ID>PLACEHOLDER_SCOUT_SIGNAL</ID>
+    <Name>PLACEHOLDER_SCOUT_SIGNAL</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_SCOUT_SIGNAL_FACT</ID>
+      <Text>[Reveal when identifying the frequency] Wow there is a dead scout</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Scout Code -->
+  <Entry><ID>PLACEHOLDER_SCOUT_CODE</ID>
+    <Name>PLACEHOLDER_SCOUT_CODE</Name>    <!-- [Note: in practice there will be two names, before and after finding the first scout code] -->
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_SCOUT_CODE_RUMOR</ID>
+      <SourceID>PLACEHOLDER_SCOUT_SIGNAL</SourceID>
+      <RumorName>PLACEHOLDER_SCOUT_CODE_RUMOR_NAME</RumorName> <!-- rumor name -->
+      <Text>[Reveal when identifying the frequency] Wow there are more dead scouts</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_SCOUT_CODE_FACT</ID>
+      <Text>[Reveal when finding specific scout] Wow a piece of code</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_SCOUT_CODE_FACT2</ID>
+      <Text>[Reveal when finding specific scout] Wow a piece of code</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_SCOUT_CODE_FACT3</ID>
+      <Text>[Reveal when finding specific scout] Wow a piece of code</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_SCOUT_CODE_FACT4</ID>
+      <Text>[Reveal when finding specific scout] Wow a piece of code</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_SCOUT_CODE_FACT5</ID>
+      <Text>[Reveal when finding specific scout] Wow a piece of code</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Karvi Message -->
+  <Entry><ID>PLACEHOLDER_KARVI_MESSAGE</ID>
+    <Name>PLACEHOLDER_KARVI_MESSAGE</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_KARVI_MESSAGE_FACT</ID>
+      <Text>[Reveal when finding message] Wow a door code</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Volcano Building -->
+  <Entry><ID>PLACEHOLDER_VOLCANO_BUILDING</ID>
+    <Name>PLACEHOLDER_VOLCANO_BUILDING</Name>   <!-- [Note: in practice there will be two names (vague "high up place" maybe?), in case the player finds the tape before finding the volcano cave] -->
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_VOLCANO_BUILDING_RUMOR</ID>
+      <SourceID>PLACEHOLDER_TRACTOR_BEAM</SourceID>
+      <RumorName>PLACEHOLDER_VOLCANO_BUILDING_RUMOR_NAME</RumorName> <!-- rumor name -->
+      <Text>[Reveal when listening to recording] Wow I know how to reach high places</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_VOLCANO_BUILDING_FACT</ID>
+      <Text>[Reveal when going the to bottom] Wow this is high</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_VOLCANO_BUILDING_FACT2</ID>
+      <Text>[Reveal when getting to the door] Wow there is a door</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Volcano Summit -->
+  <Entry><ID>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</ID>
+    <Name>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Name> <!-- [Note: in practice there will be two names (vague "torch room" maybe?), in case the player watches the slide reel first] -->
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+    <IsCuriosity />
+
+    <RumorFact>
+      <ID>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_RUMOR</ID>
+      <SourceID>PLACEHOLDER_VOLCANO_BUILDING</SourceID>
+      <Text>[Reveal when getting to the torch room] Wow there is a torch room</Text>
+    </RumorFact>
+    <RumorFact>
+      <ID>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_RUMOR2</ID>
+      <SourceID>PLACEHOLDER_SLIDE_REEL</SourceID>
+      <RumorName>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_RUMOR_NAME</RumorName> <!-- rumor name -->
+      <Text>[Reveal when watching second part of the normal reel] Wow there is a torch room</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_FACT</ID>
+      <Text>[Reveal when getting to the torch room] Wow there is a torch room at the volcano summit</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY_FACT2</ID>
+      <Text>[Reveal when igniting a torch] Wow I can ignite the torches in this room</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Ending-->
+  <Entry><ID>PLACEHOLDER_ENDING</ID>
+    <Name>PLACEHOLDER_ENDING</Name>
+    <Curiosity>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>PLACEHOLDER_ENDING_RUMOR</ID>
+      <SourceID>PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY</SourceID>
+      <Text>[Reveal when reaching ending] Wow igniting all the torches opened the way to the ending</Text>
+    </RumorFact>
+
+    <ExploreFact>
+      <ID>PLACEHOLDER_ENDING_FACT</ID>
+      <Text>[Reveal when talking to Karvi] Wow a real Karvi</Text>
+    </ExploreFact>
+  </Entry>
+  
 </AstroObjectEntry>

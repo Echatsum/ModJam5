@@ -1,3 +1,64 @@
 {
-	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json"
+	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+	"UIDictionary": {
+
+	},
+	"DialogueDictionary": {
+
+	},
+	"ShipLogDictionary": {
+		// Ominous Orbiter
+		"$COSMICCURATORS_OMINOUS_ORBITER_NAME": "Ominous Orbiter",
+		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_NAME": "Unknown Vessel",
+		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_TEXT": "The Nomai named Ping has noticed a strange alien vessel orbiting a pulsar in the distance.",
+		"$COSMICCURATORS_OMINOUS_ORBITER_EXPLORE_TEXT": "I made it inside the alien ship. It appears to be eerie, yet humble.",
+		// Exhibit Rooms
+		"$COSMICCURATORS_EXHIBIT_ROOMS_NAME": "Exhibit Rooms",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_RUMOR_NAME": "Fireplace room",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_RUMOR_TEXT": "There is a large fireplace in the entrance room.",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_EXPLORE_TEXT": "There are four exhibit rooms around the central fireplace",
+		// Exhibit Rooms (KAV)
+		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME": "Unknown Species",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_EXPLORE_TEXT": "I may have found an exhibition dedicated to the species who built this ship.",
+		"$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT": "When I approached this crystal, I learned how to read three new languages!", // [Note: Three? Not two? Do we learn Nomai too?]
+		"$COSMICCURATORS_CRYSTAL_PICKUP_TEXT": "I can also pick up the crystal.",
+		// Exhibit Rooms (STR)
+		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_NAME": "Inhabitants",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_EXPLORE_TEXT": "I found an exhibition dedicated to the Stranger's Inhabitants.",
+		"$COSMICCURATORS_ARTIFACT_PICKUP_TEXT": "I found an early artifact replica in the Inhabitant exhibit.",
+		// Exhibit Rooms (NOM)
+		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_NAME": "Nomai",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_EXPLORE_TEXT": "I found an exhibition dedicated to the Nomai.",
+		"$COSMICCURATORS_TRACTORBEAM_PICKUP_TEXT": "I found a tractor beam replica in the Nomai exhibit.",
+		// Exhibit Rooms (HEA)
+		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_NAME": "Hearthian",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_EXPLORE_TEXT": "I found an exhibition dedicated to us Hearthians. Somehow, it still feels foreign.",
+		"$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT1": "I found what looked like a can of marshmallows.",
+		"$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT2": "I tasted one of the marshmallows. Tastes like a bad batch of Porphy's xxx super Sap-Wine.",
+		// Diorama Door
+		"$COSMICCURATORS_DIORAMA_DOOR_NAME": "Pedestal Door",
+		"$COSMICCURATORS_DIORAMA_DOOR_RUMOR_NAME": "Out-of-Place Wall",
+		"$COSMICCURATORS_DIORAMA_DOOR_RUMOR_TEXT": "The wall at the back is noticeably different from the others. In front of it are four pedestals, each with eye-like symbols on it.",
+		"$COSMICCURATORS_DIORAMA_DOOR_SOLVED_TEXT": "Placing down an item from each exhibit on the pedestals opens a new room.",
+		// Diorama Room
+		"$COSMICCURATORS_DIORAMA_ROOM_NAME": "Diorama Room",
+		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_NAME": "Room Behind the Wall",
+		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_TEXT": "The wall swung open to reveal a room behind it.",
+		"$COSMICCURATORS_DIORAMA_ROOM_EXPLORE_TEXT": "There are four dioramas inside the room. They appear to be based on the same four species of the exhibits.",
+		"$COSMICCURATORS_DIORAMA_ROOM_MINIATURE_TEXT": "I can jump inside the dioramas and become <![CDATA[<color=orange>miniature</color>]]>",
+		// Dioramas (KAV, STR, NOM, HEA)
+		"$COSMICCURATORS_DIORAMA_KAV_NAME": "Karvi",
+		"$COSMICCURATORS_DIORAMA_KAV_EXPLORE_TEXT1": "One of the dioramas is dedicated to the Karvi.",
+		"$COSMICCURATORS_DIORAMA_KAV_EXPLORE_TEXT2": "TODO: More description (waiting on model)", // [Note-TODO: describe better once the exhibit is fully modelled]
+		"$COSMICCURATORS_DIORAMA_STR_NAME": "Inhabitants",
+		"$COSMICCURATORS_DIORAMA_STR_EXPLORE_TEXT1": "One of the dioramas is dedicated to the Stranger's Inhabitants.",
+		"$COSMICCURATORS_DIORAMA_STR_EXPLORE_TEXT2": "It is an island surrounded by a moat, with Inhabitant-styled wooden buildings on it. I count five small houses, a large one, and a very tall tower.",
+		"$COSMICCURATORS_DIORAMA_NOM_NAME": "Nomai",
+		"$COSMICCURATORS_DIORAMA_NOM_EXPLORE_TEXT1": "One of the dioramas is dedicated to the Nomai.",
+		"$COSMICCURATORS_DIORAMA_NOM_EXPLORE_TEXT2": "On one side the terrain is reminiscent of Brittle Hollow, on the other it is reminiscent of Ember Twin. There is a dark gap between them, bridged by a platform.",
+		"$COSMICCURATORS_DIORAMA_NOM_EXPLORE_TEXT3": "There is also Nomai-styled sandstone buildings, with a gravity cannon on the roof of the large one.",
+		"$COSMICCURATORS_DIORAMA_HEA_NAME": "Hearthian",
+		"$COSMICCURATORS_DIORAMA_HEA_EXPLORE_TEXT1": "One of the dioramas is dedicated to us Hearthians.",
+		"$COSMICCURATORS_DIORAMA_HEA_EXPLORE_TEXT2": "It bears ressemblance to one of Timber Hearth's craters. I can see a mountain, and a campfire next to a small river."
+	}
 }
