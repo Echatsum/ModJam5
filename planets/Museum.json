@@ -123,7 +123,7 @@
         "type": "wall",
         "position": {
           "x": -131.7427,
-          "y": -106.7392,
+          "y": -105.1392,
           "z": 141.6041
         },
         "rotation": {
@@ -145,7 +145,10 @@
       {
         "type": "whiteboard",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/NomaiExhibit/Buildings/EmberHouse/Interactibles/Props_NOM_Whiteboard_Scroll",
-        "isRelativeToParent": true
+        "isRelativeToParent": true,
+        "rotation": {
+          "y": 180
+        }
       }
     ],
     "slideShows": [
@@ -506,7 +509,7 @@
         "revealFor": "player",
         "reveals": [ "MUSEUM_STR_SYMBOLS_E1" ],
         "radius": 2,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/House1/Props/Prefab_IP_PictureFrame",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House1/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
         "position": {
           "z": 2
@@ -516,7 +519,7 @@
         "revealFor": "player",
         "reveals": [ "MUSEUM_STR_SYMBOLS_E2" ],
         "radius": 2,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/House2/Props/Prefab_IP_PictureFrame",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House2/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
         "position": {
           "z": 2
@@ -526,7 +529,7 @@
         "revealFor": "player",
         "reveals": [ "MUSEUM_STR_SYMBOLS_E3" ],
         "radius": 2,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/House3/Props/Prefab_IP_PictureFrame",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House3/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
         "position": {
           "z": 2
@@ -536,7 +539,7 @@
         "revealFor": "player",
         "reveals": [ "MUSEUM_STR_SYMBOLS_E4" ],
         "radius": 2,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/House4/Props/Prefab_IP_PictureFrame",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House4/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
         "position": {
           "z": 2
@@ -546,7 +549,7 @@
         "revealFor": "player",
         "reveals": [ "MUSEUM_STR_SYMBOLS_E5" ],
         "radius": 2,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/House5/Props/Prefab_IP_PictureFrame",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House5/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
         "position": {
           "z": 2

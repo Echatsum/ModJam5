@@ -128,7 +128,10 @@
       {
         "type": "whiteboard",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/NomaiText/Whiteboard",
-        "isRelativeToParent": true
+        "isRelativeToParent": true,
+        "rotation": {
+          "y": 180
+        }
       }
     ],
     "warpReceivers": [
