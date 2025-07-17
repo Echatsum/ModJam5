@@ -24,23 +24,23 @@
 		"$COSMICCURATORS_EXHIBIT_ROOMS_EXPLORE_TEXT": "There are four exhibit rooms around the central fireplace",
 
 		// Exhibit Rooms (KAV)
-		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME": "Unknown Species",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME": "Unknown Species Exhibit",
 		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_EXPLORE_TEXT": "I may have found an exhibition dedicated to the species who built this ship.",
 		"$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT": "When I approached this crystal, I learned how to read three new languages!", // [Note: Three? Not two? Do we learn Nomai too?]
 		"$COSMICCURATORS_CRYSTAL_PICKUP_TEXT": "I can also pick up the crystal.",
 
 		// Exhibit Rooms (STR)
-		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_NAME": "Inhabitants",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_NAME": "Inhabitant Exhibit",
 		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_EXPLORE_TEXT": "I found an exhibition dedicated to the Stranger's Inhabitants.",
 		"$COSMICCURATORS_ARTIFACT_PICKUP_TEXT": "I found an early artifact replica in the Inhabitant exhibit.",
 
 		// Exhibit Rooms (NOM)
-		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_NAME": "Nomai",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_NAME": "Nomai Exhibit",
 		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_EXPLORE_TEXT": "I found an exhibition dedicated to the Nomai.",
 		"$COSMICCURATORS_TRACTORBEAM_PICKUP_TEXT": "I found a tractor beam replica in the Nomai exhibit.",
 
 		// Exhibit Rooms (HEA)
-		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_NAME": "Hearthian",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_NAME": "Hearthian Exhibit",
 		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_EXPLORE_TEXT": "I found an exhibition dedicated to us Hearthians. Somehow, it still feels foreign.",
 		"$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT1": "I found what looked like a can of marshmallows.",
 		"$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT2": "I tasted one of the marshmallows. Tastes like a bad batch of Porphy's xxx super Sap-Wine.",

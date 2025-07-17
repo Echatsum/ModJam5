@@ -616,10 +616,13 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "COSMICCURATORS_QUANTUM_GEYSERS_R" ],
+        "reveals": [ "COSMICCURATORS_QUANTUM_GEYSERS_E" ],
         "radius": 15,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/Prefab_IP_DW_CodeTotem",
-        "isRelativeToParent": true
+        "position": {
+          "x": -177.1169,
+          "y": -114.569,
+          "z": -142.0402
+        }
       },
       {
         "revealFor": "player",
@@ -627,16 +630,6 @@
         "radius": 15,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
         "isRelativeToParent": true
-      },
-      {
-        "revealFor": "player",
-        "reveals": [ "COSMICCURATORS_GHOST_MATTER_CAVE_ENTER1", "COSMICCURATORS_GHOST_MATTER_CAVE_ENTER2" ],
-        "radius": 2.5,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
-        "isRelativeToParent": true,
-        "position": {
-          "x": -14.25
-        }
       },
       {
         "revealFor": "player",
@@ -796,7 +789,7 @@
     "xmlFile": "planets/shiplogs/Museum.xml",
     "spriteFolder": "planets/shiplogs/sprites",
     "mapMode": {
-      "revealedSprite": "planets/shiplogs/sprites/COSMICCURATORS_OMINOUS_ORBITER.png"
+      "revealedSprite": "planets/shiplogs/sprites/PLACEHOLDER.png"
     }
   }
 }
