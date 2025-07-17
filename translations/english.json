@@ -91,11 +91,11 @@
 
 		// Owlk Houses
 		"$COSMICCURATORS_INHABITANT_HOUSES_NAME": "Inhabitant Houses",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1": "In one of the houses, I found a ring symbol.",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2": "In one of the houses, I found an eye symbol.",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3": "In one of the houses, I found a fire symbol.",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4": "In one of the houses, I found a sun symbol.",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5": "In one of the houses, I found a star symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1": "In one of the houses, I found a fire symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2": "In one of the houses, I found a gibbous symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3": "In one of the houses, I found a sun symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4": "In one of the houses, I found a crescent symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5": "In one of the houses, I found a ring symbol.",
 
 		// Reel House
 		"$COSMICCURATORS_REEL_HOUSE_NAME": "Large House",
