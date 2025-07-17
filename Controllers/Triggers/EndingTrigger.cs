@@ -28,6 +28,8 @@ namespace FifthModJam
 
         private void Start()
         {
+            VerifyUnityParameters();
+
             _music?.SetActive(false);
             _nhPlanet = FifthModJam.NewHorizonsAPI.GetPlanet("ScaledMuseum");
             _desiredSector = _nhPlanet?.transform?.Find("Sector")?.gameObject?.GetComponent<Sector>();
