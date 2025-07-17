@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace FifthModJam
 {
@@ -7,9 +8,7 @@ namespace FifthModJam
         [SerializeField]
         private GameObject[] lights;
         [SerializeField]
-        private SingleLightSensor slideTotemSensor;
-        private bool isOn;
-        private bool isOff;
+        private SlideProjectorSocket _socket;
 
         private void VerifyUnityParameters()
         {
@@ -17,39 +16,41 @@ namespace FifthModJam
             {
                 FifthModJam.WriteLine("[TheatreLightsHandler] light array is null or empty", OWML.Common.MessageType.Error);
             }
-            if (slideTotemSensor == null)
+            if (_socket == null)
             {
-                FifthModJam.WriteLine("[TheatreLightsHandler] slideTotemSensor is null", OWML.Common.MessageType.Error);
+                FifthModJam.WriteLine("[TheatreLightsHandler] socket is null", OWML.Common.MessageType.Error);
             }
         }
-
         private void Start()
         {
             VerifyUnityParameters();
-            isOn = false;
-            isOff = true;
         }
 
-        private void Update()
+        private void Awake()
         {
-            if (!isOn && slideTotemSensor.IsIlluminated() && slideTotemSensor._lightSourceMask == LightSourceType.SIMPLE_LANTERN)
-            {
-                isOn = true;
-                isOff = false;
-                foreach (var light in lights)
-                {
-                    light.SetActive(true);
-                }
-            }
+            _socket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Combine(_socket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
+            _socket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Combine(_socket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+        }
+        private void OnDestroy()
+        {
+            _socket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Remove(_socket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
+            _socket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Remove(_socket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+        }
 
-            if (!isOff && !slideTotemSensor.IsIlluminated())
+        private void OnSocketFilled(OWItem item)
+        {
+            ToggleLights(turnOn: false); // Socket filled = lights OFF
+        }
+        private void OnSocketRemoved(OWItem item)
+        {
+            ToggleLights(turnOn: true); // Socket empty = lights ON
+        }
+
+        private void ToggleLights(bool turnOn)
+        {
+            foreach (var light in lights)
             {
-                isOn = false;
-                isOff = true;
-                foreach (var light in lights)
-                {
-                    light.SetActive(false);
-                }
+                light.SetActive(turnOn);
             }
         }
     }
