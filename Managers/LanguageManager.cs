@@ -12,6 +12,7 @@
 
         // We only need to ping the shiplog twice: at the start + when the event is triggered. For other times a cache saves a bit of performance
         private bool _hasLearnedLangCache;
+        private bool _isReady;
 
         public void Start()
         {
@@ -19,12 +20,20 @@
             _hasLearnedLangCache = Locator.GetShipLogManager().IsFactRevealed("COSMICCURATORS_CRYSTAL_PROX");
 
             FifthModJam.WriteLineReady("LanguageManager");
+            _isReady = true;
         }
 
         // Shiplog methods
         public bool HasLearnedLang()
         {
-            return _hasLearnedLangCache;
+            if (_isReady)
+            {
+                return _hasLearnedLangCache;
+            }
+            else
+            {
+                return Locator.GetShipLogManager().IsFactRevealed("COSMICCURATORS_CRYSTAL_PROX"); // In case the manager isn't ready before being poked at, we can't use the cache
+            }
         }
 
         public void RevealFactLanguagesLearned()

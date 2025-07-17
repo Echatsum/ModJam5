@@ -31,15 +31,14 @@ namespace FifthModJam
         }
         private void OnLanguagesLearned()
         {
-            _dialogue.SetActive(true);
+            _dialogue?.SetActive(true);
         }
 
         private void Start()
         {
             VerifyUnityParameters();
 
-            _dialogue.SetActive(LanguageManager.Instance.HasLearnedLang());
+            _dialogue?.SetActive(LanguageManager.Instance.HasLearnedLang());
         }
-
     }
 }
