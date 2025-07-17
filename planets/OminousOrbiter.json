@@ -333,7 +333,7 @@
     "revealVolumes": [
       {
         "revealFor": "player",
-        "reveals": [ "SHIP_MAIN_E" ],
+        "reveals": [ "COSMICCURATORS_OMINOUS_ORBITER_E" ],
         "radius": 100
       },
       {
