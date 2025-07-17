@@ -24,6 +24,11 @@ namespace FifthModJam
             GlobalMessenger<string, bool>.AddListener("DialogueConditionChanged", OnDialogueConditionChanged);
         }
 
+        private void OnDestroy()
+        {
+            GlobalMessenger<string, bool>.RemoveListener("DialogueConditionChanged", OnDialogueConditionChanged);
+        }
+
         private void OnDialogueConditionChanged(string conditionName, bool conditionState)
         {
             if (credits.activeSelf) return; // No need to check again once credits are active
