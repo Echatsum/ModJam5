@@ -52,6 +52,7 @@ namespace FifthModJam
             // Checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled)
             {
+                Locator.GetShipLogManager().RevealFact("MUSEUM_HEA_CAVES_E1");
                 ToggleGhostMatterDamage(nullifyDamage: true);
             } 
         }

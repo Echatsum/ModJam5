@@ -544,6 +544,16 @@
       },
       {
         "revealFor": "player",
+        "reveals": [ "MUSEUM_STR_CODE_E" ],
+        "radius": 3,
+        "position": {
+          "x": 172.8949,
+          "y": -95.11523,
+          "z": 193.3018
+        }
+      },
+      {
+        "revealFor": "player",
         "reveals": [ "COSMICCURATORS_SLIDE_REEL_E" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02/Tower_Reel",

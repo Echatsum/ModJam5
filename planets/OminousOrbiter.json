@@ -333,6 +333,11 @@
     "revealVolumes": [
       {
         "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_OMINOUS_ORBITER_E" ],
+        "radius": 100
+      },
+      {
+        "revealFor": "player",
         "reveals": [ "COSMICCURATORS_DIORAMA_DOOR_R" ],
         "radius": 4,
         "parentPath": "Sector/KarviShip_Interior/Building/Floor (13)",
