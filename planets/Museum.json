@@ -202,8 +202,8 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02",
         "isRelativeToParent": true,
         "rename": "Tower_Reel",
-        "reveals": [ "MUSEUM_STR_REEL_E" ],
-        "playWithShipLogFacts": [ "MUSEUM_STR_REEL_E" ],
+        "reveals": [ "COSMICCURATORS_SLIDE_REEL_WATCH" ],
+        "playWithShipLogFacts": [ "COSMICCURATORS_SLIDE_REEL_WATCH" ],
         "slides": [
           {
             "backdropAudio": "planets/assets/Audio/main_slidereel.ogg",
@@ -453,7 +453,7 @@
         "isRelativeToParent": true,
         "name": "4 - SUN",
         "volume": 0.1,
-        "reveals": "MUSEUM_KAV_SIGNALS_HEA"
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE4"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -464,7 +464,7 @@
         "isRelativeToParent": true,
         "name": "5 - STAR",
         "volume": 0.1,
-        "reveals": "MUSEUM_KAV_SIGNALS_KAV"
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE5"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -475,7 +475,7 @@
         "isRelativeToParent": true,
         "name": "1 - RING",
         "volume": 0.1,
-        "reveals": "MUSEUM_KAV_SIGNALS_STR1"
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE1"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -486,7 +486,7 @@
         "isRelativeToParent": true,
         "name": "2 - EYE",
         "volume": 0.1,
-        "reveals": "MUSEUM_KAV_SIGNALS_STR2"
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE2"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -497,7 +497,7 @@
         "isRelativeToParent": true,
         "name": "3 - FIRE",
         "volume": 0.1,
-        "reveals": "MUSEUM_KAV_SIGNALS_NOM"
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE3"
       },
       {
         "frequency": "Infared Readings",
@@ -537,7 +537,7 @@
     "revealVolumes": [
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_STR_CODE_R1" ],
+        "reveals": [ "COSMICCURATORS_REEL_HOUSE_E" ],
         "radius": 3,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/Prefab_IP_DW_CodeTotem",
         "isRelativeToParent": true
@@ -554,14 +554,14 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_STR_REEL_R" ],
+        "reveals": [ "COSMICCURATORS_SLIDE_REEL_E" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02/Tower_Reel",
         "isRelativeToParent": true
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_STR_SYMBOLS_E1" ],
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E1" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House1/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -571,7 +571,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_STR_SYMBOLS_E2" ],
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E2" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House2/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -581,7 +581,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_STR_SYMBOLS_E3" ],
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E3" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House3/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -591,7 +591,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_STR_SYMBOLS_E4" ],
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E4" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House4/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -601,7 +601,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_STR_SYMBOLS_E5" ],
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E5" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House5/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -611,28 +611,38 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_HEA_CAVES_R" ],
+        "reveals": [ "COSMICCURATORS_GHOST_MATTER_CAVE_E" ],
         "radius": 15,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
         "isRelativeToParent": true
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_KAV_CODE_R" ],
+        "reveals": [ "COSMICCURATORS_GHOST_MATTER_CAVE_ENTER1", "COSMICCURATORS_GHOST_MATTER_CAVE_ENTER2" ],
+        "radius": 2.5,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -14.25
+        }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_VOLCANO_BUILDING_DOOR" ],
         "radius": 3,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_Totem",
         "isRelativeToParent": true
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_KAV_CODE_E" ],
+        "reveals": [ "COSMICCURATORS_VOLCANO_SUMMIT_R" ],
         "radius": 1,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Building/Fancy Door (1)",
         "isRelativeToParent": true
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_KAV_TORCH_R" ],
+        "reveals": [ "COSMICCURATORS_VOLCANO_SUMMIT_E" ],
         "radius": 4,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/UnlitTorches/KavriTorch_UNLIT (1)",
         "isRelativeToParent": true,
@@ -643,7 +653,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_NOM_TOWER_R" ],
+        "reveals": [ "COSMICCURATORS_NOMAI_CANNON_E" ],
         "radius": 30,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/NomaiExhibit/Buildings/GravityCannon",
         "isRelativeToParent": true,
@@ -771,6 +781,7 @@
     "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper/WhiteHoleAmbience"
   ],
   "ShipLog": {
-    "xmlFile": "planets/shiplogs/Museum.xml"
+    "xmlFile": "planets/shiplogs/Museum.xml",
+    "spriteFolder": "planets/shiplogs/sprites"
   }
 }

@@ -75,6 +75,7 @@ namespace FifthModJam
 
         private void IgniteFlame()
         {
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_VOLCANO_SUMMIT_IGNITE");
 
             _isIgnited = true;
             _torchFlame?.SetActive(true);

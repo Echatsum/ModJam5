@@ -17,5 +17,13 @@ namespace FifthModJam
                 return _instance;
             }
         }
+
+        /// <summary>
+        /// Equivalent to Instance, but calling it makes sure the manager instance is generated at this time
+        /// </summary>
+        public static T Spawn() 
+        {
+            return Instance;
+        }
     }
 }

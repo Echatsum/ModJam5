@@ -338,7 +338,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "SHIP_DOOR_R" ],
+        "reveals": [ "COSMICCURATORS_DIORAMA_DOOR_R" ],
         "radius": 4,
         "parentPath": "Sector/KarviShip_Interior/Building/Floor (13)",
         "position": {
@@ -348,28 +348,28 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "SHIP_ROOMS_KAV" ],
+        "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_KAV_E" ],
         "radius": 2,
         "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door",
         "isRelativeToParent": true
       },
       {
         "revealFor": "player",
-        "reveals": [ "SHIP_ROOMS_STR" ],
+        "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_STR_E" ],
         "radius": 2,
         "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (1)",
         "isRelativeToParent": true
       },
       {
         "revealFor": "player",
-        "reveals": [ "SHIP_ROOMS_NOM" ],
+        "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_NOM_E" ],
         "radius": 2,
         "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (2)",
         "isRelativeToParent": true
       },
       {
         "revealFor": "player",
-        "reveals": [ "SHIP_ROOMS_HEA" ],
+        "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_HEA_E" ],
         "radius": 2,
         "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (3)",
         "isRelativeToParent": true
@@ -422,6 +422,7 @@
     ]
   },
   "ShipLog": {
-    "xmlFile": "planets/shiplogs/Ship.xml"
+    "xmlFile": "planets/shiplogs/Ship.xml",
+    "spriteFolder": "planets/shiplogs/sprites"
   }
 }

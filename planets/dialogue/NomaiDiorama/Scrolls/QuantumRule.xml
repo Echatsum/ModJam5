@@ -11,11 +11,11 @@
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>Therefore, it is possible to influence the possibilities of a quantum object by simply blocking theese sockets with non-quantum objects.</Text>
+		<Text>Therefore, it is possible to influence the possibilities of a quantum object by simply blocking these sockets with non-quantum objects.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 		<RevealFact>
-			<FactID>MUSEUM_HEA_QUANTUM_E</FactID>
+			<FactID>COSMICCURATORS_FOURTH_QUANTUM_RULE_E</FactID>
 			<Condition>3</Condition>
 		</RevealFact>
 	</ShipLogConditions>

@@ -1,21 +1,323 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
   "name": "Jam5",
-  "initialReveal": ["SHIP_MAIN_R"],
+  "initialReveal": [
+    "COSMICCURATORS_OMINOUS_ORBITER_R",
+// [Note to self@Stache: all the following is only to see the full shiplog. Comment/Uncomment the lines when testing proper gameplay, and remove when we release the mod]
+/*
+    "COSMICCURATORS_OMINOUS_ORBITER_E",
+    "COSMICCURATORS_EXHIBIT_ROOMS_R",
+    "COSMICCURATORS_EXHIBIT_ROOMS_E",
+    "COSMICCURATORS_EXHIBIT_ROOMS_KAV_E",
+    "COSMICCURATORS_CRYSTAL_PROX",
+    "COSMICCURATORS_CRYSTAL_PICK",
+    "COSMICCURATORS_EXHIBIT_ROOMS_STR_E",
+    "COSMICCURATORS_ARTIFACT_PICK",
+    "COSMICCURATORS_EXHIBIT_ROOMS_NOM_E",
+    "COSMICCURATORS_TRACTORBEAM_PICK",
+    "COSMICCURATORS_EXHIBIT_ROOMS_HEA_E",
+    "COSMICCURATORS_MARSHMALLOWS_PICK1",
+    "COSMICCURATORS_MARSHMALLOWS_PICK2",
+    "COSMICCURATORS_DIORAMA_DOOR_R",
+    "COSMICCURATORS_DIORAMA_DOOR_SOLVED",
+    "COSMICCURATORS_DIORAMA_ROOM_R",
+    "COSMICCURATORS_DIORAMA_ROOM_E",
+    "COSMICCURATORS_DIORAMA_ROOM_MINIATURE",
+    "COSMICCURATORS_DIORAMA_KAV_E1",
+    "COSMICCURATORS_DIORAMA_KAV_E2",
+    "COSMICCURATORS_DIORAMA_STR_E1",
+    "COSMICCURATORS_DIORAMA_STR_E2",
+    "COSMICCURATORS_DIORAMA_NOM_E1",
+    "COSMICCURATORS_DIORAMA_NOM_E2",
+    "COSMICCURATORS_DIORAMA_NOM_E3",
+    "COSMICCURATORS_DIORAMA_HEA_E1",
+    "COSMICCURATORS_DIORAMA_HEA_E2",
+
+    "COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_R",
+    "COSMICCURATORS_CODED_DOORS_VOLCANO_R",
+    "COSMICCURATORS_CODED_DOORS_STRHOUSE_R",
+    "COSMICCURATORS_CODED_DOORS_SCOUT_R",
+    "COSMICCURATORS_CODED_DOORS_KAV_R",
+    "COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_E",
+    "COSMICCURATORS_CODED_DOORS_VOLCANO_E",
+    "COSMICCURATORS_CODED_DOORS_STRHOUSE_E",
+    "COSMICCURATORS_CODED_DOORS_SCOUT_E",
+    "COSMICCURATORS_CODED_DOORS_KAVHOUSE_E",
+    "COSMICCURATORS_INHABITANT_HOUSES_E1",
+    "COSMICCURATORS_INHABITANT_HOUSES_E2",
+    "COSMICCURATORS_INHABITANT_HOUSES_E3",
+    "COSMICCURATORS_INHABITANT_HOUSES_E4",
+    "COSMICCURATORS_INHABITANT_HOUSES_E5",
+    "COSMICCURATORS_REEL_HOUSE_E",
+    "COSMICCURATORS_REEL_HOUSE_ENTER",
+    "COSMICCURATORS_REEL_HOUSE_BUKRAD",
+    "COSMICCURATORS_SLIDE_REEL_R",
+    "COSMICCURATORS_SLIDE_REEL_E",
+    "COSMICCURATORS_SLIDE_REEL_WATCH",
+    "COSMICCURATORS_SLIDE_REEL_ERNESTO_E",
+    "COSMICCURATORS_SLIDE_REEL_ERNESTO_WATCH",
+    "COSMICCURATORS_ERNESTO_R",
+    "COSMICCURATORS_ERNESTO_E1",
+    "COSMICCURATORS_ERNESTO_E2",
+
+    "PLACEHOLDER_OWLK_TOWER_RUMOR",
+    "COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_R",
+    "PLACEHOLDER_OWLK_TOWER_FACT",
+    "PLACEHOLDER_OWLK_TOWER_FACT2",
+    "COSMICCURATORS_INHABITANT_TOWER_COLLAPSE",
+
+    "COSMICCURATORS_NOMAI_CANNON_E",
+    "COSMICCURATORS_NOMAI_CANNON_SHOOT",
+    "COSMICCURATORS_FOURTH_QUANTUM_RULE_E",
+    "COSMICCURATORS_QUANTUM_GEYSERS_R",
+    "COSMICCURATORS_QUANTUM_GEYSERS_E",
+    "COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET1",
+    "COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET2",
+    "COSMICCURATORS_GHOST_MATTER_CAVE_R",
+    "COSMICCURATORS_GHOST_MATTER_CAVE_E",
+    "COSMICCURATORS_GHOST_MATTER_CAVE_ENTER1",
+    "COSMICCURATORS_GHOST_MATTER_CAVE_ENTER2",
+    "COSMICCURATORS_FELDSPAR_MYTH_R",
+    "COSMICCURATORS_FELDSPAR_MYTH_E",
+    "COSMICCURATORS_SCOUT_SIGNAL_E",
+    "COSMICCURATORS_BROKEN_SCOUTS_R",
+    "COSMICCURATORS_BROKEN_SCOUTS_CODE1",
+    "COSMICCURATORS_BROKEN_SCOUTS_CODE2",
+    "COSMICCURATORS_BROKEN_SCOUTS_CODE3",
+    "COSMICCURATORS_BROKEN_SCOUTS_CODE4",
+    "COSMICCURATORS_BROKEN_SCOUTS_CODE5",
+
+    "PLACEHOLDER_KARVI_MESSAGE_FACT",
+
+    "COSMICCURATORS_VOLCANO_BUILDING_R",
+    "COSMICCURATORS_VOLCANO_BUILDING_FELDSPAR_R",
+    "COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM",
+    "COSMICCURATORS_VOLCANO_BUILDING_DOOR",
+    "COSMICCURATORS_VOLCANO_SUMMIT_R",
+    "COSMICCURATORS_VOLCANO_SUMMIT_REEL_R",
+    "COSMICCURATORS_VOLCANO_SUMMIT_E",
+    "COSMICCURATORS_VOLCANO_SUMMIT_IGNITE",
+    "COSMICCURATORS_PHOSPHORUS_R",
+    "COSMICCURATORS_PHOSPHORUS_E"
+  */
+  ],
   "entryPositions": [
     {
-      "id": "SHIP_MAIN",
+      "id": "COSMICCURATORS_OMINOUS_ORBITER",
       "position": {
-        "x": 200,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS",
+      "position": {
+        "x": 0,
         "y": 300
       }
     },
     {
-      "id": "SHIP_CRYSTAL",
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS_KAV",
+      "position": {
+        "x": 100,
+        "y": 350
+      }
+    },
+    {
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS_STR",
+      "position": {
+        "x": 100,
+        "y": 200
+      }
+    },
+    {
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS_NOM",
+      "position": {
+        "x": -100,
+        "y": 200
+      }
+    },
+    {
+      "id": "COSMICCURATORS_EXHIBIT_ROOMS_HEA",
+      "position": {
+        "x": -100,
+        "y": 350
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_DOOR",
+      "position": {
+        "x": 0,
+        "y": 600
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_CURIOSITY",
+      "position": {
+        "x": 0,
+        "y": 1300
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_KAV",
+      "position": {
+        "x": -160,
+        "y": 1450
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_STR",
+      "position": {
+        "x": 160,
+        "y": 1450
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_NOM",
+      "position": {
+        "x": 160,
+        "y": 1150
+      }
+    },
+    {
+      "id": "COSMICCURATORS_DIORAMA_HEA",
+      "position": {
+        "x": -160,
+        "y": 1150
+      }
+    },
+    // ---
+    {
+      "id": "COSMICCURATORS_CODED_DOORS",
+      "position": {
+        "x": 0,
+        "y": 1800
+      }
+    },
+    {
+      "id": "COSMICCURATORS_INHABITANT_HOUSES",
       "position": {
         "x": 300,
-        "y": 400
+        "y": 1800
+      }
+    },
+    {
+      "id": "COSMICCURATORS_REEL_HOUSE",
+      "position": {
+        "x": 450,
+        "y": 2100
+      }
+    },
+    {
+      "id": "COSMICCURATORS_SLIDE_REEL",
+      "position": {
+        "x": 750,
+        "y": 2100
+      }
+    },
+    {
+      "id": "COSMICCURATORS_ERNESTO",
+      "position": {
+        "x": 1050,
+        "y": 2100
+      }
+    },
+    {
+      "id": "COSMICCURATORS_OWLK_TOWER",
+      "position": {
+        "x": 450,
+        "y": 1500
+      }
+    },
+    {
+      "id": "COSMICCURATORS_NOMAI_CANNON",
+      "position": {
+        "x": 450,
+        "y": 1100
+      }
+    },
+    {
+      "id": "COSMICCURATORS_FOURTH_QUANTUM_RULE",
+      "position": {
+        "x": 300,
+        "y": 800
+      }
+    },
+    {
+      "id": "COSMICCURATORS_QUANTUM_GEYSERS",
+      "position": {
+        "x": -300,
+        "y": 800
+      }
+    },
+    {
+      "id": "COSMICCURATORS_GHOST_MATTER_CAVE",
+      "position": {
+        "x": -600,
+        "y": 800
+      }
+    },
+    {
+      "id": "COSMICCURATORS_FELDSPAR_MYTH",
+      "position": {
+        "x": -900,
+        "y": 800
+      }
+    },
+    {
+      "id": "COSMICCURATORS_SCOUT_SIGNAL",
+      "position": {
+        "x": -450,
+        "y": 1100
+      }
+    },
+    {
+      "id": "COSMICCURATORS_BROKEN_SCOUTS",
+      "position": {
+        "x": -450,
+        "y": 1500
+      }
+    },
+    {
+      "id": "PLACEHOLDER_KARVI_MESSAGE",
+      "position": {
+        "x": -300,
+        "y": 1800
+      }
+    },
+    {
+      "id": "COSMICCURATORS_VOLCANO_BUILDING",
+      "position": {
+        "x": -450,
+        "y": 2100
+      }
+    },
+    {
+      "id": "COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY",
+      "position": {
+        "x": 0,
+        "y": 2500
+      }
+    },
+    {
+      "id": "COSMICCURATORS_PHOSPHORUS",
+      "position": {
+        "x": 0,
+        "y": 2800
       }
     }
+  ],
+  "curiosities": [
+    {
+      "id": "COSMICCURATORS_DIORAMA_CURIOSITY",
+      "color": { "r": 200, "g": 120, "b": 200, "a": 255 }, // PURPLE
+      "highlightColor": { "r": 240, "g": 120, "b": 240, "a": 255 } // LIGHTER PURPLE
+    },
+    {
+      "id": "COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY",
+      "color": { "r": 240, "g": 120, "b": 120, "a": 255 }, // RED
+      "highlightColor": { "r": 240, "g": 150, "b": 150, "a": 255 } // LIGHTER RED
+    },
+  
   ]
 }

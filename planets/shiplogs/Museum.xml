@@ -1,372 +1,356 @@
 ﻿<!-- Example File -->
 <!-- All files must have "AstroObjectEntry" as their root element, the xmlns:xsi=... and xsi:noNamespaceSchemaLocation=... is optional but heavily encouraged to reduce errors -->
 <AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
-    <ID>MUSEUM</ID> <!-- The ID of the planet this xml file is for -->
+  <ID>MUSEUM</ID> <!-- The ID of the planet this xml file is for -->
+  
+  <!-- [Note to self@Stache: Placeholders on the Karvi message?] -->
 
-    <Entry> <!-- An Entry For This Planet -->
-        <ID>MUSEUM_MAIN</ID> <!-- The ID of this entry -->
-		<Name>Diorama Room</Name> <!-- The name to show for this entry both on the card and in map mode -->
+  <!-- Coded Doors -->
+  <Entry><ID>COSMICCURATORS_CODED_DOORS</ID>
+    <Name>$COSMICCURATORS_CODED_DOORS_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-        <ExploreFact> <!-- An explore fact that belongs to this entry -->
-            <ID>MUSEUM_MAIN_E</ID> <!-- The ID of this fact -->
-            <Text>I found out that I can jump inside the dioramas in the diorama room.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-        </ExploreFact>
+    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_R</ID>
+      <SourceID>COSMICCURATORS_REEL_HOUSE</SourceID>
+      <Text>$COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_RUMOR_TEXT</Text>
+    </RumorFact>
+    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_VOLCANO_R</ID>
+      <SourceID>COSMICCURATORS_VOLCANO_BUILDING</SourceID>
+      <Text>$COSMICCURATORS_CODED_DOORS_VOLCANO_RUMOR_TEXT</Text>
+    </RumorFact>
+    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_STRHOUSE_R</ID>
+      <SourceID>COSMICCURATORS_INHABITANT_HOUSES</SourceID>
+      <Text>$COSMICCURATORS_CODED_DOORS_STRHOUSE_RUMOR_TEXT</Text>
+    </RumorFact>    
+    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_SCOUT_R</ID>
+      <SourceID>COSMICCURATORS_BROKEN_SCOUTS</SourceID>
+      <Text>$COSMICCURATORS_CODED_DOORS_SCOUT_EXPLORE_TEXT</Text>
+    </RumorFact>    
+    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_KAV_R</ID>
+      <SourceID>PLACEHOLDER_KARVI_MESSAGE</SourceID>
+      <Text>$COSMICCURATORS_CODED_DOORS_KAVHOUSE_RUMOR_TEXT</Text>
+    </RumorFact>
+    
+    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_E</ID>
+      <Text>$COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_VOLCANO_E</ID>
+      <Text>$COSMICCURATORS_CODED_DOORS_VOLCANO_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_STRHOUSE_E</ID>
+      <Text>$COSMICCURATORS_CODED_DOORS_STRHOUSE_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_SCOUT_E</ID>
+      <Text>$COSMICCURATORS_CODED_DOORS_SCOUT_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_KAVHOUSE_E</ID>
+      <Text>$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-        <Entry> <!-- An Entry For This Planet -->
-            <ID>MUSEUM_HEA_FIRSTSIGNAL</ID> <!-- The ID of this entry -->
-            <Name>Abandoned Scout Signal</Name> <!-- The name to show for this entry both on the card and in map mode -->
+  <!-- Owlk Houses -->
+  <Entry><ID>COSMICCURATORS_INHABITANT_HOUSES</ID>
+    <Name>$COSMICCURATORS_INHABITANT_HOUSES_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact> <!-- An explore fact that belongs to this entry -->
-                <ID>MUSEUM_HEA_FIRSTSIGNAL_E</ID> <!-- The ID of this fact -->
-                <Text>I found a new frequency from an abandoned scout in the Hearthian Diorama.</Text> <!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-            </ExploreFact>
-        </Entry>
+    <!-- [Note: Order mixed on purpose so that the player has to figure out the house shapes, not just use the shiplog order] -->
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E4</ID>
+      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E1</ID>
+      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E3</ID>
+      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E5</ID>
+      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E2</ID>
+      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Reel House -->
+  <Entry><ID>COSMICCURATORS_REEL_HOUSE</ID>
+    <Name>$COSMICCURATORS_REEL_HOUSE_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_STR_CODE</ID>
-			<!-- The ID of this entry -->
-			<Name>Slide Reel House Code</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
+    <ExploreFact><ID>COSMICCURATORS_REEL_HOUSE_E</ID>
+      <Text>$COSMICCURATORS_REEL_HOUSE_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_REEL_HOUSE_ENTER</ID>
+      <Text>$COSMICCURATORS_REEL_HOUSE_ENTER_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_REEL_HOUSE_BUKRAD</ID>
+      <Text>$COSMICCURATORS_REEL_HOUSE_BUKRAD_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-			<RumorFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_STR_CODE_R1</ID>
-				<!-- The ID of this fact -->
-				<RumorName>Secret Code</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>There is a code totem locking the entrance to the big house in the Inhabitant Diorama.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</RumorFact>
+  <!-- Slide Reel -->
+  <Entry><ID>COSMICCURATORS_SLIDE_REEL</ID>
+    <Name>$COSMICCURATORS_SLIDE_REEL_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<RumorFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_STR_CODE_R2</ID>
-				<!-- The ID of this fact -->
-				<RumorName>Secret Code</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>A message in one of the houses in the Karvi Diorama hint that this code is five symbols long.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</RumorFact>
+    <RumorFact><ID>COSMICCURATORS_SLIDE_REEL_R</ID>
+      <SourceID>COSMICCURATORS_REEL_HOUSE</SourceID>
+      <Text>$COSMICCURATORS_SLIDE_REEL_RUMOR_TEXT</Text>
+    </RumorFact>
+    
+    <ExploreFact><ID>COSMICCURATORS_SLIDE_REEL_E</ID>
+      <Text>$COSMICCURATORS_SLIDE_REEL_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_SLIDE_REEL_WATCH</ID>
+      <Text>$COSMICCURATORS_SLIDE_REEL_WATCH_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_SLIDE_REEL_ERNESTO_E</ID>
+      <Text>$COSMICCURATORS_SLIDE_REEL_ERNESTO_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_SLIDE_REEL_ERNESTO_WATCH</ID>
+      <Text>$COSMICCURATORS_SLIDE_REEL_ERNESTO_WATCH_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_STR_CODE_E</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>After examining the buildings, I managed to crack the code and enter the slide reel house.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
+  <!-- Ernesto-->
+  <Entry><ID>COSMICCURATORS_ERNESTO</ID>
+    <Name>$COSMICCURATORS_ERNESTO_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_STR_SYMBOLS</ID>
-			<!-- The ID of this entry -->
-			<Name>Code Symbols</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
-			
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_STR_SYMBOLS_E1</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>In one of the houses, I found a ring symbol.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
+    <RumorFact><ID>COSMICCURATORS_ERNESTO_R</ID>
+      <RumorName>$COSMICCURATORS_ERNESTO_RUMOR_NAME</RumorName>
+      <SourceID>COSMICCURATORS_SLIDE_REEL</SourceID>
+      <Text>$COSMICCURATORS_ERNESTO_RUMOR_TEXT</Text>
+    </RumorFact>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_STR_SYMBOLS_E2</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>In one of the houses, I found a eye symbol.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_ERNESTO_E1</ID>
+      <Text>$COSMICCURATORS_ERNESTO_EXPLORE_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_ERNESTO_E2</ID>
+      <Text>$COSMICCURATORS_ERNESTO_EXPLORE_TEXT2</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Owlk Tower -->
+  <Entry><ID>COSMICCURATORS_OWLK_TOWER</ID>
+    <Name>PLACEHOLDER_OWLK_TOWER</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_STR_SYMBOLS_E3</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>In one of the houses, I found a fire symbol.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
+    <RumorFact>
+      <ID>PLACEHOLDER_OWLK_TOWER_RUMOR</ID>
+      <SourceID>COSMICCURATORS_SLIDE_REEL</SourceID>
+      <Text>[Reveal when watching the first part of the reel about the pole] Wow the reel showed there is a boat pole in the tower</Text>
+    </RumorFact>
+    <RumorFact><ID>COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_R</ID>
+      <SourceID>COSMICCURATORS_NOMAI_CANNON</SourceID>
+      <Text>$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_RUMOR_TEXT</Text>
+    </RumorFact>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_STR_SYMBOLS_E4</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>In one of the houses, I found a sun symbol.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_OWLK_TOWER_FACT</ID>
+      <Text>[Reveal when swimming close to the support] Wow the tower is not up to builders code</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>PLACEHOLDER_OWLK_TOWER_FACT2</ID>
+      <Text>[Reveal when watching the first part of the reel about the pole OR when simply finding the pole] Wow there is a boat pole in the tower</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_TOWER_COLLAPSE</ID>
+      <Text>$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_STR_SYMBOLS_E5</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>In one of the houses, I found a star symbol.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
+  <!-- Nomai Cannon -->
+  <Entry><ID>COSMICCURATORS_NOMAI_CANNON</ID>
+    <Name>$COSMICCURATORS_NOMAI_CANON_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_STR_REEL</ID>
-			<!-- The ID of this entry -->
-			<Name>Tractor Beam Exploit</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
+    <ExploreFact><ID>COSMICCURATORS_NOMAI_CANNON_E</ID>
+      <Text>$COSMICCURATORS_NOMAI_CANON_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_NOMAI_CANNON_SHOOT</ID>
+      <Text>$COSMICCURATORS_NOMAI_CANON_SHOOT_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-			<RumorFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_STR_REEL_R</ID>
-				<!-- The ID of this fact -->
-				<RumorName>Meaning of the Signals</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I found a slide reel atop the collapsed tower.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</RumorFact>
+  <!-- Fourth Quantum Rule -->
+  <Entry><ID>COSMICCURATORS_FOURTH_QUANTUM_RULE</ID>
+    <Name>$COSMICCURATORS_FOURTH_QUANTUM_RULE_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_STR_REEL_E</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>The slide reel depicts a boat pole being used to ignite unlit torches.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
+    <ExploreFact><ID>COSMICCURATORS_FOURTH_QUANTUM_RULE_E</ID>
+      <Text>$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_NOM_TOWER</ID>
-			<!-- The ID of this entry -->
-			<Name>Gravity Cannon</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
+  <!-- Quantum Geysers -->
+  <Entry><ID>COSMICCURATORS_QUANTUM_GEYSERS</ID>
+    <Name>$COSMICCURATORS_QUANTUM_GEYSERS_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<RumorFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_NOM_TOWER_R</ID>
-				<!-- The ID of this fact -->
-				<RumorName>Gravity Cannon</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>A gravity cannon sits atop a structure in the Nomai Diorama.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</RumorFact>
+    <RumorFact><ID>COSMICCURATORS_QUANTUM_GEYSERS_R</ID>
+      <RumorName>$COSMICCURATORS_QUANTUM_GEYSERS_RUMOR_NAME</RumorName>
+      <SourceID>COSMICCURATORS_FOURTH_QUANTUM_RULE</SourceID>
+      <Text>$COSMICCURATORS_QUANTUM_GEYSERS_RUMOR_TEXT</Text>
+    </RumorFact>
+    
+    <ExploreFact><ID>COSMICCURATORS_QUANTUM_GEYSERS_E</ID>
+      <Text>$COSMICCURATORS_QUANTUM_GEYSERS_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET1</ID>
+      <Text>$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET2</ID>
+      <Text>$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT2</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Ghost Matter Cave -->
+  <Entry><ID>COSMICCURATORS_GHOST_MATTER_CAVE</ID>
+    <Name>$COSMICCURATORS_GHOST_MATTER_CAVE_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_NOM_TOWER_E</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I was able to knock over the tower in the Inhabitant Diorama with the gravity cannon in the Nomai Diorama.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
-		
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_HEA_CAVES</ID>
-			<!-- The ID of this entry -->
-			<Name>Ghost Matter Cave</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
+    <RumorFact><ID>COSMICCURATORS_GHOST_MATTER_CAVE_R</ID>
+      <SourceID>COSMICCURATORS_QUANTUM_GEYSERS</SourceID>
+      <Text>$COSMICCURATORS_GHOST_MATTER_CAVE_RUMOR_TEXT</Text>
+    </RumorFact>
 
-			<RumorFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_HEA_CAVES_R</ID>
-				<!-- The ID of this fact -->
-				<RumorName>Ghost Matter Cave</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I found a cave barricaded by ghost matter. Entering it is likely fatal.</Text>
-				<!-- The Text to display for this fact -->
-			</RumorFact>
-			
-			<ExploreFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_HEA_CAVES_E1</ID>
-				<!-- The ID of this fact -->
-				<Text>I made it past the ghost matter with the aid of a collapsed quantum geyser.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_GHOST_MATTER_CAVE_E</ID>
+      <Text>$COSMICCURATORS_GHOST_MATTER_CAVE_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_GHOST_MATTER_CAVE_ENTER1</ID>
+      <Text>$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_GHOST_MATTER_CAVE_ENTER2</ID>
+      <Text>$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT2</Text>
+    </ExploreFact>
+  </Entry>
 
-			<ExploreFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_HEA_CAVES_E2</ID>
-				<!-- The ID of this fact -->
-				<Text>A Hearthian Recorder shares a fictional story of Felspar using a Nomai tractor beam to reach an unreachable place.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</ExploreFact>
-		</Entry>
+  <!-- Feldpar Myth -->
+  <Entry><ID>COSMICCURATORS_FELDSPAR_MYTH</ID>
+    <Name>$COSMICCURATORS_FELDSPAR_MYTH_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_HEA_QUANTUM</ID>
-			<!-- The ID of this entry -->
-			<Name>Rule of Quantum Manipulation</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
+    <RumorFact><ID>COSMICCURATORS_FELDSPAR_MYTH_R</ID>
+      <RumorName>$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_NAME</RumorName>
+      <SourceID>COSMICCURATORS_GHOST_MATTER_CAVE</SourceID>
+      <Text>$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_TEXT</Text>
+    </RumorFact>
 
-			<RumorFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_HEA_QUANTUM_R</ID>
-				<!-- The ID of this fact -->
-				<RumorName>Rings of Stone</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I am able to place down items atop rings of stone marked along the river.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</RumorFact>
+    <ExploreFact><ID>COSMICCURATORS_FELDSPAR_MYTH_E</ID>
+      <Text>$COSMICCURATORS_FELDSPAR_MYTH_EXPLORE_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_HEA_QUANTUM_E</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>According to a Nomai scroll, a fourth quantum rule states that a non-quantum object occupying the same space as a quantum socket can make it impossible for a quantum object to collapse on that socket.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
+  <!-- Scout Signal -->
+  <Entry><ID>COSMICCURATORS_SCOUT_SIGNAL</ID>
+    <Name>$COSMICCURATORS_SCOUT_SIGNAL_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_KAV_TRACTOR</ID>
-			<!-- The ID of this entry -->
-			<Name>Tractor Beam Exploit</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
+    <ExploreFact><ID>COSMICCURATORS_SCOUT_SIGNAL_E</ID>
+      <Text>$COSMICCURATORS_SCOUT_SIGNAL_EXPLORE_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-			<RumorFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_TRACTOR_R</ID>
-				<!-- The ID of this fact -->
-				<RumorName>The Feldspar Myth</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>Feldspar's myth suggests that it's possible that a tractor beam can be used to ascend to higher places, if placed in a proper location.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</RumorFact>
+  <!-- Broken Scouts -->
+  <Entry><ID>COSMICCURATORS_BROKEN_SCOUTS</ID>
+    <Name>$COSMICCURATORS_BROKEN_SCOUTS_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_TRACTOR_E</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>When placing a tractor beam at the center of the cave, it activated all of the sudden. I can now ascend to the building at the top of the mountain.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
+    <RumorFact><ID>COSMICCURATORS_BROKEN_SCOUTS_R</ID>
+      <RumorName>$COSMICCURATORS_BROKEN_SCOUTS_RUMOR_NAME</RumorName>
+      <SourceID>COSMICCURATORS_SCOUT_SIGNAL</SourceID>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_RUMOR_TEXT</Text>
+    </RumorFact>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_KAV_SIGNALS</ID>
-			<!-- The ID of this entry -->
-			<Name>Karvi Wavelengths</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
+    <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE1</ID>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE2</ID>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE3</ID>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE4</ID>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE5</ID>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+    </ExploreFact>
+  </Entry>
 
-			<RumorFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_SIGNALS_R</ID>
-				<RumorName>Karvi Wavelengths</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>After discovering the Abandoned Scout's signal, I can now see several other signals available for me to find.</Text>
-				<!-- The Text to display for this fact -->
-			</RumorFact>
+  <!-- Karvi Message -->
+  <Entry><ID>PLACEHOLDER_KARVI_MESSAGE</ID>
+    <Name>PLACEHOLDER_KARVI_MESSAGE</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_SIGNALS_STR1</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I found a signal in the Inhabitant Diorama. The name of the signal oddly reads as "1 - RING"</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
+    <ExploreFact><ID>PLACEHOLDER_KARVI_MESSAGE_FACT</ID>
+      <Text>[Reveal when finding message] Wow a door code hint</Text>
+    </ExploreFact>
+  </Entry>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_SIGNALS_STR2</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I found a signal in the Inhabitant Diorama. The name of the signal oddly reads as "2 - EYE"</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
+  <!-- Volcano Building -->
+  <Entry><ID>COSMICCURATORS_VOLCANO_BUILDING</ID>
+    <Name>$COSMICCURATORS_VOLCANO_BUILDING_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_SIGNALS_NOM</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I found a signal in the Nomai Diorama. The name of the signal oddly reads as "3 - FIRE"</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
+    <RumorFact><ID>COSMICCURATORS_VOLCANO_BUILDING_R</ID>
+      <RumorName>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME</RumorName>
+      <Text>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_TEXT</Text>
+    </RumorFact>
+    <RumorFact><ID>COSMICCURATORS_VOLCANO_BUILDING_FELDSPAR_R</ID>
+      <SourceID>COSMICCURATORS_FELDSPAR_MYTH</SourceID>
+      <RumorName>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME</RumorName>
+      <Text>$COSMICCURATORS_VOLCANO_BUILDING_FELDSPAR_RUMOR_TEXT</Text>
+    </RumorFact>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_SIGNALS_HEA</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I found a signal in the Hearthian Diorama. The name of the signal oddly reads as "4 - SUN"</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM</ID>
+      <Text>$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_VOLCANO_BUILDING_DOOR</ID>
+      <Text>$COSMICCURATORS_VOLCANO_BUILDING_DOOR_TEXT</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Volcano Summit -->
+  <Entry><ID>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</ID>
+    <Name>$COSMICCURATORS_VOLCANO_SUMMIT_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
+    <IsCuriosity />
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_SIGNALS_KAV</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I found a signal in the Hearthian Diorama. The name of the signal oddly reads as "5 - STAR"</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
+    <RumorFact><ID>COSMICCURATORS_VOLCANO_SUMMIT_R</ID>
+      <RumorName>$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_NAME</RumorName>
+      <SourceID>COSMICCURATORS_VOLCANO_BUILDING</SourceID>
+      <Text>$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_TEXT</Text>
+    </RumorFact>    
+    <RumorFact>
+      <ID>COSMICCURATORS_VOLCANO_SUMMIT_REEL_R</ID>
+      <RumorName>$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_NAME</RumorName>
+      <SourceID>COSMICCURATORS_SLIDE_REEL</SourceID>
+      <Text>$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_TEXT</Text>
+    </RumorFact>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_KAV_CODE</ID>
-			<!-- The ID of this entry -->
-			<Name>Mountain Building Code Totem</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
+    <ExploreFact><ID>COSMICCURATORS_VOLCANO_SUMMIT_E</ID>
+      <Text>$COSMICCURATORS_VOLCANO_SUMMIT_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_VOLCANO_SUMMIT_IGNITE</ID>
+      <Text>$COSMICCURATORS_VOLCANO_SUMMIT_IGNITE_TEXT</Text>
+    </ExploreFact>
+  </Entry>
 
-			<RumorFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_CODE_R</ID>
-				<!-- The ID of this fact -->
-				<RumorName>Mountain Building Code Totem</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>There is a code totem inside the building atop the mountain.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</RumorFact>
+  <!-- Phophorus -->
+  <Entry><ID>COSMICCURATORS_PHOSPHORUS</ID>
+    <Name>$COSMICCURATORS_PHOSPHORUS_NAME</Name>
+    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_CODE_E</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>Using the odd signal names, I managed to crack the code and get to the other side of the door.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
+    <RumorFact><ID>COSMICCURATORS_PHOSPHORUS_R</ID>
+      <RumorName>$COSMICCURATORS_PHOSPHORUS_RUMOR_NAME</RumorName>
+      <SourceID>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</SourceID>
+      <Text>$COSMICCURATORS_PHOSPHORUS_RUMOR_TEXT</Text>
+    </RumorFact>
 
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_KAV_TORCH</ID>
-			<!-- The ID of this entry -->
-			<Name>Unlit Hallway</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
-
-			<RumorFact>
-				<!-- An explore fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_TORCH_R</ID>
-				<!-- The ID of this fact -->
-				<RumorName>Mysterious Hallway</RumorName>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I found a dark hallway inside the building atop the mountain in the Karvi Exhibit.</Text>
-				<!-- The Text to display for this fact, notice how you can use color just like in dialogue -->
-			</RumorFact>
-
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_TORCH_E</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>By following the slide reel, I used the pole to ignite the unlit torches.</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
-
-		<Entry>
-			<!-- An Entry For This Planet -->
-			<ID>MUSEUM_KAV_END</ID>
-			<!-- The ID of this entry -->
-			<Name>Phosphorous</Name>
-			<!-- The name to show for this entry both on the card and in map mode -->
-
-			<ExploreFact>
-				<!-- A rumor fact that belongs to this entry -->
-				<ID>MUSEUM_KAV_END_E</ID>
-				<!-- The name of the rumor this fact relates to -->
-				<Text>I met a living Karvi named Phosphorous!</Text>
-				<!-- The Text to display for this fact -->
-			</ExploreFact>
-		</Entry>
-    </Entry>
+    <ExploreFact><ID>COSMICCURATORS_PHOSPHORUS_E</ID>
+      <Text>$COSMICCURATORS_PHOSPHORUS_EXPLORE_TEXT</Text>
+    </ExploreFact>
+  </Entry>
+  
 </AstroObjectEntry>

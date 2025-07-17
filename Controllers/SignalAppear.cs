@@ -2,43 +2,53 @@
 
 namespace FifthModJam
 {
+    /// <summary>
+    /// The controller that turns on the signals once the first scout signal is identified
+    /// </summary>
     public class SignalAppear : MonoBehaviour
     {
+        // The gameObject that parents all the signals
         [SerializeField]
-        public GameObject signals;
+        private GameObject _signals;
 
-        private bool signalsEnabled;
-
-        private void Start()
+        private void VerifyUnityParameters()
         {
-            if (HasDiscoveredSignals())
+            if (_signals == null)
             {
-                signals.SetActive(true);
-                signalsEnabled = true;
-            }
-            else
-            {
-                signals.SetActive(false);
-                signalsEnabled = false;
+                FifthModJam.WriteLine("[SignalAppear] signals object null", OWML.Common.MessageType.Error);
             }
         }
 
-        private void Update()
+        private void Start()
         {
-            if (!signalsEnabled && HasDiscoveredSignals())
-            {
-                signals.SetActive(true);
-            }
+            VerifyUnityParameters();
 
             if (!HasDiscoveredSignals())
             {
-                signals.SetActive(false);
+                _signals.SetActive(false);
+            }
+
+            GlobalMessenger.AddListener("ShipLogUpdated", OnShipLogUpdated);
+        }
+        private void OnDestroy()
+        {
+            GlobalMessenger.RemoveListener("ShipLogUpdated", OnShipLogUpdated);
+        }
+
+        private void OnShipLogUpdated()
+        {
+            if (_signals.activeSelf) return; // If the signals are already active we don't need to update
+
+            // While the ShipLogUpdated event firing doesn't say which event, we can check the one we care about
+            if (HasDiscoveredSignals())
+            {
+                _signals.SetActive(true);
             }
         }
 
         private bool HasDiscoveredSignals()
         {
-            return Locator.GetShipLogManager().IsFactRevealed("MUSEUM_HEA_FIRSTSIGNAL_E");
+            return Locator.GetShipLogManager().IsFactRevealed("COSMICCURATORS_SCOUT_SIGNAL_E");
         }
     }
 }

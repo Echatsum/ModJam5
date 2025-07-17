@@ -13,8 +13,7 @@
 			<Page>Sometimes we Karvi wonder if Feldspar actually did things like these.</Page>
 		</Dialogue>
 		<RevealFacts>
-			<FactID>MUSEUM_KAV_TRACTOR_R</FactID>
-			<FactID>MUSEUM_HEA_CAVES_E2</FactID>
+			<FactID>COSMICCURATORS_FELDSPAR_MYTH_E</FactID>
 		</RevealFacts>
 	</DialogueNode>
 </DialogueTree>

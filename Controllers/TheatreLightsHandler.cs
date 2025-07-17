@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace FifthModJam.Controllers
+namespace FifthModJam
 {
     public class TheatreLightsHandler : MonoBehaviour
     {
@@ -11,8 +11,21 @@ namespace FifthModJam.Controllers
         private bool isOn;
         private bool isOff;
 
-        public void Start()
+        private void VerifyUnityParameters()
         {
+            if (lights == null || lights.Length == 0)
+            {
+                FifthModJam.WriteLine("[TheatreLightsHandler] light array is null or empty", OWML.Common.MessageType.Error);
+            }
+            if (slideTotemSensor == null)
+            {
+                FifthModJam.WriteLine("[TheatreLightsHandler] slideTotemSensor is null", OWML.Common.MessageType.Error);
+            }
+        }
+
+        private void Start()
+        {
+            VerifyUnityParameters();
             isOn = false;
             isOff = true;
         }
