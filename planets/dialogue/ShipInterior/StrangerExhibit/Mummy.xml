@@ -1,11 +1,11 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>RECORDING</NameField>
+	<NameField>SIGN</NameField>
 	<!-- The name of this character -->
 	<DialogueNode>
-		<Name>KarviStrangerClue</Name>
+		<Name>Crystal</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Look at that! The amphibians have become sapient! A new era of hope and excitement begins! I wonder if these amphibians will finally be the ones to interact with the vortex.</Page>
+			<Page>A replica of the species currently aboard the ship they call home. While they seem to now be all extinct, we managed to recreate what they looked like. They appear to have tails, long limbs, and a belly button, as one curator continually loves to point out.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>
