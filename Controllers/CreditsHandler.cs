@@ -7,26 +7,31 @@ namespace FifthModJam
         [SerializeField]
         public GameObject credits;
 
-        private bool creditsEnabled;
-
-        private void Start()
+        private void VerifyUnityParameters()
         {
-            credits.SetActive(false);
-            creditsEnabled = false;
-        }
-
-        private void Update()
-        {
-            if (!creditsEnabled && HasTalkedToKarvi())
+            if (credits == null)
             {
-                credits.SetActive(true);
-                creditsEnabled = true;
+                FifthModJam.WriteLine("[CreditsHandler] credits is null", OWML.Common.MessageType.Error);
             }
         }
 
-        private bool HasTalkedToKarvi()
+        private void Start()
         {
-            return DialogueConditionManager.SharedInstance.GetConditionState("KARVI_MET");
+            VerifyUnityParameters();
+
+            credits?.SetActive(false);
+
+            GlobalMessenger<string, bool>.AddListener("DialogueConditionChanged", OnDialogueConditionChanged);
+        }
+
+        private void OnDialogueConditionChanged(string conditionName, bool conditionState)
+        {
+            if (credits.activeSelf) return; // No need to check again once credits are active
+
+            if (conditionName.Equals("KARVI_MET") && conditionState) // Has talked to Karvi
+            {
+                credits.SetActive(true);
+            }
         }
     }
 }
