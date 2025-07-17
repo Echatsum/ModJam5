@@ -99,6 +99,9 @@ namespace FifthModJam
             _towerAudio?.PlayOneShot(global::AudioType.Tower_RW_Fall_2, 1f);
             yield return new WaitForSeconds(1.4f);
             _towerAudio?.PlayOneShot(global::AudioType.GeneralDestruction, 1f);
+            
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_R");
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_INHABITANT_TOWER_COLLAPSE");
         }
 
         private void OnPressInteract()
@@ -107,6 +110,7 @@ namespace FifthModJam
 
             _hasFallen = true;
             TowerCollapseManager.Instance.CollapseTower();
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_SHOOT");
             StartCoroutine(PlayAnim());
         }
     }

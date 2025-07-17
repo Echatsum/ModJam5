@@ -54,6 +54,12 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/HEA_Text",
         "isRelativeToParent": true,
         "rename": "FeldsparDialogue"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text1",
+        "isRelativeToParent": true,
+        "rename": "Recorder"
       }
     ],
     "dialogue": [
@@ -78,6 +84,26 @@
         "xmlFile": "planets/dialogue/HearthianDiorama/Recorder.xml"
       },
       {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_KAV/Interactibles/Text/Text1/KarviText/Dialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviKav.xml"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_STR/Interactibles/Text/Text1/StrangerText/Dialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviStr1.xml"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text1/Recorder",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviHea.xml"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_STR/Interactibles/Text/Text2/StrangerText/Dialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviStr2.xml"
+      },
+      {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_DialogueSocket",
         "isRelativeToParent": true,
         "radius": 1.3,
@@ -97,7 +123,7 @@
         "type": "wall",
         "position": {
           "x": -131.7427,
-          "y": -106.7392,
+          "y": -105.1392,
           "z": 141.6041
         },
         "rotation": {
@@ -106,6 +132,23 @@
           "z": 80.6691
         },
         "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Nomai.xml"
+      },
+      {
+        "type": "scroll",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/NomaiExhibit/Buildings/BrittleHouse/Interactibles/Scrolls/QuantumScroll",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/NomaiDiorama/Scrolls/QuantumRule.xml",
+        "rotation": {
+          "x": -90
+        }
+      },
+      {
+        "type": "whiteboard",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/NomaiExhibit/Buildings/EmberHouse/Interactibles/Props_NOM_Whiteboard_Scroll",
+        "isRelativeToParent": true,
+        "rotation": {
+          "y": 180
+        }
       }
     ],
     "slideShows": [
@@ -115,6 +158,8 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02",
         "isRelativeToParent": true,
         "rename": "Tower_Reel",
+        "reveals": [ "COSMICCURATORS_SLIDE_REEL_WATCH" ],
+        "playWithShipLogFacts": [ "COSMICCURATORS_SLIDE_REEL_WATCH" ],
         "slides": [
           {
             "backdropAudio": "planets/assets/Audio/main_slidereel.ogg",
@@ -209,7 +254,7 @@
           },
           {
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00057.png",
-            "beatAudio": "planets/assets/Audio/powerup.wav"            
+            "beatAudio": "planets/assets/Audio/powerup.wav"
           },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00058.png" },
           { "imagePath": "planets/assets/Slideshows/Puzzle/slide_00059.png" },
@@ -363,7 +408,8 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/HEA",
         "isRelativeToParent": true,
         "name": "4 - SUN",
-        "volume": 0.1
+        "volume": 0.1,
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE4"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -373,7 +419,8 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/KAV",
         "isRelativeToParent": true,
         "name": "5 - STAR",
-        "volume": 0.1
+        "volume": 0.1,
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE5"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -383,7 +430,8 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/STR1",
         "isRelativeToParent": true,
         "name": "1 - RING",
-        "volume": 0.1
+        "volume": 0.1,
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE1"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -393,7 +441,8 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/STR2",
         "isRelativeToParent": true,
         "name": "2 - EYE",
-        "volume": 0.1
+        "volume": 0.1,
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE2"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -403,7 +452,8 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/NOM",
         "isRelativeToParent": true,
         "name": "3 - FIRE",
-        "volume": 0.1
+        "volume": 0.1,
+        "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE3"
       },
       {
         "frequency": "Infared Readings",
@@ -440,6 +490,125 @@
     ]
   },
   "Volumes": {
+    "revealVolumes": [
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_REEL_HOUSE_E" ],
+        "radius": 3,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/Prefab_IP_DW_CodeTotem",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_SLIDE_REEL_E" ],
+        "radius": 2,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02/Tower_Reel",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E1" ],
+        "radius": 2,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House1/Props/Prefab_IP_PictureFrame",
+        "isRelativeToParent": true,
+        "position": {
+          "z": 2
+        }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E2" ],
+        "radius": 2,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House2/Props/Prefab_IP_PictureFrame",
+        "isRelativeToParent": true,
+        "position": {
+          "z": 2
+        }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E3" ],
+        "radius": 2,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House3/Props/Prefab_IP_PictureFrame",
+        "isRelativeToParent": true,
+        "position": {
+          "z": 2
+        }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E4" ],
+        "radius": 2,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House4/Props/Prefab_IP_PictureFrame",
+        "isRelativeToParent": true,
+        "position": {
+          "z": 2
+        }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E5" ],
+        "radius": 2,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House5/Props/Prefab_IP_PictureFrame",
+        "isRelativeToParent": true,
+        "position": {
+          "z": 2
+        }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_GHOST_MATTER_CAVE_E" ],
+        "radius": 15,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_GHOST_MATTER_CAVE_ENTER1", "COSMICCURATORS_GHOST_MATTER_CAVE_ENTER2" ],
+        "radius": 2.5,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -14.25
+        }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_VOLCANO_BUILDING_DOOR" ],
+        "radius": 3,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_Totem",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_VOLCANO_SUMMIT_R" ],
+        "radius": 1,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Building/Fancy Door (1)",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_VOLCANO_SUMMIT_E" ],
+        "radius": 4,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/UnlitTorches/KavriTorch_UNLIT (1)",
+        "isRelativeToParent": true,
+        "position": {
+          "y": 4,
+          "z": 2
+        }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_NOMAI_CANNON_E" ],
+        "radius": 30,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/NomaiExhibit/Buildings/GravityCannon",
+        "isRelativeToParent": true,
+        "position": {
+          "y": -5,
+          "x": -10
+        }
+      }
+    ],
     "oxygenVolumes": [
       {
         "radius": 800

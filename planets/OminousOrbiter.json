@@ -112,6 +112,26 @@
         "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/ERNESTO/Dialogue",
         "isRelativeToParent": true,
         "radius": 2
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/KarviExhibit/Crystal.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/KarviText/CrystalText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/KarviExhibit/Telescope.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/KarviText/TelescopeText/Dialogue",
+        "isRelativeToParent": true
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "whiteboard",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/NomaiText/Whiteboard",
+        "isRelativeToParent": true,
+        "rotation": {
+          "y": 180
+        }
       }
     ],
     "warpReceivers": [
@@ -123,6 +143,46 @@
     ]
   },
   "Volumes": {
+    "revealVolumes": [
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_DIORAMA_DOOR_R" ],
+        "radius": 4,
+        "parentPath": "Sector/KarviShip_Interior/Building/Floor (13)",
+        "position": {
+          "y": 2
+        },
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_KAV_E" ],
+        "radius": 2,
+        "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_STR_E" ],
+        "radius": 2,
+        "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (1)",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_NOM_E" ],
+        "radius": 2,
+        "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (2)",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_HEA_E" ],
+        "radius": 2,
+        "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (3)",
+        "isRelativeToParent": true
+      }
+    ],
     "oxygenVolumes": [
       {
         "radius": 100

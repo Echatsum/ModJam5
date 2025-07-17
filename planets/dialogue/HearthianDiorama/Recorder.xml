@@ -12,5 +12,8 @@
 			<Page>Once in the right spot, they placed it down and let the tractor beams push them back to the surface.</Page>
 			<Page>Sometimes we Karvi wonder if Feldspar actually did things like these.</Page>
 		</Dialogue>
+		<RevealFacts>
+			<FactID>COSMICCURATORS_FELDSPAR_MYTH_E</FactID>
+		</RevealFacts>
 	</DialogueNode>
 </DialogueTree>

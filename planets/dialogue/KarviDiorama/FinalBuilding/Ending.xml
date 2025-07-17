@@ -48,6 +48,9 @@
 			<Page>Find a way to disable the Ash Twin Project. Follow the cry of the Eye, and put and end to your suffering and the suffering of the universe, for the hope that there'll be a tomorrow.</Page>
 			<Page>Farewell Hatchling. Just remember, that your friend Phosphorus will be watching your back, rooting for you.</Page>
 		</Dialogue>
+		<RevealFacts>
+			<FactID>COSMICCURATORS_PHOSPHORUS_E</FactID>
+		</RevealFacts>
 		<SetCondition>KARVI_MET</SetCondition>
 	</DialogueNode>
 </DialogueTree>
