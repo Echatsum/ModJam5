@@ -544,6 +544,16 @@
       },
       {
         "revealFor": "player",
+        "reveals": [ "MUSEUM_STR_CODE_E" ],
+        "radius": 3,
+        "position": {
+          "x": 172.8949,
+          "y": -95.11523,
+          "z": 193.3018
+        }
+      },
+      {
+        "revealFor": "player",
         "reveals": [ "MUSEUM_STR_REEL_R" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02/Tower_Reel",
@@ -608,16 +618,6 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_HEA_CAVES_E1" ],
-        "radius": 2.5,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
-        "isRelativeToParent": true,
-        "position": {
-          "x": -14.25
-        }
-      },
-      {
-        "revealFor": "player",
         "reveals": [ "MUSEUM_KAV_CODE_R" ],
         "radius": 3,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_Totem",
@@ -639,16 +639,6 @@
         "position": {
           "y": 4,
           "z": 2
-        }
-      },
-      {
-        "revealFor": "player",
-        "reveals": [ "MUSEUM_KAV_TORCH_E" ],
-        "radius": 1,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/Trigger",
-        "isRelativeToParent": true,
-        "position": {
-          "y": 2
         }
       },
       {

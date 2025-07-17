@@ -333,6 +333,11 @@
     "revealVolumes": [
       {
         "revealFor": "player",
+        "reveals": [ "SHIP_MAIN_E" ],
+        "radius": 100
+      },
+      {
+        "revealFor": "player",
         "reveals": [ "SHIP_DOOR_R" ],
         "radius": 4,
         "parentPath": "Sector/KarviShip_Interior/Building/Floor (13)",

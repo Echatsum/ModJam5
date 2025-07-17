@@ -38,6 +38,7 @@ namespace FifthModJam
             if (hitCollider.CompareTag("PlayerDetector") && enabled && geyser._isActive)
             {
                 isInVolume = true;
+                Locator.GetShipLogManager().RevealFact("MUSEUM_HEA_CAVES_E1");
                 foreach (var gm in ghostMatter)
                 {
                     gm._firstContactDamage = 0;
