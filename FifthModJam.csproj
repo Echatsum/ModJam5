@@ -56,9 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="planets\assets\Slideshows\Secret\" />
-    <Folder Include="planets\dialogue\ShipInterior\HearthianExhibit\" />
-    <Folder Include="planets\dialogue\ShipInterior\StrangerExhibit\" />
-    <Folder Include="planets\dialogue\ShipInterior\NomaiExhibit\" />
   </ItemGroup>
 	<Target Name="BuildDll" AfterTargets="Build">
 		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(USERPROFILE)\source\repos\OW-JAM-UNITY\Assets\" />

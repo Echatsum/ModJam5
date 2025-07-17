@@ -1,11 +1,11 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>RECORDING</NameField>
+	<NameField>SIGN</NameField>
 	<!-- The name of this character -->
 	<DialogueNode>
-		<Name>KarviStrangerClue</Name>
+		<Name>Crystal</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Look at that! The amphibians have become sapient! A new era of hope and excitement begins! I wonder if these amphibians will finally be the ones to interact with the vortex.</Page>
+			<Page>A ship capable of interplanetary flight. It’s unknown how it flies, but it seems to be able to seat one person at a time.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

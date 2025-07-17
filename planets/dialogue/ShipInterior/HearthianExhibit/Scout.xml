@@ -2,10 +2,10 @@
 	<NameField>RECORDING</NameField>
 	<!-- The name of this character -->
 	<DialogueNode>
-		<Name>KarviStrangerClue</Name>
+		<Name>Crystal</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Look at that! The amphibians have become sapient! A new era of hope and excitement begins! I wonder if these amphibians will finally be the ones to interact with the vortex.</Page>
+			<Page>A device made from haphazardly tossed-together technology from their predecessors, capable of scouting areas for hazards or, as the first pilot seemed to do in a hazardous situation, fly.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

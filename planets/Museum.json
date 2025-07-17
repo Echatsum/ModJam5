@@ -60,6 +60,12 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text1",
         "isRelativeToParent": true,
         "rename": "Recorder"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text2",
+        "isRelativeToParent": true,
+        "rename": "Recorder"
       }
     ],
     "dialogue": [
@@ -89,6 +95,11 @@
         "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviKav.xml"
       },
       {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_KAV/Interactibles/Text/Text2/KarviText/Dialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviKav2.xml"
+      },
+      {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_STR/Interactibles/Text/Text1/StrangerText/Dialogue",
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviStr1.xml"
@@ -97,6 +108,11 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text1/Recorder",
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviHea.xml"
+      },
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text2/Recorder",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviHea2.xml"
       },
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_STR/Interactibles/Text/Text2/StrangerText/Dialogue",
@@ -132,6 +148,34 @@
           "z": 80.6691
         },
         "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Nomai.xml"
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": -118.4107,
+          "y": -109.3574,
+          "z": 175.7163
+        },
+        "rotation": {
+          "x": 359.8637,
+          "y": 0.1142,
+          "z": 92.0441
+        },
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviNom.xml"
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": -124.8116,
+          "y": -109.4181,
+          "z": 175.7163
+        },
+        "rotation": {
+          "x": 2.3655,
+          "y": 1.7077,
+          "z": 92.0441
+        },
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviNom2.xml"
       },
       {
         "type": "scroll",

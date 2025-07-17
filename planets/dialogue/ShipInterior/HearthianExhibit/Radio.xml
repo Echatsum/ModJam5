@@ -2,10 +2,10 @@
 	<NameField>RECORDING</NameField>
 	<!-- The name of this character -->
 	<DialogueNode>
-		<Name>KarviStrangerClue</Name>
+		<Name>Crystal</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Look at that! The amphibians have become sapient! A new era of hope and excitement begins! I wonder if these amphibians will finally be the ones to interact with the vortex.</Page>
+			<Page>A strange device that plays audio. While it’s unknown how it operates, we speculate that it uses trapped spirits for entertainment.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

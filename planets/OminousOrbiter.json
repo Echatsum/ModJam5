@@ -56,6 +56,41 @@
           "Effects",
           "Props_HEA_Campfire"
         ]
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ComputerMarshmallowText",
+        "isRelativeToParent": true,
+        "removeComponents": true,
+        "rename": "Dialogue"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/RadioText",
+        "isRelativeToParent": true,
+        "removeComponents": true,
+        "rename": "Dialogue"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/SapWineText",
+        "isRelativeToParent": true,
+        "removeComponents": true,
+        "rename": "Dialogue"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ScoutText",
+        "isRelativeToParent": true,
+        "removeComponents": true,
+        "rename": "Dialogue"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ShipText",
+        "isRelativeToParent": true,
+        "removeComponents": true,
+        "rename": "Dialogue"
       }
     ],
     "dialogue": [
@@ -122,6 +157,61 @@
         "xmlFile": "planets/dialogue/ShipInterior/KarviExhibit/Telescope.xml",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/KarviText/TelescopeText/Dialogue",
         "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/StrangerExhibit/Artifact.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/StrangerText/ArtifactText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/StrangerExhibit/Fuel.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/StrangerText/FuelText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/StrangerExhibit/KorokComet.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/StrangerText/CometKorokText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/StrangerExhibit/LightSensor.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/StrangerText/RaftLightText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/StrangerExhibit/Mummy.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/StrangerText/MummyText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/StrangerExhibit/UFO.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/StrangerText/UFOText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/HearthianExhibit/Printer.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ComputerMarshmallowText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/HearthianExhibit/Radio.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/RadioText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/HearthianExhibit/SapWine.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/SapWineText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/HearthianExhibit/Scout.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ScoutText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/HearthianExhibit/Ship.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ShipText/Dialogue",
+        "isRelativeToParent": true
       }
     ],
     "translatorText": [
@@ -132,6 +222,103 @@
         "rotation": {
           "y": 180
         }
+      },
+      {
+        "type": "scroll",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/NomaiText/Scroll",
+        "xmlFile": "planets/dialogue/ShipInterior/NomaiExhibit/Scroll.xml",
+        "isRelativeToParent": true,
+        "position": {
+          "y": -0.1,
+          "z": 0.7
+        },
+        "rotation": {
+          "z": 50.4745
+        }
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": -12.6409,
+          "y": 1.8999,
+          "z": -23.75
+        },
+        "rotation": {
+          "x": 1.4071,
+          "y": 357.1376,
+          "z": 273.3254
+        },
+        "xmlFile": "planets/dialogue/ShipInterior/NomaiExhibit/TractorBeam.xml"
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": -17.57893,
+          "y": 1.884769,
+          "z": -23.75
+        },
+        "rotation": {
+          "x": 1.4071,
+          "y": 357.1376,
+          "z": 273.3254
+        },
+        "xmlFile": "planets/dialogue/ShipInterior/NomaiExhibit/Staff.xml"
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": -20.75927,
+          "y": 2.03749,
+          "z": -23.75
+        },
+        "rotation": {
+          "x": 1.4071,
+          "y": 357.1376,
+          "z": 273.3254
+        },
+        "xmlFile": "planets/dialogue/ShipInterior/NomaiExhibit/Toys.xml"
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": -23.10555,
+          "y": 3.163226,
+          "z": -12.25
+        },
+        "rotation": {
+          "x": 358.5929,
+          "y": 180,
+          "z": 273.3254
+        },
+        "xmlFile": "planets/dialogue/ShipInterior/NomaiExhibit/Shuttle.xml"
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": -20.556,
+          "y": 1.9538,
+          "z": -12.27
+        },
+        "rotation": {
+          "x": 0.0497,
+          "y": 180,
+          "z": 45.4351
+        },
+        "xmlFile": "planets/dialogue/ShipInterior/NomaiExhibit/Grater.xml"
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": -15.14001,
+          "y": 2.845203,
+          "z": -12.25
+        },
+        "rotation": {
+          "x": 359.793,
+          "y": 179.6,
+          "z": 273.3254
+        },
+        "xmlFile": "planets/dialogue/ShipInterior/NomaiExhibit/Bed.xml"
       }
     ],
     "warpReceivers": [
