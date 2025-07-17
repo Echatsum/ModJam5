@@ -3,7 +3,8 @@
   "name": "Jam5",
   "initialReveal": [
     "COSMICCURATORS_OMINOUS_ORBITER_R",
-    // [Note to self@Stache: all the following is only to see the full shiplog. Comment the lines when testing proper gameplay, and remove when we release the mod]
+// [Note to self@Stache: all the following is only to see the full shiplog. Comment/Uncomment the lines when testing proper gameplay, and remove when we release the mod]
+/*
     "COSMICCURATORS_OMINOUS_ORBITER_E",
     "COSMICCURATORS_EXHIBIT_ROOMS_R",
     "COSMICCURATORS_EXHIBIT_ROOMS_E",
@@ -98,6 +99,7 @@
     "COSMICCURATORS_VOLCANO_SUMMIT_IGNITE",
     "COSMICCURATORS_PHOSPHORUS_R",
     "COSMICCURATORS_PHOSPHORUS_E"
+  */
   ],
   "entryPositions": [
     {
@@ -312,7 +314,7 @@
       "highlightColor": { "r": 240, "g": 120, "b": 240, "a": 255 } // LIGHTER PURPLE
     },
     {
-      "id": "PLACEHOLDER_VOLCANO_SUMMIT_CURIOSITY",
+      "id": "COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY",
       "color": { "r": 240, "g": 120, "b": 120, "a": 255 }, // RED
       "highlightColor": { "r": 240, "g": 150, "b": 150, "a": 255 } // LIGHTER RED
     },
