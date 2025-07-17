@@ -120,10 +120,8 @@ namespace FifthModJam
         {
             // Close eyes
             yield return StartCoroutine(FifthModJam.Instance.CloseEyesCoroutine());
-            yield return new WaitForSeconds(Constants.BLINK_STAY_CLOSED_TIME);
-
-            // Update objects
             _museum.SetActive(true);
+            yield return new WaitForSeconds(Constants.BLINK_STAY_CLOSED_TIME);
             _starLight.SetActive(false);
 
             // Warp

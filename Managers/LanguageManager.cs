@@ -26,6 +26,7 @@
         {
             return _hasLearnedLangCache;
         }
+
         public void RevealFactLanguagesLearned()
         {
             Locator.GetShipLogManager().RevealFact("COSMICCURATORS_CRYSTAL_PROX");

@@ -423,6 +423,9 @@
   },
   "ShipLog": {
     "xmlFile": "planets/shiplogs/Ship.xml",
-    "spriteFolder": "planets/shiplogs/sprites"
+    "spriteFolder": "planets/shiplogs/sprites",
+    "mapMode": {
+      "revealedSprite": "planets/shiplogs/sprites/COSMICCURATORS_OMINOUS_ORBITER.png"
+    }
   }
 }

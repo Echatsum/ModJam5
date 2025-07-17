@@ -88,7 +88,6 @@
 		"$COSMICCURATORS_CODED_DOORS_SCOUT_RUMOR_TEXT": "I found a signal with a peculiar name.",
 		"$COSMICCURATORS_CODED_DOORS_SCOUT_EXPLORE_TEXT": "The scout signal I found has a familiar name.",
 		"$COSMICCURATORS_CODED_DOORS_KAVHOUSE_RUMOR_TEXT": "The Karvi know about the Inhabitant codes.",
-		"$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT": "A message in one of the houses in the Karvi Diorama hint that a code is usually five symbols long.",
 
 		// Owlk Houses
 		"$COSMICCURATORS_INHABITANT_HOUSES_NAME": "Inhabitant Houses",
@@ -119,7 +118,8 @@
 		"$COSMICCURATORS_ERNESTO_EXPLORE_TEXT1": "There is a cult gathering in a secret room!",
 		"$COSMICCURATORS_ERNESTO_EXPLORE_TEXT2": "Ernesto the magic talking anglerfish was summoned by the cult!",
 
-		// Owlk Tower - TODO
+		// Owlk Tower
+		"$COSMICCURATORS_OWLK_TOWER_NAME": "Inhabitant Tower",
 		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_RUMOR_TEXT": "The shuttle collided with the tower in the other diorama!",
 		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_TEXT": "I was able to knock over the tower in the Inhabitant Diorama with the gravity cannon in the Nomai Diorama.",
 
@@ -135,15 +135,12 @@
 
 		// Quantum Geysers
 		"$COSMICCURATORS_QUANTUM_GEYSERS_NAME": "Quantum Geyser",
-		"$COSMICCURATORS_QUANTUM_GEYSERS_RUMOR_NAME": "Quantum Sockets",
-		"$COSMICCURATORS_QUANTUM_GEYSERS_RUMOR_TEXT": "I can have some control on quantum objects.",
 		"$COSMICCURATORS_QUANTUM_GEYSERS_EXPLORE_TEXT": "There is a quantum geyser in the Hearthian exhibit hopping between rings of stone in the river",
 		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT1": "I am able to place down items atop rings of stone marked along the river.",
 		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT2": "When the geyser is completely blocked from the river, it is forced onto the mountain pointing at the cave.",
 
 		// Ghost Matter Cave
 		"$COSMICCURATORS_GHOST_MATTER_CAVE_NAME": "Ghost Matter Cave",
-		"$COSMICCURATORS_GHOST_MATTER_CAVE_RUMOR_TEXT": "I can make the geyser point at the cave.",
 		"$COSMICCURATORS_GHOST_MATTER_CAVE_EXPLORE_TEXT": "I found a cave barricaded by a dense field of ghost matter. Entering it by conventional means is likely fatal.",
 		"$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT1": "I made it past the ghost matter with the aid of a collapsed quantum geyser.",
 		"$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT2": "I am soaked wet. Even when no longer sprayed by the geyser it is enough to nullify the ghost matter for just a bit of time.",
@@ -156,12 +153,10 @@
 
 		// Scout Signal
 		"$COSMICCURATORS_SCOUT_SIGNAL_NAME": "Abandoned Scout Signal",
-		"$COSMICCURATORS_SCOUT_SIGNAL_EXPLORE_TEXT": "I found a new frequency from an abandoned scout in the Hearthian Diorama.",
+		"$COSMICCURATORS_SCOUT_SIGNAL_EXPLORE_TEXT": "I found a new frequency from an abandoned scout in the Hearthian Diorama. I can now see several other signals available for me to find.",
 
 		// Broken Scouts
-		"$COSMICCURATORS_BROKEN_SCOUTS_NAME": "Broken Scouts",
-		"$COSMICCURATORS_BROKEN_SCOUTS_RUMOR_NAME": "Karvi Wavelengths",
-		"$COSMICCURATORS_BROKEN_SCOUTS_RUMOR_TEXT": "After discovering the abandoned scout's signal, I can now see several other signals available for me to find.",
+		"$COSMICCURATORS_BROKEN_SCOUTS_NAME": "Karvi Wavelengths",
 		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1": "I found a signal in the Inhabitant diorama. The name of the signal oddly reads as '1 - RING'",
 		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT2": "I found a signal in the Inhabitant diorama. The name of the signal oddly reads as '2 - EYE'",
 		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT3": "I found a signal in the Nomai diorama. The name of the signal oddly reads as '3 - FIRE'",
@@ -169,7 +164,8 @@
 		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT5": "I found a signal in the Hearthian diorama. The name of the signal oddly reads as '5 - STAR'",
 
 		// Karvi Message - TODO
-
+		"$COSMICCURATORS_KARVI_MESSAGE_NAME": "Karvi Message",
+		"$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT": "A message in one of the houses in the Karvi Diorama hint that a code is usually five symbols long.",
 
 		// Volcano Building
 		"$COSMICCURATORS_VOLCANO_BUILDING_NAME": "Volcano Building",

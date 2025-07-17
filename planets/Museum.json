@@ -1,6 +1,6 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "name": "ScaledMuseum",
+  "name": "Scaled Museum",
   "starSystem": "Jam5",
   "Base": {
     "surfaceSize": 800,
@@ -69,6 +69,11 @@
       }
     ],
     "dialogue": [
+      {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/Text/StrangerText/Dialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/StrangerDiorama/Bukrad.xml"
+      },
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/KarviText/Dialogue",
         "isRelativeToParent": true,
@@ -442,7 +447,7 @@
         "isRelativeToParent": true,
         "name": "Scout Distress Signal",
         "volume": 0.1,
-        "reveals": "MUSEUM_HEA_FIRSTSIGNAL_E"
+        "reveals": "COSMICCURATORS_SCOUT_SIGNAL_E"
       },
       {
         "frequency": "Karvi Wavelength",
@@ -544,7 +549,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "MUSEUM_STR_CODE_E" ],
+        "reveals": [ "COSMICCURATORS_REEL_HOUSE_ENTER" ],
         "radius": 3,
         "position": {
           "x": 172.8949,
@@ -608,6 +613,13 @@
         "position": {
           "z": 2
         }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_QUANTUM_GEYSERS_R" ],
+        "radius": 15,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/Prefab_IP_DW_CodeTotem",
+        "isRelativeToParent": true
       },
       {
         "revealFor": "player",
@@ -782,6 +794,9 @@
   ],
   "ShipLog": {
     "xmlFile": "planets/shiplogs/Museum.xml",
-    "spriteFolder": "planets/shiplogs/sprites"
+    "spriteFolder": "planets/shiplogs/sprites",
+    "mapMode": {
+      "revealedSprite": "planets/shiplogs/sprites/COSMICCURATORS_OMINOUS_ORBITER.png"
+    }
   }
 }

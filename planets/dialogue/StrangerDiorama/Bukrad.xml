@@ -2,13 +2,13 @@
 	<NameField>SIGN</NameField>
 	<!-- The name of this character -->
 	<DialogueNode>
-		<Name>KarviStrangerClue</Name>
+		<Name>StrangerBukrad</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>The sentient bird species we've been observing preserves things like we do, but seal it all behind lock and key. Their key is often a code of five symbols.</Page>
+			<Page>One of the avian creatures went mad after watching too many reels. Documentaries about a peculiar multi-legged animal, we believe. In their madness, the creature went on to destroy the whole reel collection.</Page>
 		</Dialogue>
 		<RevealFacts>
-			<FactID>COSMICCURATORS_KARVI_MESSAGE_FACT</FactID>
+			<FactID>COSMICCURATORS_REEL_HOUSE_BUKRAD</FactID>
 		</RevealFacts>
 	</DialogueNode>
 </DialogueTree>
