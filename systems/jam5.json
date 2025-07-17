@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
   "name": "Jam5",
   "initialReveal": [
-    "COSMICCURATORS_OMINOUS_ORBITER_R",
+    "COSMICCURATORS_OMINOUS_ORBITER_R"
 // [Note to self@Stache: all the following is only to see the full shiplog. Comment/Uncomment the lines when testing proper gameplay, and remove when we release the mod]
 /*
     "COSMICCURATORS_OMINOUS_ORBITER_E",

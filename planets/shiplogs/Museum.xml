@@ -2,72 +2,28 @@
 <!-- All files must have "AstroObjectEntry" as their root element, the xmlns:xsi=... and xsi:noNamespaceSchemaLocation=... is optional but heavily encouraged to reduce errors -->
 <AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
   <ID>MUSEUM</ID> <!-- The ID of the planet this xml file is for -->
-  
-  <!-- [Note to self@Stache: Placeholders on the Karvi message?] -->
-
-  <!-- Coded Doors -->
-  <Entry><ID>COSMICCURATORS_CODED_DOORS</ID>
-    <Name>$COSMICCURATORS_CODED_DOORS_NAME</Name>
-    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
-
-    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_R</ID>
-      <SourceID>COSMICCURATORS_REEL_HOUSE</SourceID>
-      <Text>$COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_RUMOR_TEXT</Text>
-    </RumorFact>
-    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_VOLCANO_R</ID>
-      <SourceID>COSMICCURATORS_VOLCANO_BUILDING</SourceID>
-      <Text>$COSMICCURATORS_CODED_DOORS_VOLCANO_RUMOR_TEXT</Text>
-    </RumorFact>
-    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_STRHOUSE_R</ID>
-      <SourceID>COSMICCURATORS_INHABITANT_HOUSES</SourceID>
-      <Text>$COSMICCURATORS_CODED_DOORS_STRHOUSE_RUMOR_TEXT</Text>
-    </RumorFact>    
-    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_SCOUT_R</ID>
-      <SourceID>COSMICCURATORS_BROKEN_SCOUTS</SourceID>
-      <Text>$COSMICCURATORS_CODED_DOORS_SCOUT_EXPLORE_TEXT</Text>
-    </RumorFact>    
-    <RumorFact><ID>COSMICCURATORS_CODED_DOORS_KAV_R</ID>
-      <SourceID>PLACEHOLDER_KARVI_MESSAGE</SourceID>
-      <Text>$COSMICCURATORS_CODED_DOORS_KAVHOUSE_RUMOR_TEXT</Text>
-    </RumorFact>
-    
-    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_E</ID>
-      <Text>$COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_EXPLORE_TEXT</Text>
-    </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_VOLCANO_E</ID>
-      <Text>$COSMICCURATORS_CODED_DOORS_VOLCANO_EXPLORE_TEXT</Text>
-    </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_STRHOUSE_E</ID>
-      <Text>$COSMICCURATORS_CODED_DOORS_STRHOUSE_EXPLORE_TEXT</Text>
-    </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_SCOUT_E</ID>
-      <Text>$COSMICCURATORS_CODED_DOORS_SCOUT_EXPLORE_TEXT</Text>
-    </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_CODED_DOORS_KAVHOUSE_E</ID>
-      <Text>$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT</Text>
-    </ExploreFact>
-  </Entry>
-
   <!-- Owlk Houses -->
   <Entry><ID>COSMICCURATORS_INHABITANT_HOUSES</ID>
     <Name>$COSMICCURATORS_INHABITANT_HOUSES_NAME</Name>
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
     <!-- [Note: Order mixed on purpose so that the player has to figure out the house shapes, not just use the shiplog order] -->
-    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E4</ID>
-      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4</Text>
-    </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E1</ID>
       <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1</Text>
     </ExploreFact>
+	  <ExploreFact>
+		  <ID>COSMICCURATORS_INHABITANT_HOUSES_E2</ID>
+		  <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2</Text>
+	  </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E3</ID>
       <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3</Text>
     </ExploreFact>
+	  <ExploreFact>
+		  <ID>COSMICCURATORS_INHABITANT_HOUSES_E4</ID>
+		  <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4</Text>
+	  </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E5</ID>
       <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5</Text>
-    </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E2</ID>
-      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2</Text>
     </ExploreFact>
   </Entry>
   
@@ -91,68 +47,23 @@
   <Entry><ID>COSMICCURATORS_SLIDE_REEL</ID>
     <Name>$COSMICCURATORS_SLIDE_REEL_NAME</Name>
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
-
-    <RumorFact><ID>COSMICCURATORS_SLIDE_REEL_R</ID>
-      <SourceID>COSMICCURATORS_REEL_HOUSE</SourceID>
-      <Text>$COSMICCURATORS_SLIDE_REEL_RUMOR_TEXT</Text>
-    </RumorFact>
-    
     <ExploreFact><ID>COSMICCURATORS_SLIDE_REEL_E</ID>
       <Text>$COSMICCURATORS_SLIDE_REEL_EXPLORE_TEXT</Text>
     </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_SLIDE_REEL_WATCH</ID>
       <Text>$COSMICCURATORS_SLIDE_REEL_WATCH_TEXT</Text>
     </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_SLIDE_REEL_ERNESTO_E</ID>
-      <Text>$COSMICCURATORS_SLIDE_REEL_ERNESTO_EXPLORE_TEXT</Text>
-    </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_SLIDE_REEL_ERNESTO_WATCH</ID>
-      <Text>$COSMICCURATORS_SLIDE_REEL_ERNESTO_WATCH_TEXT</Text>
-    </ExploreFact>
-  </Entry>
-
-  <!-- Ernesto-->
-  <Entry><ID>COSMICCURATORS_ERNESTO</ID>
-    <Name>$COSMICCURATORS_ERNESTO_NAME</Name>
-    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
-
-    <RumorFact><ID>COSMICCURATORS_ERNESTO_R</ID>
-      <RumorName>$COSMICCURATORS_ERNESTO_RUMOR_NAME</RumorName>
-      <SourceID>COSMICCURATORS_SLIDE_REEL</SourceID>
-      <Text>$COSMICCURATORS_ERNESTO_RUMOR_TEXT</Text>
-    </RumorFact>
-
-    <ExploreFact><ID>COSMICCURATORS_ERNESTO_E1</ID>
-      <Text>$COSMICCURATORS_ERNESTO_EXPLORE_TEXT1</Text>
-    </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_ERNESTO_E2</ID>
-      <Text>$COSMICCURATORS_ERNESTO_EXPLORE_TEXT2</Text>
-    </ExploreFact>
   </Entry>
   
   <!-- Owlk Tower -->
   <Entry><ID>COSMICCURATORS_OWLK_TOWER</ID>
-    <Name>PLACEHOLDER_OWLK_TOWER</Name>
+    <Name>$COSMICCURATORS_OWLK_TOWER_NAME</Name>
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
-
-    <RumorFact>
-      <ID>PLACEHOLDER_OWLK_TOWER_RUMOR</ID>
-      <SourceID>COSMICCURATORS_SLIDE_REEL</SourceID>
-      <Text>[Reveal when watching the first part of the reel about the pole] Wow the reel showed there is a boat pole in the tower</Text>
-    </RumorFact>
+	  
     <RumorFact><ID>COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_R</ID>
       <SourceID>COSMICCURATORS_NOMAI_CANNON</SourceID>
       <Text>$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_RUMOR_TEXT</Text>
     </RumorFact>
-
-    <ExploreFact>
-      <ID>PLACEHOLDER_OWLK_TOWER_FACT</ID>
-      <Text>[Reveal when swimming close to the support] Wow the tower is not up to builders code</Text>
-    </ExploreFact>
-    <ExploreFact>
-      <ID>PLACEHOLDER_OWLK_TOWER_FACT2</ID>
-      <Text>[Reveal when watching the first part of the reel about the pole OR when simply finding the pole] Wow there is a boat pole in the tower</Text>
-    </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_INHABITANT_TOWER_COLLAPSE</ID>
       <Text>$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_TEXT</Text>
     </ExploreFact>
@@ -207,12 +118,6 @@
   <Entry><ID>COSMICCURATORS_GHOST_MATTER_CAVE</ID>
     <Name>$COSMICCURATORS_GHOST_MATTER_CAVE_NAME</Name>
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
-
-    <RumorFact><ID>COSMICCURATORS_GHOST_MATTER_CAVE_R</ID>
-      <SourceID>COSMICCURATORS_QUANTUM_GEYSERS</SourceID>
-      <Text>$COSMICCURATORS_GHOST_MATTER_CAVE_RUMOR_TEXT</Text>
-    </RumorFact>
-
     <ExploreFact><ID>COSMICCURATORS_GHOST_MATTER_CAVE_E</ID>
       <Text>$COSMICCURATORS_GHOST_MATTER_CAVE_EXPLORE_TEXT</Text>
     </ExploreFact>
@@ -228,12 +133,6 @@
   <Entry><ID>COSMICCURATORS_FELDSPAR_MYTH</ID>
     <Name>$COSMICCURATORS_FELDSPAR_MYTH_NAME</Name>
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
-
-    <RumorFact><ID>COSMICCURATORS_FELDSPAR_MYTH_R</ID>
-      <RumorName>$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_NAME</RumorName>
-      <SourceID>COSMICCURATORS_GHOST_MATTER_CAVE</SourceID>
-      <Text>$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_TEXT</Text>
-    </RumorFact>
 
     <ExploreFact><ID>COSMICCURATORS_FELDSPAR_MYTH_E</ID>
       <Text>$COSMICCURATORS_FELDSPAR_MYTH_EXPLORE_TEXT</Text>
@@ -265,70 +164,65 @@
       <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
     </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE2</ID>
-      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT2</Text>
     </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE3</ID>
-      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT3</Text>
     </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE4</ID>
-      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT4</Text>
     </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_BROKEN_SCOUTS_CODE5</ID>
-      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1</Text>
+      <Text>$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT5</Text>
     </ExploreFact>
   </Entry>
 
   <!-- Karvi Message -->
-  <Entry><ID>PLACEHOLDER_KARVI_MESSAGE</ID>
-    <Name>PLACEHOLDER_KARVI_MESSAGE</Name>
+  <Entry><ID>COSMICCURATORS_KARVI_MESSAGE</ID>
+    <Name>$COSMICCURATORS_KARVI_MESSAGE_NAME</Name>
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
-    <ExploreFact><ID>PLACEHOLDER_KARVI_MESSAGE_FACT</ID>
-      <Text>[Reveal when finding message] Wow a door code hint</Text>
+    <ExploreFact><ID>COSMICCURATORS_KARVI_MESSAGE_FACT</ID>
+      <Text>$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT</Text>
     </ExploreFact>
   </Entry>
-
-  <!-- Volcano Building -->
-  <Entry><ID>COSMICCURATORS_VOLCANO_BUILDING</ID>
-    <Name>$COSMICCURATORS_VOLCANO_BUILDING_NAME</Name>
-    <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
-
-    <RumorFact><ID>COSMICCURATORS_VOLCANO_BUILDING_R</ID>
-      <RumorName>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME</RumorName>
-      <Text>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_TEXT</Text>
-    </RumorFact>
-    <RumorFact><ID>COSMICCURATORS_VOLCANO_BUILDING_FELDSPAR_R</ID>
-      <SourceID>COSMICCURATORS_FELDSPAR_MYTH</SourceID>
-      <RumorName>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME</RumorName>
-      <Text>$COSMICCURATORS_VOLCANO_BUILDING_FELDSPAR_RUMOR_TEXT</Text>
-    </RumorFact>
-
-    <ExploreFact><ID>COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM</ID>
-      <Text>$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT</Text>
-    </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_VOLCANO_BUILDING_DOOR</ID>
-      <Text>$COSMICCURATORS_VOLCANO_BUILDING_DOOR_TEXT</Text>
-    </ExploreFact>
-  </Entry>
-  
-  <!-- Volcano Summit -->
+	
+  <!-- Volcano -->
   <Entry><ID>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</ID>
     <Name>$COSMICCURATORS_VOLCANO_SUMMIT_NAME</Name>
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
     <IsCuriosity />
+	  <RumorFact>
+		  <ID>COSMICCURATORS_VOLCANO_BUILDING_R</ID>
+		  <RumorName>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME</RumorName>
+		  <Text>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_TEXT</Text>
+	  </RumorFact>
+	  <RumorFact>
+		  <ID>COSMICCURATORS_VOLCANO_BUILDING_FELDSPAR_R</ID>
+		  <SourceID>COSMICCURATORS_FELDSPAR_MYTH</SourceID>
+		  <RumorName>$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME</RumorName>
+		  <Text>$COSMICCURATORS_VOLCANO_BUILDING_FELDSPAR_RUMOR_TEXT</Text>
+	  </RumorFact>
+	  <RumorFact>
+		  <ID>COSMICCURATORS_VOLCANO_SUMMIT_R</ID>
+		  <RumorName>$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_NAME</RumorName>
+		  <Text>$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_TEXT</Text>
+	  </RumorFact>
+	  <RumorFact>
+		  <ID>COSMICCURATORS_VOLCANO_SUMMIT_REEL_R</ID>
+		  <RumorName>$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_NAME</RumorName>
+		  <SourceID>COSMICCURATORS_SLIDE_REEL</SourceID>
+		  <Text>$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_TEXT</Text>
+	  </RumorFact>
 
-    <RumorFact><ID>COSMICCURATORS_VOLCANO_SUMMIT_R</ID>
-      <RumorName>$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_NAME</RumorName>
-      <SourceID>COSMICCURATORS_VOLCANO_BUILDING</SourceID>
-      <Text>$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_TEXT</Text>
-    </RumorFact>    
-    <RumorFact>
-      <ID>COSMICCURATORS_VOLCANO_SUMMIT_REEL_R</ID>
-      <RumorName>$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_NAME</RumorName>
-      <SourceID>COSMICCURATORS_SLIDE_REEL</SourceID>
-      <Text>$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_TEXT</Text>
-    </RumorFact>
-
+	  <ExploreFact>
+		  <ID>COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM</ID>
+		  <Text>$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT</Text>
+	  </ExploreFact>
+	  <ExploreFact>
+		  <ID>COSMICCURATORS_VOLCANO_BUILDING_DOOR</ID>
+		  <Text>$COSMICCURATORS_VOLCANO_BUILDING_DOOR_TEXT</Text>
+	  </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_VOLCANO_SUMMIT_E</ID>
       <Text>$COSMICCURATORS_VOLCANO_SUMMIT_EXPLORE_TEXT</Text>
     </ExploreFact>
@@ -341,12 +235,6 @@
   <Entry><ID>COSMICCURATORS_PHOSPHORUS</ID>
     <Name>$COSMICCURATORS_PHOSPHORUS_NAME</Name>
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
-
-    <RumorFact><ID>COSMICCURATORS_PHOSPHORUS_R</ID>
-      <RumorName>$COSMICCURATORS_PHOSPHORUS_RUMOR_NAME</RumorName>
-      <SourceID>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</SourceID>
-      <Text>$COSMICCURATORS_PHOSPHORUS_RUMOR_TEXT</Text>
-    </RumorFact>
 
     <ExploreFact><ID>COSMICCURATORS_PHOSPHORUS_E</ID>
       <Text>$COSMICCURATORS_PHOSPHORUS_EXPLORE_TEXT</Text>
