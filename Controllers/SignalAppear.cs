@@ -48,7 +48,7 @@ namespace FifthModJam
 
         private bool HasDiscoveredSignals()
         {
-            return Locator.GetShipLogManager().IsFactRevealed("MUSEUM_HEA_FIRSTSIGNAL_E");
+            return Locator.GetShipLogManager().IsFactRevealed("COSMICCURATORS_SCOUT_SIGNAL_E");
         }
     }
 }

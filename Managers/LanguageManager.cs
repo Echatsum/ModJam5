@@ -16,7 +16,7 @@
         public void Start()
         {
             // Set cache at the start
-            _hasLearnedLangCache = Locator.GetShipLogManager().IsFactRevealed("SHIP_CRYSTAL_E1");
+            _hasLearnedLangCache = Locator.GetShipLogManager().IsFactRevealed("COSMICCURATORS_CRYSTAL_PROX");
 
             FifthModJam.WriteLineReady("LanguageManager");
         }
@@ -28,7 +28,7 @@
         }
         public void RevealFactLanguagesLearned()
         {
-            Locator.GetShipLogManager().RevealFact("SHIP_CRYSTAL_E1");
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_CRYSTAL_PROX");
             _hasLearnedLangCache = true; // Update the cache when learning
 
             OnLanguagesLearned?.Invoke(); // Event to let every handler update their status
