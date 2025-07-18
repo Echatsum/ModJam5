@@ -13,6 +13,7 @@ namespace FifthModJam
         private SpeciesItemSocket _speciesItemSocket;
         [SerializeField]
         private GameObject _tractorBeam;
+        public GameObject tractorItem;
 
         private void VerifyUnityParameters()
         {
@@ -52,6 +53,11 @@ namespace FifthModJam
 
         private void OnSocketFilled(OWItem item)
         {
+            tractorItem = item.gameObject;
+            if (tractorItem != null)
+            {
+                tractorItem.SetActive(false);
+            }
             CheckActivation();
         }
         private void CheckActivation()
@@ -65,6 +71,11 @@ namespace FifthModJam
 
         private void OnSocketRemoved(OWItem item)
         {
+            tractorItem = item.gameObject;
+            if (tractorItem != null)
+            {
+                tractorItem.SetActive(true);
+            }
             _tractorBeam?.SetActive(false);
         }
     }

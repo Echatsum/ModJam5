@@ -125,7 +125,7 @@ namespace FifthModJam
 
         private IEnumerator PlayNoPowerAnim()
         {
-            _noPowerAudio?.PlayOneShot(global::AudioType.AlarmChime_DW, 1f); // Change the sound here
+            _noPowerAudio?.PlayOneShot(global::AudioType.GearRotate_Fail, 1f); // Change the sound here
             yield return new WaitForSeconds(1f);
 
             Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_NOPOWER");
@@ -134,6 +134,7 @@ namespace FifthModJam
         private IEnumerator PlayAnim()
         {
             // Launch shuttle
+            _noPowerAudio?.PlayOneShot(global::AudioType.GearRotate_Heavy, 1f); // Change the sound here
             _shuttleAudio?.PlayOneShot(global::AudioType.NomaiVesselPowerUp, 1f);
             _shuttleAnim?.Play("SHUTTLE", 0);
             yield return new WaitForSeconds(2f);
