@@ -6,12 +6,12 @@
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>When an object is occupying the same space as a quantum socket, the quantum object cannot collapse into that possibility.</Text>
+		<Text>When an item is occupying the same space as a quantum socket, the quantum object cannot collapse into that possibility.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>Therefore, it is possible to influence the possibilities of a quantum object by simply blocking these sockets with non-quantum objects.</Text>
+		<Text>Therefore, it is possible to influence the possibilities of a quantum object by simply blocking these sockets with non-quantum items.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 		<RevealFact>
