@@ -28,6 +28,11 @@
     "details": [
       {
         "assetBundle": "planets/assets/AssetBundle/jam5",
+        "path": "Assets/Karvi/KarviShip_Exterior.prefab",
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "planets/assets/AssetBundle/jam5",
         "path": "Assets/Karvi/KarviShip_Interior.prefab"
       },
       {
@@ -88,6 +93,13 @@
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ShipText",
+        "isRelativeToParent": true,
+        "removeComponents": true,
+        "rename": "Dialogue"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/FuelText",
         "isRelativeToParent": true,
         "removeComponents": true,
         "rename": "Dialogue"
@@ -211,6 +223,11 @@
       {
         "xmlFile": "planets/dialogue/ShipInterior/HearthianExhibit/Ship.xml",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ShipText/Dialogue",
+        "isRelativeToParent": true
+      },
+      {
+        "xmlFile": "planets/dialogue/ShipInterior/HearthianExhibit/Fuel.xml",
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/FuelText/Dialogue",
         "isRelativeToParent": true
       }
     ],

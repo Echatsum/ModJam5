@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="planets\assets\Slideshows\Secret\" />
-    <Folder Include="planets\dialogue\ShipInterior\HearthianExhibit\" />
     <Folder Include="planets\dialogue\ShipInterior\StrangerExhibit\" />
     <Folder Include="planets\dialogue\ShipInterior\NomaiExhibit\" />
     <Folder Include="planets\shiplogs\sprites\" />
