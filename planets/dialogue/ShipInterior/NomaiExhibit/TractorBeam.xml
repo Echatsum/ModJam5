@@ -1,6 +1,6 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>A piece of technology capable of pushing objects away from a location. This device resembles the technology and features intricate designs that reflect its complex engineering.</Text>
+		<Text>Nickel: A piece of technology capable of pushing objects away from a location. This device features intricate designs that reflect its complex engineering.</Text>
 	</TextBlock>
 </NomaiObject>

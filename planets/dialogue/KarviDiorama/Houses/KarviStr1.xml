@@ -5,7 +5,7 @@
 		<Name>KarviStrangerClue</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>The sentient bird species we've been observing preserves things like we do, but seal it all behind lock and key. Their key is often a code of five symbols.</Page>
+			<Page>Chlorine has been observing the sentient bird species. They preserve things like we do, but seal it all behind lock and key. Their key is often a code of five symbols.</Page>
 		</Dialogue>
 		<RevealFacts>
 			<FactID>COSMICCURATORS_CODED_DOORS_KAVHOUSE_E</FactID>

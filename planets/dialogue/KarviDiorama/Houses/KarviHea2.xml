@@ -5,7 +5,7 @@
 		<Name>KarviStrangerClue</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>The amphibians have founded a space program! Perhaps they will be the true ones to interact with the vortex? Maybe this Feldspar character will wind up finding it completely by accident...</Page>
+			<Page>The amphibians have founded a space program! Perhaps they will be the true ones to interact with the vortex? Sulfur claims they could find it completely by accident...</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

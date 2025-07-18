@@ -5,7 +5,7 @@
 		<Name>Crystal</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>A strange device that plays audio. While it’s unknown how it operates, we speculate that it uses trapped spirits for entertainment.</Page>
+			<Page>A strange device that plays audio. While it’s unknown how it operates, Beryl speculates that it uses trapped spirits for entertainment.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

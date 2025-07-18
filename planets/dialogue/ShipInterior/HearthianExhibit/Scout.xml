@@ -5,7 +5,7 @@
 		<Name>Crystal</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>A device made from haphazardly tossed-together technology from their predecessors, capable of scouting areas for hazards or, as the first pilot seemed to do in a hazardous situation, fly.</Page>
+			<Page>A device made from haphazardly tossed-together technology from their predecessors. It is capable of scouting areas for hazards or, as the first pilot seemed to do in a hazardous situation, fly.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

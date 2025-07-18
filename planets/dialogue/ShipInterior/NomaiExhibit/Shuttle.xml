@@ -1,6 +1,6 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>A ship that is launched via a cannon of sorts. The Hanging Nomai settlement was the first to make these to reconnect to their underground settlement.</Text>
+		<Text>Chrom: A ship that is launched via a cannon of sorts. The hanging Nomai settlement was the first to make these to reconnect to their underground settlement.</Text>
 	</TextBlock>
 </NomaiObject>
