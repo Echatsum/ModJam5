@@ -127,6 +127,8 @@
 		// Nomai Cannon
 		"$COSMICCURATORS_NOMAI_CANON_NAME": "Gravity Cannon",
 		"$COSMICCURATORS_NOMAI_CANON_EXPLORE_TEXT": "A gravity cannon sits atop a structure in the Nomai Diorama.",
+		"$COSMICCURATORS_NOMAI_CANNON_NOPOWER_TEXT": "I pressed the launch button but nothing happened. I think there is no power.",
+		"$COSMICCURATORS_NOMAI_CANNON_POWERED_TEXT": "I restored the power by placing the crystal on a pedestal near the cannon.",
 		"$COSMICCURATORS_NOMAI_CANON_SHOOT_TEXT": "The shuttle can be launched by activating the cannon.",
 
 		// Fourth Quantum Rule

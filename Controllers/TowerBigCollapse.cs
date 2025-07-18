@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
+// [Note: Ideally I would like to split this class in two, this is starting to carry the task of both the cannon and the tower. But we're too close to the jam end so I'll abstain from risking it]
 namespace FifthModJam
 {
     /// <summary>
@@ -18,12 +20,19 @@ namespace FifthModJam
         [SerializeField]
         private OWAudioSource _shuttleAudio;
 
+        // The power socket
+        [SerializeField]
+        private SpeciesItemSocket _powerSocket;
+        [SerializeField]
+        private OWAudioSource _noPowerAudio; // putting this here if we want to play a sound effect
+
         // The activating button
         [SerializeField]
         private InteractReceiver _interactReceiver;
         [SerializeField]
         private GearInterfaceEffects _gearInterface; // [Note: Currently unused. Initially meant for effects at button press]
 
+        private bool _isCannonPowered = false;
         private bool _hasFallen = false;
 
         private void VerifyUnityParameters()
@@ -44,17 +53,13 @@ namespace FifthModJam
             {
                 FifthModJam.WriteLine("[TowerBigCollapse] shuttle audio is null", OWML.Common.MessageType.Error);
             }
+            if (_powerSocket == null)
+            {
+                FifthModJam.WriteLine("[TowerBigCollapse] power socket is null", OWML.Common.MessageType.Error);
+            }
             if (_interactReceiver == null)
             {
                 FifthModJam.WriteLine("[TowerBigCollapse] interact receiver is null", OWML.Common.MessageType.Error);
-            }
-        }
-
-        private void OnDestroy()
-        {
-            if (_interactReceiver != null)
-            {
-                _interactReceiver.OnPressInteract -= OnPressInteract;
             }
         }
 
@@ -66,7 +71,7 @@ namespace FifthModJam
             {
                 _interactReceiver.OnPressInteract += OnPressInteract;
                 _interactReceiver.SetPromptText(UITextType.RotateGearPrompt);
-            }        
+            }
         }
         private void OnEnable()
         {
@@ -78,9 +83,52 @@ namespace FifthModJam
             }
         }
 
+        private void Awake()
+        {
+            if (_powerSocket != null)
+            {
+                _powerSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Combine(_powerSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
+                _powerSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Combine(_powerSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+            }
+        }
+        private void OnDestroy()
+        {
+            if (_interactReceiver != null)
+            {
+                _interactReceiver.OnPressInteract -= OnPressInteract;
+            }
+
+            if (_powerSocket != null)
+            {
+                _powerSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Remove(_powerSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
+                _powerSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Remove(_powerSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+            }
+        }
+
+        private void OnSocketFilled(OWItem item)
+        {
+            if (_powerSocket.HasCorrectSpeciesItem())
+            {
+                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_POWERED");
+                _isCannonPowered = true;
+            }
+        }
+        private void OnSocketRemoved(OWItem item)
+        {
+            _isCannonPowered = false;
+        }
+
         private void ForceTowerFallenState()
         {
             _towerAnim?.Play("TOWER_AFTER", 0);
+        }
+
+        private IEnumerator PlayNoPowerAnim()
+        {
+            _noPowerAudio?.PlayOneShot(global::AudioType.AlarmChime_DW, 1f); // Change the sound here
+            yield return new WaitForSeconds(1f);
+
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_NOPOWER");
         }
 
         private IEnumerator PlayAnim()
@@ -107,6 +155,12 @@ namespace FifthModJam
         private void OnPressInteract()
         {
             if (_hasFallen) return; // Doesn't do anything after the tower has fallen
+
+            if (!_isCannonPowered)
+            {
+                StartCoroutine(PlayNoPowerAnim());
+                return;
+            }
 
             _hasFallen = true;
             TowerCollapseManager.Instance.CollapseTower();
