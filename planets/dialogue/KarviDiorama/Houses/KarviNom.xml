@@ -1,6 +1,6 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>What's this? White shell-like pods have crash-landed in the vortex's system. And just when we thought this story was over, another goat-like species shows its face.</Text>
+		<Text>What's this? White shell-like pods have crash-landed in the vortex's system! Just when we thought this story was over, another species its goat face.</Text>
 	</TextBlock>
 </NomaiObject>
