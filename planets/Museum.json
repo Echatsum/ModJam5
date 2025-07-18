@@ -13,6 +13,9 @@
     "semiMajorAxis": 1800,
     "trueAnomaly": 180
   },
+  "ReferenceFrame": {
+    "enabled": false
+  },
   "Spawn": {
     "playerSpawnPoints": [
       {
