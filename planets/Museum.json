@@ -198,6 +198,20 @@
         "rotation": {
           "y": 180
         }
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": 175.45,
+          "y": -99.46796,
+          "z": -189.2911
+        },
+        "rotation": {
+          "x": 0,
+          "y": 270,
+          "z": 0
+        },
+        "xmlFile": "planets/dialogue/NomaiDiorama/PowerSocket.xml"
       }
     ],
     "slideShows": [
