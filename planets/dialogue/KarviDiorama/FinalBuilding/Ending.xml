@@ -53,4 +53,28 @@
 		</RevealFacts>
 		<SetCondition>KARVI_MET</SetCondition>
 	</DialogueNode>
+	<DialogueNode>
+		<Name>Ending2</Name>
+		<EntryCondition>KARVI_MET</EntryCondition>
+		<Dialogue>
+			<Page>Farewell Hatchling. Just remember, that your friend Phosphorus will be watching your back, rooting for you.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I won't forget!</Text>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Could you make that whole speech again? I think I've misheard something.</Text>
+				<DialogueTarget>SpeechAgain</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	<DialogueNode>
+		<Name>SpeechAgain</Name>
+		<Dialogue>
+			<Page>Well then, if you say so.</Page>
+			<Page>*Ahem*</Page>
+		</Dialogue>
+		<DialogueTarget>Ending</DialogueTarget>
+	</DialogueNode>
 </DialogueTree>

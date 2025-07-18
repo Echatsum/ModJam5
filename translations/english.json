@@ -50,7 +50,7 @@
 		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_NAME": "Room Behind the Wall",
 		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_TEXT": "The wall swung open to reveal a room behind it.",
 		"$COSMICCURATORS_DIORAMA_ROOM_EXPLORE_TEXT": "There are four dioramas inside this room. They appear to be based on the same four species of the exhibits.",
-		"$COSMICCURATORS_DIORAMA_ROOM_MINIATURE_TEXT": "I can jump inside the dioramas and become <![CDATA[<color=orange>miniature</color>]]>!",
+		"$COSMICCURATORS_DIORAMA_ROOM_MINIATURE_TEXT": "I can jump inside the dioramas! It feels as if I have been shrunk...",
 
 		// -- MUSEUM ENTRIES
 
@@ -92,7 +92,7 @@
 
 		// Fourth Quantum Rule
 		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_NAME": "Rule of Quantum Manipulation",
-		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT": "According to a Nomai scroll, a fourth quantum rule states that a non-quantum object occupying the same space as a quantum socket can make it impossible for a quantum object to collapse on that socket.",
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT": "According to a Nomai scroll, a fourth quantum rule states that a non-quantum item occupying the same space as a quantum socket can make it impossible for a quantum object to collapse on that socket.",
 
 		// Quantum Geysers
 		"$COSMICCURATORS_QUANTUM_GEYSERS_NAME": "Quantum Geyser",
