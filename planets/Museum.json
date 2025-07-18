@@ -353,7 +353,10 @@
             "beatAudio": "planets/assets/Audio/ghostdeath.wav",
             "backdropAudio": "planets/assets/Audio/silence.ogg"
           },
-          { "imagePath": "planets/assets/Slideshows/Secret/burn1.png" },
+          {
+            "imagePath": "planets/assets/Slideshows/Secret/burn1.png",
+            "backdropAudio": "planets/assets/Audio/BURN.wav"
+          },
           { "imagePath": "planets/assets/Slideshows/Secret/burn2.png" },
           { "imagePath": "planets/assets/Slideshows/Secret/burn3.png" },
           { "imagePath": "planets/assets/Slideshows/Secret/burn4.png" },
