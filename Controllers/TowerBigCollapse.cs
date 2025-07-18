@@ -128,7 +128,6 @@ namespace FifthModJam
             _noPowerAudio?.PlayOneShot(global::AudioType.AlarmChime_DW, 1f); // Change the sound here
             yield return new WaitForSeconds(1f);
 
-            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_NOPOWER");
         }
 
         private IEnumerator PlayAnim()
@@ -147,9 +146,6 @@ namespace FifthModJam
             _towerAudio?.PlayOneShot(global::AudioType.Tower_RW_Fall_2, 1f);
             yield return new WaitForSeconds(1.4f);
             _towerAudio?.PlayOneShot(global::AudioType.GeneralDestruction, 1f);
-            
-            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_R");
-            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_INHABITANT_TOWER_COLLAPSE");
         }
 
         private void OnPressInteract()
@@ -158,13 +154,14 @@ namespace FifthModJam
 
             if (!_isCannonPowered)
             {
+                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_NOPOWER");
                 StartCoroutine(PlayNoPowerAnim());
                 return;
             }
 
             _hasFallen = true;
             TowerCollapseManager.Instance.CollapseTower();
-            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_SHOOT");
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_R");
             StartCoroutine(PlayAnim());
         }
     }

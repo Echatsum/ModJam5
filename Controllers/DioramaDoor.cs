@@ -98,6 +98,7 @@ namespace FifthModJam
             yield return new WaitForSeconds(1f);
             _audio.Play(); // Audio plays after the door slams on the ground
             Locator.GetShipLogManager().RevealFact("COSMICCURATORS_DIORAMA_DOOR_SOLVED");
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_DIORAMA_ROOM_R");
         }
     }
 }

@@ -17,79 +17,62 @@
     </ExploreFact>
   </Entry>
   
-  <!-- Exhibit Rooms {2 Facts, 4 Dict Keys} +subentries -->
-  <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS</ID>
-    <Name>$COSMICCURATORS_EXHIBIT_ROOMS_NAME</Name>
+  <!-- Exhibit (KAV) {3 Facts, 4 Dict Keys} -->
+  <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS_KAV</ID>
+    <Name>$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME</Name>
     <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
-  
-    <RumorFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_R</ID>
-      <RumorName>$COSMICCURATORS_EXHIBIT_ROOMS_RUMOR_NAME</RumorName>
-      <SourceID>COSMICCURATORS_OMINOUS_ORBITER</SourceID>
-      <Text>$COSMICCURATORS_EXHIBIT_ROOMS_RUMOR_TEXT</Text>
-    </RumorFact>
     
-    <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_E</ID>
-      <Text>$COSMICCURATORS_EXHIBIT_ROOMS_EXPLORE_TEXT</Text>
+    <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_KAV_E</ID>
+      <Text>$COSMICCURATORS_EXHIBIT_ROOMS_KAV_EXPLORE_TEXT</Text>
     </ExploreFact>
-    
-    <!-- Subentry: Exhibit (KAV) {3 Facts, 4 Dict Keys} -->
-    <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS_KAV</ID>
-      <Name>$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME</Name>
-      <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
-      
-      <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_KAV_E</ID>
-        <Text>$COSMICCURATORS_EXHIBIT_ROOMS_KAV_EXPLORE_TEXT</Text>
-      </ExploreFact>
-      <ExploreFact><ID>COSMICCURATORS_CRYSTAL_PROX</ID>
-        <Text>$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT</Text>
-      </ExploreFact>      
-      <ExploreFact><ID>COSMICCURATORS_CRYSTAL_PICK</ID>
-        <Text>$COSMICCURATORS_CRYSTAL_PICKUP_TEXT</Text>
-      </ExploreFact>      
-    </Entry>
-    
-    <!-- Subentry: Exhibit (STR) {2 Facts, 3 Dict Keys} -->
-    <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS_STR</ID>
-      <Name>$COSMICCURATORS_EXHIBIT_ROOMS_STR_NAME</Name>
-      <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
-      
-      <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_STR_E</ID>
-        <Text>$COSMICCURATORS_EXHIBIT_ROOMS_STR_EXPLORE_TEXT</Text>
-      </ExploreFact>
-      <ExploreFact><ID>COSMICCURATORS_ARTIFACT_PICK</ID>
-        <Text>$COSMICCURATORS_ARTIFACT_PICKUP_TEXT</Text>
-      </ExploreFact>
-    </Entry>
-    
-    <!-- Subentry: Exhibit (NOM) {2 Facts, 3 Dict Keys} -->
-    <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS_NOM</ID>
-      <Name>$COSMICCURATORS_EXHIBIT_ROOMS_NOM_NAME</Name>
-      <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
-      
-      <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_NOM_E</ID>
-        <Text>$COSMICCURATORS_EXHIBIT_ROOMS_NOM_EXPLORE_TEXT</Text>
-      </ExploreFact>      
-      <ExploreFact><ID>COSMICCURATORS_TRACTORBEAM_PICK</ID>
-        <Text>$COSMICCURATORS_TRACTORBEAM_PICKUP_TEXT</Text>
-      </ExploreFact>
-    </Entry>
-    
-    <!-- Subentry: Exhibit (HEA) {3 Facts, 4 Dict Keys} -->
-    <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS_HEA</ID>
-      <Name>$COSMICCURATORS_EXHIBIT_ROOMS_HEA_NAME</Name>
-      <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
-      
-      <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_HEA_E</ID>
-        <Text>$COSMICCURATORS_EXHIBIT_ROOMS_HEA_EXPLORE_TEXT</Text>
-      </ExploreFact>      
-      <ExploreFact><ID>COSMICCURATORS_MARSHMALLOWS_PICK1</ID>
-        <Text>$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT1</Text>
-      </ExploreFact>
-      <ExploreFact><ID>COSMICCURATORS_MARSHMALLOWS_PICK2</ID>
-        <Text>$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT2</Text>
-      </ExploreFact>
-    </Entry>
+    <ExploreFact><ID>COSMICCURATORS_CRYSTAL_PROX</ID>
+      <Text>$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT</Text>
+    </ExploreFact>      
+    <ExploreFact><ID>COSMICCURATORS_CRYSTAL_PICK</ID>
+      <Text>$COSMICCURATORS_CRYSTAL_PICKUP_TEXT</Text>
+    </ExploreFact>      
+  </Entry>
   
+  <!-- Exhibit (STR) {2 Facts, 3 Dict Keys} -->
+  <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS_STR</ID>
+    <Name>$COSMICCURATORS_EXHIBIT_ROOMS_STR_NAME</Name>
+    <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
+    
+    <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_STR_E</ID>
+      <Text>$COSMICCURATORS_EXHIBIT_ROOMS_STR_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_ARTIFACT_PICK</ID>
+      <Text>$COSMICCURATORS_ARTIFACT_PICKUP_TEXT</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Exhibit (NOM) {2 Facts, 3 Dict Keys} -->
+  <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS_NOM</ID>
+    <Name>$COSMICCURATORS_EXHIBIT_ROOMS_NOM_NAME</Name>
+    <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
+    
+    <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_NOM_E</ID>
+      <Text>$COSMICCURATORS_EXHIBIT_ROOMS_NOM_EXPLORE_TEXT</Text>
+    </ExploreFact>      
+    <ExploreFact><ID>COSMICCURATORS_TRACTORBEAM_PICK</ID>
+      <Text>$COSMICCURATORS_TRACTORBEAM_PICKUP_TEXT</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <!-- Exhibit (HEA) {3 Facts, 4 Dict Keys} -->
+  <Entry><ID>COSMICCURATORS_EXHIBIT_ROOMS_HEA</ID>
+    <Name>$COSMICCURATORS_EXHIBIT_ROOMS_HEA_NAME</Name>
+    <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
+    
+    <ExploreFact><ID>COSMICCURATORS_EXHIBIT_ROOMS_HEA_E</ID>
+      <Text>$COSMICCURATORS_EXHIBIT_ROOMS_HEA_EXPLORE_TEXT</Text>
+    </ExploreFact>      
+    <ExploreFact><ID>COSMICCURATORS_MARSHMALLOWS_PICK1</ID>
+      <Text>$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT1</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_MARSHMALLOWS_PICK2</ID>
+      <Text>$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT2</Text>
+    </ExploreFact>
   </Entry>
   
   <!-- Diorama Door {2 Facts, 4 Dict Keys} -->
@@ -99,12 +82,32 @@
   
     <RumorFact><ID>COSMICCURATORS_DIORAMA_DOOR_R</ID>
       <RumorName>$COSMICCURATORS_DIORAMA_DOOR_RUMOR_NAME</RumorName>
-      <SourceID>COSMICCURATORS_EXHIBIT_ROOMS</SourceID>
+      <SourceID>COSMICCURATORS_OMINOUS_ORBITER</SourceID>
       <Text>$COSMICCURATORS_DIORAMA_DOOR_RUMOR_TEXT</Text>
     </RumorFact>
     
     <ExploreFact><ID>COSMICCURATORS_DIORAMA_DOOR_SOLVED</ID>
       <Text>$COSMICCURATORS_DIORAMA_DOOR_SOLVED_TEXT</Text>
+    </ExploreFact>
+  </Entry>
+
+  <!-- Diorama Room {3 Facts, 5 Dict Keys} -->
+  <Entry><ID>COSMICCURATORS_DIORAMA_CURIOSITY</ID>
+    <Name>$COSMICCURATORS_DIORAMA_ROOM_NAME</Name>
+    <Curiosity>COSMICCURATORS_DIORAMA_CURIOSITY</Curiosity>
+    <IsCuriosity />
+
+    <RumorFact><ID>COSMICCURATORS_DIORAMA_ROOM_R</ID>
+      <RumorName>$COSMICCURATORS_DIORAMA_ROOM_RUMOR_NAME</RumorName>
+      <SourceID>COSMICCURATORS_DIORAMA_DOOR</SourceID>
+      <Text>$COSMICCURATORS_DIORAMA_ROOM_RUMOR_TEXT</Text>
+    </RumorFact>
+
+    <ExploreFact><ID>COSMICCURATORS_DIORAMA_ROOM_E</ID>
+      <Text>$COSMICCURATORS_DIORAMA_ROOM_EXPLORE_TEXT</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_DIORAMA_ROOM_MINIATURE</ID>
+      <Text>$COSMICCURATORS_DIORAMA_ROOM_MINIATURE_TEXT</Text>
     </ExploreFact>
   </Entry>
 </AstroObjectEntry>

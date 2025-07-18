@@ -9,7 +9,7 @@
 	"ShipLogDictionary": {
 		// [Note: Missing Owlk Tower + Karvi Message]
 
-		// -- PURPLE ENTRIES
+		// -- SHIP ENTRIES
 
 		// Ominous Orbiter
 		"$COSMICCURATORS_OMINOUS_ORBITER_NAME": "Ominous Orbiter",
@@ -17,16 +17,10 @@
 		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_TEXT": "The Nomai named Ping has noticed a strange alien vessel orbiting a pulsar in the distance.",
 		"$COSMICCURATORS_OMINOUS_ORBITER_EXPLORE_TEXT": "I made it inside the alien ship. It appears to be eerie, yet humble.",
 
-		// Exhibit Rooms
-		"$COSMICCURATORS_EXHIBIT_ROOMS_NAME": "Exhibit Rooms",
-		"$COSMICCURATORS_EXHIBIT_ROOMS_RUMOR_NAME": "Fireplace room",
-		"$COSMICCURATORS_EXHIBIT_ROOMS_RUMOR_TEXT": "There is a large fireplace in the entrance room.",
-		"$COSMICCURATORS_EXHIBIT_ROOMS_EXPLORE_TEXT": "There are four exhibit rooms around the central fireplace",
-
 		// Exhibit Rooms (KAV)
 		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME": "Unknown Species Exhibit",
 		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_EXPLORE_TEXT": "I may have found an exhibition dedicated to the species who built this ship.",
-		"$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT": "When I approached this crystal, I learned how to read three new languages!", // [Note: Three? Not two? Do we learn Nomai too?]
+		"$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT": "When I approached this crystal, I learned how to read two new languages!",
 		"$COSMICCURATORS_CRYSTAL_PICKUP_TEXT": "I can also pick up the crystal.",
 
 		// Exhibit Rooms (STR)
@@ -55,47 +49,24 @@
 		"$COSMICCURATORS_DIORAMA_ROOM_NAME": "Diorama Room",
 		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_NAME": "Room Behind the Wall",
 		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_TEXT": "The wall swung open to reveal a room behind it.",
-		"$COSMICCURATORS_DIORAMA_ROOM_EXPLORE_TEXT": "There are four dioramas inside the room. They appear to be based on the same four species of the exhibits.",
-		"$COSMICCURATORS_DIORAMA_ROOM_MINIATURE_TEXT": "I can jump inside the dioramas and become <![CDATA[<color=orange>miniature</color>]]>",
+		"$COSMICCURATORS_DIORAMA_ROOM_EXPLORE_TEXT": "There are four dioramas inside this room. They appear to be based on the same four species of the exhibits.",
+		"$COSMICCURATORS_DIORAMA_ROOM_MINIATURE_TEXT": "I can jump inside the dioramas and become <![CDATA[<color=orange>miniature</color>]]>!",
 
-		// Dioramas (KAV, STR, NOM, HEA)
-		"$COSMICCURATORS_DIORAMA_KAV_NAME": "Karvi",
-		"$COSMICCURATORS_DIORAMA_KAV_EXPLORE_TEXT1": "One of the dioramas is dedicated to the Karvi.",
-		"$COSMICCURATORS_DIORAMA_KAV_EXPLORE_TEXT2": "TODO: More description (waiting on model)", // [Note-TODO: describe better once the exhibit is fully modelled]
-		"$COSMICCURATORS_DIORAMA_STR_NAME": "Inhabitants",
-		"$COSMICCURATORS_DIORAMA_STR_EXPLORE_TEXT1": "One of the dioramas is dedicated to the Stranger's Inhabitants.",
-		"$COSMICCURATORS_DIORAMA_STR_EXPLORE_TEXT2": "It is an island surrounded by a moat, with Inhabitant-styled wooden buildings on it. I count five small houses, a large one, and a very tall tower.",
-		"$COSMICCURATORS_DIORAMA_NOM_NAME": "Nomai",
-		"$COSMICCURATORS_DIORAMA_NOM_EXPLORE_TEXT1": "One of the dioramas is dedicated to the Nomai.",
-		"$COSMICCURATORS_DIORAMA_NOM_EXPLORE_TEXT2": "On one side the terrain is reminiscent of Brittle Hollow, on the other it is reminiscent of Ember Twin. There is a dark gap between them, bridged by a platform.",
-		"$COSMICCURATORS_DIORAMA_NOM_EXPLORE_TEXT3": "There is also Nomai-styled sandstone buildings, with a gravity cannon on the roof of the large one.",
-		"$COSMICCURATORS_DIORAMA_HEA_NAME": "Hearthian",
-		"$COSMICCURATORS_DIORAMA_HEA_EXPLORE_TEXT1": "One of the dioramas is dedicated to us Hearthians.",
-		"$COSMICCURATORS_DIORAMA_HEA_EXPLORE_TEXT2": "It bears ressemblance to one of Timber Hearth's craters. I can see a mountain, and a campfire next to a small river.",
-
-		// -- RED ENTRIES
+		// -- MUSEUM ENTRIES
 
 		// Coded Doors
-		"$COSMICCURATORS_CODED_DOORS_NAME": "Coded Door",
-		"$COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_RUMOR_TEXT": "The big house is locked with a code.",
-		"$COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_EXPLORE_TEXT": "There is a door locked by a code totem in the Inhabitant Diorama.",
-		"$COSMICCURATORS_CODED_DOORS_SLIDEHOUSE_OPEN_TEXT": "I found the code for the Inhabitant diorama door by observing the buildings: fire-gibbous-sun-crescent-ring.",
-		"$COSMICCURATORS_CODED_DOORS_VOLCANO_RUMOR_TEXT": "The door above the pit is locked with a code.",
-		"$COSMICCURATORS_CODED_DOORS_VOLCANO_EXPLORE_TEXT": "There door locked by a code totem in the Karvi Diorama.",
-		"$COSMICCURATORS_CODED_DOORS_VOLCANO_OPEN_TEXT": "I found the code for the Karvi diorama door by finding the scouts: ring-eye-fire-sun-star.",
-		"$COSMICCURATORS_CODED_DOORS_STRHOUSE_RUMOR_TEXT": "I found a symbol.",
-		"$COSMICCURATORS_CODED_DOORS_STRHOUSE_EXPLORE_TEXT": "I found a symbol in an oddly designed house in the Inhabitant Diorama.",
-		"$COSMICCURATORS_CODED_DOORS_SCOUT_RUMOR_TEXT": "I found a signal with a peculiar name.",
-		"$COSMICCURATORS_CODED_DOORS_SCOUT_EXPLORE_TEXT": "The scout signal I found has a familiar name.",
-		"$COSMICCURATORS_CODED_DOORS_KAVHOUSE_RUMOR_TEXT": "The Karvi know about the Inhabitant codes.",
+		"$COSMICCURATORS_CODED_DOORS_NAME": "Symbols",
+		"$COSMICCURATORS_CODED_DOORS_STRHOUSE_RUMOR_TEXT": "I found a symbol within an oddly designed house in the Inhabitant diorama.",
+		"$COSMICCURATORS_CODED_DOORS_SCOUT_RUMOR_TEXT": "I found a signal with a peculiar name within the dioramas.",
+		"$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT": "A message in one of the houses in the Karvi diorama hints that an Inhabitant code is usually five symbols long.",
 
 		// Owlk Houses
 		"$COSMICCURATORS_INHABITANT_HOUSES_NAME": "Inhabitant Houses",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1": "In one of the houses, I found a fire symbol.",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2": "In one of the houses, I found a gibbous symbol.",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3": "In one of the houses, I found a sun symbol.",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4": "In one of the houses, I found a crescent symbol.",
-		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5": "In one of the houses, I found a ring symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1": "I found a fire symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2": "I found a gibbous symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3": "I found a sun symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4": "I found a crescent symbol.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5": "I found a ring symbol.",
 
 		// Reel House
 		"$COSMICCURATORS_REEL_HOUSE_NAME": "Large House",
@@ -105,31 +76,19 @@
 
 		// Slide Reel
 		"$COSMICCURATORS_SLIDE_REEL_NAME": "Slide Reel",
-		"$COSMICCURATORS_SLIDE_REEL_RUMOR_TEXT": "I can use the reel house to watch the reel I found",
-		"$COSMICCURATORS_SLIDE_REEL_EXPLORE_TEXT": "I found a slide reel atop the collapsed tower.",
+		"$COSMICCURATORS_SLIDE_REEL_RUMOR_TEXT": "I found a reel in the collapsed tower.",
 		"$COSMICCURATORS_SLIDE_REEL_WATCH_TEXT": "A slide reel depicts a boat pole being used to ignite unlit torches.",
-		"$COSMICCURATORS_SLIDE_REEL_ERNESTO_EXPLORE_TEXT": "I found a slide reel (where you find Ernesto's reel).",
-		"$COSMICCURATORS_SLIDE_REEL_ERNESTO_WATCH_TEXT": "A slide reel depicts a hidden compartment in this ship.",
-
-		// Ernesto
-		"$COSMICCURATORS_ERNESTO_NAME": "Cultist Room",
-		"$COSMICCURATORS_ERNESTO_RUMOR_NAME": "Hidden Room",
-		"$COSMICCURATORS_ERNESTO_RUMOR_TEXT": "There is a hidden room in the ship",
-		"$COSMICCURATORS_ERNESTO_EXPLORE_TEXT1": "There is a cult gathering in a secret room!",
-		"$COSMICCURATORS_ERNESTO_EXPLORE_TEXT2": "Ernesto the magic talking anglerfish was summoned by the cult!",
 
 		// Owlk Tower
 		"$COSMICCURATORS_OWLK_TOWER_NAME": "Inhabitant Tower",
-		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_RUMOR_TEXT": "The shuttle collided with the tower in the other diorama!",
-		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_TEXT": "I was able to knock over the tower in the Inhabitant Diorama with the gravity cannon in the Nomai Diorama.",
-
+		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_RUMOR_TEXT": "The shuttle I launched collided with the tower in the other diorama!",
+		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_TEXT": "I can access the top room of the tower after knocking the whole structure down.",
 
 		// Nomai Cannon
 		"$COSMICCURATORS_NOMAI_CANON_NAME": "Gravity Cannon",
 		"$COSMICCURATORS_NOMAI_CANON_EXPLORE_TEXT": "A gravity cannon sits atop a structure in the Nomai Diorama.",
 		"$COSMICCURATORS_NOMAI_CANNON_NOPOWER_TEXT": "I pressed the launch button but nothing happened. I think there is no power.",
 		"$COSMICCURATORS_NOMAI_CANNON_POWERED_TEXT": "I restored the power by placing the crystal on a pedestal near the cannon.",
-		"$COSMICCURATORS_NOMAI_CANON_SHOOT_TEXT": "The shuttle can be launched by activating the cannon.",
 
 		// Fourth Quantum Rule
 		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_NAME": "Rule of Quantum Manipulation",
@@ -139,11 +98,12 @@
 		"$COSMICCURATORS_QUANTUM_GEYSERS_NAME": "Quantum Geyser",
 		"$COSMICCURATORS_QUANTUM_GEYSERS_EXPLORE_TEXT": "There is a quantum geyser in the Hearthian exhibit hopping between rings of stone in the river",
 		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT1": "I am able to place down items atop rings of stone marked along the river.",
-		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT2": "When the geyser is completely blocked from the river, it is forced onto the mountain pointing at the cave.",
+		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT2": "When the geyser is completely blocked from the river, it is forced onto the mountain.",
 
 		// Ghost Matter Cave
 		"$COSMICCURATORS_GHOST_MATTER_CAVE_NAME": "Ghost Matter Cave",
 		"$COSMICCURATORS_GHOST_MATTER_CAVE_EXPLORE_TEXT": "I found a cave barricaded by a dense field of ghost matter. Entering it by conventional means is likely fatal.",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_GEYSER_RUMOR_TEXT": "When on the mountain, the geyser is pointing directly at the cave.",
 		"$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT1": "I made it past the ghost matter with the aid of a collapsed quantum geyser.",
 		"$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT2": "I am soaked wet. Even when no longer sprayed by the geyser it is enough to nullify the ghost matter for just a bit of time.",
 
@@ -151,30 +111,26 @@
 		"$COSMICCURATORS_FELDSPAR_MYTH_NAME": "The Feldspar Myth",
 		"$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_NAME": "Recorder",
 		"$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_TEXT": "There is a recorder in the cave.",
-		"$COSMICCURATORS_FELDSPAR_MYTH_EXPLORE_TEXT": "A Hearthian Recorder shares a fictional story of Felspar using a Nomai tractor beam to reach an unreachable place.",
+		"$COSMICCURATORS_FELDSPAR_MYTH_EXPLORE_TEXT": "The Karvi wrote a fictional story about our pioneer pilot using a Nomai tractor beam to escape from a deep hole.",
 
 		// Scout Signal
 		"$COSMICCURATORS_SCOUT_SIGNAL_NAME": "Abandoned Scout Signal",
-		"$COSMICCURATORS_SCOUT_SIGNAL_EXPLORE_TEXT": "I found a new frequency from an abandoned scout in the Hearthian Diorama. I can now see several other signals available for me to find.",
+		"$COSMICCURATORS_SCOUT_SIGNAL_EXPLORE_TEXT": "An abandoned scout in the Hearthian Diorama is emiting on a precise frequency.",
 
 		// Broken Scouts
 		"$COSMICCURATORS_BROKEN_SCOUTS_NAME": "Karvi Wavelengths",
-		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1": "I found a signal in the Inhabitant diorama. The name of the signal oddly reads as '1 - RING'",
-		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT2": "I found a signal in the Inhabitant diorama. The name of the signal oddly reads as '2 - EYE'",
-		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT3": "I found a signal in the Nomai diorama. The name of the signal oddly reads as '3 - FIRE'",
-		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT4": "I found a signal in the Hearthian diorama. The name of the signal oddly reads as '4 - SUN'",
-		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT5": "I found a signal in the Hearthian diorama. The name of the signal oddly reads as '5 - STAR'",
-
-		// Karvi Message - TODO
-		"$COSMICCURATORS_KARVI_MESSAGE_NAME": "Karvi Message",
-		"$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT": "A message in one of the houses in the Karvi Diorama hint that a code is usually five symbols long.",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_RUMOR_TEXT": "There are several signals around the dioramas echoing on the new frequency.",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1": "One signal reads as '1 - RING'",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT2": "One signal reads as '2 - EYE'",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT3": "One signal reads as '3 - FIRE'",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT4": "One signal reads as '4 - SUN'",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT5": "One signal reads as '5 - STAR'",
 
 		// Volcano Building
-		"$COSMICCURATORS_VOLCANO_BUILDING_NAME": "Volcano Building",
+		"$COSMICCURATORS_VOLCANO_BUILDING_NAME": "Volcano",
 		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME": "High up place",
-		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_TEXT": "There is a dormant volcano in the Karvi diorama. I can enter the central chamber and see an opening high above, but my jetpack is not powerful enough to carry me there.",
-		"$COSMICCURATORS_VOLCANO_BUILDING_FELDSPAR_RUMOR_TEXT": "Feldspar's myth suggests that it's possible that a tractor beam can be used to ascend to higher places, if placed in a proper location.",
-		"$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT": "When placing a tractor beam at the center of the cave, it activated all of the sudden. I can now ascend to the building at the top of the mountain.",
+		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_TEXT": "There is a dormant volcano in the Karvi diorama. I can enter the central chamber and see an opening high above, but my jetpack is not powerful enough to carry me there due to a gravitational anomaly.",
+		"$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT": "When placing a tractor beam at the center of the volcano cave, it activated all of the sudden. I can now ascend to the building at the top.",
 		"$COSMICCURATORS_VOLCANO_BUILDING_DOOR_TEXT": "There is a code totem inside the building atop the mountain.",
 
 		// Volcano Summit
@@ -183,12 +139,12 @@
 		"$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_TEXT": "Using the odd signal names, I managed to crack the code and get to the other side of the door.",
 		"$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_TEXT": "A slide reel showed a strange hallway with unlit torches.",
 		"$COSMICCURATORS_VOLCANO_SUMMIT_EXPLORE_TEXT": "I found a dark hallway inside the building atop the mountain in the Karvi Exhibit.",
-		"$COSMICCURATORS_VOLCANO_SUMMIT_IGNITE_TEXT": "I used the pole to ignite the unlit torches.",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_IGNITE_TEXT": "I used the pole to ignite an unlit torch.",
 
 		// Phophorus
 		"$COSMICCURATORS_PHOSPHORUS_NAME": "Phosphorous",
 		"$COSMICCURATORS_PHOSPHORUS_RUMOR_NAME": "Further Up",
-		"$COSMICCURATORS_PHOSPHORUS_RUMOR_TEXT": "Lighting all the torches activated a beam.",
+		"$COSMICCURATORS_PHOSPHORUS_RUMOR_TEXT": "Lighting all the torches activated a beam further up still.",
 		"$COSMICCURATORS_PHOSPHORUS_EXPLORE_TEXT": "I met a living Karvi named Phosphorous!"
 	}
 }

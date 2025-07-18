@@ -54,6 +54,7 @@ namespace FifthModJam
             {
                 Locator.GetShipLogManager().RevealFact("COSMICCURATORS_GHOST_MATTER_CAVE_ENTER1");
                 Locator.GetShipLogManager().RevealFact("COSMICCURATORS_GHOST_MATTER_CAVE_ENTER2");
+                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_FELDSPAR_MYTH_R");
                 ToggleGhostMatterDamage(nullifyDamage: true);
             } 
         }

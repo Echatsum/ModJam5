@@ -207,7 +207,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02",
         "isRelativeToParent": true,
         "rename": "Tower_Reel",
-        "reveals": [ "COSMICCURATORS_SLIDE_REEL_WATCH" ],
+        "reveals": [ "COSMICCURATORS_SLIDE_REEL_WATCH", "COSMICCURATORS_VOLCANO_SUMMIT_REEL_R" ],
         "playWithShipLogFacts": [ "COSMICCURATORS_SLIDE_REEL_WATCH" ],
         "slides": [
           {
@@ -566,7 +566,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E1" ],
+        "reveals": [ "COSMICCURATORS_CODED_DOORS_STRHOUSE_R", "COSMICCURATORS_INHABITANT_HOUSES_E1" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House1/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -576,7 +576,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E2" ],
+        "reveals": [ "COSMICCURATORS_CODED_DOORS_STRHOUSE_R", "COSMICCURATORS_INHABITANT_HOUSES_E2" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House2/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -586,7 +586,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E3" ],
+        "reveals": [ "COSMICCURATORS_CODED_DOORS_STRHOUSE_R", "COSMICCURATORS_INHABITANT_HOUSES_E3" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House3/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -596,7 +596,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E4" ],
+        "reveals": [ "COSMICCURATORS_CODED_DOORS_STRHOUSE_R", "COSMICCURATORS_INHABITANT_HOUSES_E4" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House4/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
@@ -606,13 +606,20 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "COSMICCURATORS_INHABITANT_HOUSES_E5" ],
+        "reveals": [ "COSMICCURATORS_CODED_DOORS_STRHOUSE_R", "COSMICCURATORS_INHABITANT_HOUSES_E5" ],
         "radius": 2,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House5/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
         "position": {
           "z": 2
         }
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_E" ],
+        "radius": 2,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/RevealExplore",
+        "isRelativeToParent": true
       },
       {
         "revealFor": "player",
@@ -629,6 +636,13 @@
         "reveals": [ "COSMICCURATORS_GHOST_MATTER_CAVE_E" ],
         "radius": 15,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
+        "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_VOLCANO_BUILDING_R" ],
+        "radius": 15,
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Interactibles/Prefab_IP_DreamLibraryPedestal (3)",
         "isRelativeToParent": true
       },
       {

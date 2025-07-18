@@ -373,6 +373,13 @@
         "radius": 2,
         "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (3)",
         "isRelativeToParent": true
+      },
+      {
+        "revealFor": "player",
+        "reveals": [ "COSMICCURATORS_DIORAMA_ROOM_E" ],
+        "radius": 2,
+        "parentPath": "Sector/KarviShip_Interior/Interactibles/Diorama/RevealExplore",
+        "isRelativeToParent": true
       }
     ],
     "oxygenVolumes": [

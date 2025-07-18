@@ -113,6 +113,7 @@ namespace FifthModJam
             if (_currentState == 3)
             {
                 Locator.GetShipLogManager().RevealFact("COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET2");
+                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_GHOST_MATTER_CAVE_GEYSER_R");
             }
         }
     }

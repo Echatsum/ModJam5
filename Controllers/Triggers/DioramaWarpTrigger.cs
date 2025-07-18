@@ -28,7 +28,8 @@ namespace FifthModJam.Controllers.Triggers
 
             // Checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled)
-            {
+            {                
+                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_DIORAMA_ROOM_MINIATURE");
                 DioramaWarpManager.Instance.WarpTo(_warpTargetDiorama, isEnteringDiorama: true);
             }
         }

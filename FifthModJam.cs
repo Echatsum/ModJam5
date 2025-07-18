@@ -45,6 +45,7 @@ namespace FifthModJam
             MuseumDisablerManager.Spawn();
             LanguageManager.Spawn();
             TowerCollapseManager.Spawn();
+            ScoutCodeManager.Spawn();
         }
 
         public bool IsInJamFiveSystem()

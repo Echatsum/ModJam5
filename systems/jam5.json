@@ -5,18 +5,12 @@
     "COSMICCURATORS_OMINOUS_ORBITER_R"
   ],
   "entryPositions": [
+    // -- SHIP Entries
     {
       "id": "COSMICCURATORS_OMINOUS_ORBITER",
       "position": {
         "x": 0,
         "y": 0
-      }
-    },
-    {
-      "id": "COSMICCURATORS_EXHIBIT_ROOMS",
-      "position": {
-        "x": 0,
-        "y": 300
       }
     },
     {
@@ -61,39 +55,11 @@
         "y": 1300
       }
     },
-    {
-      "id": "COSMICCURATORS_DIORAMA_KAV",
-      "position": {
-        "x": -160,
-        "y": 1450
-      }
-    },
-    {
-      "id": "COSMICCURATORS_DIORAMA_STR",
-      "position": {
-        "x": 160,
-        "y": 1450
-      }
-    },
-    {
-      "id": "COSMICCURATORS_DIORAMA_NOM",
-      "position": {
-        "x": 160,
-        "y": 1150
-      }
-    },
-    {
-      "id": "COSMICCURATORS_DIORAMA_HEA",
-      "position": {
-        "x": -160,
-        "y": 1150
-      }
-    },
     // ---
     {
       "id": "COSMICCURATORS_CODED_DOORS",
       "position": {
-        "x": 0,
+        "x": -300,
         "y": 1800
       }
     },
@@ -114,15 +80,8 @@
     {
       "id": "COSMICCURATORS_SLIDE_REEL",
       "position": {
-        "x": 750,
-        "y": 2100
-      }
-    },
-    {
-      "id": "COSMICCURATORS_ERNESTO",
-      "position": {
-        "x": 1050,
-        "y": 2100
+        "x": 600,
+        "y": 1800
       }
     },
     {
@@ -163,8 +122,8 @@
     {
       "id": "COSMICCURATORS_FELDSPAR_MYTH",
       "position": {
-        "x": -900,
-        "y": 800
+        "x": -750,
+        "y": 1100
       }
     },
     {
@@ -179,13 +138,6 @@
       "position": {
         "x": -450,
         "y": 1500
-      }
-    },
-    {
-      "id": "PLACEHOLDER_KARVI_MESSAGE",
-      "position": {
-        "x": -300,
-        "y": 1800
       }
     },
     {

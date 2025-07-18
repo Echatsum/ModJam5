@@ -105,7 +105,7 @@ namespace FifthModJam
                 }
                 _audio?.PlayOneShot(global::AudioType.NomaiTractorBeamActivate, 0.5f);
                 _beamAnim?.Play("BEAM", 0);
-                Locator.GetShipLogManager().RevealFact("MUSEUM_KAV_TORCH_E");
+                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_PHOSPHORUS_R");
 
                 _isBeamActive = true;
             }
