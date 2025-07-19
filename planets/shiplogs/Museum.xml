@@ -28,22 +28,20 @@
     <Curiosity>COSMICCURATORS_VOLCANO_SUMMIT_CURIOSITY</Curiosity>
 
     <!-- [Note: Order mixed on purpose so that the player has to figure out the house shapes, not just use the shiplog order] -->
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E4</ID>
+      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E2</ID>
+      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2</Text>
+    </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E1</ID>
       <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1</Text>
     </ExploreFact>
-	  <ExploreFact>
-		  <ID>COSMICCURATORS_INHABITANT_HOUSES_E2</ID>
-		  <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2</Text>
-	  </ExploreFact>
-    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E3</ID>
-      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3</Text>
-    </ExploreFact>
-	  <ExploreFact>
-		  <ID>COSMICCURATORS_INHABITANT_HOUSES_E4</ID>
-		  <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4</Text>
-	  </ExploreFact>
     <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E5</ID>
       <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5</Text>
+    </ExploreFact>
+    <ExploreFact><ID>COSMICCURATORS_INHABITANT_HOUSES_E3</ID>
+      <Text>$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3</Text>
     </ExploreFact>
   </Entry>
   
