@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace FifthModJam.Controllers.Triggers
+namespace FifthModJam
 {
     public class ScoutRecallTrigger : MonoBehaviour
     {
