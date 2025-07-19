@@ -339,7 +339,7 @@
         "rename": "Secret_Reel",
         "slides": [
           {
-            "backdropAudio": "planets/assets/Audio/main_slidereel.ogg",
+            "backdropAudio": "planets/assets/Audio/secret_slidereel.ogg",
             "imagePath": "planets/assets/Slideshows/Secret/slide_00001.png"
           },
           { "imagePath": "planets/assets/Slideshows/Secret/slide_00002.png" },
