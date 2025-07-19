@@ -339,7 +339,7 @@
         "rename": "Secret_Reel",
         "slides": [
           {
-            "backdropAudio": "planets/assets/Audio/main_slidereel.ogg",
+            "backdropAudio": "planets/assets/Audio/secret_slidereel.ogg",
             "imagePath": "planets/assets/Slideshows/Secret/slide_00001.png"
           },
           { "imagePath": "planets/assets/Slideshows/Secret/slide_00002.png" },
@@ -527,16 +527,6 @@
         "name": "3 - FIRE",
         "volume": 0.1,
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE3"
-      },
-      {
-        "frequency": "Infared Readings",
-        "audio": "Loading Tunnel - Loop",
-        "identificationRadius": 5,
-        "detectionRadius": 20,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/ERN",
-        "isRelativeToParent": true,
-        "name": "Distorted Signal",
-        "volume": 0.1
       }
     ],
     "singularities": [
@@ -615,7 +605,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/House3/Props/Prefab_IP_PictureFrame",
         "isRelativeToParent": true,
         "position": {
-          "z": 2
+          "z": 9
         }
       },
       {
@@ -739,9 +729,9 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/Spawn",
         "isRelativeToParent": true,
         "radius": 100,
-        "clipSelection": "sequential",
+        "track": "music",
         "audio": "Reel_1_Backdrop_A",
-        "volume": 0.4,
+        "volume": 0.2,
         "rename": "StrangerAudio",
         "priority": 0
       },
@@ -749,6 +739,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/Spawn",
         "isRelativeToParent": true,
         "radius": 100,
+        "track": "music",
         "clipSelection": "sequential",
         "audio": "OW NM Nomai Ruins 081718 AP",
         "volume": 0.4,
@@ -759,6 +750,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/Spawn",
         "isRelativeToParent": true,
         "radius": 100,
+        "track": "music",
         "clipSelection": "sequential",
         "audio": "OW_TH_Museum",
         "volume": 0.4,
@@ -769,6 +761,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/Spawn",
         "isRelativeToParent": true,
         "radius": 100,
+        "track": "music",
         "clipSelection": "sequential",
         "audio": "planets/assets/Audio/saturn.ogg",
         "volume": 0.7,
@@ -779,6 +772,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/TheatreRoom_ProjectionHouse_Zone1",
         "isRelativeToParent": true,
         "radius": 3,
+        "track": "music",
         "clipSelection": "sequential",
         "audio": "planets/assets/Audio/silence.ogg",
         "rename": "Silence",
@@ -792,6 +786,7 @@
           "y": 2
         },
         "clipSelection": "sequential",
+        "track": "music",
         "audio": "planets/assets/Audio/olderthantheuniverse.mp3",
         "rename": "EndingSong",
         "volume": 0.4,
