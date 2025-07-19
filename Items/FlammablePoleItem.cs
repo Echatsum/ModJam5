@@ -56,8 +56,10 @@ namespace FifthModJam
         private void OnCameraEnterWater(float _)
         {
             // [Note to self@Stache: This trigger even when the player doesn't hold the item. Polish when have time so that we toggle flames only if item is held]
-
-            ToggleFlames(false);
+            if (this.isItemHeld)
+            {
+                ToggleFlames(false);
+            }
         }
 
         public void ToggleFlames(bool isIgniting)

@@ -25,7 +25,7 @@ namespace FifthModJam
 
         // scaling stuff
         private Vector3 targetScale = new Vector3(0.015f, 0.015f, 0.015f);
-        private float lerpDuration = 1;
+        private float lerpDuration = 1.5f;
 
         private void Start()
         {
