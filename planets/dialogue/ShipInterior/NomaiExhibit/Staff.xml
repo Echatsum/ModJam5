@@ -1,11 +1,11 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Cobalt: A weapon capable of short-range attacks similar to our “Kingfu.” Nearly everyone seemed to have one in life, making it a common item.</Text>
+		<Text>COBALT: A weapon capable of short-range attacks similar to our “Kingfu.” Nearly everyone seemed to have one in life, making it a common item.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Cobalt: How fast one could attack with it is unknown, but our experts believe one strike can take place within the span of a lightning bolt.</Text>
+		<Text>COBALT: How fast one could attack with it is unknown, but our experts believe one strike can take place within the span of a lightning bolt.</Text>
 	</TextBlock>
 </NomaiObject>

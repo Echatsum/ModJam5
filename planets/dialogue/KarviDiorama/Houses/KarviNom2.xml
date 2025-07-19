@@ -1,11 +1,11 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>We've noticed a small disturbance in the inner core of the vortex's host star. It appears that the Nomai have attempted to build some sort of probe to destroy the star. Why could they be doing this? Are they out of their minds?</Text>
+		<Text>ARGON: We've noticed a small disturbance in the inner core of the vortex's host star. It appears that the Nomai have attempted to build some sort of probe to destroy the star. Why could they be doing this? Are they out of their minds?</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>It doesn't really matter. Iridium noted that no energy they produce could have even forced the star to accelerate into its red giant phase. Otherwise, their plan could have worked.</Text>
+		<Text>ARGON: It doesn't really matter. Thorium noted that no energy they produce could have even forced the star to accelerate into its red giant phase. Otherwise, their plan could have worked.</Text>
 	</TextBlock>
 </NomaiObject>

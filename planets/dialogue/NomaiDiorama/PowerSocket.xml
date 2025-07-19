@@ -1,6 +1,6 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Thorium: Nomai powered their war weapons with cosmic energy. From star novaes to black holes, their engines always hungered for crystals made out of mass itself.</Text>
+		<Text>THORIUM: Nomai powered their war weapons with cosmic energy. From star novaes to black holes, their engines always hungered for crystals made out of mass itself.</Text>
 	</TextBlock>
 </NomaiObject>

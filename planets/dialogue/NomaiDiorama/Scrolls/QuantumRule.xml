@@ -1,17 +1,17 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Tin: The Nomai discovered three quantum rules when exploring the vortex's system. Little did they know, there was a fourth rule hidden in plain sight.</Text>
+		<Text>TIN: The Nomai discovered three quantum rules when exploring the vortex's system. Little did they know, there was a fourth rule hidden in plain sight.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Tin: When an item is occupying the same space as a quantum socket, the quantum object cannot collapse into that possibility.</Text>
+		<Text>TIN: When an item is occupying the same space as a quantum socket, the quantum object cannot collapse into that possibility.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>Tin: Therefore, it is possible to influence the possibilities of a quantum object by simply blocking these sockets with non-quantum items.</Text>
+		<Text>TIN: Therefore, it is possible to influence the possibilities of a quantum object by simply blocking these sockets with non-quantum items.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 		<RevealFact>
