@@ -19,5 +19,8 @@
     "xen",
     "JohnCorby",
     "Streetlights Behind The Trees"
+  ],
+  "preloadAssetBundles": [
+    "planets/assets/AssetBundle/jam5"
   ]
 }
