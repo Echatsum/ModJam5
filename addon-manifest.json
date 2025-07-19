@@ -8,6 +8,7 @@
     "Anonymous#Programmer",
     "Echatsum#Programmer",
     "Repcon#3D Modeling and Design",
+    "cOa Rex#2D Art",
     " # ",
     "Playtesters:",
     "vodblink",
@@ -16,6 +17,10 @@
     " # ",
     "Special Thanks:",
     "xen",
-    "Geswaldo"
+    "JohnCorby",
+    "Streetlights Behind The Trees"
+  ],
+  "preloadAssetBundles": [
+    "planets/assets/AssetBundle/jam5"
   ]
 }
