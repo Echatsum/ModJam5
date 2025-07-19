@@ -50,24 +50,28 @@
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/HearthianText",
         "isRelativeToParent": true,
+        "removeComponents": true,
         "rename": "HearthianEyeDialogue"
       },
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/HEA_Text",
         "isRelativeToParent": true,
+        "removeComponents": true,
         "rename": "FeldsparDialogue"
       },
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text1",
         "isRelativeToParent": true,
+        "removeComponents": true,
         "rename": "Recorder"
       },
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text2",
         "isRelativeToParent": true,
+        "removeComponents": true,
         "rename": "Recorder"
       }
     ],
