@@ -6,8 +6,8 @@ namespace FifthModJam.Controllers.Triggers
     {
         public virtual void OnTriggerEnter(Collider hitCollider)
         {
-            // Checks if player collides with the trigger volume
-            if (hitCollider.CompareTag("PlayerDetector") && enabled)
+            // Checks if scout collides with the trigger volume
+            if (hitCollider.CompareTag("ProbeDetector") && enabled)
             {
                 Locator.GetProbe().Retrieve(0.5f); // recall scout
             }

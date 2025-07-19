@@ -72,7 +72,6 @@ namespace FifthModJam
         public IEnumerator CloseEyesCoroutine()
         {
             OWInput.ChangeInputMode(InputMode.None); // stop player input for a while
-            Locator.GetProbe().Retrieve(0.5f); // recall scout
             var cameraEffectController = FindObjectOfType<PlayerCameraEffectController>();
             cameraEffectController.CloseEyes(Constants.BLINK_CLOSE_ANIM_TIME);
             yield return new WaitForSeconds(Constants.BLINK_CLOSE_ANIM_TIME);  // waits until animation stops to proceed to next line

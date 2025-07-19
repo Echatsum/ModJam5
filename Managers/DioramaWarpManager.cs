@@ -105,6 +105,13 @@ namespace FifthModJam
             var spawnPoint = _spawnPoints.ContainsKey(spawnPointTarget) ? _spawnPoints[spawnPointTarget] : null;
             if (spawnPoint == null) return; // Do not try to warp if invalid spawnPoint
 
+            // (Recall scout)
+            var probe = Locator.GetProbe();
+            if (probe != null && probe.IsLaunched())
+            {
+                probe.ExternalRetrieve(silent: true); // recall scout (without on-screen notification)
+            }
+
             if (isEnteringDiorama)
             {
                 StartCoroutine(EnterDioramaCoroutine(spawnPoint));
