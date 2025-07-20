@@ -73,7 +73,7 @@ namespace FifthModJam
             } 
         }
 
-        private void IgniteFlame()
+        public void IgniteFlame()
         {
             Locator.GetShipLogManager().RevealFact("COSMICCURATORS_VOLCANO_SUMMIT_IGNITE");
 
