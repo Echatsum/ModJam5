@@ -79,7 +79,6 @@ namespace FifthModJam
             if (_speciesItemSocket.HasCorrectSpeciesItem() && _lightSensor.IsIlluminated())
             {
                 _tractorBeam?.SetActive(true);
-                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM");
             }
         }
         private void OnSocketRemoved(OWItem item)

@@ -130,7 +130,7 @@
 		"$COSMICCURATORS_VOLCANO_BUILDING_NAME": "Volcano",
 		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME": "High up place",
 		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_TEXT": "There is a dormant volcano in the Karvi diorama. I can enter the central chamber and see an opening high above, but my jetpack is not powerful enough to carry me there due to a gravitational anomaly.",
-		"$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT": "When placing a tractor beam at the center of the volcano cave, it activated all of the sudden. I can now ascend to the building at the top.",
+		"$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT": "I placed the frame of a tractor beam at the center of the volcano cave and powered it through the light sensor nearby. I can now ascend to the building at the top.",
 		"$COSMICCURATORS_VOLCANO_BUILDING_DOOR_TEXT": "There is a code totem inside the building atop the mountain.",
 
 		// Volcano Summit

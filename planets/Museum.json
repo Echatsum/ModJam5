@@ -663,7 +663,7 @@
       },
       {
         "revealFor": "player",
-        "reveals": [ "COSMICCURATORS_VOLCANO_BUILDING_DOOR" ],
+        "reveals": [ "COSMICCURATORS_VOLCANO_BUILDING_DOOR", "COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM" ],
         "radius": 3,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_Totem",
         "isRelativeToParent": true
