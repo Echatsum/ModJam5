@@ -6,15 +6,35 @@
     "isPlatform": true
   },
   "Props": {
-    "warpTransmitters": [
+    "details": [
       {
-        "frequency": "KarviShip",
-        "alignmentWindow": 360,
+        "rename": "PlatformRoot",
+        "parentPath": "Sector",
+        "isRelativeToParent": true,
         "position": {
           "x": 0,
           "y": 0,
           "z": 60
         }
+      },
+      {
+        "assetBundle": "planets/assets/AssetBundle/jam5",
+        "path": "Assets/Karvi/ModPlatform.prefab",
+        "parentPath": "Sector/PlatformRoot",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 0,
+          "y": 90,
+          "z": 0
+        }
+      }
+    ],
+    "warpTransmitters": [
+      {
+        "frequency": "KarviShip",
+        "alignmentWindow": 360,
+        "parentPath": "Sector/PlatformRoot",
+        "isRelativeToParent": true
       }
     ]
   }
