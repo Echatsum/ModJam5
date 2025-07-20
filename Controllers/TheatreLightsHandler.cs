@@ -63,6 +63,7 @@ namespace FifthModJam
         }
         private void ToggleLights(bool turnOn)
         {
+            FifthModJam.WriteLine($"[TheatreLightsHandler] ToggleLights ({turnOn})", OWML.Common.MessageType.Success);
             foreach (var light in lights)
             {
                 light.SetActive(turnOn); // [Note: this is where we would add any gradual fading if we want. Right now this is just a simple SetActive on/off switch]
@@ -71,10 +72,12 @@ namespace FifthModJam
 
         public void OnEnterHouse()
         {
+            FifthModJam.WriteLine($"[TheatreLightsHandler] OnEnter", OWML.Common.MessageType.Success);
             ToggleLights(turnOn: _shouldLightsBeOn);
         }
         public void OnExitHouse()
         {
+            FifthModJam.WriteLine($"[TheatreLightsHandler] OnExit", OWML.Common.MessageType.Success);
             ToggleLights(turnOn: true);
         }
     }

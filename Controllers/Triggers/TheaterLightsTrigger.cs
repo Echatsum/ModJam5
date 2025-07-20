@@ -26,12 +26,15 @@ namespace FifthModJam
             // Checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled)
             {
+                FifthModJam.WriteLine("[TheaterLightsTrigger] Triggered by player", OWML.Common.MessageType.Success);
                 if (_isHouseEntry)
                 {
+                    FifthModJam.WriteLine($"[TheaterLightsTrigger] Triggered by player, OnEnter ({_lightsHandler == null})", OWML.Common.MessageType.Success);
                     _lightsHandler?.OnEnterHouse();
                 }
                 else
                 {
+                    FifthModJam.WriteLine($"[TheaterLightsTrigger] Triggered by player, OnExit ({_lightsHandler == null})", OWML.Common.MessageType.Success);
                     _lightsHandler?.OnExitHouse();
                 }
             }
