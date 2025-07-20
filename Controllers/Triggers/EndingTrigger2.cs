@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using NewHorizons.Utility.Files;
+using System.Collections;
 using UnityEngine;
 
 namespace FifthModJam
@@ -9,6 +10,10 @@ namespace FifthModJam
         private Animator kavAnim;
         [SerializeField]
         private FlameTrigger[] torches;
+        [SerializeField]
+        private OWAudioSource oneShot;
+        [SerializeField]
+        private OWAudioSource audio;
         [SerializeField]
         private GameObject dialogue;
 
@@ -38,11 +43,17 @@ namespace FifthModJam
             {
                 torch.IgniteFlame();
             }
+            if (audio != null && !audio.loop)
+            {
+                audio.loop = true;
+            }
             kavAnim.Play("preidel2postidel", 0);
-            yield return new WaitUntil(() =>
-                kavAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 &&
-                !kavAnim.IsInTransition(0)
-            );
+            oneShot?.PlayOneShot(global::AudioType.Door_CloseStart, 0.5f);
+            yield return new WaitForSeconds(1.4167f);
+            audio?.AssignAudioLibraryClip(global::AudioType.MovementMetalFootstep);
+            audio?.Play();
+            yield return new WaitForSeconds(2.5833f);
+            audio?.Stop();
             dialogue.SetActive(true);
         }
     }
