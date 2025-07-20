@@ -39,5 +39,10 @@
       "g": 209,
       "b": 219
     }
+  },
+  "ShipLog": {
+    "mapMode": {
+      "revealedSprite": "planets/shiplogs/sprites/PULSAR.png"
+    }
   }
 }

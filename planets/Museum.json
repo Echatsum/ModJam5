@@ -140,7 +140,7 @@
           "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_DialogueSocket",
           "isRelativeToParent": true,
           "position": {
-            "y": -1.5
+            "y": -0.5
           }
         }
       }
@@ -231,6 +231,7 @@
         "reveals": [ "COSMICCURATORS_SLIDE_REEL_WATCH", "COSMICCURATORS_VOLCANO_SUMMIT_REEL_R" ],
         "playWithShipLogFacts": [ "COSMICCURATORS_SLIDE_REEL_WATCH" ],
         "slides": [
+          { "imagePath": "planets/assets/Slideshows/Puzzle/title.png" },
           {
             "backdropAudio": "planets/assets/Audio/main_slidereel.ogg",
             "imagePath": "planets/assets/Slideshows/Puzzle/slide_00001.png"
@@ -338,6 +339,7 @@
         "isRelativeToParent": true,
         "rename": "Secret_Reel",
         "slides": [
+          { "imagePath": "planets/assets/Slideshows/Secret/title.png" },
           {
             "backdropAudio": "planets/assets/Audio/secret_slidereel.ogg",
             "imagePath": "planets/assets/Slideshows/Secret/slide_00001.png"
@@ -826,7 +828,11 @@
     "spriteFolder": "planets/shiplogs/sprites",
     "mapMode": {
       "revealedSprite": "planets/shiplogs/sprites/MUSEUM.png",
-      "manualPosition": {"x": 0, "y": 200}
+      "manualPosition": {
+        "x": 0,
+        "y": 200
+      },
+      "invisibleWhenHidden": true
     }
   }
 }

@@ -38,7 +38,7 @@ namespace FifthModJam
             {
                 torch.IgniteFlame();
             }
-            kavAnim.Play("priedel2postidel", 0);
+            kavAnim.Play("preidel2postidel", 0);
             yield return new WaitUntil(() =>
                 kavAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 &&
                 !kavAnim.IsInTransition(0)

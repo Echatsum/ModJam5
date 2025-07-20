@@ -455,7 +455,11 @@
     "spriteFolder": "planets/shiplogs/sprites",
     "mapMode": {
       "revealedSprite": "planets/shiplogs/sprites/SHIP.png",
-      "manualPosition": { "x": 0, "y": 100 }
+      "manualPosition": {
+        "x": 0,
+        "y": 100
+      },
+      "invisibleWhenHidden": true
     }
   }
 }
