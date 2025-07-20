@@ -12,6 +12,8 @@
 
         private void Start()
         {
+            if (!FifthModJam.Instance.IsInJamFiveSystem()) return;
+
             GlobalMessenger.AddListener("IdentifySignal", OnSignalIdentified);
 
             _hasFoundSource = Locator.GetShipLogManager().IsFactRevealed("COSMICCURATORS_BROKEN_SCOUTS_CODE_R");
@@ -45,27 +47,18 @@
 
         private void CheckAndUpdate()
         {
-            FifthModJam.WriteLine("[GhostMatterTrigger] signal identified A", OWML.Common.MessageType.Error);
-
             if (_hasFoundSource && _hasfoundOneEcho) return; // Ignore when all facts revealed
-
-            FifthModJam.WriteLine("[GhostMatterTrigger] signal identified B", OWML.Common.MessageType.Error);
 
             if (HasIdentifiedSourceCode())
             {
-                FifthModJam.WriteLine("[GhostMatterTrigger] signal identified C", OWML.Common.MessageType.Error);
-
                 Locator.GetShipLogManager().RevealFact("COSMICCURATORS_BROKEN_SCOUTS_CODE_R");
                 _hasFoundSource = true;
             }
             if (HasIdentifiedEchoCode())
             {
-                FifthModJam.WriteLine("[GhostMatterTrigger] signal identified D", OWML.Common.MessageType.Error);
-
                 Locator.GetShipLogManager().RevealFact("COSMICCURATORS_CODED_DOORS_SCOUT_R");
                 _hasfoundOneEcho = true;
             }
-            FifthModJam.WriteLine("[GhostMatterTrigger] signal identified E", OWML.Common.MessageType.Error);
         }
         private bool HasIdentifiedSourceCode()
         {

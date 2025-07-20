@@ -18,6 +18,8 @@ namespace FifthModJam
 
         private void Start()
         {
+            if (!FifthModJam.Instance.IsInJamFiveSystem()) return;
+
             // Register game objects
             _hasRegisteredObjects = RegisterGameobjects();
 

@@ -8,6 +8,8 @@
 
         private void Start()
         {
+            if (!FifthModJam.Instance.IsInJamFiveSystem()) return;
+
             FifthModJam.WriteLineReady("TowerCollapseManager");
         }
 

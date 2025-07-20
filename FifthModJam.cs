@@ -65,7 +65,7 @@ namespace FifthModJam
         }
         public static void WriteLineReady(string classLocation)
         {
-            FifthModJam.WriteLine($"[{classLocation}] Ready", MessageType.Success); // [Note: Could make this a Debug message if we want]
+            FifthModJam.WriteLine($"[{classLocation}] Ready", MessageType.Debug);
         }
 
         // COROUTINES

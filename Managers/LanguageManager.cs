@@ -16,6 +16,8 @@
 
         public void Start()
         {
+            if (!FifthModJam.Instance.IsInJamFiveSystem()) return; // [Note: this sends an error anyway because NewHorizonsAPI might not be ready]
+
             // Set cache at the start
             _hasLearnedLangCache = Locator.GetShipLogManager().IsFactRevealed("COSMICCURATORS_CRYSTAL_PROX");
 
