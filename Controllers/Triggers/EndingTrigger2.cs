@@ -48,7 +48,7 @@ namespace FifthModJam
                 audio.loop = true;
             }
             kavAnim.Play("preidel2postidel", 0);
-            oneShot?.PlayOneShot(global::AudioType.Door_CloseStart, 0.5f);
+            oneShot?.PlayOneShot(global::AudioType.Door_CloseStart, 1f);
             yield return new WaitForSeconds(1.4167f);
             audio?.AssignAudioLibraryClip(global::AudioType.MovementMetalFootstep);
             audio?.Play();
