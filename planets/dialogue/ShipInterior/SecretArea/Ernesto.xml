@@ -181,6 +181,8 @@
 		<Dialogue>
 			<Page>Anyways, watch the door on your way out.</Page>
 		</Dialogue>
+		<SetPersistentCondition>CosmicCurators_Ernesto_PERM</SetPersistentCondition>
+		<SetCondition>CosmicCurators_Ernesto</SetCondition>
 		<SetCondition>ErnestoPissed</SetCondition>
 	</DialogueNode>
 
@@ -257,5 +259,7 @@
 		<Dialogue>
 			<Page>Bye bye.</Page>
 		</Dialogue>
+		<SetPersistentCondition>CosmicCurators_Ernesto_PERM</SetPersistentCondition>
+		<SetCondition>CosmicCurators_Ernesto</SetCondition>
 	</DialogueNode>
 </DialogueTree>
