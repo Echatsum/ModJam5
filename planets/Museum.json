@@ -544,7 +544,7 @@
       },
       {
         "type": "blackHole",
-        "horizonRadius": 0,
+        "horizonRadius": 0.09999999,
         "hasWarpEffects": false,
         "rename": "ENDING_BH",
         "uniqueID": "ENDING_BH",
@@ -816,12 +816,12 @@
   },
   "removeChildren": [
     // Note: the mod manager gives a warning that these don't exist.
-    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/BlackHoleRenderer",
-    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/BlackHoleAmbience",
-    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/BlackHoleEmissionOneShot",
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/ENDING_BH/BlackHoleRenderer",
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/ENDING_BH/BlackHoleAmbience",
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Lower/ENDING_BH/BlackHoleEmissionOneShot",
 
-    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper/WhiteHoleRenderer",
-    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper/WhiteHoleAmbience"
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper/ENDING_WH/WhiteHoleRenderer",
+    "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/TorchPuzzle/SingularitySocket_Upper/ENDING_WH/WhiteHoleAmbience"
   ],
   "ShipLog": {
     "xmlFile": "planets/shiplogs/Museum.xml",
