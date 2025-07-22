@@ -20,19 +20,20 @@ namespace FifthModJam
         [SerializeField]
         private OWAudioSource _shuttleAudio;
 
-        // The power socket
+        // The handler on whether the cannon has power
         [SerializeField]
-        private SpeciesItemSocket _powerSocket;
-        [SerializeField]
-        private OWAudioSource _noPowerAudio; // putting this here if we want to play a sound effect
+        private CannonPowerHandler _cannonPowerHandler;
+
+        // The interact audiosource
 
         // The activating button
         [SerializeField]
         private InteractReceiver _interactReceiver;
         [SerializeField]
         private GearInterfaceEffects _gearInterface; // [Note: Currently unused. Initially meant for effects at button press]
+        [SerializeField]
+        private OWAudioSource _interactAudio;
 
-        private bool _isCannonPowered = false;
         private bool _hasFallen = false;
 
         private void VerifyUnityParameters()
@@ -53,9 +54,9 @@ namespace FifthModJam
             {
                 FifthModJam.WriteLine("[TowerBigCollapse] shuttle audio is null", OWML.Common.MessageType.Error);
             }
-            if (_powerSocket == null)
+            if (_cannonPowerHandler == null)
             {
-                FifthModJam.WriteLine("[TowerBigCollapse] power socket is null", OWML.Common.MessageType.Error);
+                FifthModJam.WriteLine("[TowerBigCollapse] cannon power hnadler is null", OWML.Common.MessageType.Error);
             }
             if (_interactReceiver == null)
             {
@@ -83,39 +84,12 @@ namespace FifthModJam
             }
         }
 
-        private void Awake()
-        {
-            if (_powerSocket != null)
-            {
-                _powerSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Combine(_powerSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
-                _powerSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Combine(_powerSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
-            }
-        }
         private void OnDestroy()
         {
             if (_interactReceiver != null)
             {
                 _interactReceiver.OnPressInteract -= OnPressInteract;
             }
-
-            if (_powerSocket != null)
-            {
-                _powerSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Remove(_powerSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
-                _powerSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Remove(_powerSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
-            }
-        }
-
-        private void OnSocketFilled(OWItem item)
-        {
-            if (_powerSocket.HasCorrectSpeciesItem())
-            {
-                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_POWERED");
-                _isCannonPowered = true;
-            }
-        }
-        private void OnSocketRemoved(OWItem item)
-        {
-            _isCannonPowered = false;
         }
 
         private void ForceTowerFallenState()
@@ -125,15 +99,14 @@ namespace FifthModJam
 
         private IEnumerator PlayNoPowerAnim()
         {
-            _noPowerAudio?.PlayOneShot(global::AudioType.GearRotate_Fail, 1f); // Change the sound here
+            _interactAudio?.PlayOneShot(global::AudioType.GearRotate_Fail, 1f); // Change the sound here
             yield return new WaitForSeconds(1f);
-
         }
 
         private IEnumerator PlayAnim()
         {
             // Launch shuttle
-            _noPowerAudio?.PlayOneShot(global::AudioType.GearRotate_Heavy, 1f); // Change the sound here
+            _interactAudio?.PlayOneShot(global::AudioType.GearRotate_Heavy, 1f); // Change the sound here
             _shuttleAudio?.PlayOneShot(global::AudioType.NomaiVesselPowerUp, 1f);
             _shuttleAnim?.Play("SHUTTLE", 0);
             yield return new WaitForSeconds(2f);
@@ -153,9 +126,9 @@ namespace FifthModJam
         {
             if (_hasFallen) return; // Doesn't do anything after the tower has fallen
 
-            if (!_isCannonPowered)
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_NOPOWER"); // [Note: I put this out of the IsCannonPowered check, so that the fact is revealed even if the player launches after already powering the cannon]
+            if (!_cannonPowerHandler.IsCannonPowered)
             {
-                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_NOPOWER");
                 StartCoroutine(PlayNoPowerAnim());
                 return;
             }
