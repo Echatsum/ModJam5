@@ -29,6 +29,7 @@
     "hasStarController": true,
     "size": 200,
     "solarLuminosity": 1,
+    "lightRadius": 2500,
     "lightTint": {
       "r": 215,
       "g": 215,
