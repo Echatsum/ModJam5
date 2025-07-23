@@ -672,8 +672,11 @@
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_VOLCANO_SUMMIT_R" ],
         "radius": 1,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Building/Fancy Door (1)",
-        "isRelativeToParent": true
+        "position": {
+          "x": -173.543,
+          "y": -66.1753,
+          "z": 192.7662
+        }
       },
       {
         "revealFor": "player",
@@ -690,11 +693,10 @@
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_NOMAI_CANNON_E" ],
         "radius": 30,
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/NomaiExhibit/Buildings/GravityCannon",
-        "isRelativeToParent": true,
         "position": {
-          "y": -5,
-          "x": -10
+          "x": 165.7405,
+          "y": -78.4086,
+          "z": -183.0837
         }
       }
     ],

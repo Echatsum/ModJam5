@@ -367,29 +367,43 @@
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_KAV_E" ],
         "radius": 2,
-        "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door",
-        "isRelativeToParent": true
+        "position": {
+          "x": 10,
+          "y": 0,
+          "z": -2
+        }
       },
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_STR_E" ],
         "radius": 2,
-        "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (1)",
-        "isRelativeToParent": true
+        "position": {
+          "x": 10,
+          "y": 0,
+          "z": -18
+        }
       },
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_NOM_E" ],
         "radius": 2,
         "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (2)",
-        "isRelativeToParent": true
+        "isRelativeToParent": true,
+        "position": {
+          "x": -10,
+          "y": 0,
+          "z": -18
+        }
       },
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_HEA_E" ],
         "radius": 2,
-        "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (3)",
-        "isRelativeToParent": true
+        "position": {
+          "x": -10,
+          "y": 0,
+          "z": -2
+        }
       },
       {
         "revealFor": "player",
