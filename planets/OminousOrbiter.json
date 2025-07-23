@@ -387,8 +387,6 @@
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_NOM_E" ],
         "radius": 2,
-        "parentPath": "Sector/KarviShip_Interior/Building/Fancy Door (2)",
-        "isRelativeToParent": true,
         "position": {
           "x": -10,
           "y": 0,
