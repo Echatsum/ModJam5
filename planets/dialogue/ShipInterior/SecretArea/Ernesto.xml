@@ -184,6 +184,7 @@
 		<SetPersistentCondition>CosmicCurators_Ernesto_PERM</SetPersistentCondition>
 		<SetCondition>CosmicCurators_Ernesto</SetCondition>
 		<SetCondition>ErnestoPissed</SetCondition>
+    <SetCondition>ErnestoGrowling</SetCondition>
 	</DialogueNode>
 
 	<DialogueNode>
