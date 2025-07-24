@@ -1,0 +1,16 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>THORIUM: Nomai usually placed their controls right next to the launch pads.</Text>
+	</TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>THORIUM: This practice was born from crews often leaving one of their own behind on the pad, that crewmate then being in charge of the proper launch.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>1</ParentID>
+    <Text>THORIUM: The controls for this one cannon are on the roof, on the left.</Text>
+  </TextBlock>
+</NomaiObject>

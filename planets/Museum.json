@@ -219,6 +219,20 @@
           "z": 0
         },
         "xmlFile": "planets/dialogue/NomaiDiorama/PowerSocket.xml"
+      },
+      {
+        "type": "wall",
+        "position": {
+          "x": 160,
+          "y": -100.46796,
+          "z": -177.35
+        },
+        "rotation": {
+          "x": 0,
+          "y": 180,
+          "z": 0
+        },
+        "xmlFile": "planets/dialogue/NomaiDiorama/LaunchButton.xml"
       }
     ],
     "slideShows": [
