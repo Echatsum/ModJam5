@@ -411,7 +411,7 @@
           },
           {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
-            "isRelativeToParent": false,
+            "isRelativeToParent": true,
             "rename": "SOCKET3A"
           }
         ]
@@ -457,7 +457,7 @@
           },
           {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
-            "isRelativeToParent": false,
+            "isRelativeToParent": true,
             "rename": "SOCKET3C"
           }
         ]
@@ -734,8 +734,8 @@
         "isRelativeToParent": true,
         "radius": 100,
         "track": "music",
-        "audio": "Reel_1_Backdrop_A",
-        "volume": 0.2,
+        "audio": "OW Secret Library Whispers LP 040821 AP REF MIX",
+        "volume": 0.5,
         "rename": "StrangerAudio",
         "priority": 0
       },
@@ -746,7 +746,7 @@
         "track": "music",
         "clipSelection": "sequential",
         "audio": "OW NM Nomai Ruins 081718 AP",
-        "volume": 0.4,
+        "volume": 0.2,
         "rename": "NomaiAudio",
         "priority": 0
       },
@@ -757,7 +757,7 @@
         "track": "music",
         "clipSelection": "sequential",
         "audio": "OW_TH_Museum",
-        "volume": 0.4,
+        "volume": 0.2,
         "rename": "HearthAudio",
         "priority": 0
       },
@@ -768,7 +768,7 @@
         "track": "music",
         "clipSelection": "sequential",
         "audio": "planets/assets/Audio/saturn.ogg",
-        "volume": 0.7,
+        "volume": 0.5,
         "rename": "KarviAudio",
         "priority": 0
       },
@@ -793,7 +793,7 @@
         "track": "music",
         "audio": "planets/assets/Audio/olderthantheuniverse.mp3",
         "rename": "EndingSong",
-        "volume": 0.4,
+        "volume": 0.2,
         "priority": 1
       }
     ],

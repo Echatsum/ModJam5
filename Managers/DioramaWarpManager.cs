@@ -113,6 +113,7 @@ namespace FifthModJam
             {
                 probe.ExternalRetrieve(silent: true); // recall scout (without on-screen notification)
             }
+            
 
             if (isEnteringDiorama)
             {

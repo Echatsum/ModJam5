@@ -50,9 +50,9 @@ namespace FifthModJam
         {
             if (IsErnestoPissed())
             {
-                ernestoAnim.audio.PlayOneShot(global::AudioType.DBAnglerfishOpeningMouth, 0.5f);
                 if (!hasActivatedDeathVol)
                 {
+                    ernestoAnim.audio.PlayOneShot(global::AudioType.DBAnglerfishOpeningMouth, 0.5f);
                     hasActivatedDeathVol = true;
                     deathVol.SetActive(true);
                 }

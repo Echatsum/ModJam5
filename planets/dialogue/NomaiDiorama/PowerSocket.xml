@@ -3,4 +3,9 @@
 		<ID>1</ID>
 		<Text>THORIUM: Nomai powered their war weapons with cosmic energy. From star novae to black holes, their engines always hungered for crystals made out of mass itself.</Text>
 	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>THORIUM: When the power is on, the gravity cannon can be used with a small switch on the ceiling of this building.</Text>
+	</TextBlock>
 </NomaiObject>

@@ -444,7 +444,7 @@
         "radius": 100,
         "clipSelection": "sequential",
         "audio": "OW Eye Temple 121820_2 AP LP",
-        "volume": 0.4,
+        "volume": 0.2,
         "rename": "ShipAudio",
         "track": "music",
         "priority": 0
@@ -455,7 +455,7 @@
         "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/CultFire",
         "isRelativeToParent": true,
         "audio": "planets/assets/Audio/fearandashes.mp3",
-        "volume": 0.25,
+        "volume": 0.1,
         "track": "music",
         "rename": "SecretErnestoAudio",
         "priority": 1

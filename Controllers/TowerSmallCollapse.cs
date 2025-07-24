@@ -15,6 +15,8 @@ namespace FifthModJam.Controllers
         // Animator
         [SerializeField]
         private Animator _towerAnim;
+        [SerializeField]
+        private Animator _shuttleAnim;
 
         private void VerifyUnityParameters()
         {
@@ -41,6 +43,7 @@ namespace FifthModJam.Controllers
         private void OnTowerCollapse()
         {
             _towerAnim.Play("TOWER_AFTER", 0);
+            _shuttleAnim.Play("SHUTTLE_DONE", 0);
         }
     }
 }
