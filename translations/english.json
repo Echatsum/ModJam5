@@ -20,7 +20,7 @@
 		// Exhibit Rooms (KAV)
 		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME": "Unknown Species Exhibit",
 		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_EXPLORE_TEXT": "I may have found an exhibition dedicated to the species who built this ship.",
-		"$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT": "When I approached this crystal, I learned how to read two new languages!",
+		"$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT": "When I approached a floating crystal, I learned how to read two new languages!",
 		"$COSMICCURATORS_CRYSTAL_PICKUP_TEXT": "I can also pick up the crystal.",
 
 		// Exhibit Rooms (STR)
@@ -70,7 +70,7 @@
 
 		// Reel House
 		"$COSMICCURATORS_REEL_HOUSE_NAME": "Large House",
-		"$COSMICCURATORS_REEL_HOUSE_EXPLORE_TEXT": "There is a code totem locking the entrance to the big house in the Inhabitant Diorama.",
+		"$COSMICCURATORS_REEL_HOUSE_EXPLORE_TEXT": "There is a code totem locking the entrance to the big house in the Inhabitant diorama.",
 		"$COSMICCURATORS_REEL_HOUSE_ENTER_TEXT": "The big house is a reel house. There are shelves and a space to watch Inhabitant reels.",
 		"$COSMICCURATORS_REEL_HOUSE_BUKRAD_TEXT": "I found a story that does not make much sense that explain why there are no reels on the shelves.",
 
