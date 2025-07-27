@@ -357,57 +357,42 @@
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_DIORAMA_DOOR_R" ],
         "radius": 4,
-        "parentPath": "Sector/KarviShip_Interior/Building/Floor (13)",
-        "position": {
-          "y": 2
-        },
+        "parentPath": "Sector/KarviShip_Interior/RevealVolumes/DioramaDoor",
         "isRelativeToParent": true
       },
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_KAV_E" ],
         "radius": 2,
-        "position": {
-          "x": 10,
-          "y": 0,
-          "z": -2
-        }
+        "parentPath": "Sector/KarviShip_Interior/RevealVolumes/KAV",
+        "isRelativeToParent": true
       },
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_STR_E" ],
         "radius": 2,
-        "position": {
-          "x": 10,
-          "y": 0,
-          "z": -18
-        }
+        "parentPath": "Sector/KarviShip_Interior/RevealVolumes/STR",
+        "isRelativeToParent": true
       },
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_NOM_E" ],
         "radius": 2,
-        "position": {
-          "x": -10,
-          "y": 0,
-          "z": -18
-        }
+        "parentPath": "Sector/KarviShip_Interior/RevealVolumes/NOM",
+        "isRelativeToParent": true
       },
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_HEA_E" ],
         "radius": 2,
-        "position": {
-          "x": -10,
-          "y": 0,
-          "z": -2
-        }
+        "parentPath": "Sector/KarviShip_Interior/RevealVolumes/HEA",
+        "isRelativeToParent": true
       },
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_DIORAMA_ROOM_E" ],
         "radius": 2,
-        "parentPath": "Sector/KarviShip_Interior/Interactibles/Diorama/RevealExplore",
+        "parentPath": "Sector/KarviShip_Interior/RevealVolumes/DioramaRoom",
         "isRelativeToParent": true
       }
     ],
