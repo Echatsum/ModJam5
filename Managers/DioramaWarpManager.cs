@@ -146,6 +146,14 @@ namespace FifthModJam
             // Close eyes
             yield return StartCoroutine(FifthModJam.Instance.CloseEyesCoroutine());
 
+            // Wait for scout recall
+            var probe = Locator.GetProbe();
+            while (probe != null && probe.IsLaunched())
+            {
+                yield return new WaitForSeconds(0.1f);
+                probe = Locator.GetProbe();
+            }
+
             // Warp
             var spawner = GameObject.FindGameObjectWithTag("Player").GetRequiredComponent<PlayerSpawner>();
             spawner.DebugWarp(spawnPointTarget);
