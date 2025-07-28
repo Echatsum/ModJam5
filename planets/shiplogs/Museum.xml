@@ -114,6 +114,10 @@
     <ExploreFact><ID>COSMICCURATORS_FOURTH_QUANTUM_RULE_E</ID>
       <Text>$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT</Text>
     </ExploreFact>
+	  <ExploreFact>
+		  <ID>COSMICCURATORS_FOURTH_QUANTUM_RULE_E2</ID>
+		  <Text>$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT2</Text>
+	  </ExploreFact>
   </Entry>
 
   <!-- Quantum Geysers -->

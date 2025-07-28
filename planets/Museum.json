@@ -194,6 +194,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/NomaiExhibit/Buildings/BrittleHouse/Interactibles/Scrolls/QuantumScroll",
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/NomaiDiorama/Scrolls/QuantumRule.xml",
+        "location": "a",
         "rotation": {
           "x": -90
         }
