@@ -15,7 +15,8 @@
 
         public void CollapseTower()
         {
-            OnTowerCollapse?.Invoke(); // Event to let the towerSmall update its status
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_R");
+            OnTowerCollapse?.Invoke(); // Event to let the towers update their status
         }
     }
 }

@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace FifthModJam.Controllers
 {
     /// <summary>
-    /// Controls the collapse of the small tower (when the player outside the exhibits, looking at them).
+    /// Controls the collapse of the small tower and shuttle launch (when the player outside the exhibits, looking at them).
     /// </summary>
     public class TowerSmallCollapse : MonoBehaviour
     {
@@ -24,15 +19,19 @@ namespace FifthModJam.Controllers
             {
                 FifthModJam.WriteLine("[TowerSmallCollapse] tower animator is null", OWML.Common.MessageType.Error);
             }
+            if (_shuttleAnim == null)
+            {
+                FifthModJam.WriteLine("[TowerSmallCollapse] shuttle animator is null", OWML.Common.MessageType.Error);
+            }
         }
 
         private void Awake()
         {
-            TowerCollapseManager.Instance.OnTowerCollapse = (TowerCollapseManager.TowerCollapseEvent)Delegate.Combine(TowerCollapseManager.Instance.OnTowerCollapse, new TowerCollapseManager.TowerCollapseEvent(OnTowerCollapse));
+            TowerCollapseManager.Instance.OnTowerCollapse += OnTowerCollapse;
         }
         private void OnDestroy()
         {
-            TowerCollapseManager.Instance.OnTowerCollapse = (TowerCollapseManager.TowerCollapseEvent)Delegate.Remove(TowerCollapseManager.Instance.OnTowerCollapse, new TowerCollapseManager.TowerCollapseEvent(OnTowerCollapse));
+            TowerCollapseManager.Instance.OnTowerCollapse -= OnTowerCollapse;
         }
 
         private void Start()
@@ -42,8 +41,9 @@ namespace FifthModJam.Controllers
 
         private void OnTowerCollapse()
         {
-            _towerAnim.Play("TOWER_AFTER", 0);
-            _shuttleAnim.Play("SHUTTLE_DONE", 0);
+            // The small tower/shuttle do not need animation, just switching to the post-collapse state
+            _towerAnim?.Play("TOWER_AFTER", 0);
+            _shuttleAnim?.Play("SHUTTLE_DONE", 0);
         }
     }
 }

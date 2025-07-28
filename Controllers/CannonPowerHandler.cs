@@ -8,16 +8,23 @@ namespace FifthModJam
         // The power socket
         [SerializeField]
         private SpeciesItemSocket _powerSocket;
+
+        // Audio to play when change
         [SerializeField]
-        private OWAudioSource _audio; // [Note: Currently unused, but it's there if we want an extra sound]
+        private OWAudioSource _audio;
+
+        // Nomai beam
         [SerializeField]
         private GameObject _beam;
+
+        // Lights
         [SerializeField]
         private MeshRenderer[] lightsRender;
         [SerializeField]
         private GameObject[] lights;
         private readonly Color defaultColor = new Color(1.5f, 0.96f, 0.5699999f);
 
+        // Property for other scripts, using the beam activity as boolean
         public bool IsCannonPowered => _beam?.activeSelf ?? false;
 
         private void VerifyUnityParameters()
@@ -39,24 +46,24 @@ namespace FifthModJam
         private void Start()
         {
             VerifyUnityParameters();
-            HandleLights(false);
-            _beam?.SetActive(false);
+
+            TogglePower(isTurningOn: false, silent: true);
         }
 
         private void Awake()
         {
             if (_powerSocket != null)
             {
-                _powerSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Combine(_powerSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
-                _powerSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Combine(_powerSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+                _powerSocket.OnSocketablePlaced += OnSocketFilled;
+                _powerSocket.OnSocketableRemoved += OnSocketRemoved;
             }
         }
         private void OnDestroy()
         {
             if (_powerSocket != null)
             {
-                _powerSocket.OnSocketablePlaced = (OWItemSocket.SocketEvent)Delegate.Remove(_powerSocket.OnSocketablePlaced, new OWItemSocket.SocketEvent(OnSocketFilled));
-                _powerSocket.OnSocketableRemoved = (OWItemSocket.SocketEvent)Delegate.Remove(_powerSocket.OnSocketableRemoved, new OWItemSocket.SocketEvent(OnSocketRemoved));
+                _powerSocket.OnSocketablePlaced -= OnSocketFilled;
+                _powerSocket.OnSocketableRemoved -= OnSocketRemoved;
             }
         }
 
@@ -65,19 +72,34 @@ namespace FifthModJam
             if (_powerSocket.HasCorrectSpeciesItem())
             {
                 Locator.GetShipLogManager().RevealFact("COSMICCURATORS_NOMAI_CANNON_POWERED");
-                _audio.PlayOneShot(global::AudioType.NomaiPowerOn, 1f);
-                HandleLights(true);
-                _beam?.SetActive(true);
+                TogglePower(isTurningOn: true);
             }
         }
         private void OnSocketRemoved(OWItem item)
         {
-            _audio.PlayOneShot(global::AudioType.NomaiPowerOff, 1f);
-            HandleLights(false);
-            _beam?.SetActive(false);
+            TogglePower(isTurningOn: false);
         }
 
-        private void HandleLights(bool isTurningOn)
+        private void TogglePower(bool isTurningOn, bool silent = false)
+        {
+            // Play audio if not silent
+            if (!silent)
+            {
+                if (isTurningOn)
+                {
+                    _audio?.PlayOneShot(global::AudioType.NomaiPowerOn, 1f);
+                }
+                else
+                {
+                    _audio?.PlayOneShot(global::AudioType.NomaiPowerOff, 1f);
+                }
+            }
+
+            // Update game objects
+            _beam?.SetActive(isTurningOn);
+            ToggleLights(isTurningOn);
+        }
+        private void ToggleLights(bool isTurningOn)
         {
             foreach (GameObject light in lights)
             {
