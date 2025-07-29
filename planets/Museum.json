@@ -408,8 +408,9 @@
           {
             "assetBundle": "planets/assets/AssetBundle/jam5",
             "path": "Assets/GAMERIP/Geyser.prefab",
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserA",
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeyser",
             "isRelativeToParent": true,
+            "alignWithGravity": false,
             "scale": 0.5
           }
         ],
@@ -417,63 +418,22 @@
           {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket1",
             "isRelativeToParent": true,
-            "rename": "SOCKET1A"
+            "rename": "SOCKET1"
           },
           {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket2",
             "isRelativeToParent": true,
-            "rename": "SOCKET2A"
+            "rename": "SOCKET2"
           },
           {
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket_Hidden",
             "isRelativeToParent": true,
-            "rename": "SOCKET3A"
-          }
-        ]
-      },
-      {
-        "details": [
-          {
-            "assetBundle": "planets/assets/AssetBundle/jam5",
-            "path": "Assets/GAMERIP/Geyser.prefab",
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserB",
-            "isRelativeToParent": true,
-            "scale": 0.5
-          }
-        ],
-        "sockets": [
-          {
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket1",
-            "isRelativeToParent": true,
-            "rename": "SOCKET1B"
+            "rename": "SOCKET_HIDDEN"
           },
           {
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket_Solution",
             "isRelativeToParent": true,
-            "rename": "SOCKET3B"
-          }
-        ]
-      },
-      {
-        "details": [
-          {
-            "assetBundle": "planets/assets/AssetBundle/jam5",
-            "path": "Assets/GAMERIP/Geyser.prefab",
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumGeysers/QuantumGeyserC",
-            "isRelativeToParent": true,
-            "scale": 0.5
-          }
-        ],
-        "sockets": [
-          {
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket2",
-            "isRelativeToParent": true,
-            "rename": "SOCKET2C"
-          },
-          {
-            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
-            "isRelativeToParent": true,
-            "rename": "SOCKET3C"
+            "rename": "SOCKET_SOLUTION"
           }
         ]
       }
