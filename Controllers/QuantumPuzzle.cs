@@ -8,16 +8,21 @@ namespace FifthModJam
         // Rings of stone where you can place items
         [SerializeField]
         private CustomItemSocket[] _customItemSockets;
+        private bool[] _isSocketBlockedByProximity;
 
         // The quantum geyser parent object
         [SerializeField]
         private GameObject _quantumGeyserParent;
         private SocketedQuantumObject _quantumGeyser;
+        private GeyserController _geyser;
 
         // The quantum sockets. first the ones the player can interact with, then the hidden one (meant to free the interactable ones), then the solution one.
         private QuantumSocket[] _quantumSockets;
         private QuantumSocket _quantumSocketHidden;
         private QuantumSocket _quantumSocketSolution;
+
+        public bool IsGeyserOnSolutionSocket => _quantumGeyser == null ? false : _quantumGeyser.GetCurrentSocket().name.Equals("SOCKET_SOLUTION"); // Bit dirty but good enough
+        public bool IsGeyserActive => _geyser?._isActive ?? false;
 
         protected void VerifyUnityParameters()
         {
@@ -36,6 +41,7 @@ namespace FifthModJam
             VerifyUnityParameters();
 
             _quantumGeyser = _quantumGeyserParent?.GetComponentInChildren<SocketedQuantumObject>();
+            _geyser = _quantumGeyserParent?.GetComponentInChildren<GeyserController>();
             if (_quantumGeyser == null)
             {
                 FifthModJam.WriteLine("[QuantumPuzzle] Could not find quantumGeyser component", OWML.Common.MessageType.Error);
@@ -50,14 +56,23 @@ namespace FifthModJam
             }
             else
             {
+                SetGeyserFlow();
                 RegisterSockets();
                 UpdateGeyser();
             }
         }
 
+        private void SetGeyserFlow()
+        {
+            var geyserFluidVolume = _quantumGeyserParent?.GetComponentInChildren<GeyserFluidVolume>();
+            geyserFluidVolume._climbSpeed = 20f;
+            geyserFluidVolume._directionalFlowSpeed = 25f;
+        }
         private void RegisterSockets()
         {
             var count = _quantumGeyser._sockets.Length;
+
+            // QuantumSockets
             _quantumSockets = new QuantumSocket[count-2]; // [Note the -2 here. the last two are the hidden and solution]
             for (int i = 0; i < count-2; i++)
             {
@@ -66,6 +81,13 @@ namespace FifthModJam
 
             _quantumSocketHidden = _quantumGeyser._sockets[count - 2];
             _quantumSocketSolution = _quantumGeyser._sockets[count - 1];
+
+            // Proximity
+            _isSocketBlockedByProximity = new bool[count - 2];
+            for (int i = 0; i < count - 2; i++)
+            {
+                _isSocketBlockedByProximity[i] = false;
+            }
         }
         private QuantumSocket[] ComputeActiveSockets()
         {
@@ -96,9 +118,14 @@ namespace FifthModJam
             return list.ToArray();
         }
 
+        public void SetSocketBlockedByProximity(int fakeSocketIndex, bool isBlocked)
+        {
+            _isSocketBlockedByProximity[fakeSocketIndex - 1] = isBlocked; // [Note: socket 1 is at position 0, and so on]
+            UpdateGeyser();
+        }
         private bool IsSocketOccupiedByOtherStuff(int socketIndex)
         {
-            return false; // Placeholder
+            return _isSocketBlockedByProximity[socketIndex];
         }
 
         private void Awake()
@@ -141,6 +168,11 @@ namespace FifthModJam
             if (newSockets.Length == 1)
             {
                 _quantumGeyser.MoveToSocket(newSockets[0]); // Immediately move to solution socket (only reason why newSockets would have only one element)
+                _quantumGeyser.SetIsQuantum(false);
+            }
+            else
+            {
+                _quantumGeyser.SetIsQuantum(true);
             }
         }
     }

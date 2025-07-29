@@ -5,9 +5,11 @@ namespace FifthModJam
     public class GhostMatterTrigger : MonoBehaviour
     {
         [SerializeField]
-        private GeyserController geyser; // The geyser that needs to be active for the ghost matter to be damageless to the player
-        [SerializeField]
         private DarkMatterVolume[] ghostMatter; // The patches of ghost matter
+
+        // The quantum puzzle that determines if the geyser is pointing at the cave
+        [SerializeField]
+        private QuantumPuzzle _quantumPuzzle;
 
         private const float defaultFirstContact = 70;
         private const float defaultDPS = 80;
@@ -18,13 +20,13 @@ namespace FifthModJam
 
         private void VerifyUnityParameters()
         {
-            if (geyser == null)
-            {
-                FifthModJam.WriteLine("[GhostMatterTrigger] geyser is null", OWML.Common.MessageType.Error);
-            }
             if (ghostMatter == null || ghostMatter.Length == 0)
             {
                 FifthModJam.WriteLine("[GhostMatterTrigger] ghostMatter array is null or empty", OWML.Common.MessageType.Error);
+            }
+            if (_quantumPuzzle == null)
+            {
+                FifthModJam.WriteLine("[GhostMatterTrigger] quantumPuzzle object is null", OWML.Common.MessageType.Error);
             }
         }
 
@@ -47,7 +49,10 @@ namespace FifthModJam
 
         public virtual void OnTriggerEnter(Collider hitCollider)
         {
-            if (!geyser._isActive) return; // Only make damageless when we enter while the geyser is actively spewing water (not just when the geyser rock exists)
+            if (!(_quantumPuzzle.IsGeyserOnSolutionSocket && _quantumPuzzle.IsGeyserActive))
+            {
+                return; // Only make damageless when we enter while the geyser is actively spewing water (not just when the geyser rock exists)
+            }
 
             // Checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled)

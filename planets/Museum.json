@@ -426,6 +426,11 @@
             "rename": "SOCKET2"
           },
           {
+            "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket3",
+            "isRelativeToParent": true,
+            "rename": "SOCKET3"
+          },
+          {
             "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/QuantumSockets/Socket_Hidden",
             "isRelativeToParent": true,
             "rename": "SOCKET_HIDDEN"
