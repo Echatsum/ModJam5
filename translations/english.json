@@ -90,8 +90,8 @@
 
 		// Fourth Quantum Rule
 		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_NAME": "Rule of Quantum Manipulation",
-		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT": "According to a Nomai scroll, a fourth quantum rule states that a non-quantum item occupying the same space as a quantum socket can make it impossible for a quantum object to collapse on that socket.",
-		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT2": "According to a Nomai scroll, a quantum object can possibly not collapse at any given socket at all. The scroll also states that manipulating a quantum object through the forth quantum rule can force it to occupy a new quantum socket that the object would otherwise refuse to collapse onto.",
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT": "A fourth quantum rule states that a non-quantum item occupying the same space as a quantum socket can make it impossible for a quantum object to collapse on that socket.",
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT2": "It is possible for a quantum object not to collapse onto any given socket at all. Conversely, manipulating a quantum object through the fourth quantum rule can force it to occupy a new quantum socket that the object would otherwise 'refuse' to collapse onto.",
 
 		// Quantum Geysers
 		"$COSMICCURATORS_QUANTUM_GEYSERS_NAME": "Quantum Geyser",

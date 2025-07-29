@@ -20,7 +20,7 @@
 		<ID>4</ID>
 		<LocationB/>
 		<ParentID>2</ParentID>
-		<Text>XENON: You also forgot to mention that through this new quantum rule, you can collapse a quantum object into a superposition that statistically it would not be able to reach.</Text>
+		<Text>XENON: You also forgot to mention that through this new quantum rule, you can collapse a quantum object into a superposition that it should statistically not be able to reach.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
