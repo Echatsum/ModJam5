@@ -6,7 +6,7 @@
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
 			<Page>We've observed the rogue gas giant that destabilized our home planet's orbit, it's colossal! It truly makes you feel small! And yet, we can't help but stare at it in awe.</Page>
-			<Page>Though upon closer examination, the planet seems....unnatural. And peaking through its violent clouds, we saw...what we think were vines. We still can't confirm that, though.</Page> <!-- NOTE: two 'though' in the same line -->
+			<Page>Though upon closer examination, the planet seems....unnatural. And peeking through its violent clouds, we saw...what we think were vines. We still can't confirm that, though.</Page> <!-- NOTE: two 'though' in the same line -->
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>
