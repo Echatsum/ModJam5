@@ -1,7 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
 	"UIDictionary": {
-
+		"$TOTEM_PROMPT_REELHOUSE_TEXT": "Reel House code: Fire - Gibbous - Sun - Crescent - Ring",
+		"$TOTEM_PROMPT_VOLCANOSUMMIT_TEXT": "Volcano Summit code: Ring - Eye - Fire - Sun - Star"
 	},
 	"DialogueDictionary": {
 
