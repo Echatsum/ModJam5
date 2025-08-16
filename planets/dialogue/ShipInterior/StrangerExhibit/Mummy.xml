@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>A replica of the species currently aboard the ship they call home. While they seem to now be all extinct, we managed to recreate what they looked like. They appear to have tails, long limbs, and a belly button, as one curator continually loves to point out.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_STR_MUMMY</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

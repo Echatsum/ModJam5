@@ -1,6 +1,5 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
-		<Text>Three eyes searched wide, for the signal to shine,</Text>
+	<TextBlock><ID>1</ID>
+		<Text>$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_NOM</Text>
 	</TextBlock>
 </NomaiObject>

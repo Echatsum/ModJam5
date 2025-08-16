@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>KarviStrangerClue</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>We could not help but observe this beautiful teal-ringed planet, but what we found was much more beautiful. We're not alone! Sentient bird-like creatures, calmly rafting along their rivers. And their technology! Very much impressive!</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_KAV_STRHOUSE101</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

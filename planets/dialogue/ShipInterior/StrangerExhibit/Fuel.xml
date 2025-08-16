@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>A tank of fuel. Likely used for lighting campfires and alcoholic beverages to "show off."</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_STR_FUEL</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

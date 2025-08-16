@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>RECORDING</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>A ship that allowed this species the ability to fly interplanetary distances. Each one appears to be tailored to its pilot. This one seems to like windows. A lot.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_HEA_SHIP</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>RECORDING</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<NameField>RECORDING</NameField>  
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Much like the avians, Hearthian fuel is used for lighting campfires and torches. The caution symbols hint that this species has an arsonist problem.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_HEA_FUEL</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

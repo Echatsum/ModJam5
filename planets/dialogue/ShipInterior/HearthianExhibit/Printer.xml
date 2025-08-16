@@ -1,12 +1,10 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>RECORDING</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>This here depicts a recent Hearthian innovation of colored images. It seems they have the primary colors of Cyan, Magenta, Yellow, and Black as opposed to ours of Hooloovoo, Gregool, and Red.</Page>
-			<Page>Atop this printer lies a can of marshmallows cooked to perfection. It is unknown how the specimen could handle the excess amount of toxins contained within this seemingly artificial food.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_HEA_PRINTER1</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_HEA_PRINTER2</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

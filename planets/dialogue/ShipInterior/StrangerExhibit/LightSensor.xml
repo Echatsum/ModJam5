@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+  <DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>A device that sends electrical output when light is shone onto it. It seems very similar to our own technology, almost as if it’s copied and pasted.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_STR_LIGHTSENSOR</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

@@ -413,13 +413,13 @@
         "isRelativeToParent": true,
         "deathType": "crushedByElevator",
         "gameOver": {
-          "text": "ERNESTO BEAT YOU TO DEATH WITH A ROCK",
+          "text": "$COSMICCURATORS_CREDITS_ERNESTO",
           "colour": {
             "r": 255,
             "g": 0,
             "b": 0,
             "a": 255
-            },
+          },
           "creditsType": "none"
         }
       }

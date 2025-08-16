@@ -1,11 +1,9 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
-		<Text>PHOSPHORUS: What's this? White shell-like pods have crash-landed in the vortex's system. Just when we thought this story was over, another species shows its face.</Text>
+	<TextBlock><ID>1</ID>
+		<Text>$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE1</Text>
 	</TextBlock>
-  <TextBlock>
-    <ID>2</ID>
+  <TextBlock><ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>PHOSPHORUS: (Argon is quite intrigued by their goat-like features!)</Text>
+    <Text>$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE2</Text>
   </TextBlock>
 </NomaiObject>

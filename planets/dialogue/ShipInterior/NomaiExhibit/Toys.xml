@@ -1,6 +1,5 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
-		<Text>NICKEL: A set of what appears to be instruments of war for battle tactics. They would place these around to simulate how they could respond to potential enemy advances.</Text>
+	<TextBlock><ID>1</ID>
+		<Text>$COSMICCURATORS_DIALOGUE_NOM_TOYS</Text>
 	</TextBlock>
 </NomaiObject>

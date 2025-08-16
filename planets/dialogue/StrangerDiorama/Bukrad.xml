@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>StrangerBukrad</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>One of the avian creatures went mad after watching too many reels. Documentaries about a peculiar multi-legged animal, we believe. In their madness, the creature went on to destroy the whole reel collection.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_STR_BUKRAD</Page>
 		</Dialogue>
 		<RevealFacts>
 			<FactID>COSMICCURATORS_REEL_HOUSE_BUKRAD</FactID>

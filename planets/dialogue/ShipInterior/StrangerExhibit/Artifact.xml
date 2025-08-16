@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>This eerie artifact is the thing that the owl-like species used to end their own lives after finding the truth about that mysterious Vortex. It releases an explosion when one sleeps.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_STR_ARTIFACT</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

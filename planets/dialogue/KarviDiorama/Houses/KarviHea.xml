@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>RECORDING</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>KarviStrangerClue</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Look at that! The amphibians have become sapient! A new era of hope and excitement begins! I wonder if these amphibians will finally be the ones to interact with the vortex.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_KAV_HEAHOUSE1</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

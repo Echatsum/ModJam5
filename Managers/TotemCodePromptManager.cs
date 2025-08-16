@@ -42,12 +42,12 @@ namespace FifthModJam
             if (!FifthModJam.Instance.IsInJamFiveSystem()) return; // [Note: this sends an error anyway because NewHorizonsAPI might not be ready]
 
             // Reel House
-            var promptText = FifthModJam.NewHorizonsAPI.GetTranslationForUI("$TOTEM_PROMPT_REELHOUSE_TEXT");
+            var promptText = FifthModJam.NewHorizonsAPI.GetTranslationForUI("$COSMICCURATORS_TOTEM_PROMPT_REELHOUSE_TEXT");
             var factRequirements = new List<string> { "COSMICCURATORS_REEL_HOUSE_ENTER" };
             _dictPrompt.Add(TotemCodePromptEnum.REELHOUSE, new Tuple<string, IList<string>>(promptText, factRequirements));
 
             // Volcano Summit
-            promptText = FifthModJam.NewHorizonsAPI.GetTranslationForUI("$TOTEM_PROMPT_VOLCANOSUMMIT_TEXT");
+            promptText = FifthModJam.NewHorizonsAPI.GetTranslationForUI("$COSMICCURATORS_TOTEM_PROMPT_VOLCANOSUMMIT_TEXT");
             factRequirements = new List<string> { "COSMICCURATORS_VOLCANO_SUMMIT_R" };
             _dictPrompt.Add(TotemCodePromptEnum.VOLCANOSUMMIT, new Tuple<string, IList<string>>(promptText, factRequirements));
 

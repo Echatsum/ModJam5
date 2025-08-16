@@ -1,12 +1,10 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>KarviLore</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>We've observed the rogue gas giant that destabilized our home planet's orbit, it's colossal! It truly makes you feel small! And yet, we can't help but stare at it in awe.</Page>
-			<Page>Though upon closer examination, the planet seems....unnatural. And peaking through its violent clouds, we saw...what we think were vines. We still can't confirm that, though.</Page> <!-- NOTE: two 'though' in the same line -->
+			<Page>$COSMICCURATORS_DIALOGUE_KAV_KAVHOUSE101</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_KAV_KAVHOUSE102</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

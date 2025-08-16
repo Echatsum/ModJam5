@@ -1,12 +1,10 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>These are the deities that this species worshiped. The one on the left is a god named Kaos, who is a god of destruction, while the one on the right is a goddess of loyalty and kindness, watching the followers from above.</Page>
-			<Page>Totems were often made of them and placed for religious activities, with the latter being put atop high shelves.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_STR_KOROKCOMET1</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_STR_KOROKCOMET2</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

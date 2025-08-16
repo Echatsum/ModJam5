@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>RECORDING</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>KarviStrangerClue</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>The amphibians have founded a space program! Perhaps they will be the true ones to interact with the vortex? Sulfur claims they could find it completely by accident...</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_KAV_HEAHOUSE101</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

@@ -1,6 +1,5 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
-		<Text>ALUMIN: A device used to torture prisoners. It’s unknown how the creator of such a horrid device managed to sleep at night.</Text>
+	<TextBlock><ID>1</ID>
+		<Text>$COSMICCURATORS_DIALOGUE_NOM_BED</Text>
 	</TextBlock>
 </NomaiObject>

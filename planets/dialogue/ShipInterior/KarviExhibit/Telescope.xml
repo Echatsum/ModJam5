@@ -1,12 +1,10 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Our refractor telescopes are how we observe the cosmos. For hundreds of thousands of years, we have developed precise enough technology to observe species in other systems.</Page>
-      <Page>It's still not entirely perfect on details, so we have to fill in the information gap with our own theories.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_KAV_TELESCOPE1</Page>
+      <Page>$COSMICCURATORS_DIALOGUE_KAV_TELESCOPE2</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

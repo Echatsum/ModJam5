@@ -1,16 +1,14 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>RECORDING</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>FeldsparTractorBeam</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>The Hearthian legend Feldspar has made several grand endeavors.</Page>
-			<Page>We've seen their ship bounce from planet to planet, so much so that we've started theorizing how their adventures even went.</Page>
-			<Page>Xenon got particularly motivated to write stories about him. In one instance, they descend into Brittle Hollow with no way out.</Page>
-			<Page>But good ol' Feldspar, they always find a way. They snagged a nearby Nomai tractor beam from one of the ruins and positioned themselves under a hole in the crust above.</Page>
-			<Page>They put the frame down, pointed their trusted flashlight at a light sensor in a nearby observatory, then let the tractor beam push them back to the surface.</Page>
-			<Page>Sometimes we Karvi wonder if they actually did things like these.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_HEA_MYTH1</Page>
+      <Page>$COSMICCURATORS_DIALOGUE_HEA_MYTH2</Page>
+      <Page>$COSMICCURATORS_DIALOGUE_HEA_MYTH3</Page>
+      <Page>$COSMICCURATORS_DIALOGUE_HEA_MYTH4</Page>
+      <Page>$COSMICCURATORS_DIALOGUE_HEA_MYTH5</Page>
+      <Page>$COSMICCURATORS_DIALOGUE_HEA_MYTH6</Page>
 		</Dialogue>
 		<RevealFacts>
 			<FactID>COSMICCURATORS_FELDSPAR_MYTH_E</FactID>

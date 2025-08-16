@@ -1,11 +1,9 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>RECORDING</NameField>
-	<!-- The name of this character -->
-	<DialogueNode>
-		<Name>Crystal</Name>
+	<DialogueNode><Name>DefaultNode</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>A device made from haphazardly tossed-together technology from their predecessors. It is capable of scouting areas for hazards or, as the first pilot seemed to do in a hazardous situation, fly.</Page>
+			<Page>$COSMICCURATORS_DIALOGUE_HEA_SCOUT</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

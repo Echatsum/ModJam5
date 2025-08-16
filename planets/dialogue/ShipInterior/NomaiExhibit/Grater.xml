@@ -1,11 +1,9 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
-		<Text>ALUMIN: A mysterious device with many proposed uses. Some think it was a way to store cards and keep track of schedules.</Text>
+	<TextBlock><ID>1</ID>
+		<Text>$COSMICCURATORS_DIALOGUE_NOM_GRATER1</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>2</ID>
+	<TextBlock><ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>ALUMIN: It could also be used for grating hard food down to bits, perhaps some kind of "Space Parmesean"? We cannot possibly comprehend what this device even does.</Text>
+		<Text>$COSMICCURATORS_DIALOGUE_NOM_GRATER2</Text>
 	</TextBlock>
 </NomaiObject>
