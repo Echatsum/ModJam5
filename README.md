@@ -1,6 +1,6 @@
 ![image](banner.png)
 
-A story mod made for Mod Jam 5 by some the people behind **Eyes of the Past**, **Band Together**, **The Stranger They Are**, **Misfired Jump** and **Callis's Thesis**. There is an ominous ship in orbit around a nearby pulsar which appears to not be related to the Nomai or the Stranger's Inhabitants. Dare you lurk around these dark corridors?
+A story mod made for Mod Jam 5 from the people behind **Eyes of the Past**, **Band Together**, **The Stranger They Are**, **Misfired Jump** and **Callis's Thesis**. There is an ominous ship in orbit around a nearby pulsar which appears to not be related to the Nomai or the Stranger's Inhabitants. Dare you lurk around these dark corridors?
 
 This mod requires the [Mod Jam 5 Mod](https://outerwildsmods.com/mods/modjam5/) as a dependency. Outer Wilds Mod Manager should download this automatically, but if it doesn't, download it from the Mod Manager or through this link.
 
