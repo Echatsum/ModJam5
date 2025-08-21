@@ -18,6 +18,10 @@ namespace FifthModJam
         [SerializeField]
         private OWAudioSource _shuttleAudio;
 
+        // The return trigger that allows the player to walk between dioramas on the fallen tower
+        [SerializeField]
+        private GameObject _towerReturnTrigger;
+
         private void VerifyUnityParameters()
         {
             if (_towerAnim == null)
@@ -35,6 +39,10 @@ namespace FifthModJam
             if (_shuttleAudio == null)
             {
                 FifthModJam.WriteLine("[TowerBigCollapse] shuttle audio is null", OWML.Common.MessageType.Error);
+            }
+            if (_towerReturnTrigger == null)
+            {
+                FifthModJam.WriteLine("[TowerBigCollapse] tower returnTrigger is null", OWML.Common.MessageType.Error);
             }
         }
 
@@ -60,10 +68,12 @@ namespace FifthModJam
             {
                 _shuttleAnim.keepAnimatorControllerStateOnDisable = true;
             }
+            _towerReturnTrigger?.SetActive(false);
         }
 
         private void OnTowerCollapse()
         {
+            _towerReturnTrigger?.SetActive(true);
             StartCoroutine(PlayAnim());
         }
         private IEnumerator PlayAnim()

@@ -9,6 +9,8 @@ namespace FifthModJam.Controllers.Triggers
         private DioramaSpawnPointEnum _warpTargetDiorama;
         [SerializeField]
         private bool _isExhibitEntry;
+        [SerializeField]
+        private bool _isSoftTrigger; // For EXIT types: "hard" is when warping happens all the time, "soft" is when warping only happens when out of all overlapping triggers
 
         private void VerifyUnityParameters()
         {
@@ -24,11 +26,18 @@ namespace FifthModJam.Controllers.Triggers
 
         public virtual void OnTriggerEnter(Collider hitCollider)
         {
-            if (!_isExhibitEntry) return; // Continue only if this trigger is an ENTRY
-
             // Checks if player collides with the trigger volume
             if (hitCollider.CompareTag("PlayerDetector") && enabled)
-            {                
+            {
+                if (!_isExhibitEntry)
+                {
+                    if (_isSoftTrigger)
+                    {
+                        DioramaWarpManager.Instance.OnEnteringExitSoftTrigger(); // Notify manager about entering a 'soft exit' type
+                    }
+                    return; // Continue only if this trigger is an ENTRY
+                }
+
                 Locator.GetShipLogManager().RevealFact("COSMICCURATORS_DIORAMA_ROOM_MINIATURE");
                 DioramaWarpManager.Instance.WarpTo(_warpTargetDiorama, isEnteringDiorama: true);
             }
@@ -40,7 +49,16 @@ namespace FifthModJam.Controllers.Triggers
 
             if (hitCollider.CompareTag("PlayerDetector") && enabled)
             {
-                DioramaWarpManager.Instance.WarpTo(_warpTargetDiorama, isEnteringDiorama: false);
+                var shouldWarp = true;
+                if (_isSoftTrigger)
+                {
+                    shouldWarp = DioramaWarpManager.Instance.OnExitingExitSoftTrigger(); // Notify manager about exiting a 'soft exit' type. If not last overlap, then do not warp
+                }
+
+                if (shouldWarp)
+                {
+                    DioramaWarpManager.Instance.WarpTo(_warpTargetDiorama, isEnteringDiorama: false);
+                }
             }
         }
 

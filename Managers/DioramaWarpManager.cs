@@ -15,6 +15,8 @@ namespace FifthModJam
         private GameObject _starLight;
 
         private bool _hasRegisteredObjects = false;
+        private bool _isWarping = false;
+        private int _dioramaExitSoftTriggerCount = 0;
 
         private void Start()
         {
@@ -99,6 +101,16 @@ namespace FifthModJam
             return spawnPoint != null;
         }
 
+        public void OnEnteringExitSoftTrigger()
+        {
+            _dioramaExitSoftTriggerCount++; // keeps track of overlapping triggers
+        }
+        public bool OnExitingExitSoftTrigger()
+        {
+            _dioramaExitSoftTriggerCount--;            
+            return (!_isWarping && _dioramaExitSoftTriggerCount == 0); // Returns true if just exited the last overlapping trigger
+        }
+
         public void WarpTo(DioramaSpawnPointEnum spawnPointTarget, bool isEnteringDiorama)
         {
             if (!_hasRegisteredObjects) return; // Do not try to warp if invalid gameobjects
@@ -113,8 +125,9 @@ namespace FifthModJam
             {
                 probe.ExternalRetrieve(silent: true); // recall scout (without on-screen notification)
             }
-            
 
+            _isWarping = true;
+            _dioramaExitSoftTriggerCount = 0;
             if (isEnteringDiorama)
             {
                 StartCoroutine(EnterDioramaCoroutine(spawnPoint));
@@ -140,13 +153,14 @@ namespace FifthModJam
 
             // Open eyes
             yield return StartCoroutine(FifthModJam.Instance.OpenEyesCoroutine());
+            _isWarping = false;
         }
         private IEnumerator ExitDioramaCoroutine(SpawnPoint spawnPointTarget)
         {
             // Close eyes
             yield return StartCoroutine(FifthModJam.Instance.CloseEyesCoroutine());
 
-            // Wait for scout recall
+            // Wait for scout recall (the scout can bug out if museum is deactivated before scout fully recalled)
             var probe = Locator.GetProbe();
             while (probe != null && probe.IsLaunched())
             {
@@ -165,6 +179,7 @@ namespace FifthModJam
             // Open eyes
             yield return new WaitForSeconds(Constants.BLINK_STAY_CLOSED_TIME);
             yield return StartCoroutine(FifthModJam.Instance.OpenEyesCoroutine());
+            _isWarping = false;
         }
     }
 }
