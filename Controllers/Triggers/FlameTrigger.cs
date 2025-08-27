@@ -15,6 +15,8 @@ namespace FifthModJam
         [SerializeField]
         private bool _isIgnited;
         public bool IsIgnited => _isIgnited;
+        [SerializeField]
+        private FlameColorEnum _flameColor; // The color of the flame
 
         // The torch itself
         [SerializeField]
@@ -26,19 +28,36 @@ namespace FifthModJam
         [SerializeField]
         private Animator _animator; // Can be left null if ignited from the start
 
+        public void Init(bool isIgnited, FlameColorEnum flameColor, GameObject torchFlame = null, OWAudioSource audio = null, Animator animator = null)
+        {
+            this._isIgnited = isIgnited;
+            this._flameColor = flameColor;
+            this._torchFlame = torchFlame;
+            this._audio = audio;
+            this._animator = animator;
+        }
+
         protected void VerifyUnityParameters()
         {
-            if (_torchFlame == null)
+            if (!_isIgnited) // since we do not have an extinguish mechanic, we only care about parameters if it starts not ignited
             {
-                FifthModJam.WriteLine($"[FlameTrigger] torchFlame is null", OWML.Common.MessageType.Error);
+                if (_torchFlame == null)
+                {
+                    FifthModJam.WriteLine($"[FlameTrigger] torchFlame is null while torch is not lit", OWML.Common.MessageType.Error);
+                }
+                if (_audio == null)
+                {
+                    FifthModJam.WriteLine($"[FlameTrigger] audio is null while torch is not lit", OWML.Common.MessageType.Error);
+                }
+                if (_animator == null)
+                {
+                    FifthModJam.WriteLine("[FlameTrigger] animator is null while torch is not lit", OWML.Common.MessageType.Error);
+                }
             }
-            if (_audio == null && !_isIgnited)
+
+            if(_flameColor == FlameColorEnum.INVALID)
             {
-                FifthModJam.WriteLine($"[FlameTrigger] audio is null while torch is not lit", OWML.Common.MessageType.Error);
-            }
-            if (_animator == null && !_isIgnited)
-            {
-                FifthModJam.WriteLine("[FlameTrigger] animator is null while torch is not lit", OWML.Common.MessageType.Error);
+                FifthModJam.WriteLine("[FlameTrigger] color is invalid", OWML.Common.MessageType.Error);
             }
         }
 
@@ -46,7 +65,10 @@ namespace FifthModJam
         {
             VerifyUnityParameters();
 
-            _torchFlame?.SetActive(_isIgnited);
+            if (!_isIgnited)
+            {
+                _torchFlame?.SetActive(false);
+            }
         }
 
         public virtual void OnTriggerEnter(Collider hitCollider)
@@ -63,7 +85,7 @@ namespace FifthModJam
                 // Case 1: The torch ignites the unlit pole
                 if (_isIgnited && !isPoleIgnited)
                 {
-                    poleItem.ToggleFlames(true);
+                    poleItem.ToggleFlames(true, _flameColor);
                 }
                 // Case 2: The flaming pole ignites the unlit torch
                 else if (!_isIgnited && isPoleIgnited)
@@ -94,17 +116,11 @@ namespace FifthModJam
 
         private void PlayAudio(bool isIgniting)
         {
-
             if (isIgniting)
             {
                 _audio?.PlayOneShot(global::AudioType.TH_Campfire_Ignite, 0.5f);
             }
-            else
-            {
-                // [Note: It doesn't seem the lit torches can be extinguished so this code is unused, but it's fine to keep code like this in case we want to change that]
-
-                _audio?.PlayOneShot(global::AudioType.Artifact_Extinguish, 0.5f);
-            }
+            // No extinguishing for now
         }
     }
 }

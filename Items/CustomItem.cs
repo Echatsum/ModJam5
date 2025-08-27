@@ -15,7 +15,9 @@ namespace FifthModJam
         protected ItemType _itemType; // This is for item-socket compatibility [Note: While this can be set as mask, try to keep it as only one flag]
         [SerializeField]
         protected string[] _entryLogs;
-        public bool isItemHeld;
+
+        private bool _isItemHeld;
+        public bool IsItemHeld => _isItemHeld;
 
         protected virtual void VerifyUnityParameters()
         {
@@ -42,8 +44,8 @@ namespace FifthModJam
 
         protected virtual void Start()
         {
-            isItemHeld = false;
             VerifyUnityParameters();
+            _isItemHeld = false;
         }
 
         public override string GetDisplayName()
@@ -54,7 +56,8 @@ namespace FifthModJam
         public override void PickUpItem(Transform holdTranform)
         {
             base.PickUpItem(holdTranform);
-            isItemHeld = true;
+            _isItemHeld = true;
+
             foreach(var entryLog in _entryLogs)
             {
                 Locator.GetShipLogManager().RevealFact(entryLog);
@@ -63,9 +66,8 @@ namespace FifthModJam
 
         public override void DropItem(Vector3 position, Vector3 normal, Transform parent, Sector sector, IItemDropTarget customDropTarget)
         {
-            isItemHeld = false;
-
             base.DropItem(position, normal, parent, sector, customDropTarget);
+            _isItemHeld = false;
         }
     }
 }

@@ -47,6 +47,7 @@ namespace FifthModJam
             TowerCollapseManager.Spawn();
             ScoutCodeManager.Spawn();
             TotemCodePromptManager.Spawn();
+            PingCampfireFlameManager.Spawn();
         }
 
         public bool IsInJamFiveSystem()

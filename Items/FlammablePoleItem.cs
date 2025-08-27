@@ -1,16 +1,25 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 namespace FifthModJam
 {
+    // Dummy class because unity is bad at deserializing
+    public class FlameStruct : MonoBehaviour
+    {
+        public FlameColorEnum color;
+    }
+
     /// <summary>
     /// CustomItem specific to the Boat pole. Controls a flame component, for use with the torch puzzle.
     /// </summary>
     public class FlammablePoleItem : CustomItem
     {
         // The toggable fire on the pole item
-        [SerializeField]
-        private GameObject _flames;
-        public bool IsIgnited => _flames?.activeSelf ?? false; // based on the activation of the flames. If gameObject is null, defaults to false
+        private List<FlameStruct> _flames;
+
+        private bool _isIgnited;
+        public bool IsIgnited => _isIgnited;
 
         // Audio and animator
         [SerializeField]
@@ -22,10 +31,6 @@ namespace FifthModJam
         {
             base.VerifyUnityParameters();
 
-            if (_flames == null)
-            {
-                FifthModJam.WriteLine($"[FlammablePoleItem] flames object is null", OWML.Common.MessageType.Error);
-            }
             if (_oneShotAudio == null)
             {
                 FifthModJam.WriteLine("[FlammablePoleItem] audio is null", OWML.Common.MessageType.Error);
@@ -50,33 +55,53 @@ namespace FifthModJam
         protected override void Start()
         {
             base.Start();
-            _flames?.SetActive(false); // Item starts extinguished
+
+            _isIgnited = false; // Item starts extinguished
+
+            _flames = GetComponentsInChildren<FlameStruct>().ToList();
+            if (_flames != null)
+            {
+                foreach(var flame in _flames)
+                {
+                    flame?.gameObject.SetActive(false);
+                }
+            }
         }
 
         private void OnCameraEnterWater(float _)
         {
-            // [Note to self@Stache: This trigger even when the player doesn't hold the item. Polish when have time so that we toggle flames only if item is held]
-            if (this.isItemHeld)
+            if (this.IsItemHeld)
             {
                 ToggleFlames(false);
             }
         }
 
-        public void ToggleFlames(bool isIgniting)
+        public void ToggleFlames(bool isIgniting, FlameColorEnum flameColor = FlameColorEnum.PURPLE)
         {
             if (_flames == null) return; // Ignore method if parameter hasn't been set
 
             if (isIgniting == IsIgnited) return; // Trying to lit an already lit flame, or extinguish an already extinguished flame
 
+            _isIgnited = isIgniting;
             if (isIgniting)
             {
-                _flames.SetActive(true);
+                foreach (var flame in _flames)
+                {
+                    if(flame.color == flameColor)
+                    {
+                        flame?.gameObject.SetActive(true);
+                    }
+
+                }
                 _animator?.Play("FLAME", 0);
                 _oneShotAudio?.PlayOneShot(global::AudioType.TH_Campfire_Ignite, 0.5f);
             }
             else
             {
-                _flames.SetActive(false);
+                foreach (var flame in _flames)
+                {
+                    flame?.gameObject.SetActive(false);
+                }
                 _oneShotAudio?.PlayOneShot(global::AudioType.Artifact_Extinguish, 0.5f);
             }
         }

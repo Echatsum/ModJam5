@@ -11,6 +11,7 @@
         // Unity Paths
         public const string UNITYPATH_STARLIGHT = "SilverLining_Body/Sector/Star/StarLight";
         public const string UNITYPATH_MUSEUM = "ScaledMuseum_Body/Sector";
+        public const string UNITYPATH_PINGCAMPFIRE = "StarshipCommunity_Body/Sector/NomaiFirepit/";
         // Unity Paths - Diorama specific
         public const string UNITYPATH_SCALEDMUSEUM = "ScaledMuseum_Body/Sector/ScaledMuseum";
         public const string UNITYPATH_EXHIBITS_PREFIX = UNITYPATH_SCALEDMUSEUM + "/Offset/Exhibits/";
