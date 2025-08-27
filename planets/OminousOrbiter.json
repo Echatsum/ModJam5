@@ -26,6 +26,7 @@
   },
   "Props": {
     "details": [
+      // Ship exterior and interior
       {
         "assetBundle": "planets/assets/AssetBundle/jam5",
         "path": "Assets/Karvi/KarviShip_Exterior.prefab",
@@ -35,6 +36,7 @@
         "assetBundle": "planets/assets/AssetBundle/jam5",
         "path": "Assets/Karvi/KarviShip_Interior.prefab"
       },
+      // Central lodge campfires (two of them, one on each side)
       {
         "path": "Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/Prefab_HEA_Campfire",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Prefab_IP_LodgeFire/Effects_HEA_Campfire",
@@ -53,6 +55,7 @@
           "Props_HEA_Campfire"
         ]
       },
+      // Ernesto campfire
       {
         "path": "Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/Prefab_HEA_Campfire",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/CultFire",
@@ -62,6 +65,7 @@
           "Props_HEA_Campfire"
         ]
       },
+      // Recorders of the Hearthian exhibit
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ComputerMarshmallowText",
@@ -106,6 +110,7 @@
       }
     ],
     "dialogue": [
+      // Ernesto Cult
       {
         "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Worshipper.xml",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/Prefab_IP_GhostBird_Worshipper/Dialogue",
@@ -154,12 +159,14 @@
         "isRelativeToParent": true,
         "radius": 2
       },
+      // Ernesto himself
       {
         "xmlFile": "planets/dialogue/ShipInterior/SecretArea/Ernesto.xml",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/SecretErnesto/ERNESTO/Dialogue",
         "isRelativeToParent": true,
         "radius": 2
       },
+      // Karvi exhibit
       {
         "xmlFile": "planets/dialogue/ShipInterior/KarviExhibit/Crystal.xml",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/KarviText/CrystalText/Dialogue",
@@ -170,6 +177,7 @@
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/KarviText/TelescopeText/Dialogue",
         "isRelativeToParent": true
       },
+      // Stranger exhibit
       {
         "xmlFile": "planets/dialogue/ShipInterior/StrangerExhibit/Artifact.xml",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/StrangerText/ArtifactText/Dialogue",
@@ -200,6 +208,7 @@
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/StrangerText/UFOText/Dialogue",
         "isRelativeToParent": true
       },
+      // Hearthian exhibit
       {
         "xmlFile": "planets/dialogue/ShipInterior/HearthianExhibit/Printer.xml",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/HearthianText/ComputerMarshmallowText/Dialogue",
@@ -232,6 +241,7 @@
       }
     ],
     "translatorText": [
+      // Nomai exhibit whiteboard
       {
         "type": "whiteboard",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/NomaiText/Whiteboard",
@@ -240,6 +250,7 @@
           "y": 180
         }
       },
+      // Nomai exhibit scroll
       {
         "type": "scroll",
         "parentPath": "Sector/KarviShip_Interior/Interactibles/Text/NomaiText/Scroll",
@@ -253,6 +264,7 @@
           "z": 50.4745
         }
       },
+      // Nomai exhibit wall texts
       {
         "type": "wall",
         "position": {
@@ -348,11 +360,13 @@
   },
   "Volumes": {
     "revealVolumes": [
+      // general reveal upon arriving on the ship
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_OMINOUS_ORBITER_E" ],
         "radius": 100
       },
+      // pedestal door
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_DIORAMA_DOOR_R" ],
@@ -360,6 +374,7 @@
         "parentPath": "Sector/KarviShip_Interior/RevealVolumes/DioramaDoor",
         "isRelativeToParent": true
       },
+      // each of the four exhibits
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_EXHIBIT_ROOMS_KAV_E" ],
@@ -388,6 +403,7 @@
         "parentPath": "Sector/KarviShip_Interior/RevealVolumes/HEA",
         "isRelativeToParent": true
       },
+      // diorama room
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_DIORAMA_ROOM_E" ],

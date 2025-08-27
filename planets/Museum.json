@@ -42,10 +42,12 @@
   },
   "Props": {
     "details": [
+      // main prefab
       {
         "assetBundle": "planets/assets/AssetBundle/jam5",
         "path": "Assets/Karvi/ScaledMuseum.prefab"
       },
+      // Recorder in the Karvi observatory (poem)
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/HearthianText",
@@ -53,6 +55,7 @@
         "removeComponents": true,
         "rename": "HearthianEyeDialogue"
       },
+      // Recorder in the Hearthian diorama (Feldspar myth)
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/HEA_Text",
@@ -60,6 +63,7 @@
         "removeComponents": true,
         "rename": "FeldsparDialogue"
       },
+      // Two recorders in the Karvi diorama house
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text1",
@@ -73,14 +77,26 @@
         "isRelativeToParent": true,
         "removeComponents": true,
         "rename": "Recorder"
+      },
+      // Campfire in the Hearthian diorama
+      {
+        "path": "Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/Prefab_HEA_Campfire",
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/Effects_HEA_Campfire",
+        "isRelativeToParent": true,
+        "removeChildren": [
+          "Effects",
+          "Props_HEA_Campfire"
+        ]
       }
     ],
     "dialogue": [
+      // bukrad
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/Text/StrangerText/Dialogue",
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/StrangerDiorama/Bukrad.xml"
       },
+      // Observatory poem
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviObservatory/Interactibles/Text/KarviText/Dialogue",
         "isRelativeToParent": true,
@@ -96,11 +112,13 @@
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Hearthian.xml"
       },
+      // Feldspar myth
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/HEA_Text/FeldsparDialogue",
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/HearthianDiorama/Recorder.xml"
       },
+      // Karvi diorama houses
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_KAV/Interactibles/Text/Text1/KarviText/Dialogue",
         "isRelativeToParent": true,
@@ -117,6 +135,11 @@
         "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviStr1.xml"
       },
       {
+        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_STR/Interactibles/Text/Text2/StrangerText/Dialogue",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviStr2.xml"
+      },
+      {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_HEA/Interactibles/Text/Text1/Recorder",
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviHea.xml"
@@ -126,11 +149,7 @@
         "isRelativeToParent": true,
         "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviHea2.xml"
       },
-      {
-        "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/KarviHouse_STR/Interactibles/Text/Text2/StrangerText/Dialogue",
-        "isRelativeToParent": true,
-        "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviStr2.xml"
-      },
+      // Phophorus
       {
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_ALIVE/KAV_DialogueSocket",
         "isRelativeToParent": true,
@@ -146,6 +165,7 @@
       }
     ],
     "translatorText": [
+      // Observatory poem
       {
         "rename": "NomaiEyeText",
         "type": "wall",
@@ -161,6 +181,7 @@
         },
         "xmlFile": "planets/dialogue/KarviDiorama/Observatory/Nomai.xml"
       },
+      // Karvi diorama houses
       {
         "type": "wall",
         "position": {
@@ -189,6 +210,7 @@
         },
         "xmlFile": "planets/dialogue/KarviDiorama/Houses/KarviNom2.xml"
       },
+      // Scroll of the 4th quantum rule + whiteboard (Nomai diorama)
       {
         "type": "scroll",
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_NOM/NomaiExhibit/Buildings/BrittleHouse/Interactibles/Scrolls/QuantumScroll",
@@ -207,6 +229,7 @@
           "y": 180
         }
       },
+      // wall texts in the Nomai cannon building
       {
         "type": "wall",
         "position": {
@@ -536,6 +559,7 @@
   },
   "Volumes": {
     "revealVolumes": [
+      // reel house (when on the porch)
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_REEL_HOUSE_E" ],
@@ -543,6 +567,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/SlideReelManor/Interactibles/Prefab_IP_DW_CodeTotem",
         "isRelativeToParent": true
       },
+      // reel house (when entering)
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_REEL_HOUSE_ENTER" ],
@@ -553,6 +578,7 @@
           "z": 193.3018
         }
       },
+      // slide reel in the tower
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_SLIDE_REEL_E" ],
@@ -560,6 +586,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/Interactibles/Prefab_IP_SlideReelShelf/SlideReelShelf_Row_03/SlideSocket_02/Tower_Reel",
         "isRelativeToParent": true
       },
+      // symbols in the houses of the stranger diorama
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_CODED_DOORS_STRHOUSE_R", "COSMICCURATORS_INHABITANT_HOUSES_E1" ],
@@ -610,6 +637,7 @@
           "z": 2
         }
       },
+      // tower room (when entering)
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_E" ],
@@ -617,6 +645,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_STR/GhostExhibit/Structure/Tower/Tower_Pivot/Offset/RevealExplore",
         "isRelativeToParent": true
       },
+      // geyser (when spawning in Hearthian diorama)
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_QUANTUM_GEYSERS_E" ],
@@ -627,6 +656,7 @@
           "z": -142.0402
         }
       },
+      // ghost matter cave
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_GHOST_MATTER_CAVE_E" ],
@@ -634,6 +664,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/GhostMatter",
         "isRelativeToParent": true
       },
+      // base of volcano
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_VOLCANO_BUILDING_R" ],
@@ -641,6 +672,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Interactibles/Prefab_IP_DreamLibraryPedestal (3)",
         "isRelativeToParent": true
       },
+      // volcano totem door
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_VOLCANO_BUILDING_DOOR", "COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM" ],
@@ -648,6 +680,7 @@
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_KAV/KarviExhibit/Structure/FinalBuilding/Interactibles/KAV_Totem",
         "isRelativeToParent": true
       },
+      // past the totem door? [TODO: rework that hardcoded position]
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_VOLCANO_SUMMIT_R" ],
@@ -658,6 +691,7 @@
           "z": 192.7662
         }
       },
+      // unlit room
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_VOLCANO_SUMMIT_E" ],
@@ -669,6 +703,7 @@
           "z": 2
         }
       },
+      // near nomai cannon building [TODO: rework that hardcoded position]
       {
         "revealFor": "player",
         "reveals": [ "COSMICCURATORS_NOMAI_CANNON_E" ],
