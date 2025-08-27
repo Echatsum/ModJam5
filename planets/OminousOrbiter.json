@@ -1,6 +1,6 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "name": "Ominous Orbiter",
+  "name": "$COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER_NAME",
   "starSystem": "Jam5",
   "Base": {
     "surfaceSize": 150,
@@ -8,7 +8,7 @@
     "surfaceGravity": 0
   },
   "Orbit": {
-    "primaryBody": "Silver Lining",
+    "primaryBody": "$COSMICCURATORS_ASTRALBODY_SILVER_LINING_NAME",
     "dottedOrbitLine": true,
     "semiMajorAxis": 1200
   },

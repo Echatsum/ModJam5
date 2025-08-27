@@ -194,10 +194,15 @@
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN2": "*Ahem*",
 	},
 	"ShipLogDictionary": {
+		// -- Astral bodies names
+		"$COSMICCURATORS_ASTRALBODY_SILVER_LINING_NAME": "Silver Lining",
+		"$COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER_NAME": "Ominous Orbiter",
+		"$COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM_NAME": "Scaled Museum",
+
 		// -- SHIP ENTRIES
 
 		// Ominous Orbiter
-		"$COSMICCURATORS_OMINOUS_ORBITER_NAME": "Ominous Orbiter",
+		"$COSMICCURATORS_OMINOUS_ORBITER_NAME": "Ominous Orbiter"
 		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_NAME": "Unknown Vessel",
 		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_TEXT": "The Nomai named Ping has noticed a strange alien vessel orbiting a pulsar in the distance.",
 		"$COSMICCURATORS_OMINOUS_ORBITER_EXPLORE_TEXT": "I made it inside the alien ship. It appears to be eerie, yet humble.",

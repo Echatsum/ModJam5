@@ -1,6 +1,6 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "name": "Scaled Museum",
+  "name": "$COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM_NAME",
   "starSystem": "Jam5",
   "Base": {
     "surfaceSize": 800,
@@ -8,7 +8,7 @@
     "surfaceGravity": 0
   },
   "Orbit": {
-    "primaryBody": "Silver Lining",
+    "primaryBody": "$COSMICCURATORS_ASTRALBODY_SILVER_LINING_NAME",
     "showOrbitLine": false,
     "semiMajorAxis": 1800,
     "trueAnomaly": 180
