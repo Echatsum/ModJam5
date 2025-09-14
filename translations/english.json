@@ -3,9 +3,16 @@
 	"UIDictionary": {
 		// [Note for translators: These codes correspond to the Owlk symbols. Feel free to translate them to a better description in your language in case a literal translation would be weird]
 
+		// -- Astral bodies names (no $ because that breaks some things)
+		"COSMICCURATORS_ASTRALBODY_SILVER_LINING": "Silver Lining",
+		"COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER": "Ominous Orbiter",
+		"COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM": "Scaled Museum",
+
+		// -- Door prompts
 		"$COSMICCURATORS_TOTEM_PROMPT_REELHOUSE_TEXT": "Reel House code: Fire - Gibbous - Sun - Crescent - Ring",
 		"$COSMICCURATORS_TOTEM_PROMPT_VOLCANOSUMMIT_TEXT": "Volcano Summit code: Ring - Eye - Fire - Sun - Star",
 
+		// -- Ernesto gameover
 		"$COSMICCURATORS_CREDITS_ERNESTO": "ERNESTO BEAT YOU TO DEATH WITH A ROCK"
 	},
 	"DialogueDictionary": {
@@ -194,11 +201,6 @@
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN2": "*Ahem*",
 	},
 	"ShipLogDictionary": {
-		// -- Astral bodies names
-		"$COSMICCURATORS_ASTRALBODY_SILVER_LINING_NAME": "Silver Lining",
-		"$COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER_NAME": "Ominous Orbiter",
-		"$COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM_NAME": "Scaled Museum",
-
 		// -- SHIP ENTRIES
 
 		// Ominous Orbiter

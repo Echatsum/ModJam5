@@ -31,7 +31,7 @@ namespace FifthModJam
             VerifyUnityParameters();
 
             _music?.SetActive(false);
-            _nhPlanet = FifthModJam.NewHorizonsAPI.GetPlanet("Scaled Museum");
+            _nhPlanet = FifthModJam.NewHorizonsAPI.GetPlanet(Constants.ASTRALBODY_SCALED_MUSEUM);
             _desiredSector = _nhPlanet?.transform?.Find("Sector")?.gameObject?.GetComponent<Sector>();
 
             if (_nhPlanet == null)
