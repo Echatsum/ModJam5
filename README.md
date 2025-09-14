@@ -8,9 +8,9 @@ For Developers: To build the mod from source, you will need to already have the 
 
 Licences: See our [licenses.txt](licenses.txt) file (SPOILERS INSIDE) for references to licenses for things used in the mod (none of them have actual documents).
 
-Signal Jammers Team:
-pikpik_carrot - Lead Developer
-Anonymous - Programmer
-Echatsum/Stache - Programmer
-Repcon - 3D Modeling and Design
-cOa Rex - Playtester and 2D Art
+Signal Jammers Team:  
+pikpik_carrot - Lead Developer  
+Anonymous - Programmer  
+Echatsum/Stache - Programmer  
+Repcon - 3D Modeling and Design  
+cOa Rex - Playtester and 2D Art  
