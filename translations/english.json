@@ -339,5 +339,54 @@
 		"$COSMICCURATORS_PHOSPHORUS_RUMOR_NAME": "Further Up",
 		"$COSMICCURATORS_PHOSPHORUS_RUMOR_TEXT": "Lighting all the torches activated a beam further up still.",
 		"$COSMICCURATORS_PHOSPHORUS_EXPLORE_TEXT": "I met a living Karvi named Phosphorous!"
+	},
+	"AchievementTranslations": {
+		// -- Story Achievements
+		"COSMICCURATORS.SHRUNK_HATCHLING": {
+			"Name": "Honey I shrunk the Hatchling",
+			"Description": "Enter a diorama."
+		},
+		"COSMICCURATORS.WHATS_THIS_BUTTON": {
+			"Name": "Hey, what's this (Nomai) button do?",
+			"Description": "Fire the Nomai cannon."
+		},
+		"COSMICCURATORS.KNOCK_KNOCK": {
+			"Name": "Knock knock", // Note: I was tempted to use 'Tadaima' but that's probably better left for the Japanese translation only
+			"Description": "Open all three locked doors."
+		},
+		"COSMICCURATORS.THE_COSMIC_CURATORS": {
+			"Name": "The Cosmic Curators",
+			"Description": "Finish the mod."
+		},
+
+		// -- Other Achievements
+		"COSMICCURATORS.ERNESTO": {
+			"Name": "Ernesto",
+			"Description": "Find the magic talking anglerfish."
+		},
+		"COSMICCURATORS.ONE_RING_TO_RULE_THEM_ALL": {
+			"Name": "One ring to rule them all",
+			"Description": "Get inside the ghost matter cave with just one single item ever inserted in the river sockets that loop."
+		},
+		"COSMICCURATORS.INFINITY_STICK": {
+			"Name": "Infinity Stick",
+			"Description": "Get the stick all 6 possible flame colors in one loop."
+		},
+		"COSMICCURATORS.SCOUTLESS": {
+			"Name": "Scoutless",
+			"Description": "Reach the mod ending without ever launching the scout this loop."
+		},
+		"COSMICCURATORS.MIXED_PASSWORDS": {
+			"Name": "Mixed Passwords",
+			"Description": "Input the volcano code on the reel house totem, and the reel house code on the volcano totem."
+		},
+		"COSMICCURATORS.WALK_THE_PLANK": {
+			"Name": "Walk the plank",
+			"Description": "Walk on the fallen tower between dioramas."
+		},
+		"COSMICCURATORS.ITS_ONLY_A_MODEL": {
+			"Name": "It's only a model",
+			"Description": "Sleep with the artifact replica."
+		}
 	}
 }

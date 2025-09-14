@@ -25,7 +25,21 @@
         public const string UNITYPATH_EXHIBITS_SUFFIX_HEA = "Exhibit_HEA/Spawn/SpawnKAV3";
         public const string UNITYPATH_EXHIBITS_SUFFIX_KAR = "Exhibit_KAV/Spawn/SpawnKAV4";
         public const string UNITYPATH_KARVISHIP_SPAWNRETURN = Constants.ASTRALBODY_OMINOUS_ORBITER + "_Body/Sector/KarviShip_Interior/Interactibles/SpawnReturn/SpawnKAV5";
-        
+
+
+        // Achievements
+        public const string ACHIEVEMENT_SHRUNK_HATCHLING = "COSMICCURATORS.SHRUNK_HATCHLING";
+        public const string ACHIEVEMENT_WHATS_THIS_BUTTON = "COSMICCURATORS.WHATS_THIS_BUTTON";
+        public const string ACHIEVEMENT_KNOCK_KNOCK = "COSMICCURATORS.KNOCK_KNOCK";
+        public const string ACHIEVEMENT_THE_COSMIC_CURATORS = "COSMICCURATORS.THE_COSMIC_CURATORS";
+
+        public const string ACHIEVEMENT_ERNESTO = "COSMICCURATORS.ERNESTO";
+        public const string ACHIEVEMENT_ONE_RING_TO_RULE_THEM_ALL = "COSMICCURATORS.ONE_RING_TO_RULE_THEM_ALL";
+        public const string ACHIEVEMENT_INFINITY_STICK = "COSMICCURATORS.INFINITY_STICK";
+        public const string ACHIEVEMENT_SCOUTLESS = "COSMICCURATORS.SCOUTLESS";
+        public const string ACHIEVEMENT_MIXED_PASSWORDS = "COSMICCURATORS.MIXED_PASSWORDS";
+        public const string ACHIEVEMENT_WALK_THE_PLANK = "COSMICCURATORS.WALK_THE_PLANK";
+        public const string ACHIEVEMENT_ITS_ONLY_A_MODEL = "COSMICCURATORS.ITS_ONLY_A_MODEL";
 
     }
 }

@@ -86,6 +86,7 @@ namespace FifthModJam
                 _hasLaunched = true;
                 TowerCollapseManager.Instance.CollapseTower();
                 StartCoroutine(PlayAudio(hasPower: true));
+                FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_WHATS_THIS_BUTTON);
             }
         }
     }

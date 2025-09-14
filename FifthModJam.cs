@@ -11,6 +11,7 @@ namespace FifthModJam
     public class FifthModJam : ModBehaviour
     {
         public static INewHorizons NewHorizonsAPI { get; private set; }
+        public static IAchievements AchievementsAPI { get; private set; }
         private static FifthModJam _instance;
         public static FifthModJam Instance
         {
@@ -30,6 +31,14 @@ namespace FifthModJam
             NewHorizonsAPI = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
             NewHorizonsAPI.LoadConfigs(this);
 
+            // Get the Achievement+ API
+            AchievementsAPI = ModHelper.Interaction.TryGetModApi<IAchievements>("xen.AchievementTracker");
+            if(AchievementsAPI != null)
+            {
+                RegisterAllAchievements();
+            }
+
+            // Harmony patching
             new Harmony("TheSignalJammers.FifthModJam").PatchAll(Assembly.GetExecutingAssembly());
 
             // Example of accessing game code.
@@ -85,6 +94,24 @@ namespace FifthModJam
             cameraEffectController.OpenEyes(Constants.BLINK_OPEN_ANIM_TIME, false);
             yield return new WaitForSeconds(Constants.BLINK_OPEN_ANIM_TIME); // Waits until animation stops to proceed to next line
             OWInput.ChangeInputMode(InputMode.Character); // gives the player back input
+        }
+
+        // ACHIEVEMENTS
+        public void RegisterAllAchievements()
+        {
+            // Story Achievements
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_SHRUNK_HATCHLING, secret: true, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_WHATS_THIS_BUTTON, secret: true, this);
+            //AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_KNOCK_KNOCK, secret: true, this); // TODO: More than just a line to add so left for later
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS, secret: true, this);
+
+            // Other Achievements
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_ERNESTO, secret: true, this);
+
+
+
+            // Add translations
+            AchievementsAPI.RegisterTranslationsFromFiles(this, "translations/");
         }
     }
 }

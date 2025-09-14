@@ -131,6 +131,7 @@ namespace FifthModJam
             if (isEnteringDiorama)
             {
                 StartCoroutine(EnterDioramaCoroutine(spawnPoint));
+                FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_SHRUNK_HATCHLING);
             }
             else
             {

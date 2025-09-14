@@ -36,6 +36,7 @@ namespace FifthModJam
             if (conditionName.Equals("KARVI_MET") && conditionState) // Has talked to Karvi
             {
                 credits.SetActive(true);
+                FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS);
             }
         }
     }

@@ -36,6 +36,20 @@ namespace FifthModJam
             ernesto.SetActive(false);
             ernestoDialogue.SetActive(false);
             deathVol.SetActive(false);
+
+            GlobalMessenger<string, bool>.AddListener("DialogueConditionChanged", OnDialogueConditionChanged);
+        }
+        private void OnDestroy()
+        {
+            GlobalMessenger<string, bool>.RemoveListener("DialogueConditionChanged", OnDialogueConditionChanged);
+        }
+
+        private void OnDialogueConditionChanged(string conditionName, bool conditionState)
+        {
+            if (conditionName.Equals("CosmicCurators_Ernesto") && conditionState) // Has talked to Ernesto
+            {
+                FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_ERNESTO);
+            }
         }
 
         public virtual void OnTriggerEnter(Collider hitCollider)
