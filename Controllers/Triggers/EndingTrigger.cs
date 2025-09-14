@@ -59,8 +59,12 @@ namespace FifthModJam
                 Locator.GetToolModeSwapper().GetItemCarryTool()?.DropItemInstantly(_desiredSector, _nhPlanet.transform);
                 Locator.GetPlayerSuit().RemoveSuit();
 
+                // Stop timeloop
+                TimeLoop._isTimeFlowing = false;
+                TimeLoop.SetTimeLoopEnabled(false);
+
                 _hasAlreadyTriggeredEnding = true;
-            } 
+            }
         }
     }
 }
