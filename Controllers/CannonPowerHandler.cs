@@ -77,7 +77,10 @@ namespace FifthModJam
         }
         private void OnSocketRemoved(OWItem item)
         {
-            TogglePower(isTurningOn: false);
+            if (IsCannonPowered)
+            {
+                TogglePower(isTurningOn: false);
+            }
         }
 
         private void TogglePower(bool isTurningOn, bool silent = false)
