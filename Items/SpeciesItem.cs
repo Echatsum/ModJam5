@@ -28,25 +28,5 @@ namespace FifthModJam
                 _species = speciesData.Species;
             }
         }
-
-        public override void DropItem(Vector3 position, Vector3 normal, Transform parent, Sector sector, IItemDropTarget customDropTarget)
-        {
-            // [Note to self@Stache: I don't know what this does, since it seems it gets overwritten by base.DropItem()'s own SetSector anyway? To investigate]
-            if (_species == SpeciesEnum.NOMAI)
-            {
-                Sector desiredSector;
-                if (Locator.GetPlayerSectorDetector().IsWithinSector("ScaledMuseum"))
-                {
-                    desiredSector = SearchUtilities.Find("ScaledMuseum_Body/Sector").GetComponent<Sector>();
-                }
-                else
-                {
-                    desiredSector = SearchUtilities.Find("OminousOrbiter_Body/Sector").GetComponent<Sector>();
-                }
-                this.SetSector(desiredSector);
-            }
-
-            base.DropItem(position, normal, parent, sector, customDropTarget);
-        }
     }
 }
