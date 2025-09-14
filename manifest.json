@@ -4,7 +4,7 @@
   "author": "The Signal Jammers",
   "name": "The Cosmic Curators",
   "uniqueName": "TheSignalJammers.FifthModJam",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "owmlVersion": "2.15.1",
   "dependencies": [ "xen.NewHorizons", "xen-42.ModJam5" ]
 }
