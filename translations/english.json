@@ -101,7 +101,7 @@
 		"$COSMICCURATORS_DIALOGUE_ERNESTO_TATTLE": "You better not tell, Hatchling. I'll be watching you.",
 		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_ANNOYED": "Oh no...ANOTHER ERNESTO REFERENCE IN AN OUTER WILDS MOD!?",
 		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED1": "Like I even wanted to be here in the first place!",
-		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED2": "People are obsessed with me to the point that they worshipping me in the most sick and twisted ways.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED2": "People are obsessed with me to the point that they are worshipping me in the most sick and twisted ways.",
 		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED3": "Geswaldo is probably worried about me, and you fools summon me through demonic worship?",
 		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED4": "You people make me sick.",
 		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED_OPTION_SORRY": "OK then, sorry.",
@@ -387,6 +387,18 @@
 		"COSMICCURATORS.ITS_ONLY_A_MODEL": {
 			"Name": "It's only a model",
 			"Description": "Sleep with the artifact replica."
+		},
+		"COSMICCURATORS.YOU_FOUND_US": {
+			"Name": "Yahaha! You found us!",
+			"Description": "Find the Signal Jammers team portrait."
+		},
+		"COSMICCURATORS.ALL_IN_ITS_PLACE": {
+			"Name": "Everything in its proper place",
+			"Description": "Return each of the four species object to their diorama."
+		},
+		"COSMICCURATORS.FAT_SHAMING": {
+			"Name": "Fat Shaming",
+			"Description": "Try to fit in one of the Nomai escape pods."
 		}
 	}
 }
