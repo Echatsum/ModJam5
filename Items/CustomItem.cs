@@ -50,7 +50,7 @@ namespace FifthModJam
 
         public override string GetDisplayName()
         {
-            return _itemName;
+            return FifthModJam.NewHorizonsAPI.GetTranslationForUI(_itemName);
         }
 
         public override void PickUpItem(Transform holdTranform)

@@ -1,19 +1,25 @@
 {
 	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
 	"UIDictionary": {
-		// [Note for translators: These codes correspond to the Owlk symbols. Feel free to translate them to a better description in your language in case a literal translation would be weird]
-
 		// -- Astral bodies names (no $ because that breaks some things)
 		"COSMICCURATORS_ASTRALBODY_SILVER_LINING": "Silver Lining",
 		"COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER": "Ominous Orbiter",
 		"COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM": "Scaled Museum",
 
 		// -- Door prompts
+		// [Note for translators: These codes correspond to the Owlk symbols. Feel free to translate them to a better description in your language in case a literal translation would be weird]
 		"$COSMICCURATORS_TOTEM_PROMPT_REELHOUSE_TEXT": "Reel House code: Fire - Gibbous - Sun - Crescent - Ring",
 		"$COSMICCURATORS_TOTEM_PROMPT_VOLCANOSUMMIT_TEXT": "Volcano Summit code: Ring - Eye - Fire - Sun - Star",
 
 		// -- Ernesto gameover
-		"$COSMICCURATORS_CREDITS_ERNESTO": "ERNESTO BEAT YOU TO DEATH WITH A ROCK"
+		"$COSMICCURATORS_CREDITS_ERNESTO": "ERNESTO BEAT YOU TO DEATH WITH A ROCK",
+
+		// -- Items
+		"COSMICCURATORS_ITEM_KAV": "Knowledge Crystal",
+		"COSMICCURATORS_ITEM_STR": "Artifact",
+		"COSMICCURATORS_ITEM_NOM": "Tractor Beam",
+		"COSMICCURATORS_ITEM_HEA": "Spoiled Marshmallows",
+		"COSMICCURATORS_ITEM_BOATPOLE": "Boat Pole"
 	},
 	"DialogueDictionary": {
 		// [Note for translators: The Karvi are named after elements on the periodic table. Feel free to tweak the names a small bit if your language calls the element differently than English (try to keep the same element though please)]
@@ -192,7 +198,7 @@
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH38": "Hatchling, it's time to let go. The inevitable will happen, your friends may die, but there is no need to endure all this pain just to see their faces again.",
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH39": "That Prisoner? He scanned the vortex when no one was looking. He knew there was more to the vortex, and thanks to him, we know the secret to the Eye of the Universe.",
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH40": "Once someone enters the Eye and sacrifices themselves, their memories are passed on and allow the creation of a brand new universe.",
-		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH41": "Find a way to disable the Ash Twin Project. Follow the cry of the Eye, and put and end to your suffering and the suffering of the universe, for the hope that there'll be a tomorrow.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH41": "Find a way to disable the Ash Twin Project. Follow the cry of the Eye, and put an end to your suffering and the suffering of the universe, for the hope that there'll be a tomorrow.",
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH42": "Farewell Hatchling. Just remember, that your friend Phosphorus will be watching your back, rooting for you.",
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH": "Farewell Hatchling. Just remember, that your friend Phosphorus will be watching your back, rooting for you.",
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH_OPTION_AGREE": "I won't forget!",
@@ -343,7 +349,7 @@
 	"AchievementTranslations": {
 		// -- Story Achievements
 		"COSMICCURATORS.SHRUNK_HATCHLING": {
-			"Name": "Honey I shrunk the Hatchling",
+			"Name": "Honey I shrunk the Hatchling", // Translators: Nod to the movies. If that doesn't translate well in your language, feel free to localize the way you want.
 			"Description": "Enter a diorama."
 		},
 		"COSMICCURATORS.WHATS_THIS_BUTTON": {
@@ -366,27 +372,32 @@
 		},
 		"COSMICCURATORS.ONE_RING_TO_RULE_THEM_ALL": {
 			"Name": "One ring to rule them all",
-			"Description": "Get inside the ghost matter cave with just one single item ever inserted in the river sockets that loop."
+			"Description": "Get inside the ghost matter cave with just one single item ever inserted in the river sockets that loop.",
+			"DescriptionNotAchieved": "Hint: You only need one ring"
 		},
 		"COSMICCURATORS.INFINITY_STICK": {
 			"Name": "Infinity Stick",
-			"Description": "Get the stick all 6 possible flame colors in one loop."
+			"Description": "Get the stick all 6 possible flame colors in one loop.",
+			"DescriptionNotAchieved": "Hint: Gather all 6"
 		},
 		"COSMICCURATORS.SCOUTLESS": {
 			"Name": "Scoutless",
-			"Description": "Reach the mod ending without ever launching the scout this loop."
+			"Description": "Reach the mod credits without ever launching the scout on that loop."
 		},
 		"COSMICCURATORS.MIXED_PASSWORDS": {
 			"Name": "Mixed Passwords",
-			"Description": "Input the volcano code on the reel house totem, and the reel house code on the volcano totem."
+			"Description": "Input the volcano code on the reel house totem, and the reel house code on the volcano totem.",
+			"DescriptionNotAchieved": "Hint: Have you forgotten which code opens what?"
 		},
 		"COSMICCURATORS.WALK_THE_PLANK": {
 			"Name": "Walk the plank",
-			"Description": "Walk on the fallen tower between dioramas."
+			"Description": "Walk on the fallen tower between dioramas.",
+			"DescriptionNotAchieved": "Hint: YARR!"
 		},
 		"COSMICCURATORS.ITS_ONLY_A_MODEL": {
 			"Name": "It's only a model",
-			"Description": "Sleep with the artifact replica."
+			"Description": "Sleep with the artifact replica.",
+			"DescriptionNotAchieved": "Hint: Sweet dreams"
 		},
 		"COSMICCURATORS.YOU_FOUND_US": {
 			"Name": "Yahaha! You found us!",
@@ -394,11 +405,13 @@
 		},
 		"COSMICCURATORS.ALL_IN_ITS_PLACE": {
 			"Name": "Everything in its proper place",
-			"Description": "Return each of the four species object to their diorama."
+			"Description": "Return each of the four species objects to their diorama.",
+			"DescriptionNotAchieved": "Hint: Return four objects"
 		},
 		"COSMICCURATORS.FAT_SHAMING": {
 			"Name": "Fat Shaming",
-			"Description": "Try to fit in one of the Nomai escape pods."
+			"Description": "Try to fit in one of the Nomai escape pods.",
+			"DescriptionNotAchieved": "Hint: Those were not designed for someone of your.. generous.. ness" // Translators: This is a Portal Glados quote, so you can reuse the translation Portal has in your language
 		}
 	}
 }
