@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace FifthModJam
 {
-    [RequireComponent(typeof(EclipseCodeController4))]
+    [RequireComponent(typeof(EclipseCodeController4Expanded))]
     public class TotemCodePrompt : MonoBehaviour
     {
         // The totem interact, 
@@ -50,7 +50,7 @@ namespace FifthModJam
 
         private void InitializePrompt()
         {
-            _totemCode = this.GetComponent<EclipseCodeController4>()._code;
+            _totemCode = this.GetComponent<EclipseCodeController4Expanded>().GetCode();
 
             var promptText = TotemCodePromptManager.Instance.GetPromptText(_totemLocation);
             var sprite = TotemCodePromptManager.Instance.GetSprite(_totemCode);

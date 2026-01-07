@@ -40,6 +40,15 @@
         public const string ACHIEVEMENT_MIXED_PASSWORDS = "COSMICCURATORS.MIXED_PASSWORDS";
         public const string ACHIEVEMENT_WALK_THE_PLANK = "COSMICCURATORS.WALK_THE_PLANK";
         public const string ACHIEVEMENT_ITS_ONLY_A_MODEL = "COSMICCURATORS.ITS_ONLY_A_MODEL";
+        public const string ACHIEVEMENT_YOU_FOUND_US = "COSMICCURATORS.YOU_FOUND_US";
+        public const string ACHIEVEMENT_ALL_IN_ITS_PLACE = "COSMICCURATORS.ALL_IN_ITS_PLACE";
+        public const string ACHIEVEMENT_FAT_SHAMING = "COSMICCURATORS.FAT_SHAMING";
+
+        // Conditions (Perm or Loop)
+        public const string PERMCOND_OPENDOOR_REELHOUSE = "CosmicCurators_OpenDoor_ReelHouse_PERM";
+        public const string PERMCOND_OPENDOOR_VOLCANOSUMMIT = "CosmicCurators_OpenDoor_VolcanoSummit_PERM";
+        public const string PERMCOND_MIXEDPASSWORD_REELHOUSE = "CosmicCurators_MixedPassword_ReelHouse_PERM";
+        public const string PERMCOND_MIXEDPASSWORD_VOLCANOSUMMIT = "CosmicCurators_MixedPassword_VolcanoSummit_PERM";
 
     }
 }

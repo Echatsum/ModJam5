@@ -99,16 +99,25 @@ namespace FifthModJam
         // ACHIEVEMENTS
         public void RegisterAllAchievements()
         {
-            // Story Achievements
+            // Story Achievements (fully secret)
             AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_SHRUNK_HATCHLING, secret: true, this);
             AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_WHATS_THIS_BUTTON, secret: true, this);
-            //AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_KNOCK_KNOCK, secret: true, this); // TODO: More than just a line to add so left for later
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_KNOCK_KNOCK, secret: true, this);
             AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS, secret: true, this);
 
-            // Other Achievements
-            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_ERNESTO, secret: true, this);
+            // Other Achievements (not hidden)
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_ERNESTO, secret: false, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_YOU_FOUND_US, secret: false, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_SCOUTLESS, secret: false, this);
 
-
+            // Other Achievements (semi-hidden, with hint)
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_ONE_RING_TO_RULE_THEM_ALL, secret: false, showDescriptionNotAchieved: true, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_INFINITY_STICK, secret: false, showDescriptionNotAchieved: true, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_MIXED_PASSWORDS, secret: false, showDescriptionNotAchieved: true, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_WALK_THE_PLANK, secret: false, showDescriptionNotAchieved: true, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_ITS_ONLY_A_MODEL, secret: false, showDescriptionNotAchieved: true, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_ALL_IN_ITS_PLACE, secret: false, showDescriptionNotAchieved: true, this);
+            AchievementsAPI.RegisterAchievement(Constants.ACHIEVEMENT_FAT_SHAMING, secret: false, showDescriptionNotAchieved: true, this);
 
             // Add translations
             AchievementsAPI.RegisterTranslationsFromFiles(this, "translations/");

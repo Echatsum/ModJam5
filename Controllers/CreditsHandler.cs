@@ -7,6 +7,8 @@ namespace FifthModJam
         [SerializeField]
         public GameObject credits;
 
+        private bool _hasLaunchedScout;
+
         private void VerifyUnityParameters()
         {
             if (credits == null)
@@ -20,13 +22,16 @@ namespace FifthModJam
             VerifyUnityParameters();
 
             credits?.SetActive(false);
+            _hasLaunchedScout = false;
 
             GlobalMessenger<string, bool>.AddListener("DialogueConditionChanged", OnDialogueConditionChanged);
+            GlobalMessenger<SurveyorProbe>.AddListener("LaunchProbe", OnLaunchProbe);
         }
 
         private void OnDestroy()
         {
             GlobalMessenger<string, bool>.RemoveListener("DialogueConditionChanged", OnDialogueConditionChanged);
+            GlobalMessenger<SurveyorProbe>.RemoveListener("LaunchProbe", OnLaunchProbe);
         }
 
         private void OnDialogueConditionChanged(string conditionName, bool conditionState)
@@ -37,7 +42,16 @@ namespace FifthModJam
             {
                 credits.SetActive(true);
                 FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS);
+
+                if (!_hasLaunchedScout)
+                {
+                    FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_SCOUTLESS);
+                }
             }
+        }
+        private void OnLaunchProbe(SurveyorProbe probe)
+        {
+            _hasLaunchedScout = true;
         }
     }
 }

@@ -131,7 +131,6 @@ namespace FifthModJam
             if (isEnteringDiorama)
             {
                 StartCoroutine(EnterDioramaCoroutine(spawnPoint));
-                FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_SHRUNK_HATCHLING);
             }
             else
             {
@@ -155,6 +154,8 @@ namespace FifthModJam
             // Open eyes
             yield return StartCoroutine(FifthModJam.Instance.OpenEyesCoroutine());
             _isWarping = false;
+
+            FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_SHRUNK_HATCHLING);
         }
         private IEnumerator ExitDioramaCoroutine(SpawnPoint spawnPointTarget)
         {
