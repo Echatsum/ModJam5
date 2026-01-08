@@ -24,6 +24,11 @@ namespace FifthModJam
         public bool IsGeyserOnSolutionSocket => _quantumGeyser == null ? false : _quantumGeyser.GetCurrentSocket().name.Equals("SOCKET_SOLUTION"); // Bit dirty but good enough
         public bool IsGeyserActive => _geyser?._isActive ?? false;
 
+        // Achievement of single insertion
+        [SerializeField]
+        private GameObject _achievementVolumeTrigger;
+        private bool _hasSocketedOneItem = false;
+
         protected void VerifyUnityParameters()
         {
             if (_quantumGeyserParent == null)
@@ -33,6 +38,10 @@ namespace FifthModJam
             if (_customItemSockets == null || _customItemSockets.Length == 0)
             {
                 FifthModJam.WriteLine("[QuantumPuzzle] itemSockets array is null or empty", OWML.Common.MessageType.Error);
+            }
+            if (_achievementVolumeTrigger == null)
+            {
+                FifthModJam.WriteLine("[QuantumPuzzle] achievement volumeTrigger is null", OWML.Common.MessageType.Error);
             }
         }
 
@@ -153,6 +162,15 @@ namespace FifthModJam
 
         private void OnSocketFilled(OWItem item)
         {
+            if (_hasSocketedOneItem)
+            {
+                _achievementVolumeTrigger?.SetActive(false); // Two or more insertions = Achievement disabled
+            }
+            else
+            {
+                _hasSocketedOneItem = true;
+            }
+
             Locator.GetShipLogManager().RevealFact("COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET1");
             UpdateGeyser();
         }

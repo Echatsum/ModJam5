@@ -21,6 +21,8 @@ namespace FifthModJam
         // The return trigger that allows the player to walk between dioramas on the fallen tower
         [SerializeField]
         private GameObject _towerReturnTrigger;
+        [SerializeField]
+        private GameObject _achievementVolumeTrigger;
 
         private void VerifyUnityParameters()
         {
@@ -43,6 +45,10 @@ namespace FifthModJam
             if (_towerReturnTrigger == null)
             {
                 FifthModJam.WriteLine("[TowerBigCollapse] tower returnTrigger is null", OWML.Common.MessageType.Error);
+            }
+            if (_achievementVolumeTrigger == null)
+            {
+                FifthModJam.WriteLine("[TowerBigCollapse] achievement volumeTrigger is null", OWML.Common.MessageType.Error);
             }
         }
 
@@ -69,11 +75,13 @@ namespace FifthModJam
                 _shuttleAnim.keepAnimatorControllerStateOnDisable = true;
             }
             _towerReturnTrigger?.SetActive(false);
+            _achievementVolumeTrigger?.SetActive(false);
         }
 
         private void OnTowerCollapse()
         {
             _towerReturnTrigger?.SetActive(true);
+            _achievementVolumeTrigger?.SetActive(true);
             StartCoroutine(PlayAnim());
         }
         private IEnumerator PlayAnim()
