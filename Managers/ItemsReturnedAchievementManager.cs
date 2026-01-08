@@ -14,16 +14,11 @@ namespace FifthModJam
         private SpeciesEnum _currentDiorama = SpeciesEnum.INVALID;
         public void SetCurrentDiorama(SpeciesEnum species)
         {
-            FifthModJam.WriteLine("[ItemsReturnedAchievementManager] SET DIORAMA: " + species, OWML.Common.MessageType.Warning);
-
-
             _currentDiorama = species;
         }
 
         public void RegisterSpeciesItemNoLongerHeld(SpeciesEnum species)
         {
-            FifthModJam.WriteLine("[ItemsReturnedAchievementManager] DROPPED: " + species, OWML.Common.MessageType.Warning);
-
             if (!_isItemReturned.ContainsKey(species)) return; // Ignore what isn't in our dict (catch for the invalid value)
 
             if (species == _currentDiorama)
@@ -34,8 +29,6 @@ namespace FifthModJam
         }
         public void RegisterSpeciesItemHeld(SpeciesEnum species)
         {
-            FifthModJam.WriteLine("[ItemsReturnedAchievementManager] PICKED UP: " + species, OWML.Common.MessageType.Warning);
-
             if (!_isItemReturned.ContainsKey(species)) return; // Ignore what isn't in our dict (catch for the invalid value)
 
             _isItemReturned[species] = false;
