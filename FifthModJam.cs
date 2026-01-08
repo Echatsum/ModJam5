@@ -57,6 +57,7 @@ namespace FifthModJam
             ScoutCodeManager.Spawn();
             TotemCodePromptManager.Spawn();
             PingCampfireFlameManager.Spawn();
+            ItemsReturnedAchievementManager.Spawn();
         }
 
         public bool IsInJamFiveSystem()

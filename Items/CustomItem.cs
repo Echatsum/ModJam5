@@ -69,5 +69,10 @@ namespace FifthModJam
             base.DropItem(position, normal, parent, sector, customDropTarget);
             _isItemHeld = false;
         }
+        public override void SocketItem(Transform socketTransform, Sector sector)
+        {
+            base.SocketItem(socketTransform, sector);
+            _isItemHeld = false;
+        }
     }
 }

@@ -28,5 +28,25 @@ namespace FifthModJam
                 _species = speciesData.Species;
             }
         }
+
+        public override void PickUpItem(Transform holdTranform)
+        {
+            base.PickUpItem(holdTranform);
+
+            ItemsReturnedAchievementManager.Instance.RegisterSpeciesItemHeld(_species);
+        }
+
+        public override void DropItem(Vector3 position, Vector3 normal, Transform parent, Sector sector, IItemDropTarget customDropTarget)
+        {
+            base.DropItem(position, normal, parent, sector, customDropTarget);
+
+            ItemsReturnedAchievementManager.Instance.RegisterSpeciesItemNoLongerHeld(_species);
+        }
+        public override void SocketItem(Transform socketTransform, Sector sector)
+        {
+            base.SocketItem(socketTransform, sector);
+
+            ItemsReturnedAchievementManager.Instance.RegisterSpeciesItemNoLongerHeld(_species);
+        }
     }
 }
