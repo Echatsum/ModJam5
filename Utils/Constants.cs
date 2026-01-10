@@ -50,5 +50,7 @@
         public const string PERMCOND_MIXEDPASSWORD_REELHOUSE = "CosmicCurators_MixedPassword_ReelHouse_PERM";
         public const string PERMCOND_MIXEDPASSWORD_VOLCANOSUMMIT = "CosmicCurators_MixedPassword_VolcanoSummit_PERM";
 
+        // Translation keys
+        public const string TRANSLATIONKEY_NPCNAME_PHOSPHORUS = "COSMICCURATORS_DIALOGUE_PHOPHORUS_NAME";
     }
 }

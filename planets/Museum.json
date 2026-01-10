@@ -474,7 +474,7 @@
         "detectionRadius": 40,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Exhibit_HEA/HearthianExhibit/Interactibles/SIGNAL_SCOUT",
         "isRelativeToParent": true,
-        "name": "Scout Distress Signal",
+        "name": "COSMICCURATORS_SIGNAL_KARVI0",
         "volume": 0.1,
         "reveals": "COSMICCURATORS_SCOUT_SIGNAL_E"
       },
@@ -485,7 +485,7 @@
         "detectionRadius": 20,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/HEA",
         "isRelativeToParent": true,
-        "name": "4 - SUN",
+        "name": "COSMICCURATORS_SIGNAL_KARVI4",
         "volume": 0.1,
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE4"
       },
@@ -496,7 +496,7 @@
         "detectionRadius": 20,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/KAV",
         "isRelativeToParent": true,
-        "name": "5 - STAR",
+        "name": "COSMICCURATORS_SIGNAL_KARVI5",
         "volume": 0.1,
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE5"
       },
@@ -507,7 +507,7 @@
         "detectionRadius": 20,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/STR1",
         "isRelativeToParent": true,
-        "name": "1 - RING",
+        "name": "COSMICCURATORS_SIGNAL_KARVI1",
         "volume": 0.1,
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE1"
       },
@@ -518,7 +518,7 @@
         "detectionRadius": 20,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/STR2",
         "isRelativeToParent": true,
-        "name": "2 - EYE",
+        "name": "COSMICCURATORS_SIGNAL_KARVI2",
         "volume": 0.1,
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE2"
       },
@@ -529,7 +529,7 @@
         "detectionRadius": 20,
         "parentPath": "Sector/ScaledMuseum/Offset/Exhibits/Signals/NOM",
         "isRelativeToParent": true,
-        "name": "3 - FIRE",
+        "name": "COSMICCURATORS_SIGNAL_KARVI3",
         "volume": 0.1,
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE3"
       }

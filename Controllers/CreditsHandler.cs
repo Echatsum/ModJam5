@@ -7,6 +7,10 @@ namespace FifthModJam
         [SerializeField]
         public GameObject credits;
 
+        [SerializeField]
+        private GameObject _dialogueParent;
+        private InteractReceiver _interactReceiver;
+
         private bool _hasLaunchedScout;
 
         private void VerifyUnityParameters()
@@ -14,6 +18,15 @@ namespace FifthModJam
             if (credits == null)
             {
                 FifthModJam.WriteLine("[CreditsHandler] credits is null", OWML.Common.MessageType.Error);
+            }
+            if (_dialogueParent == null)
+            {
+                FifthModJam.WriteLine("[CreditsHandler] dialogue parent is null", OWML.Common.MessageType.Error);
+            }
+            _interactReceiver = _dialogueParent?.GetComponentInChildren<InteractReceiver>();
+            if (_interactReceiver == null)
+            {
+                FifthModJam.WriteLine("[CreditsHandler] interactReceiver not found", OWML.Common.MessageType.Error);
             }
         }
 
@@ -40,9 +53,10 @@ namespace FifthModJam
 
             if (conditionName.Equals("KARVI_MET") && conditionState) // Has talked to Karvi
             {
+                _interactReceiver.SetPromptText(UITextType.TalkToPrompt, FifthModJam.NewHorizonsAPI.GetTranslationForUI(Constants.TRANSLATIONKEY_NPCNAME_PHOSPHORUS)); // Update the talkto prompt to show Phosphorus's name
                 credits.SetActive(true);
-                FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS);
 
+                FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS);
                 if (!_hasLaunchedScout)
                 {
                     FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_SCOUTLESS);

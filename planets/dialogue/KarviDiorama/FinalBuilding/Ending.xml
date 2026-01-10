@@ -1,5 +1,5 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>???</NameField>
+	<NameField>COSMICCURATORS_DIALOGUE_PHOPHORUS_INITIAL_NAME</NameField>
   
 	<DialogueNode><Name>Ending</Name>
 		<EntryCondition>DEFAULT</EntryCondition>

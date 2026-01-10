@@ -6,6 +6,14 @@
 		"COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER": "Ominous Orbiter",
 		"COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM": "Scaled Museum",
 
+		// Signals
+		"COSMICCURATORS_SIGNAL_KARVI0": "Scout Distress Signal",
+		"COSMICCURATORS_SIGNAL_KARVI1": "1 - RING",
+		"COSMICCURATORS_SIGNAL_KARVI2": "2 - EYE",
+		"COSMICCURATORS_SIGNAL_KARVI3": "3 - FIRE",
+		"COSMICCURATORS_SIGNAL_KARVI4": "4 - SUN",
+		"COSMICCURATORS_SIGNAL_KARVI5": "5 - STAR",
+
 		// -- Door prompts
 		// [Note for translators: These codes correspond to the Owlk symbols. Feel free to translate them to a better description in your language in case a literal translation would be weird]
 		"$COSMICCURATORS_TOTEM_PROMPT_REELHOUSE_TEXT": "Reel House code: Fire - Gibbous - Sun - Crescent - Ring",
@@ -24,6 +32,12 @@
 	"DialogueDictionary": {
 		// [Note for translators: The Karvi are named after elements on the periodic table. Feel free to tweak the names a small bit if your language calls the element differently than English (try to keep the same element though please)]
 		// [In no particular order and hopefully complete, here is the name list for your convenience: Alumin, Argon, Chrom, Cobalt, Nickel, Tin, Xenon, Thorium, Phosphorus, Chlorine, Sulfur]
+
+		// NPC names
+		"COSMICCURATORS_DIALOGUE_PHOPHORUS_INITIAL_NAME": "???",
+		"COSMICCURATORS_DIALOGUE_PHOPHORUS_NAME": "Phosphorus",
+		"COSMICCURATORS_DIALOGUE_ERNESTO_NAME": "Ernesto",
+		"COSMICCURATORS_DIALOGUE_CULTIST_NAME": "Worshipper",
 
 		// -- MAIN SHIP
 		// Exhibit Rooms (KAV)
@@ -204,7 +218,7 @@
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH_OPTION_AGREE": "I won't forget!",
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH_OPTION_REPEAT": "Could you make that whole speech again? I think I've misheard something.",
 		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN1": "Well then, if you say so.",
-		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN2": "*Ahem*",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN2": "*Ahem*"
 	},
 	"ShipLogDictionary": {
 		// -- SHIP ENTRIES
