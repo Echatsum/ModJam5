@@ -82,8 +82,8 @@ namespace FifthModJam
 
                 var isPoleIgnited = poleItem.IsIgnited;
 
-                // Case 1: The torch ignites the unlit pole
-                if (_isIgnited && !isPoleIgnited)
+                // Case 1: The torch tries to ignite the pole (pole handles logic)
+                if (_isIgnited)
                 {
                     poleItem.ToggleFlames(true, _flameColor);
                 }
@@ -101,7 +101,7 @@ namespace FifthModJam
 
             _isIgnited = true;
             _torchFlame?.SetActive(true);
-            _animator?.Play("FLAME", 0);
+            _animator?.Play("FLAME_TORCH", 0); // TODO: this is shared with the pole, ideally separate the two states
             PlayAudio(true);
 
             // This will tell objects that are linked, that this torch is now lit [Note: Namely, the torch puzzle]
