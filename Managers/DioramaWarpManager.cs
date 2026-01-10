@@ -155,6 +155,7 @@ namespace FifthModJam
             yield return StartCoroutine(FifthModJam.Instance.OpenEyesCoroutine());
             _isWarping = false;
 
+            Locator.GetShipLogManager().RevealFact("COSMICCURATORS_DIORAMA_ROOM_MINIATURE");
             FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_SHRUNK_HATCHLING);
         }
         private IEnumerator ExitDioramaCoroutine(SpawnPoint spawnPointTarget)

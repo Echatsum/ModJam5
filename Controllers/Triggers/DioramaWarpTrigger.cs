@@ -42,7 +42,6 @@ namespace FifthModJam.Controllers.Triggers
                     return; // Continue only if this trigger is an ENTRY
                 }
 
-                Locator.GetShipLogManager().RevealFact("COSMICCURATORS_DIORAMA_ROOM_MINIATURE");
                 DioramaWarpManager.Instance.WarpTo(_warpTargetDiorama, isEnteringDiorama: true);
             }
         }

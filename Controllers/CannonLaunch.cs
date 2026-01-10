@@ -47,7 +47,6 @@ namespace FifthModJam
             if (_interactReceiver != null)
             {
                 _interactReceiver.OnPressInteract += OnPressInteract;
-                _interactReceiver.SetPromptText(UITextType.RotateGearPrompt);
             }
         }
         private void OnDestroy()
