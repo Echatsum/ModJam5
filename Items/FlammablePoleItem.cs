@@ -116,7 +116,6 @@ namespace FifthModJam
 
                 // Update flame count and check for achievement
                 _ignitedCount++;
-                FifthModJam.WriteLine("[FlammablePoleItem] ignitedCount is now " + _ignitedCount + ". Color added: " + flameColor, OWML.Common.MessageType.Warning);
                 if (_ignitedCount >= 6)
                 {
                     FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_INFINITY_STICK);
@@ -133,7 +132,6 @@ namespace FifthModJam
                 _oneShotAudio?.PlayOneShot(global::AudioType.Artifact_Extinguish, 0.5f);
 
                 _ignitedCount = 0;
-                FifthModJam.WriteLine("[FlammablePoleItem] ignitedCount is now " + _ignitedCount, OWML.Common.MessageType.Warning);
             }
         }
 
