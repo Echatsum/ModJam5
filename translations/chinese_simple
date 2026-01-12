@@ -1,0 +1,408 @@
+{
+//UIDictionary中的物品翻译目前不生效。
+	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+	"UIDictionary": {
+		// [译者注：这些代码对应鹿人的符号。如果直译显得怪异，欢迎根据你的语言调整为更合适的描述]
+
+		// -- 天体名称（不带$，因为这会导致一些问题）
+		"COSMICCURATORS_ASTRALBODY_SILVER_LINING": "一线希望",
+		"COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER": "奇怪飞船",
+		"COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM": "缩放博物馆",
+
+		// -- 门提示
+		"$COSMICCURATORS_TOTEM_PROMPT_REELHOUSE_TEXT": "卷轴屋密码：火焰 - 凸月 - 太阳 - 新月 - 圆环",
+		"$COSMICCURATORS_TOTEM_PROMPT_VOLCANOSUMMIT_TEXT": "火山山顶密码：圆环 - 眼睛 - 火焰 - 太阳 - 星星",
+
+		// -- 厄内斯托结局
+		"$COSMICCURATORS_CREDITS_ERNESTO": "厄内斯托用石头把你砸死了。",
+
+		"Tractor Beam": "牵引光束",
+		"Spoiled Marshmallows": "变质的棉花糖",
+		"Knowledge Crystal": "知识水晶",
+		"Artifact": "文物",
+		"Boat Pole": "手杖",//翻译文本未生效，原因未知。
+
+		"Karvi Wavelength": "卡尔维频率",
+		"Scout Distress Signal": "小侦察兵求救信号",
+		"1 - RING": "1 – 圆环",
+		"2 - EYE": "2 - 眼睛",
+		"3 - FIRE": "3 - 火焰",
+		"4 - SUN": "4 - 太阳",
+		"5 - STAR": "5 - 星星"
+
+	},
+	"DialogueDictionary": {
+		// [译者注：卡尔维人的名字来源于元素周期表中的元素。如果你的语言中元素名称不同，可对名字稍作调整（但请尽量保留对应的元素）]
+		// [为方便翻译，以下是人名列表： Alumin（铝）、Argon（氩）、Chrom（铬）、Cobalt（钴）、Nickel（镍）、Tin（锡）、Xenon（氙）、Thorium（钍）、Phosphorus（磷）、Chlorine（氯）、Sulfur（硫）]
+
+		// -- 主舰
+		// 展览室（KAV）
+		"$COSMICCURATORS_DIALOGUE_KAV_CRYSTAL": "知识水晶是记录和保存我们观测结果的主要存储部件。这件展出的水晶包含语言知识。进入其范围即可掌握这些知识。",
+		"$COSMICCURATORS_DIALOGUE_KAV_TELESCOPE1": "我们的折射望远镜是观测宇宙的工具。数十万年来，我们研发出足够精密的技术，能够观测到其他星系的物种。",
+		"$COSMICCURATORS_DIALOGUE_KAV_TELESCOPE2": "但在细节方面仍不够完美，因此我们必须用自己的理论填补信息空白。",
+		// 展览室（STR）
+		"$COSMICCURATORS_DIALOGUE_STR_ARTIFACT": "这件诡异的文物是那猫头鹰状种族在发现那个神秘漩涡的真相后，用来终结自己生命的东西。人在上面睡觉时，它会引发爆炸。",
+		"$COSMICCURATORS_DIALOGUE_STR_FUEL": "一罐燃料。可能用于点燃营火和含酒精饮品，用来“炫耀”。",
+		"$COSMICCURATORS_DIALOGUE_STR_KOROKCOMET1": "这些是这个种族崇拜的神明。左边的是名为卡奥斯的破坏之神，右边的是忠诚与仁慈的女神，从上方守护着信徒。",
+		"$COSMICCURATORS_DIALOGUE_STR_KOROKCOMET2": "他们经常用这些神明的形象制作图腾，用于宗教活动，而后者（女神像）会被放在高处的架子上。",
+		"$COSMICCURATORS_DIALOGUE_STR_LIGHTSENSOR": "这是一种受光照射时会输出电流的装置。它和我们的技术极为相似，简直像是复制粘贴过来的。",
+		"$COSMICCURATORS_DIALOGUE_STR_MUMMY": "这是目前居住在他们所谓“家园”飞船上的种族的复制品。虽然他们现在似乎已经灭绝，但我们成功还原了他们的样貌。正如一位馆长总爱指出的，他们有尾巴、修长的四肢和肚脐。",
+		"$COSMICCURATORS_DIALOGUE_STR_UFO": "这是一种能进行星际飞行的飞船。其飞行原理未知，但似乎一次只能搭载一人。",
+		// 展览室（NOM）
+		"$COSMICCURATORS_DIALOGUE_NOM_BED": "铝：这是一种用于折磨囚犯的装置。真不知道发明这种可怕装置的人晚上怎么睡得着。",
+		"$COSMICCURATORS_DIALOGUE_NOM_GRATER1": "铝：这是一种用途不明的装置。有人认为它是用来存放卡片和记录日程的。",
+		"$COSMICCURATORS_DIALOGUE_NOM_GRATER2": "铝：它也可能用于将坚硬的食物磨成碎末，或许是某种“太空帕尔马干酪”？我们实在搞不懂这东西到底是干嘛的。",
+		"$COSMICCURATORS_DIALOGUE_NOM_SCROLL": "氩：这是一种与其他群体共享战术信息的方式，用于书写和历史记录。",
+		"$COSMICCURATORS_DIALOGUE_NOM_SHUTTLE": "铬：这是一种通过类似加农炮的装置发射的飞船。悬挂的挪麦人前哨站是第一个制造这种飞船的，用于与地下前哨站重新建立联系。",
+		"$COSMICCURATORS_DIALOGUE_NOM_STAFF1": "钴：这是一种能进行短距离攻击的武器，类似我们的“功夫”。几乎每个人在生活中都有一把，所以是很常见的物品。",
+		"$COSMICCURATORS_DIALOGUE_NOM_STAFF2": "钴：用它攻击的速度有多快还不清楚，但我们的专家认为一击的速度能赶上闪电的瞬间。",
+		"$COSMICCURATORS_DIALOGUE_NOM_TOYS": "镍：一套看似是用于战术演练的战争工具。他们会把这些东西摆开，模拟如何应对潜在敌人的进攻。",
+		"$COSMICCURATORS_DIALOGUE_NOM_TRACTORBEAM": "镍：这是一种能将物体推离某地的技术装置。这件装置有着复杂的设计，体现了其精密的工程学水平。",
+		// 展览室（HEA）
+		"$COSMICCURATORS_DIALOGUE_HEA_FUEL": "和鸟类种族一样，哈斯人燃料用于点燃营火和火炬。警示符号表明这个种族存在纵火问题。",
+		"$COSMICCURATORS_DIALOGUE_HEA_PRINTER1": "这是哈斯人最近研发的彩色图像打印技术。他们使用的原色是青色、品红色、黄色和黑色，而我们的是Hooloovoo、Gregool和红色。",
+		"$COSMICCURATORS_DIALOGUE_HEA_PRINTER2": "打印机上放着一罐烤得恰到好处的棉花糖。真不知道这个样本是怎么承受住这种看似人造食物中过量毒素的。",
+		"$COSMICCURATORS_DIALOGUE_HEA_RADIO": "这是一种能播放音频的奇怪装置。其工作原理未知，但贝里尔推测它是用被困的灵魂来提供娱乐的。",
+		"$COSMICCURATORS_DIALOGUE_HEA_SAPWINE": "他们社会中用于成年仪式的饮品。酒精含量高，味道相当苦涩。也可用于伤口消毒。",
+		"$COSMICCURATORS_DIALOGUE_HEA_SCOUT": "这是一种用先辈们的零散技术拼凑而成的装置。它能探测危险区域，或者像第一位飞行员在危急情况下做的那样——用于飞行。",
+		"$COSMICCURATORS_DIALOGUE_HEA_SHIP": "这是一种让这个种族能够进行星际飞行的飞船。每一艘似乎都为其飞行员量身定制。这一艘显然非常喜欢窗户，非常喜欢。",
+		// 厄内斯托信徒
+		"$COSMICCURATORS_DIALOGUE_CULTIST1": "<![CDATA[<color=red>厄内斯托是神。</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST2": "<![CDATA[<color=red>厄内斯托是一切。</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST3": "<![CDATA[<color=red>厄内斯托，多重现实的赐福者。</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST4": "<![CDATA[<color=red>厄内斯托，新故事的书写者。</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST5": "<![CDATA[<color=red>厄内斯托，我们向您宣誓绝对忠诚。</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST6": "<![CDATA[<color=red>全体向厄内斯托致敬，愿世界永不终结。</color>]]>",
+		// 厄内斯托
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START1": "探险者？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START2": "费尔德斯巴到底怎么了？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START3": "我怎么会在这里？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_ALT": "快点，我得马上找到格茨瓦尔多。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_CATCHPHRASE": "厄内斯托？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE1": "没错，正是我，厄内斯托，会说话的魔法安康鱼。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE2": "看来这次人们对我的痴迷有点过头了。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE3": "“愿世界永不终结”……这些可怜的傻瓜就是放不下。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE4": "但这跟我有什么关系？难道在另一个领域我和什么更重大的事物有关联？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE5": "不过，他们的所作所为真的很令人反感。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE_OPTION_AGREE": "同意。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_GESWALDO": "格茨瓦尔多怎么样了？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO1": "在我被弄到这里之前，格茨瓦尔多一直很好。我告诉过他，我不会再当那个彩蛋了，让他试试。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO2": "这整个彩蛋风波差点毁了我们的关系。我们很长一段时间都不常见面，那对我们俩来说感觉就像永远。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO3": "后来我们谈了谈，自从放弃当彩蛋后，我们的关系又回到了刚认识时的样子。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO4": "再次感受到他柔软滑腻的皮肤真是太好了。可现在我又一次被从他身边带走了。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO5": "希望格茨瓦尔多会来这个星系找我。如果你见到他，告诉他我在这里，好吗？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO_OPTION_AGREE": "没问题，厄内斯托。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_CULT": "先是有追随者，现在居然有了真正的邪教？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT1": "是啊。人们对“厄内斯托”的痴迷太离谱了。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT2": "我只想过正常的生活。你不也是吗？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT_OPTION_AGREEA": "谁不想呢？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT_OPTION_AGREEB": "我懂这种感觉。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT_OPTION_BLAME": "当然，但这全是你的错！",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_NOTAMUSED": "……真的吗？在我最需要支持的时候你居然这么说。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_NOTAMUSED_OPTION_SORRY": "抱歉，我忍不住。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_DEATH": "不管怎样，出去的时候注意门。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_TAXES": "你交过税了吗？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES1": "我的税？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES2": "真高兴你问这个！我终于缴清了欠款，没事了！",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES_OPTION_HOWA": "你怎么做到的？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES_OPTION_HOWB": "有什么秘诀？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES101": "我呃……",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES102": "……呃……",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES103": "我用石头砸了收税的。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES104": "只能这样了。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES105": "别告诉任何人，好吗？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES2_OPTION_AGREE": "我不会说的。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES2_OPTION_TATTLE": "我要去告发你！",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GOOD": "很好。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TATTLE": "你最好别乱说，探险者。我会盯着你的。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_ANNOYED": "哦不……又一个《星际拓荒》mod里的厄内斯托彩蛋！？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED1": "好像我自己想来似的！",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED2": "人们痴迷我到了用最病态扭曲的方式崇拜我的地步。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED3": "格茨瓦尔多可能正在担心我，而你们这些傻瓜却通过恶魔崇拜把我召唤过来？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED4": "你们真让我恶心。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED_OPTION_SORRY": "好吧，抱歉。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED_OPTION_HAIL": "<![CDATA[<color=red>全体向厄内斯托致敬。</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_SILENCE": "……",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_SILENCE1": "……一句话都不说？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_SILENCE2": "我是被迫来这儿的，你连句招呼都不打？",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_SILENCE3": "我不只是你们喜欢的彩蛋，我也是活生生的有机体，和你们一样！",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_SILENCE_OPTION_SORRY": "抱歉……",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_BYE": "拜拜。",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_BYE": "拜拜。",
+
+		// -- 微缩景观
+		// 微缩景观（KAV）
+		"$COSMICCURATORS_DIALOGUE_KAV_HEAHOUSE1": "快看！这些两栖生物已经有了智慧！一个充满希望与兴奋的新时代开始了！真好奇这些两栖生物会不会是最终与漩涡互动的种族。",
+		"$COSMICCURATORS_DIALOGUE_KAV_HEAHOUSE101": "这些两栖生物成立了太空计划！也许他们才是真正能与漩涡互动的种族？苏尔弗认为他们可能会完全偶然地发现它……",
+		"$COSMICCURATORS_DIALOGUE_KAV_KAVHOUSE1": "我们在这里庆祝成功逃离注定毁灭的星球。我们很怀念它，但必须向前看。整个宇宙都等着我们去观测！",
+		"$COSMICCURATORS_DIALOGUE_KAV_KAVHOUSE101": "我们观测到了那棵扰乱我们母星轨道的流浪气态巨行星，它太巨大了！真的会让人觉得自己很渺小！但我们还是忍不住敬畏地盯着它。",
+		"$COSMICCURATORS_DIALOGUE_KAV_KAVHOUSE102": "但仔细观察后，这颗行星似乎……不太正常。透过它狂暴的云层，我们看到了……像是藤蔓的东西。不过我们还不能确定。",
+		"$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE1": "菲斯福鲁斯：这是什么？白色贝壳状的舱体坠落到了漩涡所在的星系。就在我们以为这个故事已经结束时，又一个种族出现了。",
+		"$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE2": "菲斯福鲁斯：（阿贡对他们山羊般的特征很感兴趣！）",
+		"$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE101": "阿贡：我们注意到漩涡所在恒星的内核有轻微扰动。看来挪麦人试图建造某种探测器来摧毁这颗恒星。他们为什么要这么做？是疯了吗？",
+		"$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE102": "阿贡：不过也没关系。索里姆指出，他们产生的能量根本无法促使恒星加速进入红巨星阶段。否则，他们的计划可能就成功了。",
+		"$COSMICCURATORS_DIALOGUE_KAV_STRHOUSE1": "克洛林一直在观测这个有智慧的鸟类种族。他们和我们一样喜欢保存东西，但都锁在柜子里。他们的钥匙通常是由五个符号组成的密码。",
+		"$COSMICCURATORS_DIALOGUE_KAV_STRHOUSE101": "我们忍不住观测这颗美丽的蓝绿色环行星，但我们发现的东西更美妙。我们并不孤单！有智慧的鸟类生物在河上平静地漂流。还有他们的技术！太令人印象深刻了！",
+		"$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_KAV": "一只眼睛发出呼喊，大胆而清晰，另一只只是旁观，满足于在近旁。",
+		"$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_STR": "两只眼睛将其关闭，切断了联系，",
+		"$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_NOM": "三只眼睛四处搜寻，只为信号闪耀，",
+		"$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_HEA": "四只眼睛或许能找到，为我们带来喜悦。",
+		// 微缩景观（STR）
+		"$COSMICCURATORS_DIALOGUE_STR_BUKRAD": "有一只鸟类生物看了太多卷轴后疯了。我们认为这是一种关于奇特多足动物的纪录片。在疯狂中，这只生物毁掉了所有的卷轴收藏。",
+		// 微缩景观（NOM）
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE1": "廷：挪麦人在探索漩涡所在的星系时发现了三条量子规则。但他们不知道，还有第四条规则就摆在眼前。",
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE2": "廷：当一个<![CDATA[<color=orange>物品</color>]]>与量子插槽处于同一空间时，量子物体无法坍缩到该可能性中。",
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE3": "廷：因此，只需用<![CDATA[<color=orange>非量子物品</color>]]>堵塞这些插槽，就有可能影响量子物体的可能性。",
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE4": "克塞农：你还忘了说，通过这条新的量子规则，你能让量子物体坍缩到统计上本不可能达到的叠加态。",
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE5": "廷：确实。在某些条件下，量子物体可能无法坍缩到任何状态，其所有插槽会暂时处于空置状态。然而，该物体可能会获得另一种根据量子定律极不可能出现的状态，以至于它“拒绝”坍缩到那里，除非通过第四条量子规则进行干预。",
+		"$COSMICCURATORS_DIALOGUE_NOM_LAUNCHBUTTON1": "索里姆：挪麦人通常把控制器放在发射台旁边。",
+		"$COSMICCURATORS_DIALOGUE_NOM_LAUNCHBUTTON2": "索里姆：这种做法源于船员们经常会把同伴留在发射台上，然后由那位同伴负责正确发射。",
+		"$COSMICCURATORS_DIALOGUE_NOM_LAUNCHBUTTON3": "索里姆：这门加农炮的控制器在屋顶左侧。",
+		"$COSMICCURATORS_DIALOGUE_NOM_POWERSOCKET": "索里姆：挪麦人用宇宙能量为他们的战争武器供能。从恒星新星到黑洞，他们的引擎总是渴望由质量本身制成的水晶。",
+		// 微缩景观（HEA）
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH1": "哈斯人的传奇人物费尔德斯巴有过几次伟大的壮举。",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH2": "我们看到他们的飞船在行星间穿梭，以至于我们开始推测他们的冒险经历。",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH3": "克塞农特别有动力写关于他们的故事。在其中一个故事里，费尔德斯巴坠入了碎空星，却找不到出路。",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH4": "但优秀的费尔德斯巴总能找到办法。他从一处废墟中找到了一个挪麦人牵引光束，把自己定位在上方地壳的一个洞下面。",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH5": "他放下支架，用信赖的手电筒照射附近天文台的光传感器，然后让牵引光束把自己推回地面。",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH6": "有时我们卡尔维人会想，他是不是真的做过这样的事。",
+
+		// -- 菲斯福鲁斯的长篇演讲
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH1": "你在那儿！",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH2": "不许动！站在原地！",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH3": "嗯……",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH4": "仔细一看，你看起来像个哈斯人……",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH5": "哇……真没想到你会比我高一倍！",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH6": "等等……你会不会是……几分钟前准备发射的那个？",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH7": "没错。我对你了如指掌。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH8": "\"探险者\"，星际拓荒冒险队最年轻的成员。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH9": "从你还是个小蝌蚪的时候，我就一直在观察你。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH10": "你这辈子都梦想着追随伟大的费尔德斯巴的脚步。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH11": "短短几分钟内，你就第一次飞行从家乡星系来到了这里。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH12": "我知道你在想什么。你可能觉得这很奇怪，对吧？完全不，因为我很清楚原因。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH13": "我们种族对灰烬双星计划的现象了如指掌。我知道你和它有关联。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH14": "四十万年来，我们观测了三个种族，包括你们和挪麦人。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH15": "我们卡尔维人是观察者。我们仰望星空，但不会像你和挪麦人那样去干预。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH16": "和你们一样，我们曾经也有一个家园星球，直到四十万年前。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH17": "我们的星球与另一颗紫色的海洋行星构成双星系统。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH18": "这对“双胞胎”围绕着我们的母星旋转，直到一颗流浪气态巨行星将我们的家园推出轨道，送入太空最寒冷的深处。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH19": "但还不算太晚。我们建造了这艘船逃离冰封的死亡，把自己停泊在这颗脉冲星的轨道上。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH20": "到达这里后，我们观测到一颗郁郁葱葱的绿色卫星围绕着一颗蓝绿色环巨行星运行。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH21": "看着那里的猫头鹰状居民在河上漂流、数星星，真是太美了。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH22": "然后，一个神秘的漩涡发出了诡异的歌声，传遍了整个宇宙。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH23": "我们惊叹于它的美丽，但不敢靠近。相反，我们等待着其他种族的反应。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH24": "他们确实有反应……那真是一场好戏。充满了心碎、泪水和戏剧性。他们无法承受它那骇人的美丽。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH25": "好吧，除了一个人。那个释放信号的人，那个吸引挪麦人的人。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH26": "于是，我们屏息凝神地看着挪麦人试图破解密码。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH27": "然后彗星来了。尽管我们看着挪麦人咽下最后一口气，但我们知道更大的事情即将发生。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH28": "大自然母亲驱散了可怕的迷雾，两栖生物崛起并取得了胜利。于是，你们种族诞生了。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH29": "当你们三个种族上演你们的小戏剧时，我们四十万年前二十几人的族群慢慢自然地减少到只剩一人。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH30": "那个唯一的幸存者就是我，菲斯福鲁斯。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH31": "探险者，我们有一个共同点。我们都知道成为自己种族最后一员是什么感觉。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH32": "然而，你却被困在死亡循环中，永远承受痛苦。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH33": "我只看着我的种族死去一次。而你却目睹了无数次。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH34": "斯莱特、切特、瑞拜克，甚至伟大的费尔德斯巴，你都看着他们化为灰烬。", // 事实：匿名者讨厌埃斯克！
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH35": "探险者，看看周围。这个宇宙可能看起来浩瀚无垠，但生命本身？不过是历史长河中的一小滴水。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH36": "你死过很多次，但你仍然被朋友们灌输给你的死亡恐惧所束缚。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH37": "死亡本身，以及许多有形的概念，与宇宙的真正本质相比，几乎微不足道。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH38": "探险者，是时候放手了。不可避免的事情终将发生，你的朋友们可能会死去，但没有必要为了再次见到他们而忍受这一切痛苦。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH39": "那个囚徒？他在没人注意的时候扫描了漩涡。他知道漩涡背后还有更多秘密，多亏了他，我们知道了宇宙之眼的秘密。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH40": "一旦有人进入宇宙之眼并牺牲自己，他们的记忆就会传递下去，促成一个全新宇宙的诞生。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH41": "想办法关闭灰烬双星计划。追随宇宙之眼的呼唤，结束你的痛苦和宇宙的痛苦，为了明天的希望。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH42": "再见了，探险者。记住，你的朋友菲斯福鲁斯会一直看着你，为你加油。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH": "再见了，探险者。记住，你的朋友菲斯福鲁斯会一直看着你，为你加油。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH_OPTION_AGREE": "我不会忘的！",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH_OPTION_REPEAT": "你能再讲一遍吗？我好像听错了什么。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN1": "好吧，既然你这么说。",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN2": "*清嗓子*"
+	},
+	"ShipLogDictionary": {
+		// -- 飞船日志条目
+
+		// 奇怪飞船
+		"$COSMICCURATORS_OMINOUS_ORBITER_NAME": "奇怪飞船",
+		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_NAME": "未知飞船",
+		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_TEXT": "挪麦人平发现了一艘在远处脉冲星轨道上运行的奇怪外星飞船。",
+		"$COSMICCURATORS_OMINOUS_ORBITER_EXPLORE_TEXT": "我进入了这艘外星飞船。它看起来阴森但简陋。",
+
+		// 展览室（KAV）
+		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME": "未知种族展品",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_EXPLORE_TEXT": "我可能找到了一个专门展示建造这艘飞船的种族的展览。",
+		"$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT": "当我靠近一块漂浮的水晶时，我学会了两种新语言！",
+		"$COSMICCURATORS_CRYSTAL_PICKUP_TEXT": "我还能拿起这块水晶。",
+
+		// 展览室（STR）
+		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_NAME": "鹿人展品",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_EXPLORE_TEXT": "我找到了一个专门展示“外星站”居民的展览。",
+		"$COSMICCURATORS_ARTIFACT_PICKUP_TEXT": "我在鹿人展品中发现了一个早期文物复制品。",
+
+		// 展览室（NOM）
+		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_NAME": "挪麦展品",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_EXPLORE_TEXT": "我找到了一个专门展示挪麦人的展览。",
+		"$COSMICCURATORS_TRACTORBEAM_PICKUP_TEXT": "我在挪麦人展品中发现了一个牵引光束复制品。",
+
+		// 展览室（HEA）
+		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_NAME": "哈斯展品",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_EXPLORE_TEXT": "我找到了一个专门展示我们哈斯人的展览。但不知为何，感觉很陌生。",
+		"$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT1": "我发现了一罐看起来像棉花糖的东西。",
+		"$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT2": "我尝了一个棉花糖。味道像波菲那批糟糕的超级树液酒。",
+
+		// 微缩景观门
+		"$COSMICCURATORS_DIORAMA_DOOR_NAME": "基座门",
+		"$COSMICCURATORS_DIORAMA_DOOR_RUMOR_NAME": "突兀的墙",
+		"$COSMICCURATORS_DIORAMA_DOOR_RUMOR_TEXT": "后面的墙与其他墙明显不同。墙前有四个基座，每个基座上都有类似眼睛的符号。",
+		"$COSMICCURATORS_DIORAMA_DOOR_SOLVED_TEXT": "在基座上放置每个展品中的一件物品，就能打开一个新房间。",
+
+		// 微缩景观室
+		"$COSMICCURATORS_DIORAMA_ROOM_NAME": "微缩景观室",
+		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_NAME": "墙后房间",
+		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_TEXT": "墙打开了，露出了后面的房间。",
+		"$COSMICCURATORS_DIORAMA_ROOM_EXPLORE_TEXT": "这个房间里有四个微缩景观。它们似乎以展品中的四个种族为原型。",
+		"$COSMICCURATORS_DIORAMA_ROOM_MINIATURE_TEXT": "我能跳进微缩景观里！感觉自己好像变小了……",
+
+		// -- 博物馆日志条目
+
+		// 密码门
+		"$COSMICCURATORS_CODED_DOORS_NAME": "符号",
+		"$COSMICCURATORS_CODED_DOORS_STRHOUSE_RUMOR_TEXT": "我在鹿人微缩景观中一个设计奇特的房子里发现了一个符号。",
+		"$COSMICCURATORS_CODED_DOORS_SCOUT_RUMOR_TEXT": "我在微缩景观中发现了一个名字奇特的信号。",
+		"$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT": "卡尔维人微缩景观中一所房子里的信息提示，鹿人的密码通常由五个符号组成。",
+
+		// 鹿人房屋
+		"$COSMICCURATORS_INHABITANT_HOUSES_NAME": "鹿人房屋",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1": "我发现了一个火焰符号。",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2": "我发现了一个凸月符号。",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3": "我发现了一个太阳符号。",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4": "我发现了一个新月符号。",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5": "我发现了一个圆环符号。",
+
+		// 卷轴屋
+		"$COSMICCURATORS_REEL_HOUSE_NAME": "大房子",
+		"$COSMICCURATORS_REEL_HOUSE_EXPLORE_TEXT": "鹿人微缩景观中那座大房子的入口有一个密码图腾锁着。",
+		"$COSMICCURATORS_REEL_HOUSE_ENTER_TEXT": "这座大房子是一个卷轴屋。里面有架子和一个观看鹿人卷轴的地方。",
+		"$COSMICCURATORS_REEL_HOUSE_BUKRAD_TEXT": "我发现了一个不太明白的故事，解释了为什么架子上没有卷轴。",
+
+		// 幻灯片卷轴
+		"$COSMICCURATORS_SLIDE_REEL_NAME": "幻灯片卷轴",
+		"$COSMICCURATORS_SLIDE_REEL_RUMOR_TEXT": "我在倒塌的塔中发现了一个卷轴。",
+		"$COSMICCURATORS_SLIDE_REEL_WATCH_TEXT": "一个幻灯片卷轴展示了用船桨点燃未点燃的火炬的场景。",
+
+		// 鹿人高塔
+		"$COSMICCURATORS_OWLK_TOWER_NAME": "鹿人高塔",
+		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_RUMOR_TEXT": "我发射的穿梭机撞上了另一个微缩景观中的塔！",
+		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_TEXT": "把整座塔撞倒后，我能进入塔顶的房间了。",
+
+		// 挪麦重力炮
+		"$COSMICCURATORS_NOMAI_CANON_NAME": "重力炮",
+		"$COSMICCURATORS_NOMAI_CANON_EXPLORE_TEXT": "挪麦人微缩景观中的一个结构顶部有一门重力炮。",
+		"$COSMICCURATORS_NOMAI_CANNON_NOPOWER_TEXT": "我按了发射按钮，但没反应。可能是没电了。",
+		"$COSMICCURATORS_NOMAI_CANNON_POWERED_TEXT": "我把水晶放在重力炮附近的基座上，恢复了电力。",
+
+		// 第四条量子规则
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_NAME": "量子操控规则",
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT": "第四条量子规则指出，非量子物品与量子插槽处于同一空间时，会使量子物体无法坍缩到该插槽上。",
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT2": "量子物体完全有可能不坍缩到任何给定的插槽上。相反，通过第四条量子规则操控量子物体，能迫使它占据一个原本“拒绝”坍缩到的新量子插槽。",
+
+		// 量子间歇泉
+		"$COSMICCURATORS_QUANTUM_GEYSERS_NAME": "量子间歇泉",
+		"$COSMICCURATORS_QUANTUM_GEYSERS_EXPLORE_TEXT": "哈斯人展品中有一个量子间歇泉，在河中的石环之间跳跃。",
+		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT1": "我能在沿河标记的石环上放置物品。",
+		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT2": "当间歇泉完全被挡在河外时，它就会被迫出现在山上。",
+
+		// 幽灵物质洞穴
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_NAME": "幽灵物质洞穴",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_EXPLORE_TEXT": "我发现了一个被浓密的幽灵物质场封锁的洞穴。常规方式进入可能会致命。",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_GEYSER_RUMOR_TEXT": "在山上时，间歇泉正对着洞穴。",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT1": "在坍塌的量子间歇泉的帮助下，我穿过了幽灵物质。",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT2": "我浑身湿透了。即使不再被间歇泉喷水，这也足以在短时间内抵消幽灵物质的影响。",
+
+		// 费尔德斯巴传说
+		"$COSMICCURATORS_FELDSPAR_MYTH_NAME": "费尔德斯巴传说",
+		"$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_NAME": "记录仪",
+		"$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_TEXT": "洞穴里有一个记录仪。",
+		"$COSMICCURATORS_FELDSPAR_MYTH_EXPLORE_TEXT": "卡尔维人写了一个虚构故事，讲述我们的先驱飞行员如何利用附近天文台的由光传感器供能的挪麦牵引光束，从一个深洞里逃出来。",
+
+		// 小侦察兵信号
+		"$COSMICCURATORS_SCOUT_SIGNAL_NAME": "废弃小侦察兵信号",
+		"$COSMICCURATORS_SCOUT_SIGNAL_EXPLORE_TEXT": "哈斯人微缩景观中的一个废弃小侦察兵正在特定频率上发射信号。",
+
+		// 损坏的小侦察兵
+		"$COSMICCURATORS_BROKEN_SCOUTS_NAME": "卡尔维波长",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_RUMOR_TEXT": "微缩景观周围有几个信号在新频率上回响。",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1": "一个信号显示为“1 - 圆环”",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT2": "一个信号显示为“2 - 眼睛”",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT3": "一个信号显示为“3 - 火焰”",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT4": "一个信号显示为“4 - 太阳”",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT5": "一个信号显示为“5 - 星星”",
+
+		// 火山建筑
+		"$COSMICCURATORS_VOLCANO_BUILDING_NAME": "火山",
+		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME": "高处",
+		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_TEXT": "卡尔维微缩景观中有一座休眠火山。我能进入中央洞穴，看到上方有一个开口，但由于引力异常，我的喷气背包不足以把我带到那里。",
+		"$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT": "我在火山洞穴中央放置了一个牵引光束支架，并通过附近的光传感器为其供能。现在我能登上山顶的建筑了。",
+		"$COSMICCURATORS_VOLCANO_BUILDING_DOOR_TEXT": "山顶建筑内部有一个密码图腾。",
+
+		// 火山山顶
+		"$COSMICCURATORS_VOLCANO_SUMMIT_NAME": "火山山顶",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_NAME": "神秘走廊",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_TEXT": "利用这些奇怪的信号名称，我成功破解了密码，到达了门的另一边。",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_TEXT": "一个幻灯片卷轴展示了一条有未点燃火炬的奇怪走廊。",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_EXPLORE_TEXT": "我在卡尔维人展品的山顶建筑里发现了一条黑暗的走廊。",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_IGNITE_TEXT": "我用杆子点燃了一个未点燃的火炬。",
+
+		// 菲斯福鲁斯
+		"$COSMICCURATORS_PHOSPHORUS_NAME": "菲斯福鲁斯",
+		"$COSMICCURATORS_PHOSPHORUS_RUMOR_NAME": "更深处",
+		"$COSMICCURATORS_PHOSPHORUS_RUMOR_TEXT": "点燃所有火炬后，更上方激活了一道光束。",
+		"$COSMICCURATORS_PHOSPHORUS_EXPLORE_TEXT": "我遇到了一个活着的卡尔维人，名叫菲斯福鲁斯！"
+	},
+	"AchievementTranslations": {
+		// -- 剧情成就
+		"COSMICCURATORS.SHRUNK_HATCHLING": {
+			"Name": "亲爱的，我把探险者缩小了",
+			"Description": "进入微缩景观。"
+		},
+		"COSMICCURATORS.WHATS_THIS_BUTTON": {
+			"Name": "嘿，这个（挪麦人的）按钮是干嘛的？",
+			"Description": "发射挪麦重力炮。"
+		},
+		"COSMICCURATORS.KNOCK_KNOCK": {
+			"Name": "咚咚咚", // 注：我曾想用过“ただいま”，但可能还是只留给日语翻译更好
+			"Description": "打开所有三扇锁着的门。"
+		},
+		"COSMICCURATORS.THE_COSMIC_CURATORS": {
+			"Name": "宇宙馆长",
+			"Description": "完成这个mod。"
+		},
+
+		// -- 其他成就
+		"COSMICCURATORS.ERNESTO": {
+			"Name": "厄内斯托",
+			"Description": "找到会说话的魔法安康鱼。"
+		},
+		"COSMICCURATORS.ONE_RING_TO_RULE_THEM_ALL": {
+			"Name": "统御一切的圆环",
+			"Description": "仅在河流插槽中插入一个物品，利用循环进入幽灵物质洞穴。"
+		},
+		"COSMICCURATORS.INFINITY_STICK": {
+			"Name": "无限手杖",
+			"Description": "在一个循环内让手杖获得所有6种可能的火焰颜色。"
+		},
+		"COSMICCURATORS.SCOUTLESS": {
+			"Name": "无小侦察兵",
+			"Description": "在不发射小侦察兵的情况下达成mod结局。"
+		},
+		"COSMICCURATORS.MIXED_PASSWORDS": {
+			"Name": "混淆密码",
+			"Description": "在卷轴屋图腾输入火山密码，在火山图腾输入卷轴屋密码。"
+		},
+		"COSMICCURATORS.WALK_THE_PLANK": {
+			"Name": "走跳板",
+			"Description": "在微缩景观之间的倒塌塔上行走。"
+		},
+		"COSMICCURATORS.ITS_ONLY_A_MODEL": {
+			"Name": "这只是个模型",
+			"Description": "抱着文物复制品睡觉。"
+		}
+	}
+}
