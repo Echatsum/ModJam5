@@ -6,51 +6,44 @@ namespace FifthModJam
     /// The basic expanded OWItem class for custom mod items.
     /// Allows for custom name and choosing ItemType equivalence.
     /// </summary>
-    public class CustomItem : OWItem
+    public class CustomItem : NewHorizons.Components.Props.NHItem
     {
-        // Name and socket type
         [SerializeField]
-        protected string _itemName;
+        protected string _customItemType;
         [SerializeField]
-        protected ItemType _itemType; // This is for item-socket compatibility [Note: While this can be set as mask, try to keep it as only one flag]
-        [SerializeField]
-        protected string[] _entryLogs;
+        protected string[] _entryLogs; // NHItem only allows for one entryLog on pickup. This class allows for more.
 
         private bool _isItemHeld;
         public bool IsItemHeld => _isItemHeld;
 
         protected virtual void VerifyUnityParameters()
         {
-            if (_itemName == null || _itemName.Length == 0)
-            {
-                FifthModJam.WriteLine($"[CustomItem] itemname null or empty", OWML.Common.MessageType.Error);
-            }
-            if (_itemType == ItemType.Invalid)
-            {
-                FifthModJam.WriteLine($"[CustomItem ({_itemName})] itemType has no accepted value", OWML.Common.MessageType.Error);
-            }
+            var hasBaseType = ItemType != ItemType.Invalid;
+            var hasCustomType = _customItemType != null && _customItemType.Length > 0;
 
+            if (DisplayName == null || DisplayName.Length == 0)
+            {
+                FifthModJam.WriteLine($"[CustomItem] DisplayName null or empty", OWML.Common.MessageType.Error);
+            }
             if (_sector == null) // Base code works but gets annoyed if we don't set a sector for the items
             {
-                FifthModJam.WriteLine($"[CustomItem ({_itemName})] sector is null", OWML.Common.MessageType.Warning);
+                FifthModJam.WriteLine($"[CustomItem ({DisplayName})] sector is null", OWML.Common.MessageType.Warning);
             }
-        }
 
-        public override void Awake()
-        {
-            _type = _itemType;
-            base.Awake();
+            if (!hasBaseType && !hasCustomType)
+            {
+                FifthModJam.WriteLine($"[CustomItem] itemType/customItemType has no accepted value", OWML.Common.MessageType.Error);
+            }
+            else if (hasCustomType)
+            {
+                ItemType = NewHorizons.Builder.Props.ItemBuilder.GetOrCreateItemType(_customItemType);
+            }
         }
 
         protected virtual void Start()
         {
             VerifyUnityParameters();
             _isItemHeld = false;
-        }
-
-        public override string GetDisplayName()
-        {
-            return FifthModJam.NewHorizonsAPI.GetTranslationForUI(_itemName);
         }
 
         public override void PickUpItem(Transform holdTranform)
