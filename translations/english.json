@@ -363,11 +363,11 @@
 	"AchievementTranslations": {
 		// -- Story Achievements
 		"COSMICCURATORS.SHRUNK_HATCHLING": {
-			"Name": "Honey I shrunk the Hatchling", // Translators: Nod to the movies. If that doesn't translate well in your language, feel free to localize the way you want.
+			"Name": "Honey I shrunk the Hatchling", // Translators: Reference to the movies of similar name. If that doesn't translate well in your language, feel free to localize the way you want.
 			"Description": "Enter a diorama."
 		},
 		"COSMICCURATORS.WHATS_THIS_BUTTON": {
-			"Name": "Hey, what's this (Nomai) button do?",
+			"Name": "Hey, what's this (Nomai) button do?", // Translators: Reference to the base game achievement of similar name.
 			"Description": "Fire the Nomai cannon."
 		},
 		"COSMICCURATORS.KNOCK_KNOCK": {
@@ -385,13 +385,13 @@
 			"Description": "Find the magic talking anglerfish."
 		},
 		"COSMICCURATORS.ONE_RING_TO_RULE_THEM_ALL": {
-			"Name": "One ring to rule them all",
+			"Name": "One ring to rule them all", // Translators: Reference to 'The Lord Of The Rings'
 			"Description": "Get inside the ghost matter cave with just one single item ever inserted in the river sockets that loop.",
 			"DescriptionNotAchieved": "Hint: You only need one ring"
 		},
 		"COSMICCURATORS.INFINITY_STICK": {
-			"Name": "Infinity Stick",
-			"Description": "Get the stick all 6 possible flame colors in one loop.",
+			"Name": "Infinity Stick", // Translators: Reference to the colored 'Infinity Stones' of Marvel Comics
+			"Description": "Get the stick all 6 possible flame colors at the same time.",
 			"DescriptionNotAchieved": "Hint: Gather all 6"
 		},
 		"COSMICCURATORS.SCOUTLESS": {
@@ -404,17 +404,17 @@
 			"DescriptionNotAchieved": "Hint: Have you forgotten which code opens what?"
 		},
 		"COSMICCURATORS.WALK_THE_PLANK": {
-			"Name": "Walk the plank",
+			"Name": "Walk the plank", // Translators: Pirate act of making prisoners 'walk the plank' of wood into the ocean. Unsure how well that translates.
 			"Description": "Walk on the fallen tower between dioramas.",
 			"DescriptionNotAchieved": "Hint: YARR!"
 		},
 		"COSMICCURATORS.ITS_ONLY_A_MODEL": {
-			"Name": "It's only a model",
+			"Name": "It's only a model", // Translators: Reference to Monty Python's 'Holy Grail' movie
 			"Description": "Sleep with the artifact replica.",
 			"DescriptionNotAchieved": "Hint: Sweet dreams"
 		},
 		"COSMICCURATORS.YOU_FOUND_US": {
-			"Name": "Yahaha! You found us!",
+			"Name": "Yahaha! You found us!", // Translators: Reference to 'The Legend of Zelda' Koroks
 			"Description": "Find the Signal Jammers team portrait."
 		},
 		"COSMICCURATORS.ALL_IN_ITS_PLACE": {
@@ -425,7 +425,7 @@
 		"COSMICCURATORS.FAT_SHAMING": {
 			"Name": "Fat Shaming",
 			"Description": "Try to fit in one of the Nomai escape pods.",
-			"DescriptionNotAchieved": "Hint: Those were not designed for someone of your.. generous.. ness" // Translators: This is a Portal Glados quote, so you can reuse the translation Portal has in your language
+			"DescriptionNotAchieved": "Hint: Those were not designed for someone of your.. generous.. ness" // Translators: Reference to a 'Portal 2' Glados quote, so you can reuse the translation Portal has in your language
 		}
 	}
 }
