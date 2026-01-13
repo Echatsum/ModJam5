@@ -53,7 +53,7 @@ namespace FifthModJam
 
             if (conditionName.Equals("KARVI_MET") && conditionState) // Has talked to Karvi
             {
-                _interactReceiver.SetPromptText(UITextType.TalkToPrompt, FifthModJam.NewHorizonsAPI.GetTranslationForUI(Constants.TRANSLATIONKEY_NPCNAME_PHOSPHORUS)); // Update the talkto prompt to show Phosphorus's name
+                _interactReceiver.SetPromptText(UITextType.TalkToPrompt, FifthModJam.NewHorizonsAPI.GetTranslationForDialogue(Constants.TRANSLATIONKEY_NPCNAME_PHOSPHORUS)); // Update the talkto prompt to show Phosphorus's name
                 credits.SetActive(true);
 
                 FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS);
