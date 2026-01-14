@@ -56,10 +56,10 @@ namespace FifthModJam
                 _interactReceiver.SetPromptText(UITextType.TalkToPrompt, FifthModJam.NewHorizonsAPI.GetTranslationForDialogue(Constants.TRANSLATIONKEY_NPCNAME_PHOSPHORUS)); // Update the talkto prompt to show Phosphorus's name
                 credits.SetActive(true);
 
-                FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS);
+                FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_THE_COSMIC_CURATORS);
                 if (!_hasLaunchedScout)
                 {
-                    FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_SCOUTLESS);
+                    FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_SCOUTLESS);
                 }
             }
         }

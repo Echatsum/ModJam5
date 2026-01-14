@@ -50,7 +50,7 @@ namespace FifthModJam
             }
             if (flag)
             {
-                FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_ALL_IN_ITS_PLACE);
+                FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_ALL_IN_ITS_PLACE);
             }
         }
     }

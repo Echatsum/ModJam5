@@ -118,7 +118,7 @@ namespace FifthModJam
                 _ignitedCount++;
                 if (_ignitedCount >= 6)
                 {
-                    FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_INFINITY_STICK);
+                    FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_INFINITY_STICK);
                 }
             }
             else

@@ -20,7 +20,7 @@ namespace FifthModJam
         {
             if (this.IsItemHeld)
             {
-                FifthModJam.AchievementsAPI.EarnAchievement(Constants.ACHIEVEMENT_ITS_ONLY_A_MODEL);
+                FifthModJam.AchievementsAPI?.EarnAchievement(Constants.ACHIEVEMENT_ITS_ONLY_A_MODEL);
             }
         }
     }
