@@ -1,67 +1,46 @@
 {
 	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
-
-	"OtherDictionary": {
-		"COSMICCURATORS_ITEM_KAV": "知识水晶",
-		"COSMICCURATORS_ITEM_STR": "文物",
-		"COSMICCURATORS_ITEM_NOM": "牵引光束",
-		"COSMICCURATORS_ITEM_HEA": "变质的棉花糖",
-		"COSMICCURATORS_ITEM_BOATPOLE": "手杖",
-		"COSMICCURATORS_DIALOGUE_PHOPHORUS_INITIAL_NAME": "???",
-		"COSMICCURATORS_DIALOGUE_PHOPHORUS_NAME": "菲斯福鲁斯",
-		"COSMICCURATORS_DIALOGUE_ERNESTO_NAME": "厄内斯托",
-		"COSMICCURATORS_DIALOGUE_CULTIST_NAME": "追随者" //这一段翻译未知是否生效
-	},
-
 	"UIDictionary": {
-		// [译者注：这些代码对应鹿人的符号。如果直译显得怪异，欢迎根据你的语言调整为更合适的描述]
-
 		// -- 天体名称（不带$，因为这会导致一些问题）
 		"COSMICCURATORS_ASTRALBODY_SILVER_LINING": "一线希望",
 		"COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER": "奇怪飞船",
 		"COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM": "缩放博物馆",
 
+		// Signals
+		"COSMICCURATORS_SIGNAL_KARVIFREQUENCY": "卡尔维频率",
+		"COSMICCURATORS_SIGNAL_KARVI0": "小侦察兵求救信号",
+		"COSMICCURATORS_SIGNAL_KARVI1": "1 – 星环",
+		"COSMICCURATORS_SIGNAL_KARVI2": "2 - 眼睛",
+		"COSMICCURATORS_SIGNAL_KARVI3": "3 - 火焰",
+		"COSMICCURATORS_SIGNAL_KARVI4": "4 - 太阳",
+		"COSMICCURATORS_SIGNAL_KARVI5": "5 - 星星",
+
 		// -- 门提示
+		// [译者注：这些代码对应鹿人的符号。如果直译显得怪异，欢迎根据你的语言调整为更合适的描述]
 		"$COSMICCURATORS_TOTEM_PROMPT_REELHOUSE_TEXT": "卷轴屋密码：火焰 - 凸月 - 太阳 - 新月 - 星环",
 		"$COSMICCURATORS_TOTEM_PROMPT_VOLCANOSUMMIT_TEXT": "火山山顶密码：星环 - 眼睛 - 火焰 - 太阳 - 星星",
 
 		// -- 厄内斯托结局
 		"$COSMICCURATORS_CREDITS_ERNESTO": "厄内斯托用石头把你砸死了。",
 
-		"Karvi Wavelength": "卡尔维频率",
-		"Scout Distress Signal": "小侦察兵求救信号",
-		"1 - RING": "1 – 星环",
-		"2 - EYE": "2 - 眼睛",
-		"3 - FIRE": "3 - 火焰",
-		"4 - SUN": "4 - 太阳",
-		"5 - STAR": "5 - 星星",
-
+		// -- Items
 		"COSMICCURATORS_ITEM_KAV": "知识水晶",
 		"COSMICCURATORS_ITEM_STR": "文物",
 		"COSMICCURATORS_ITEM_NOM": "牵引光束",
 		"COSMICCURATORS_ITEM_HEA": "变质的棉花糖",
-		"COSMICCURATORS_ITEM_BOATPOLE": "手杖",
-		"COSMICCURATORS_DIALOGUE_PHOPHORUS_INITIAL_NAME": "???",
-		"COSMICCURATORS_DIALOGUE_PHOPHORUS_NAME": "菲斯福鲁斯",
-		"COSMICCURATORS_DIALOGUE_ERNESTO_NAME": "厄内斯托",
-		"COSMICCURATORS_DIALOGUE_CULTIST_NAME": "追随者" //这一段翻译未知是否生效
+		"COSMICCURATORS_ITEM_BOATPOLE": "手杖"
 	},
 	"DialogueDictionary": {
 		// [译者注：卡尔维人的名字来源于元素周期表中的元素。如果你的语言中元素名称不同，可对名字稍作调整（但请尽量保留对应的元素）]
 		// [为方便翻译，以下是人名列表： Alumin（阿鲁敏）、Argon（阿贡）、Beryllium（贝里尔）、Chrom（克罗姆）、Cobalt（科博尔特）、Nickel（尼克尔）、Tin（廷）、Xenon（泽农）、Thorium（索里姆）、Phosphorus（菲斯福鲁斯）、Chlorine（克洛林）、Sulfur（萨弗尔）]
 
-		// -- 主舰
-
-		"COSMICCURATORS_ITEM_KAV": "知识水晶",
-		"COSMICCURATORS_ITEM_STR": "文物",
-		"COSMICCURATORS_ITEM_NOM": "牵引光束",
-		"COSMICCURATORS_ITEM_HEA": "变质的棉花糖",
-		"COSMICCURATORS_ITEM_BOATPOLE": "手杖",
+		// NPC names
 		"COSMICCURATORS_DIALOGUE_PHOPHORUS_INITIAL_NAME": "???",
 		"COSMICCURATORS_DIALOGUE_PHOPHORUS_NAME": "菲斯福鲁斯",
 		"COSMICCURATORS_DIALOGUE_ERNESTO_NAME": "厄内斯托",
 		"COSMICCURATORS_DIALOGUE_CULTIST_NAME": "追随者", //这一段翻译未知是否生效
 
+		// -- 主舰
 		// 展览室（KAV）
 		"$COSMICCURATORS_DIALOGUE_KAV_CRYSTAL": "知识水晶是记录和保存我们观测结果的主要存储部件。这件展出的水晶包含语言知识。进入其范围即可掌握这些知识。",
 		"$COSMICCURATORS_DIALOGUE_KAV_TELESCOPE1": "我们的折射望远镜是观测宇宙的工具。数十万年来，我们研发出足够精密的技术，能够观测到其他星系的物种。",
