@@ -1,0 +1,432 @@
+{
+	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+	"UIDictionary": {
+		// -- Astral bodies names (no $ because that breaks some things)
+		"COSMICCURATORS_ASTRALBODY_SILVER_LINING": "Lueur d'Espoir",
+		"COSMICCURATORS_ASTRALBODY_OMINOUS_ORBITER": "Orbiteur Menaçant",
+		"COSMICCURATORS_ASTRALBODY_SCALED_MUSEUM": "Musée à l'Échelle",
+
+		// Signals
+		"COSMICCURATORS_SIGNAL_KARVIFREQUENCY": "Longueur d'onde Karvi",
+		"COSMICCURATORS_SIGNAL_KARVI0": "Signal de détresse guetteur",
+		"COSMICCURATORS_SIGNAL_KARVI1": "1 - ANNEAU",
+		"COSMICCURATORS_SIGNAL_KARVI2": "2 - ŒIL",
+		"COSMICCURATORS_SIGNAL_KARVI3": "3 - FEU",
+		"COSMICCURATORS_SIGNAL_KARVI4": "4 - SOLEIL",
+		"COSMICCURATORS_SIGNAL_KARVI5": "5 - ÉTOILE",
+
+		// -- Door prompts
+		// [Note for translators: These codes correspond to the Owlk symbols. Feel free to translate them to a better description in your language in case a literal translation would be weird]
+		"$COSMICCURATORS_TOTEM_PROMPT_REELHOUSE_TEXT": "Code Maison de Carrousel : Feu - Gibbeuse - Soleil - Croissant - Anneau",
+		"$COSMICCURATORS_TOTEM_PROMPT_VOLCANOSUMMIT_TEXT": "Code Sommet du Volcan : Anneau - Œil - Feu - Soleil - Étoile",
+
+		// -- Ernesto gameover
+		"$COSMICCURATORS_CREDITS_ERNESTO": "ERNESTO T'A BATTU À MORT AVEC UNE PIERRE",
+
+		// -- Items
+		"COSMICCURATORS_ITEM_KAV": "Cristal de la Connaissance",
+		"COSMICCURATORS_ITEM_STR": "Artefact",
+		"COSMICCURATORS_ITEM_NOM": "Rayon Tracteur",
+		"COSMICCURATORS_ITEM_HEA": "Guimauves Périmée",
+		"COSMICCURATORS_ITEM_BOATPOLE": "Perche de Bâteau"
+	},
+	"DialogueDictionary": {
+		// [Note for translators: The Karvi are named after elements on the periodic table. Feel free to tweak the names a small bit if your language calls the element differently than English (try to keep the same element though please)]
+		// [In no particular order and hopefully complete, here is the name list for your convenience: Alumin, Argon, Chrom, Cobalt, Nickel, Tin, Xenon, Thorium, Phosphorus, Chlorine, Sulfur]
+
+		// NPC names
+		"COSMICCURATORS_DIALOGUE_PHOPHORUS_INITIAL_NAME": "???",
+		"COSMICCURATORS_DIALOGUE_PHOPHORUS_NAME": "Phosphore",
+		"COSMICCURATORS_DIALOGUE_ERNESTO_NAME": "Ernesto",
+		"COSMICCURATORS_DIALOGUE_CULTIST_NAME": "Fidèle",
+
+		// -- MAIN SHIP
+		// Exhibit Rooms (KAV)
+		"$COSMICCURATORS_DIALOGUE_KAV_CRYSTAL": "Le Cristal de la Connaissance est le principal composant de stockage pour documenter et préserver nos observations. Ce cristal exposé a la connaissance de la langue. Entrez dans son rayon pour exploiter sa connaissance.",
+		"$COSMICCURATORS_DIALOGUE_KAV_TELESCOPE1": "Nos télescopes réfracteurs nous permettent d'observer le cosmos. Depuis des centaines de milliers d'années, nous avons développé une technologie suffisamment précise pour observer les espèces dans d'autres systèmes.",
+		"$COSMICCURATORS_DIALOGUE_KAV_TELESCOPE2": "Ce n'est toujours pas entièrement parfait sur les détails, donc nous devons combler le manque d'informations avec nos propres théories.",
+		// Exhibit Rooms (STR)
+		"$COSMICCURATORS_DIALOGUE_STR_ARTIFACT": "Cet artefact étrange est la chose que les espèces ressemblant à des hiboux utilisaient pour mettre fin à leurs propres vies après avoir découvert la vérité sur ce mystérieux Vortex. Il libère une explosion quand on dort.",
+		"$COSMICCURATORS_DIALOGUE_STR_FUEL": "Un réservoir de carburant. Probablement utilisé pour allumer des feux de camp et des boissons alcoolisées pour \"frimer.\"",
+		"$COSMICCURATORS_DIALOGUE_STR_KOROKCOMET1": "Ce sont les divinités que cette espèce vénérait. Celui de gauche est un dieu nommé Kaos, c'est un dieu de la destruction, tandis que celui de droite est une déesse de la loyauté et de la gentillesse, observant les disciples d'en haut.",
+		"$COSMICCURATORS_DIALOGUE_STR_KOROKCOMET2": "Les totems étaient souvent faits à leur image et placés pour des activités religieuses, ces dernières étant placées sur des étagères hautes.",
+		"$COSMICCURATORS_DIALOGUE_STR_LIGHTSENSOR": "Un appareil qui envoie une sortie électrique lorsque de la lumière est dirigée dessus. Il semble très similaire à notre propre technologie, presque comme s'il était copié-collé.",
+		"$COSMICCURATORS_DIALOGUE_STR_MUMMY": "Une réplique de l'espèce actuellement à bord du vaisseau qu'ils appellent leur maison. Bien qu'ils semblent maintenant tous éteints, nous avons réussi à recréer ce à quoi ils ressemblaient. Ils semblent avoir des queues, de longs membres et un nombril, comme un conservateur aime continuellement le souligner.",
+		"$COSMICCURATORS_DIALOGUE_STR_UFO": "Un vaisseau capable de vol interplanétaire. On ne sait pas comment il vole, mais il semble pouvoir transporter une personne à la fois.",
+		// Exhibit Rooms (NOM)
+		"$COSMICCURATORS_DIALOGUE_NOM_BED": "ALUMIN : Un appareil utilisé pour torturer les prisonniers. On ignore comment le créateur d'un tel appareil horrible a réussi à dormir la nuit.",
+		"$COSMICCURATORS_DIALOGUE_NOM_GRATER1": "ALUMIN : Un appareil mystérieux avec de nombreuses utilisations envisagées. Certains pensent que c'était un moyen de stocker des cartes et de suivre les horaires.",
+		"$COSMICCURATORS_DIALOGUE_NOM_GRATER2": "ALUMIN : Il pourrait également être utilisé pour râper des aliments durs en morceaux, peut-être une sorte de \"Parmesan Spatial\" ? Nous ne pouvons même pas comprendre ce que cet appareil fait.",
+		"$COSMICCURATORS_DIALOGUE_NOM_SCROLL": "ARGON : Une méthode de partage d'informations tactiques avec d'autres groupes, utilisée pour la rédaction et la tenue de dossiers historiques.",
+		"$COSMICCURATORS_DIALOGUE_NOM_SHUTTLE": "CHROME : Un vaisseau qui est lancé via une sorte de canon. L'avant-poste suspendu Nomaï a été le premier à faire ça pour se reconnecter à leur avant-poste souterrain.",
+		"$COSMICCURATORS_DIALOGUE_NOM_STAFF1": "COBALT : Une arme capable d'attaques à courte portée similaire à notre �Kingfu.� Presque tout le monde semblait en avoir un dans la vie, ce qui en faisait un élément courant.",
+		"$COSMICCURATORS_DIALOGUE_NOM_STAFF2": "COBALT : La vitesse à laquelle on pourrait attaquer avec est inconnue, mais nos experts pensent qu'une frappe peut avoir lieu dans la portée d'un éclair.",
+		"$COSMICCURATORS_DIALOGUE_NOM_TOYS": "NICKEL : Un ensemble de ce qui semble être des instruments de guerre pour les tactiques de bataille. Ils les placeraient autour pour simuler comment ils pourraient répondre aux avancées ennemies potentielles.",
+		"$COSMICCURATORS_DIALOGUE_NOM_TRACTORBEAM": "NICKEL : Un appareil technologique capable de repousser des objets d'un emplacement. Cet appareil présente des conceptions complexes qui reflètent son ingénierie complexe.",
+		// Exhibit Rooms (HEA)
+		"$COSMICCURATORS_DIALOGUE_HEA_FUEL": "Tout comme les aviaires, le carburant Âtrien est utilisé pour allumer des feux de camp et des torches. Les symboles de mise en garde indiquent que cette espèce a un problème de pyromanie.",
+		"$COSMICCURATORS_DIALOGUE_HEA_PRINTER1": "Ceci représente une innovation récente d'Âtrien en matière d'images colorées. Il semble qu'ils aient comme couleurs primaires Cyan, Magenta, Jaune et Noir par opposition aux nôtres de Hooloovoo, Gregool et Rouge.",
+		"$COSMICCURATORS_DIALOGUE_HEA_PRINTER2": "Au sommet de cette imprimante se trouve une boîte de guimauves cuites à la perfection. On ne sait pas comment le spécimen pourrait gérer la quantité excédentaire de toxines contenues dans cet aliment apparemment artificiel.",
+		"$COSMICCURATORS_DIALOGUE_HEA_RADIO": "Un appareil étrange qui joue de l'audio. Bien qu'on ne sache pas comment il fonctionne, Béryl spécule qu'il utilise des esprits piégés pour se divertir.",
+		"$COSMICCURATORS_DIALOGUE_HEA_SAPWINE": "Un liquide buvable utilisé comme rituel de passage à l'âge adulte dans leur société. Il a une forte teneur en alcool et est assez amer. Il peut également être utilisé pour désinfecter les plaies.",
+		"$COSMICCURATORS_DIALOGUE_HEA_SCOUT": "Un appareil fabriqué à partir d'une technologie mélangée au hasard de leurs prédécesseurs. Il est capable de repérer les zones dangereuses ou, comme le premier pilote semblait le faire dans une situation dangereuse, de voler.",
+		"$COSMICCURATORS_DIALOGUE_HEA_SHIP": "Un vaisseau qui a permis à cette espèce de voler sur des distances interplanétaires. Chacun d'entre eux semble être adapté à son pilote. Celui-ci semble aimer les fenêtres. Beaucoup.",
+		// Ernesto Cultist
+		"$COSMICCURATORS_DIALOGUE_CULTIST1": "<![CDATA[<color=red>ERNESTO EST DIEU.</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST2": "<![CDATA[<color=red>ERNESTO EST TOUT.</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST3": "<![CDATA[<color=red>ERNESTO, BÉNI DES RÉALITÉS ALTERNATIVES.</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST4": "<![CDATA[<color=red>ERNESTO, ÉCRIVAIN DE NOUVELLES HISTOIRES.</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST5": "<![CDATA[<color=red>ERNESTO, NOUS TE JURONS NOTRE PLUS GRANDE LOYAUTÉ.</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_CULTIST6": "<![CDATA[<color=red>AVE ERNESTO, POUR QUE LES MONDES NE CESSENT JAMAIS.</color>]]>",
+		// Ernesto
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START1": "Petite Pierre ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START2": "Punaise de Feldspath, qu'est-ce qu'il se passe ici ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START3": "Comment ai-je même pu arriver ici ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_ALT": "Dépêche-toi, je dois trouver Geswaldo immédiatement.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_CATCHPHRASE": "Ernesto ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE1": "En effet, c'est moi, Ernesto, le cœlacanthe parlant magique.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE2": "Il semble que les gens prennent cette obsession un peu trop loin cette fois.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE3": "\"POUR QUE LES MONDES NE CESSENT JAMAIS\"...Ces pauvres idiots ne pouvaient tout simplement pas lâcher prise.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE4": "Mais qu'est-ce que j'ai à voir avec ça ? Suis-je associé à quelque chose de plus grand dans un autre domaine ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE5": "Pourtant, c'est très écœurant ce qu'ils font.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CATCHPHRASE_OPTION_AGREE": "Je suis d'accord.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_GESWALDO": "Comment va Geswaldo ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO1": "Geswaldo allait merveilleusement bien jusqu'à ce que je sois transporté ici. Je lui ai dit que j'arrêterais d'être l'easter egg, et qu'il essaierait pour changer.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO2": "Tout ce désordre d'easter egg a presque détruit notre relation. Nous ne nous sommes jamais beaucoup vus pendant de longues périodes, ce qui semblait interminable pour nous deux.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO3": "Ensuite, nous en avons parlé, et depuis que nous avons renoncé à être un easter egg, notre relation s'est épanouie à nouveau dans ce qu'elle était lorsque nous nous sommes rencontrés pour la première fois.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO4": "C'était tellement agréable de sentir sa peau douce et glissante à nouveau. Et maintenant me voilà, éloigné de lui une fois de plus.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO5": "Espérons que Geswaldo est venu dans ce système pour me chercher. Si tu le vois, dis-lui où je suis, d'accord ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GESWALDO_OPTION_AGREE": "Avec plaisir, Ernesto.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_CULT": "D'abord un véritable culte, maintenant tu as une vraie secte ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT1": "Ouais. Les gens ont poussé cette Ernesto obsession beaucoup trop loin.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT2": "Je veux juste vivre une vie normale. Pas toi ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT_OPTION_AGREEA": "Qui ne veut pas ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT_OPTION_AGREEB": "Je connais ce sentiment.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_CULT_OPTION_BLAME": "Bien sûr, mais tout cela est de TA faute !",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_NOTAMUSED": "...Vraiment ? Juste à un moment où j'avais vraiment besoin de ton soutien.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_NOTAMUSED_OPTION_SORRY": "Désolé, je n'ai pas pu m'en empêcher.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_DEATH": "Quoi qu'il en soit, surveille la porte en sortant.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_TAXES": "As-tu payé tes impôts ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES1": "Mes impôts ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES2": "Je suis tellement content que tu aies demandé ! J'ai enfin payé mon dû et c'est bon pour moi !",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES_OPTION_HOWA": "Comment as-tu fait ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES_OPTION_HOWB": "C'est quoi ton secret ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES101": "Je euh...",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES102": "....euhh......",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES103": "J'ai frappé mon percepteur des impôts avec une pierre.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES104": "C'était le seul moyen.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES105": "Ne le dis à personne, d'accord ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES2_OPTION_AGREE": "Je ne dirai rien.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TAXES2_OPTION_TATTLE": "Je vais le dire !",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_GOOD": "Bien.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_TATTLE": "Tu ferais mieux de ne pas le dire, Petite Pierre. Je vais te surveiller.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_ANNOYED": "Oh non...UNE AUTRE ERNESTO RÉFÉRENCE DANS UN MOD OUTER WILDS !?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED1": "Comme si je voulais même être ici en premier lieu !",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED2": "Les gens sont obsédés par moi au point qu'ils me vénèrent de la manière la plus maladive et tordue.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED3": "Geswaldo est probablement inquiet pour moi, et vous, les imbéciles, m'invoquez par un culte démoniaque ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED4": "Vous me rendez malade.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED_OPTION_SORRY": "OK d'accord, désolé.",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_ANNOYED_OPTION_HAIL": "<![CDATA[<color=red>AVE ERNESTO.</color>]]>",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_SILENCE": "...",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_SILENCE1": "....Pas un mot ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_SILENCE2": "J'ai été forcé de venir ici, et tu ne dis pas au moins bonjour ?",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_SILENCE3": "Je ne suis pas juste ton easter egg bien-aimé, je suis un être vivant, respirant, organisme, tout comme toi !",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_SILENCE_OPTION_SORRY": "Désolé....",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_START_OPTION_BYE": "Bye Bye",
+		"$COSMICCURATORS_DIALOGUE_ERNESTO_BYE": "Bye bye.",
+
+		// -- DIORAMAS
+		// Diorama (KAV)
+		"$COSMICCURATORS_DIALOGUE_KAV_HEAHOUSE1": "Regarde ça ! Les amphibiens sont devenus conscients ! Une nouvelle ère d'espoir et d'excitation commence ! Je me demande si ces amphibiens seront enfin ceux qui interagiront avec le vortex.",
+		"$COSMICCURATORS_DIALOGUE_KAV_HEAHOUSE101": "Les amphibiens ont fondé un programme spatial ! Peut-être qu'ils seront les premiers à interagir avec le vortex ? Soufre prétend qu'ils pourraient le trouver complètement par accident...",
+		"$COSMICCURATORS_DIALOGUE_KAV_KAVHOUSE1": "Nous sommes assis ici pour célébrer nos efforts pour avoir échappé à notre planète condamnée. Elle nous manque tellement, mais nous devons aller de l'avant. Il y a tout un univers là-bas que nous pouvons observer !",
+		"$COSMICCURATORS_DIALOGUE_KAV_KAVHOUSE101": "Nous avons observé la géante gazeuse qui a déstabilisé l'orbite de notre planète natale, c'est colossal ! Cela vous fait vraiment sentir petit ! Et pourtant, nous ne pouvons pas nous empêcher de la regarder avec admiration.",
+		"$COSMICCURATORS_DIALOGUE_KAV_KAVHOUSE102": "Pourtant, à y regarder de plus près, la planète semble... non naturelle. Et en regardant à travers ses nuages violents, nous avons vu... ce que nous pensons être des vignes. Nous ne pouvons toujours pas confirmer cela, cependant.",
+		"$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE1": "PHOSPHORE : Qu'est-ce que c'est ? Des capsules blanches en forme de coquillage ont atterri en catastrophe dans le système du vortex. Juste au moment où nous pensions que cette histoire était terminée, une autre espèce montre son visage.",
+		"$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE2": "PHOSPHORE : (Argon est assez intrigué par leurs traits de chèvre !)",
+		"$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE101": "ARGON : Nous avons remarqué une petite perturbation dans le noyau interne de l'étoile hôte du vortex. Il semble que les Nomaï aient tenté de construire une sorte de sonde pour détruire l'étoile. Pourquoi auraient-ils fait ça ? Sont-ils fous ?",
+		"$COSMICCURATORS_DIALOGUE_KAV_NOMHOUSE102": "ARGON : Ça n'a pas vraiment d'importance. Thorium a noté qu'aucune énergie produite n'aurait pu forcer l'étoile à accélérer dans sa phase de géante rouge. Sinon, leur plan aurait pu fonctionner.",
+		"$COSMICCURATORS_DIALOGUE_KAV_STRHOUSE1": "Chlore a observé l'espèce d'oiseau sensible. Ils préservent les choses comme nous, mais scellent tout derrière une serrure et une clé. Leur clé est souvent un code de cinq symboles.",
+		"$COSMICCURATORS_DIALOGUE_KAV_STRHOUSE101": "Nous n'avons pas pu nous empêcher d'observer cette belle planète aux anneaux turquoises, mais ce que nous avons trouvé était encore plus beau. Nous ne sommes pas seuls ! Des créatures sensibles comme des oiseaux, faisant du rafting calmement le long de leurs rivières. Et leur technologie ! Très impressionnant !",
+		"$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_KAV": "Un œil a fait un appel, clair et audacieux, un autre regardant simplement, satisfait de rester près de son environnement.",
+		"$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_STR": "Deux yeux l'ont dissimulé, coupant la ligne,",
+		"$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_NOM": "Trois yeux ont cherché en grand, pour que le signal brille,",
+		"$COSMICCURATORS_DIALOGUE_KAV_OBSERVATORY_HEA": "Quatre yeux peuvent le trouver, nous rendant radieux.",
+		// Diorama (STR)
+		"$COSMICCURATORS_DIALOGUE_STR_BUKRAD": "Une des créatures aviaires est devenue folle après avoir regardé trop de carrousels. Des documentaires sur un animal particulier à plusieurs pattes, selon nous. Dans sa folie, la créature a ensuite détruit toute la collection de carrousels.",
+		// Diorama (NOM)
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE1": "TIN : Les Nomaï ont découvert trois règles quantiques en explorant le système du vortex. Ils ne savaient pas qu'il y avait une quatrième règle cachée à la vue de tous.",
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE2": "TIN : Quand un <![CDATA[<color=orange>objet</color>]]> occupe le même espace qu'une cavité quantique, l'objet quantique ne peut pas s'effondrer dans cette possibilité.",
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE3": "TIN : Par conséquent, il est possible d'influencer les possibilités d'un objet quantique en bloquant simplement ces cavités avec <![CDATA[<color=orange>des objets non quantique</color>]]>.",
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE4": "XENON : Tu as également oublié de mentionner que grâce à cette nouvelle règle quantique, tu peux réduire un objet quantique en une superposition qu'il ne devrait statistiquement pas être capable d'atteindre.",
+		"$COSMICCURATORS_DIALOGUE_NOM_QUANTUMRULE5": "TIN : En effet. Dans certaines conditions, un objet quantique peut échouer à s'effondrer dans un état et toutes ses cavités resteront brièvement vides. Cependant, l'objet peut obtenir un autre état possible qui est si improbable par les lois quantiques que l'objet \"refuse\" de s'effondrer là, à moins d'être manipulé par la quatrième règle quantique.",
+		"$COSMICCURATORS_DIALOGUE_NOM_LAUNCHBUTTON1": "THORIUM : Les Nomaï placent généralement leurs commandes juste à côté des rampes de lancement.",
+		"$COSMICCURATORS_DIALOGUE_NOM_LAUNCHBUTTON2": "THORIUM : Cette pratique est née du fait que les équipages laissent souvent l'un des leurs derrière eux sur le pad, ce membre d'équipage étant ensuite responsable du lancement approprié.",
+		"$COSMICCURATORS_DIALOGUE_NOM_LAUNCHBUTTON3": "THORIUM : Les commandes de ce canon sont sur le toit, à gauche.",
+		"$COSMICCURATORS_DIALOGUE_NOM_POWERSOCKET": "THORIUM : Les Nomaï ont alimenté leurs armes de guerre avec une énergie cosmique. Des novae d'étoiles aux trous noirs, leurs moteurs ont toujours eu faim de cristaux fabriqués à partir de la masse elle-même.",
+		// Diorama (HEA)
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH1": "La légende Âtrienne, Feldspath, a fait plusieurs grands efforts.",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH2": "Nous avons vu son vaisseau rebondir de planète en planète, à tel point que nous avons commencé à théoriser comment sess aventures se sont même déroulées.",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH3": "Xenon a été particulièrement motivé pour écrire des histoires à son sujet. Dans l'une d'entre elles, il descend dans Cravité sans échappatoire.",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH4": "Mais ce bon vieux Feldspath, il trouve toujours un moyen. Il a accroché un rayon tracteur Nomaï à proximité d'une des ruines et s'est positionné sous un trou dans la croûte au-dessus.",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH5": "Il a posé la structure au sol, orienté sa lampe de poche fiable vers un capteur de lumière dans un observatoire voisin, puis laissé le faisceau tracteur le repousser à la surface.",
+		"$COSMICCURATORS_DIALOGUE_HEA_MYTH6": "Parfois, nous, les Karvis, nous demandons s'il a vraiment fait des choses comme celles-ci.",
+
+		// -- PHOPHORUS UNENDING SPEECH
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH1": "Toi là !",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH2": "Ne bouge pas ! Reste où tu es !",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH3": "Hmmm...",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH4": "En y regardant de plus près, tu ressembles à un Âtrien....",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH5": "Wow...Je n'aurais jamais pensé que tu serais deux fois plus grand que moi !",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH6": "Attends...serais-tu...celui qui devait décoller il y a quelques minutes ?",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH7": "C'est vrai. Je sais tout de toi.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH8": "\"Petite Pierre\", le plus jeune membre du programme Odyssée.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH9": "Je t'ai observé depuis que tu étais juste un petit têtard.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH10": "Toute ta vie, tu as rêvé de suivre les traces du grand Feldspath.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH11": "En seulement quelques minutes, tu as fait tout ce chemin depuis ton système natale lors de ton premier vol.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH12": "Je sais à quoi tu penses. Je trouve probablement ça étrange, n'est-ce pas ? Loin de là, parce que je sais exactement pourquoi.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH13": "Mon espèce sait tout du phénomène du Projet Sablière Noire. Je sais que tu es connecté à ça.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH14": "Nous avons observé trois espèces sur une période de 400 000 ans, y compris la tienne et les Nomaï.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH15": "Nous Karvi, nous sommes des observateurs. Nous regardons les étoiles, mais nous n'interagissons pas avec elles comme vous et les Nomaï l'avez fait.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH16": "Comme toi, nous avions autrefois une planète natale, jusqu'à il y a 400 000 ans.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH17": "Notre planète faisait partie d'une relation binaire avec une autre violette, la planète Hycean.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH18": "Les deux jumeaux ont dansé autour de notre étoile natale, jusqu'à ce qu'une géante gazeuse solitaire envoie notre planète natale voler hors de son orbite dans les profondeurs froides de l'espace.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH19": "Cependant, il n'était pas trop tard. Nous avons construit ce vaisseau pour échapper à nos morts glaciales, et nous nous sommes maintenus en orbite autour de ce pulsar.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH20": "Une fois que nous sommes arrivés, nous avons observé une lune verte et luxuriante en orbite autour d'une géante aux anneaux turquoises.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH21": "C'était magnifique, regardant ses habitants ressemblant à des hiboux descendre en radeau ses rivières et comptant leurs étoiles.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH22": "Puis, un vortex énigmatique a laissé échapper une chanson étrange pour que tout l'univers puisse l'entendre.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH23": "Nous sommes restés là, émerveillés par sa beauté, mais nous n'avons pas osé y aller. Au lieu de cela, nous avons attendu que les autres espèces réagissent.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH24": "Et ils ont fait... quel spectacle c'était. Plein de chagrin, de larmes et de drame. Ils ne pouvaient pas supporter sa beauté horrifiante.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH25": "Enfin, tous sauf un. Celui qui a libéré le signal, celui qui a attiré l'attention des Nomaï.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH26": "Et donc, nous nous sommes assis sur le bord de nos sièges en regardant les Nomaï essayer de déchiffrer le code.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH27": "Puis la comète est venue. Même si nous avons regardé les Nomaï rendre leur dernier souffle, nous savions que quelque chose de plus grand arrivait.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH28": "Mère Nature a alors éclaboussé le brouillard épouvantable et les amphibiens se sont élevés pour triompher. Et ainsi, votre espèce est née.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH29": "Pendant que vous trois espèces faisiez votre petite pièce de théâtre, notre équipage d'une vingtaine de personnes il y a 400 000 ans s'est lentement et naturellement dirigé vers un seul.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH30": "Ce seul survivant, c'est moi, Phosphore.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH31": "Il y a une chose que nous partageons, Petite Pierre. Nous savons ce que c'est d'être le dernier de notre espèce.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH32": "Et pourtant, tu es accroché à une boucle de la mort pour toute l'éternité, à souffrir.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH33": "Je n'ai regardé mon espèce mourir qu'une seule fois. Tu l'as vu d'innombrables fois.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH34": "Ardoise, Chail, Riebeck, et même le grand Feldspath, tu les as regardés brûler dans l'oubli.", // Fact: Anon hates Esker!
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH35": "Petite Pierre, regarde autour de toi. Cet univers, il peut sembler gargantuesque, mais la vie elle-même ? C'est juste un petit point dans les océans de l'histoire.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH36": "Tu es mort plusieurs fois, mais tu es toujours lié à la peur de la mort que tes amis t'ont mise.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH37": "La mort elle-même, et de nombreux concepts qui sont tangibles, n'ont presque aucune importance par rapport à la véritable nature de l'univers.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH38": "Petite Pierre, il est temps de lâcher prise. L'inévitable arrivera, tes amis peuvent mourir, mais il n'est pas nécessaire de supporter toute cette douleur juste pour revoir leur visage.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH39": "Ce prisonnier ? Il a scanné le vortex quand personne ne regardait. Il savait qu'il y avait plus dans le vortex, et grâce à lui, nous connaissons le secret de l'Œil de l'Univers.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH40": "Une fois que quelqu'un entre dans l'Œil et se sacrifie, ses souvenirs sont transmis et permettent la création d'un tout nouvel univers.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH41": "Trouve un moyen de désactiver le Projet Sablière Noire. Suis le cri de l'Œil, et mets fin à ta souffrance et à la souffrance de l'univers, pour l'espoir qu'il y aura un lendemain.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECH42": "Adieu, Petite Pierre. N'oublie pas que ton ami Phosphore veillera sur tes arrières, te soutenant.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH": "Adieu, Petite Pierre. N'oublie pas que ton ami Phosphore veillera sur tes arrières, te soutenant.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH_OPTION_AGREE": "Je ne l'oublierai pas !",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_ENDSPEECH_OPTION_REPEAT": "Pourriez-vous refaire tout ce discours ? Je pense que j'ai mal entendu quelque chose.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN1": "Eh bien alors, si tu le dis.",
+		"$COSMICCURATORS_DIALOGUE_PHOPHORUS_SPEECHAGAIN2": "*Ahem*"
+	},
+	"ShipLogDictionary": {
+		// -- SHIP ENTRIES
+
+		// Ominous Orbiter
+		"$COSMICCURATORS_OMINOUS_ORBITER_NAME": "Orbiteur Menaçant",
+		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_NAME": "Vaisseau Inconnu",
+		"$COSMICCURATORS_OMINOUS_ORBITER_RUMOR_TEXT": "Le Nomaï nommé Ping a remarqué un étrange vaisseau alien en orbite autour d'un pulsar au loin.",
+		"$COSMICCURATORS_OMINOUS_ORBITER_EXPLORE_TEXT": "Je suis arrivé à l'intérieur du vaisseau alien. Il semble étrange, mais humble.",
+
+		// Exhibit Rooms (KAV)
+		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_NAME": "Exposition Espèce Inconnue",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_KAV_EXPLORE_TEXT": "J'ai peut-être trouvé une exposition dédiée aux espèces qui ont construit ce vaisseau.",
+		"$COSMICCURATORS_CRYSTAL_PROXIMITY_TEXT": "Quand je me suis approché d'un cristal flottant, j'ai appris à lire deux nouvelles langues !",
+		"$COSMICCURATORS_CRYSTAL_PICKUP_TEXT": "Je peux aussi ramasser le cristal.",
+
+		// Exhibit Rooms (STR)
+		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_NAME": "Exposition Habitants",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_STR_EXPLORE_TEXT": "J'ai trouvé une exposition dédiée aux Habitants de l'Étranger.",
+		"$COSMICCURATORS_ARTIFACT_PICKUP_TEXT": "J'ai trouvé une réplique d'artefact ancien dans l'exposition Habitants.",
+
+		// Exhibit Rooms (NOM)
+		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_NAME": "Exposition Nomaï",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_NOM_EXPLORE_TEXT": "J'ai trouvé une exposition dédiée au Nomaï.",
+		"$COSMICCURATORS_TRACTORBEAM_PICKUP_TEXT": "J'ai trouvé une réplique de rayon tracteur dans l'exposition Nomaï.",
+
+		// Exhibit Rooms (HEA)
+		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_NAME": "Exposition Âtrienne",
+		"$COSMICCURATORS_EXHIBIT_ROOMS_HEA_EXPLORE_TEXT": "J'ai trouvé une exposition dédiée à nous, les Âtriens. D'une certaine manière, cela semble encore étranger.",
+		"$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT1": "J'ai trouvé ce qui ressemblait à une boîte de guimauves.",
+		"$COSMICCURATORS_MARSHMALLOWS_PICKUP_TEXT2": "J'ai goûté l'une des guimauves. Ça a le goût d'un mauvais lot de Porphy's xxx super Sap-Wine.",
+
+		// Diorama Door
+		"$COSMICCURATORS_DIORAMA_DOOR_NAME": "Porte du Piédestal",
+		"$COSMICCURATORS_DIORAMA_DOOR_RUMOR_NAME": "Mur Inadapté",
+		"$COSMICCURATORS_DIORAMA_DOOR_RUMOR_TEXT": "Le mur à l'arrière est visiblement différent des autres. Devant lui se trouvent quatre piédestaux, chacun avec des symboles en forme d'œil dessus.",
+		"$COSMICCURATORS_DIORAMA_DOOR_SOLVED_TEXT": "Placer un objet de chaque exposition sur les piédestaux ouvre une nouvelle pièce.",
+
+		// Diorama Room
+		"$COSMICCURATORS_DIORAMA_ROOM_NAME": "Salle Diorama",
+		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_NAME": "Salle Derrière le Mur",
+		"$COSMICCURATORS_DIORAMA_ROOM_RUMOR_TEXT": "Le mur s'est ouvert pour révéler une pièce derrière lui.",
+		"$COSMICCURATORS_DIORAMA_ROOM_EXPLORE_TEXT": "Il y a quatre dioramas à l'intérieur de cette salle. Ils semblent être basés sur les mêmes quatre espèces des expositions.",
+		"$COSMICCURATORS_DIORAMA_ROOM_MINIATURE_TEXT": "Je peux sauter à l'intérieur des dioramas ! C'est comme si j'avais été rétréci...",
+
+		// -- MUSEUM ENTRIES
+
+		// Coded Doors
+		"$COSMICCURATORS_CODED_DOORS_NAME": "Symboles",
+		"$COSMICCURATORS_CODED_DOORS_STRHOUSE_RUMOR_TEXT": "J'ai trouvé un symbole dans une maison curieusement conçue dans le diorama Habitants.",
+		"$COSMICCURATORS_CODED_DOORS_SCOUT_RUMOR_TEXT": "J'ai trouvé un signal avec un nom particulier dans les dioramas.",
+		"$COSMICCURATORS_CODED_DOORS_KAVHOUSE_EXPLORE_TEXT": "Un message dans l'une des maisons du diorama Karvi laisse entendre qu'un code Habitant est généralement composé de cinq symboles.",
+
+		// Owlk Houses
+		"$COSMICCURATORS_INHABITANT_HOUSES_NAME": "Maisons Habitants",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT1": "J'ai trouvé un symbole de feu.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT2": "J'ai trouvé un symbole gibbeux.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT3": "J'ai trouvé un symbole de soleil.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT4": "J'ai trouvé un symbole de croissant.",
+		"$COSMICCURATORS_INHABITANT_HOUSES_EXPLORE_TEXT5": "J'ai trouvé un symbole d'anneau.",
+
+		// Reel House
+		"$COSMICCURATORS_REEL_HOUSE_NAME": "Grande Maison",
+		"$COSMICCURATORS_REEL_HOUSE_EXPLORE_TEXT": "Il y a un totem de code verrouillant l'entrée de la grande maison dans le diorama Habitant.",
+		"$COSMICCURATORS_REEL_HOUSE_ENTER_TEXT": "La grande maison est une maison de carrousels. Il y a des étagères et un espace pour regarder les carrousels d'Habitants.",
+		"$COSMICCURATORS_REEL_HOUSE_BUKRAD_TEXT": "J'ai trouvé une histoire qui n'a pas beaucoup de sens expliquant pourquoi il n'y a pas de carrousels sur les étagères.",
+
+		// Slide Reel
+		"$COSMICCURATORS_SLIDE_REEL_NAME": "Carrousel de Diapositives",
+		"$COSMICCURATORS_SLIDE_REEL_RUMOR_TEXT": "J'ai trouvé un carrousel dans la tour effondrée.",
+		"$COSMICCURATORS_SLIDE_REEL_WATCH_TEXT": "Un carrousel de diapositives représente une perche de bateau utilisée pour allumer des torches éteintes.",
+
+		// Owlk Tower
+		"$COSMICCURATORS_OWLK_TOWER_NAME": "Tour Habitant",
+		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_RUMOR_TEXT": "La navette que j'ai lancée a percuté la tour dans l'autre diorama !",
+		"$COSMICCURATORS_INHABITANT_TOWER_COLLAPSE_TEXT": "Je peux accéder à la pièce supérieure de la tour après avoir renversé toute la structure.",
+
+		// Nomai Cannon
+		"$COSMICCURATORS_NOMAI_CANON_NAME": "Canon Gravitationnel",
+		"$COSMICCURATORS_NOMAI_CANON_EXPLORE_TEXT": "Un canon gravitationnel se trouve sur une structure dans le Diorama Nomaï.",
+		"$COSMICCURATORS_NOMAI_CANNON_NOPOWER_TEXT": "J'ai appuyé sur le bouton de lancement mais rien ne s'est passé. Je pense qu'il n'y a pas d'alimentation.",
+		"$COSMICCURATORS_NOMAI_CANNON_POWERED_TEXT": "J'ai rétabli le courant en plaçant le cristal sur un piédestal près du canon.",
+
+		// Fourth Quantum Rule
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_NAME": "Règle de la Manipulation Quantique",
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT": "Une quatrième règle quantique stipule qu'un objet non quantique occupant le même espace qu'une cavité quantique peut rendre impossible l'effondrement d'un objet quantique sur cette cavité.",
+		"$COSMICCURATORS_FOURTH_QUANTUM_RULE_EXPLORE_TEXT2": "Il est possible qu'un objet quantique ne s'effondre pas du tout sur une cavité donnée. Inversement, manipuler un objet quantique selon la quatrième règle quantique peut le forcer à occuper une nouvelle cavité quantique sur laquelle l'objet aurait autrement 'refuser' de s'effondrer.",
+
+		// Quantum Geysers
+		"$COSMICCURATORS_QUANTUM_GEYSERS_NAME": "Geyser Quantique",
+		"$COSMICCURATORS_QUANTUM_GEYSERS_EXPLORE_TEXT": "Il y a un geyser quantique dans l'exposition Âtrienne qui saute entre des anneaux de pierre dans la rivière.",
+		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT1": "Je suis capable de placer des objets au-dessus des anneaux de pierre marqués le long de la rivière.",
+		"$COSMICCURATORS_QUANTUM_GEYSERS_FILLSOCKET_TEXT2": "Lorsque le geyser est complètement bloqué de la rivière, il est forcé sur la montagne.",
+
+		// Ghost Matter Cave
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_NAME": "Grotte de Matière Fantôme",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_EXPLORE_TEXT": "J'ai trouvé une grotte barricadée par un champ dense de matière fantôme. Y entrer par des moyens conventionnels est probablement fatal.",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_GEYSER_RUMOR_TEXT": "Quand sur la montagne, le geyser pointe directement vers la grotte.",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT1": "J'ai réussi à passer la matière fantôme avec l'aide d'un geyser quantique effondré.",
+		"$COSMICCURATORS_GHOST_MATTER_CAVE_ENTER_TEXT2": "Je suis trempé. Même quand elle n'est plus pulvérisée par le geyser, c'est suffisant pour neutraliser la matière fantôme pendant juste un peu de temps.",
+
+		// Feldpar Myth
+		"$COSMICCURATORS_FELDSPAR_MYTH_NAME": "Le Mythe de Feldspath",
+		"$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_NAME": "Enregistreur",
+		"$COSMICCURATORS_FELDSPAR_MYTH_RUMOR_TEXT": "Il y a un enregistreur dans la grotte.",
+		"$COSMICCURATORS_FELDSPAR_MYTH_EXPLORE_TEXT": "Le Karvi a écrit une histoire fictive sur notre pilote pionnier s'échappant d'un trou profond en utilisant un rayon tracteur Nomaï alimenté par un capteur de lumière dans un observatoire à proximité.",
+
+		// Scout Signal
+		"$COSMICCURATORS_SCOUT_SIGNAL_NAME": "Signal Guetteur Abandonné",
+		"$COSMICCURATORS_SCOUT_SIGNAL_EXPLORE_TEXT": "Un guetteur abandonné dans le Diorama Âtrien émet sur une fréquence précise.",
+
+		// Broken Scouts
+		"$COSMICCURATORS_BROKEN_SCOUTS_NAME": "Longueurs d'Onde Karvi",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_RUMOR_TEXT": "Il y a plusieurs signaux autour des dioramas qui résonnent sur la nouvelle fréquence.",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT1": "Un signal se lit comme '1 - ANNEAU'",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT2": "Un signal se lit comme '2 - ŒIL'",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT3": "Un signal se lit comme '3 - FEU'",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT4": "Un signal se lit comme '4 - SOLEIL'",
+		"$COSMICCURATORS_BROKEN_SCOUTS_CODE_TEXT5": "Un signal se lit comme '5 - ÉTOILE'",
+
+		// Volcano Building
+		"$COSMICCURATORS_VOLCANO_BUILDING_NAME": "Volcan",
+		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_NAME": "Endroit en hauteur",
+		"$COSMICCURATORS_VOLCANO_BUILDING_RUMOR_TEXT": "Il y a un volcan dormant dans le diorama Karvi. Je peux entrer dans la chambre centrale et voir une ouverture au-dessus, mais mon jetpack n'est pas assez puissant pour m'y emmener en raison d'une anomalie gravitationnelle.",
+		"$COSMICCURATORS_VOLCANO_BUILDING_TRACTORBEAM_TEXT": "J'ai placé le cadre d'un rayon tracteur au centre de la grotte du volcan et je l'ai alimenté à travers le capteur de lumière à proximité. Je peux maintenant monter jusqu'en haut du bâtiment.",
+		"$COSMICCURATORS_VOLCANO_BUILDING_DOOR_TEXT": "Il y a un totem à code à l'intérieur du bâtiment au sommet de la montagne.",
+
+		// Volcano Summit
+		"$COSMICCURATORS_VOLCANO_SUMMIT_NAME": "Sommet du Volcan",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_NAME": "Couloir Mystérieux",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_RUMOR_TEXT": "En utilisant les noms de signaux étranges, j'ai réussi à déchiffrer le code et à atteindre l'autre côté de la porte.",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_REEL_RUMOR_TEXT": "Un carrousel de diapositives montrait un couloir étrange avec des torches éteintes.",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_EXPLORE_TEXT": "J'ai trouvé un couloir sombre à l'intérieur du bâtiment au sommet de la montagne dans l'Exposition Karvi.",
+		"$COSMICCURATORS_VOLCANO_SUMMIT_IGNITE_TEXT": "J'ai utilisé le bâton pour allumer une torche éteinte.",
+
+		// Phophorus
+		"$COSMICCURATORS_PHOSPHORUS_NAME": "Phosphore",
+		"$COSMICCURATORS_PHOSPHORUS_RUMOR_NAME": "Plus Haut",
+		"$COSMICCURATORS_PHOSPHORUS_RUMOR_TEXT": "Allumer toutes les torches a activé un faisceau encore plus haut.",
+		"$COSMICCURATORS_PHOSPHORUS_EXPLORE_TEXT": "J'ai rencontré un Karvi vivant nommé Phosphore !",
+	},
+	"AchievementTranslations": {
+		// -- Story Achievements
+		"COSMICCURATORS.SHRUNK_HATCHLING": {
+			"Name": "Chérie, j'ai rétréci la Petite Pierre", // Translators: Nod to the movies. If that doesn't translate well in your language, feel free to localize the way you want.
+			"Description": "Entrez dans un diorama."
+		},
+		"COSMICCURATORS.WHATS_THIS_BUTTON": {
+			"Name": "Ça fait quoi si j'appuie sur ce bouton Nomaï",
+			"Description": "Utilisez le canon Nomaï."
+		},
+		"COSMICCURATORS.KNOCK_KNOCK": {
+			"Name": "Toc toc", // Note: I was tempted to use 'Tadaima' but that's probably better left for the Japanese translation only
+			"Description": "Ouvrez les trois portes verrouillées."
+		},
+		"COSMICCURATORS.THE_COSMIC_CURATORS": {
+			"Name": "The Cosmic Curators",
+			"Description": "Finissez le mod."
+		},
+
+		// -- Other Achievements
+		"COSMICCURATORS.ERNESTO": {
+			"Name": "Ernesto",
+			"Description": "Trouvez le cœlacanthe parlant magique."
+		},
+		"COSMICCURATORS.ONE_RING_TO_RULE_THEM_ALL": {
+			"Name": "Un anneau pour les gouverner tous",
+			"Description": "Entrez dans la grotte de matière fantôme avec un seul objet inséré dans les cavités de la rivière cette boucle.",
+			"DescriptionNotAchieved": "Indice : Vous n'avez besoin que d'un anneau"
+		},
+		"COSMICCURATORS.INFINITY_STICK": {
+			"Name": "Infinity Stick",
+			"Description": "Obtenez les 6 couleurs de flamme possibles avec le bâton simultanément.",
+			"DescriptionNotAchieved": "Indice : Rassemblez les 6"
+		},
+		"COSMICCURATORS.SCOUTLESS": {
+			"Name": "Sans guetteur",
+			"Description": "Atteingnez les crédits du mod sans jamais lancer le guetteur dans cette boucle."
+		},
+		"COSMICCURATORS.MIXED_PASSWORDS": {
+			"Name": "Mots de passe mélangés",
+			"Description": "Entrez le code du volcan dans le totem de la maison à carrousels, et le code de la maison à carrousels dans le totem du volcan.",
+			"DescriptionNotAchieved": "Indice : As-tu oublié quel code ouvre quoi ?"
+		},
+		"COSMICCURATORS.WALK_THE_PLANK": {
+			"Name": "Marcher sur la planche",
+			"Description": "Marchez sur la tour tombée entre les dioramas.",
+			"DescriptionNotAchieved": "Indice : YARR !"
+		},
+		"COSMICCURATORS.ITS_ONLY_A_MODEL": {
+			"Name": "C'est seulement un modèle",
+			"Description": "Dors avec la réplique de l'artefact.",
+			"DescriptionNotAchieved": "Indice : Sweet dreams"
+		},
+		"COSMICCURATORS.YOU_FOUND_US": {
+			"Name": "Yahaha ! Tu nous as trouvé !",
+			"Description": "Trouvez le portrait de l'équipe the Signal Jammers."
+		},
+		"COSMICCURATORS.ALL_IN_ITS_PLACE": {
+			"Name": "Chaque chose à sa place",
+			"Description": "Retournez chacun des quatre objets des espèces à leur diorama.",
+			"DescriptionNotAchieved": "Indices : Retournez quatre objets"
+		},
+		"COSMICCURATORS.FAT_SHAMING": {
+			"Name": "Grossophobie",
+			"Description": "Essayez d'entrer dans l'une des capsules de sauvetage Nomaï.",
+			"DescriptionNotAchieved": "Indice : Elles ne doivent pas être étalonnée pour quelqu'un de votre... adiposité." // Translators: This is a Portal Glados quote, so you can reuse the translation Portal has in your language
+		}
+	}
+}
