@@ -52,5 +52,10 @@
 
         // Translation keys
         public const string TRANSLATIONKEY_NPCNAME_PHOSPHORUS = "COSMICCURATORS_DIALOGUE_PHOPHORUS_NAME";
+
+        // Compatibility
+        public const string FREQUENCY_NAME_OLD = "Karvi Wavelength";
+        public const string FREQUENCY_NAME_NEW = "COSMICCURATORS_SIGNAL_KARVIFREQUENCY";
+
     }
 }

@@ -58,6 +58,7 @@ namespace FifthModJam
             TotemCodePromptManager.Spawn();
             PingCampfireFlameManager.Spawn();
             ItemsReturnedAchievementManager.Spawn();
+            FrequencyUpgradeManager.Spawn();
         }
 
         public bool IsInJamFiveSystem()

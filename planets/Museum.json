@@ -468,7 +468,7 @@
     ],
     "signals": [
       {
-        "frequency": "Karvi Wavelength",
+        "frequency": "COSMICCURATORS_SIGNAL_KARVIFREQUENCY",
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
         "detectionRadius": 40,
@@ -479,7 +479,7 @@
         "reveals": "COSMICCURATORS_SCOUT_SIGNAL_E"
       },
       {
-        "frequency": "Karvi Wavelength",
+        "frequency": "COSMICCURATORS_SIGNAL_KARVIFREQUENCY",
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
         "detectionRadius": 20,
@@ -490,7 +490,7 @@
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE4"
       },
       {
-        "frequency": "Karvi Wavelength",
+        "frequency": "COSMICCURATORS_SIGNAL_KARVIFREQUENCY",
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
         "detectionRadius": 20,
@@ -501,7 +501,7 @@
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE5"
       },
       {
-        "frequency": "Karvi Wavelength",
+        "frequency": "COSMICCURATORS_SIGNAL_KARVIFREQUENCY",
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
         "detectionRadius": 20,
@@ -512,7 +512,7 @@
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE1"
       },
       {
-        "frequency": "Karvi Wavelength",
+        "frequency": "COSMICCURATORS_SIGNAL_KARVIFREQUENCY",
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
         "detectionRadius": 20,
@@ -523,7 +523,7 @@
         "reveals": "COSMICCURATORS_BROKEN_SCOUTS_CODE2"
       },
       {
-        "frequency": "Karvi Wavelength",
+        "frequency": "COSMICCURATORS_SIGNAL_KARVIFREQUENCY",
         "audio": "Orb_Roll_Energy_Loop_v2_01",
         "identificationRadius": 5,
         "detectionRadius": 20,
