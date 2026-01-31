@@ -4,6 +4,8 @@ A story mod made for Mod Jam 5 from the people behind **Eyes of the Past**, **Ba
 
 This mod requires the [Mod Jam 5 Mod](https://outerwildsmods.com/mods/modjam5/) as a dependency. Outer Wilds Mod Manager should download this automatically, but if it doesn't, download it from the Mod Manager or through this link.
 
+This mods also supports Achievements. While optional, you can download and enable [Achievements+](https://outerwildsmods.com/mods/achievements/) to give yourself some extra challenges while playing.
+
 For Developers: To build the mod from source, you will need to already have the mod installed via OWML. Reason being is the Slide Reel Cache is already generated and the AssetBundles are too big to be placed on the GitHub Repository.
 
 Licences: See our [licenses.txt](licenses.txt) file (SPOILERS INSIDE) for references to licenses for things used in the mod (none of them have actual documents).
