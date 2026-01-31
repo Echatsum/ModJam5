@@ -15,6 +15,6 @@ Echatsum/Stache - Programmer
 Repcon - 3D Modeling and Design  
 cOa Rex - Playtester and 2D Art  
 
-Translations curtesy of:
-cOa Rex - French
-SanBaiMing - Chinese
+Translations curtesy of:  
+cOa Rex - French  
+SanBaiMing - Chinese  
